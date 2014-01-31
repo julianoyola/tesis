@@ -1,0 +1,349 @@
+%\section{Detección de vesículas}
+
+\section {Metodología propuesta}
+
+La metodología propuesta para la detección de vesículas de varicela, consiste en una combinación de técnicas de procesamiento de imágenes. Puede resumirse en la aplicación de los siguientes métodos:
+
+\begin{itemize}
+
+	\item Selección de un espacio de color óptimo
+		
+	\item Detección de bordes
+		
+	\item Detección de círculos
+		
+	\item Ecualización del histograma
+	
+\end{itemize}
+
+\section{Selección de un espacio de color óptimo}
+\label{sec:color}
+
+Como primera medida a tomar realizamos un pre-procesamiento de la imagen, para poder centrarnos en un espacio de color que maximice el porcentaje de patrones correctamente detectados, y como paso posterior, ajustar el contraste.
+
+La imagen tiene componentes de luz y de color. Alguno de estos componentes son más apropiados para realizar la posterior detección de patrones y análisis del color de las vesículas de varicela. Existen diferentes formas de representar una imagen, estos modelos guardan los componentes de las imágenes de distintas formas. Por tal motivo, la selección de un espacio de color se convierte en un punto clave para el procesamiento posterior. En principio, evaluamos cuatro familias de modelos de color: RGB (RBG, CMYK), YCbCr (YUV, YCbCr), HSV (HSV, HSL) y CIE L*a*b.
+
+Uno de los modelos de color más utilizados en la representación de imágenes es el RGB, y su equivalente de síntesis sustractiva, el CYMK. Si bien este modelo de color resulta muy conveniente para la representación en dispositivos como monitores o impresoras, se aparta de un principio de la visión humana: el ojo es más susceptible a cambios en iluminación que a cambios en color. La luminancia es en general la componente que da más información sobre la imagen. Una imagen con un alto contraste en luminancia y pobre en cromatismo, puede ser percibida correctamente por un observador humano, mientras que el caso inverso genera dificultad en la detección de patrones.
+
+Los modelos YCbCr y L*a*b, intentan separar la imagen en componentes de luminancia y color. De este modo, se puede contar con una capa de la imagen que representa a la misma en escalas de blanco y negro, y manipularla independientemente de la información de color, que puede incluso ser transmitida o almacenada con menor tasa de información, sin perjudicar la percepción humana. El modelo YCbCr es ampliamente utilizado en imágenes de video o fotografía. El modelo L*a*b es un derivado del espacio de color CIE XYZ, que es un intento de estandarización de la CIE (Commission Internationale d' Eclairage) del año 1931. Busca conseguir la uniformidad perceptiva: que ante determinados cambios en los valores de luminancia o color, la variación en la percepción humana sea proporcional a esos cambios. La ventaja de estos modelos es que permiten diferenciar la luminancia que posee un pixel del mismo color y, en particular, el modelo L*a*b es robusto ante cambios en la iluminación.
+
+El modelo HSV/HSB (hue, saturation, value o brightness), busca modelar la percepción de color de un artista, que piensa en un determinado tinte de color (hue), la saturación o pureza del mismo (saturation) y el brillo o luz (value). La principal ventaja de este modelo es la facilidad para determinar o visualizar la componente del color, ya que se encuentra separada de la saturación y del brillo, sin embargo, la luminancia no resulta tan fácil de determinar, al estar separadas las variables `saturation' y `value'.
+
+En consecuencia, en la etapa de preprocesamiento el análisis se realizó en paralelo con los modelos YCbCr y L*a*b. De ambos se extrajo la componente de luminancia, es decir, $Y$ para el modelo YCbCr y $L$ en el caso de L*a*b.
+
+
+\section{Detección de bordes}
+
+Los métodos de segmentación se pueden agrupar en diferentes esquemas de clasificación. En un sentido amplio se pueden considerar tres tipos principales: esquemas de agrupamiento de puntos, métodos basados en bordes y métodos orientados a regiones ~\cite{CK01}~\cite{LK01}. Además, se han propuesto esquemas híbridos que resultan de combinaciones de los enfoques anteriores.
+Para la segmentación de las fotografías en zonas con vesículas y zonas sin vesículas utilizaremos métodos basados en la detección de bordes.
+
+Un borde es la frontera entre un objeto y el fondo. Una vez identificado el borde, se puede localizar todo el objeto, así como analizar su forma. La utilización de la información de borde simplifica en gran medida el análisis de las fotografías, ya que una vez identificados los bordes podemos estudiarlos y determinar si se trata de elementos circulares que puedan identificarse con vesículas de varicela.
+
+
+\section{Método de detección de bordes Canny}	
+
+Para la detección de bordes en las fotografías decidimos utilizar el método de Canny, ya es uno de los mejores métodos para la detección global de bordes sobre una imagen ~\cite{JC01}. Este método es considerado como uno de los más robustos contra el ruido (filtro óptimo), en comparación con otros métodos, como por ejemplo los métodos de Roberts, Sobel o Prewitt ~\cite{GW01}. Además, se considera que tiene una gran adaptibilidad para poder ser aplicado en diferentes tipos de imágenes. Por otro lado, en las pruebas que realizamos resultó exitosa su aplicación. En la figuras \ref{fig:imagenesConBordeVaricel03} y \ref{fig:imagenesConBordeVaricel04} se puede observar algunos resultados.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=2.4]{Resources/Varicel-03.jpg}
+\includegraphics[scale=0.21]{Resources/Varicel-03_bordes_detectados.png}
+\includegraphics[scale=0.21]{Resources/Varicel-03_imagen_con_bordes.png}
+\caption{Ejemplo de bordes detectados en una imagen. \textbf{Izquierda:} Figura original. \textbf{Centro:} Bordes detectados con el algoritmo de Canny. \textbf{Derecha:} Figura original con bordes superpuestos. \label{fig:imagenesConBordeVaricel03}}
+\end{figure}
+
+\bigskip
+
+El algoritmo de Canny esta basado en los siguientes criterios ~\cite{GW01} ~\cite{JR01}: 
+
+\begin{itemize}
+	\item Detectar los bordes sin eliminar ninguno y sin detectar bordes falsos. 	
+	\item Minimizar la diferencia entre la localización real del borde y la que detecta el algoritmo.
+	\item Evitar la detección de bordes duplicados.
+\end{itemize}
+
+El algoritmo de Canny emplea filtros de convolución que aproximan a la primer derivada de la imagen, suponiendo que ésta proviene de una función
+de argumento continuo. La derivada es cero en todas las regiones donde no varía la intensidad, y toma valores grandes donde hay un cambio brusco de intensidad. Esto sirve para detectar los bordes ~\cite{JR01}.
+
+\bigskip
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=3]{Resources/Varicel-04.jpg}
+\includegraphics[scale=0.21]{Resources/Varicel-04_bordes_detectados.png}
+\includegraphics[scale=0.21]{Resources/Varicel-04_imagen_con_bordes.png}
+\caption{Ejemplo de bordes detectados en otra imagen. \textbf{Izquierda:} Figura original. \textbf{Centro:} Bordes detectados con el algoritmo de Canny. \textbf{Derecha:} Figura original con bordes superpuestos. \label{fig:imagenesConBordeVaricel04}}
+\end{figure}
+
+El algoritmo de detección de bordes de Canny consta de cuatro etapas principales: 
+
+\begin{enumerate}
+	\item \textbf{Suavizado de la imagen:} en esta etapa se aplica un filtro gaussiano para suavizar la imagen.
+	\item \textbf{Obtención del gradiente:} en esta etapa se aplica un filtro pasa altos en la dirección vertical y horizontal para obtener el gradiente.
+	\item \textbf{Supresión de puntos que no son máximos locales:} en esta etapa se logra el adelgazamiento del ancho de los bordes, obtenidos con el gradiente, hasta lograr bordes de un píxel de ancho, suprimiendo los puntos que no son máximos.
+	\item \textbf{Umbral con histéresis:} en esta etapa se aplica una función de histéresis basada en dos umbrales; con este proceso se trata de reducir la posibilidad de aparición de contornos falsos.
+\end{enumerate}
+
+\paragraph{\textbf{Suavizado de la imagen.}}
+En esta primera etapa se suaviza la imagen para eliminar el posible ruido existente y evitar detectar bordes erróneamente. Para esto se utiliza un filtro gaussiano que es aplicado a la imagen. Se debe de tener cuidado de no realizar un suavizado excesivo, pues se podrían perder detalles de la imagen y provocar un pésimo resultado final. Este suavizado se obtiene promediando los valores de intensidad de los píxels en una ventana deslizante.
+
+\paragraph{\textbf{Obtención del gradiente.}}
+Una vez que se suaviza la imagen, para cada píxel se obtiene la magnitud (o módulo) y la orientación del gradiente, obteniendo así dos imágenes. Para esto se realiza un filtrado de convolución de la derivada primera de una función gaussiana normalizada discreta con la imagen, realizada en dos direcciones: horizontal y vertical. Con esto se obtiene el gradiente en cada posición de la imagen. Luego se calcula la magnitud y la orientación del gradiente en cada posición.
+
+\paragraph{\textbf{Supresión de valores que no son máximos locales.}}
+Esta etapa consiste en detectar los picos del gradiente obtenido en la etapa anterior que indican la presencia de un borde. Para esto se toman las dos imágenes generadas en el paso anterior, que sirven de entrada para generar una imagen con los bordes adelgazados. El procedimiento es el siguiente: se consideran cuatro direcciones identificadas por las orientaciones de 0º, 45º, 90º y 135º con respecto al eje horizontal. Para cada píxel se encuentra la dirección que mejor se aproxime a la dirección del ángulo de gradiente.
+
+Posteriormente se observa si el valor de la magnitud de gradiente es más pequeño que al menos uno de sus dos vecinos en la dirección del ángulo obtenida en el paso anterior. De ser así se asigna el valor 0 a dicho píxel, en caso contrario se asigna el valor que tenga la magnitud del gradiente. La salida de este segundo paso es una imagen binaria que contiene a los bordes adelgazados. 
+
+\paragraph{\textbf{Umbral con histéresis.}}
+La última etapa de procesamiento realiza una optimización de la decisión llevada a cabo en la etapa anterior, mediante la aplicación de una función de histéresis sobre la imagen obtenida en la etapa anterior. Esta función se basa en la definición de dos umbrales, TL y TH, tales que TL $<$ TH. Valores típicos para estos umbrales son 0.1 y 0.5, respectivamente, aunque se recomienda que TH y TL tengan una relación entre 2:1 y 3:1, dependiendo de la relación señal ruido, en el caso de que este valor sea conocido ~\cite{JC01}.
+
+Para cada punto de la imagen binaria de bordes adelgazados se debe localizar el siguiente punto de borde no explorado que sea mayor al segundo umbral. A partir de dicho punto seguir las cadenas de máximos locales conectados en ambas direcciones perpendiculares a la normal del borde siempre que sean mayores al primer umbral. Así se marcan todos los puntos explorados y se almacena la lista de todos los puntos en el contorno conectado. Es así como en este paso se logra eliminar las uniones en forma de Y de los segmentos que confluyan en un punto ~\cite{JR01}.
+
+% Dada la imagen $ I_n $ obtenida en el paso anterior, se realizan las siguientes decisiones:
+
+% \begin{enumerate}
+
+	% \item Un pixel $ I_n (i , j ) $ se considera borde definitivo si $ I_n (i , j ) \geq TH $.
+	% \item Un pixel $ I_n (i , j ) $ se considera fondo definitivo si $ I_n (i , j )  < TL $.
+	% \item Los pixeles que cumplen $ TL <= In(i,j) < TH $ se llaman candidatos.
+	% \item Un pixel candidato que pertenece a un vecindario de 3 x 3 de un pixel considerado como borde definitivo se considera también borde definitivo si existe un camino dentro del vecindario, formado por pixeles candidatos, que une al pixel candidato con el pixel de borde.
+
+% \end{enumerate}
+
+Durante las pruebas realizadas surgieron como óptimos los umbrales [TL TH] iguales a [$0.15$ $0.4$], lo que implica que requiere un pixel inicial con un valor alto relativo ($\geq 0.4$) para comenzar el borde, y un pixel vecino no muy alto para continuarlo ($\geq 0.15$).
+
+\section{Operaciones morfológicas}
+
+Luego de realizar la detección de bordes se recomienda realizar operaciones morfológicas para el cierre de contornos abiertos. Las operaciones morfológicas son una herramienta muy utilizada en el procesamiento de imágenes. Pueden simplificar los datos de una imagen, preservar las características esenciales y eliminar aspectos irrelevantes. Una de las sugerencias fue realizar una operación de cierre seguida de una operación de apertura.
+
+La operación de apertura suaviza el contorno de un objeto, separando pequeños enlaces entre formas presentes en la imagen. Si se toma como referencia un contorno, la apertura suaviza la imagen por la parte interior del mismo, lo cual es consecuencia de la erosión previa a la dilatación que lo caracteriza. La aplicación de la apertura realiza una separación de formas en una imagen. 
+
+La operación de cierre como la operación de apertura, suaviza el contorno del objeto, pero por la parte exterior del mismo. Al realizarse previamente la dilatación, se fortalecen los enlaces débiles entre los objetos.
+
+Sin embargo, en nuestro caso no sirvió realizar una operación de cierre y luego una de apertura ya que esto hacía que perdiéramos los contornos detectados.
+
+Otras de las operaciones morfológicas con las probamos fue la operación `clean', que básicamente elimina los píxeles aislados. Esta operación no mejoró resultados.
+
+Finalmente, probamos con la operación `bridge', que une píxeles que se hallan separados por un pixel. Con esta operación tampoco obtuvimos mejores resultados.
+
+\section{Detección de círculos}
+
+Una vez obtenidos los bordes de la imagen y eliminado todo elemento que pueda entorpecer la búsqueda de las vesículas de la varicela, se utiliza la transformada circular de Hough para detectar dichas vesículas.
+
+La transformada de Hough se trata de un método utilizado para detectar líneas de alguna clase determinada, presentes en una imagen digital. En general, su aplicación implica el uso de una fórmula que describa la curva que se desea detectar (usualmente rectas, círculos o elipses). Sin embargo, puede generalizarse para cualquier tipo de forma ~\cite{AN01}.
+
+La forma clásica de la transformada fue originalmente propuesta por Paul Hough en 1959 durante la conferencia internacional sobre aceleradores de alta energía del CERN ~\cite{HO01}. Se la utilizó para la detección de líneas rectas en una imagen, y se basaba en los dos parámetros implícitos en la ecuación de la recta según la representación pendiente-ordenada en el origen, es decir la ecuación: $y = ax + b$.
+
+La Transformada de Hough plantea entonces que en el espacio originado por los parámetros a y b (o espacio de Hough), es donde se analiza la aparición o no de una línea de puntos. Sin embargo, esta formulación tiene algunos inconvenientes numéricos: para rectas horizontales, cuando $a = 0$ y con rectas verticales, cuando $a\to\infty$ . Para evitar estos inconvenientes se puede reformular la transformada y utilizar la ecuación de coordenadas polares o radio-ángulo. Esta versión fue presentada por Richard Duda y Peter Hart en 1972 ~\cite{DH01}. La ecuación de la recta utilizada en esta versión es $p = x \cos \alpha + y \sin \alpha$.
+
+Esta idea utilizada para detectar lineas rectas, se puede extender a otras curvas. Para ello sólo es necesario trabajabar con la ecuación que represente la curva que se desea detectar, en lugar la ecuación de la recta. En nuestro caso, necesitamos detectar las vesículas de varicela, que generalmente presentan una forma circular. Por lo tanto, decidimos utilizar la transformada de Hough para círculos. En consecuencia, utilizamos la ecuación de la circunferencia.  
+
+Independientemente de la fórmula empleada, la transformada de Hough siempre utiliza lo que se conoce como Arreglo de Acumulación, donde se totalizan los ``votos'' para la combinación de parámetros del tipo de línea que se desea detectar. Los valores de esa combinación que obtengan más votos serán los candidatos a ser los que describan la curva que estamos buscando.
+
+Las definiciones básicas de la transformada de Hough son:
+
+\begin{enumerate}
+
+	\item {\bf Función de Parámetros de la Transformada:} Es como se describe el objeto a detectar: rectas, círculos, elipses.
+	\item {\bf Transformada Directa de Hough:} Cada punto en el espacio de dos dimensiones de la imagen, es transformado a un hiper-espacio de Hough de $n$ dimensiones, donde $n$ es la cantidad de parámetros utilizados en la fórmula que describe el objeto.
+	\item {\bf Transformada Inversa de Hough:} Cada punto en el espacio de Hough describe una instancia específica del tipo de línea de interés en el espacio bidimensional de la imagen.
+
+\end{enumerate}
+
+La transformada circular de Hough utiliza la siguiente fórmula $r=(x-x_0)^2 + (y-y_0)^2$. Los parámetros de la función de la transformada son tres: el centro del círculo, descripto por dos parámetros, $x0$ e $y0$ y el radio. Es decir que el espacio de Hough es tridimensional, luego el arreglo de acumulación será de dimensión tres. Ésta es la versión que utilizamos para la detección de las vesículas de la varicela.
+
+Una vez obtenido el Arreglo de Acumulación se debe decidir con algún criterio si se está en presencia de un círculo. En este trabajo el criterio que tomamos fue calcular un valor para cada posible círculo a través de una ponderación relativa respecto del círculo que obtuvo más votos. Luego comparamos este valor con un porcentaje de aciertos esperados. Durante las pruebas trabajamos con varios valores de este porcentaje, obteniendo resultados más representativos con un porcentaje del 90 por ciento. 
+
+
+\bigskip
+
+Veamos más en detalle el procedimiento llevado a cabo para la detección de círculos.
+
+\begin{enumerate}
+
+	\item Primero aplicamos la transformada de Hough para círculos utilizando la ecuación $(x-x0)^2 + (y-y0)^2 = r^2$. Es decir, que para un pixel que en el paso anterior fue detectado como borde, se calcula el centro del posible círculo, suponiendo que dicho pixel pertenece al borde de un círculo. A cada centro calculado le sumamos un voto. En este punto utilizamos la siguiente propiedad: Dado un círculo de centro $c$ y radio $r$, si en cada punto del borde se traza otro círculo de radio $r$ centrado en ese mismo punto, entonces todos los círculos se intersecan en $c$.
+	Se prueba con diferentes radios y se mantiene un arreglo de acumulación para cada uno de ellos. Los arreglos de acumulación pertenecen al espacio de Hough y son acumuladores de votos por cada posible centro.
+	
+	\item En segundo lugar, definimos un umbral para determinar si cada uno de los centros de posibles círculos realmente pertenece a uno. Para esto primero dividimos el acumulador por la cantidad máxima de votos recibido para alguno de los centros de los posibles círculos. Esto no da valores entre el 0 y el 1 en el acumulador, que podemos comparar con un porcentaje. Antes de realizar dicha comparación obtenemos los máximos locales de la matriz de acumulación (es decir, del Arreglo de Acumulación que se encuentra en el espacio de Hough). Luego para cada centro lo comparamos con el umbral definido: 70\%, 80\% o 90\%. Los que superen dicho umbral se consideran que son centro de círculos presentes en la imagen original.
+
+\end{enumerate}
+
+Observese que si colocamos como umbral 100\% sólo se detectarán aquellos círculos cuyos centros reciban la mayor cantidad de votos y además tengan la misma cantidad de votos. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.25]{Resources/coins2.jpg}
+\includegraphics[scale=0.33]{Resources/ccoins2-1.png}
+\caption{Primer ejemplo de arreglo acumulador. \textbf{Izquierda:} Fotografía original de las monedas. \textbf{Derecha:} Arreglo acumulador de votos. \label{fig:acumuladorMonedas}}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.42]{Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png}
+\includegraphics[scale=0.53]{Resources/acumulador-Varicel-02.jpg}
+\caption{Segundo ejemplo de arreglo acumulador. \textbf{Izquierda:} Fotografía original de varicela. \textbf{Derecha:} Arreglo acumulador con votos sumados. \label{fig:acumuladorVesiculas}}
+\end{figure}
+
+En la figura \ref{fig:acumuladorMonedas} podemos observar los votos calculados del arreglo acumulador para una imagen que contiene monedas. En tanto que en la figura \ref{fig:acumuladorVesiculas} se muestra el arreglo acumulador de una de las imágenes de varicela con las cuales trabajamos. En el primer ejemplo se ve más facilmente donde se está realizando la suma de votos, dado que las monedas son perfectamente circulares.
+
+\section{Porcentaje de puntos del círculo detectado}
+En las pruebas realizadas, los mejores resultados fueron obtenidos con un porcentaje del 90\% de los puntos del círculo, ya que se minimizó la cantidad de falsos positivos.
+Tomando los resultados de evaluar la imagen de la figura \ref{fig:bordesDetectados}, se puede observar que hay dos vesículas cuyos bordes no son circulares. Si se disminuye el umbral del porcentaje a un 70\%, son detectadas. Esto sucede porque en la fotografía existen otras vesículas del mismo diámetro cuya forma es más cercana a un círculo. Por lo tanto, cuando se pondera los acumulados de una vesícula cuya forma es más irregular, con los acumulados máximos que corresponden a vesículas más circulares, sucede que las primeras no pueden detectarse ya que el porcentaje resultante es menor al 80\%.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.25]{Resources/resultado-chicken_pox_picture_13-marcado.jpg}
+\includegraphics[scale=0.25]{Resources/resultado-chicken_pox_picture_13-int689101114-conc2-70.jpg}
+\includegraphics[scale=0.25]{Resources/resultado-chicken_pox_picture_13-int689101114-conc2-90.jpg}
+\caption{\textbf{Izquierda:} Bordes detectados. Las vesículas marcadas en rojo no son lo suficientemente circulares para ser detectadas. \textbf{Centro:} Las vesículas marcadas en la figura anterior son detectadas cuando el umbral baja al 70\%. \textbf{Derecha:} Las vesículas marcadas en la primer figura no son detectadas con un umbral del 90\% \label{fig:bordesDetectados}}
+\end{figure}
+
+Para corregir este desvío podríamos ponderar con un porcentaje del acumulado de un círculo completo correspondiente al radio que estamos examinando. De esta forma la detección de vesículas irregulares no estaría supeditada a que existan otras cuya forma son más cercanas al círculo, sino que se podría comparar con un porcentaje del círculo completo. 
+
+Se puede observar en la figura \ref{fig:umbralPorcentajeHough} las detecciones de vesículas utilizando diferentes porcentajes. Con un porcentaje del 70\% tenemos falsos positivos. En tanto que con un porcentaje del 90\% no se detectan todas las vesículas de la imagen. Para esta imagen en particular, se obtienen mejores resultados con un umbral del 80\%, sin embargo, para la mayoría de las imágenes, el proceso tiene un mejor comportamiento considerando el 90\% de los puntos del círculo.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.25]{Resources/resultado-Varicel-01-70.jpg}
+\includegraphics[scale=0.25]{Resources/resultado-Varicel-01-80.jpg}
+\includegraphics[scale=0.25]{Resources/resultado-Varicel-01-90.jpg}
+\caption{Detección de círculos con diferentes porcentajes. \textbf{Izquierda:} porcentaje = 70\%.  \textbf{Centro:} porcentaje = 80\%. \textbf{Derecha:} porcentaje = 90\%. \label{fig:umbralPorcentajeHough}}
+\end{figure}
+
+\section{Radios utilizados para la detección de las vesículas}
+El algoritmo desarrollado necesita de la especificación de los radios de los círculos a detectar.
+
+Tomando como ejemplo la imagen de la figura \ref{fig:deteccionRadios2324}, se pueden realizar pruebas con diferentes radios, y verificar que varía la efectividad de la detección de círculos. En esta prueba se puede observar claramente que la selección de un radio erróneo puede determinar la aparición de falsos positivos, en cambio, cuando el radio esta bien seleccionado, la detección es correcta.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.45]{Resources/recorte-resultado-Varicel-02-radio23.jpg}
+\includegraphics[scale=0.45]{Resources/recorte-resultado-Varicel-02-radio24.jpg}
+\caption{Detección de vesículas con diferentes radios. \textbf{Izquierda:} radio = 23. \textbf{Derecha:} radio = 24. \label{fig:deteccionRadios2324}}
+\end{figure}
+
+Sin embargo, el método se muestra robusto para la imagen de la figura \ref{fig:deteccionRadios4043}, donde la vesícula es detectada con diferentes radios ingresados, a pesar de que sus bordes son claramente no circulares.
+
+Para determinar los radios adecuados a utilizar, se analizó cada una de las imágenes con las cuáles se trabajó, hasta conseguir los radios óptimos.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.35]{Resources/recorte-resultado-varicella_18-bordes.jpg}
+\includegraphics[scale=0.354]{Resources/recorte-resultado-varicella_18-radio40.jpg}
+\includegraphics[scale=0.34]{Resources/recorte-resultado-varicella_18-radio43.jpg}
+\caption{Detección de vesículas con diferentes radios. \textbf{Izq:} Bordes detectados. \textbf{Centro:} Detección de vesículas con radio radio = 40. \textbf{Der:} Detección de vesículas con radio = 43. \label{fig:deteccionRadios4043}}
+\end{figure}
+
+\section{Eliminación de detecciones duplicadas}
+
+Cuando se ingresa más de un radio posible para la detección de círculos, puede ocurrir que para una vesícula haya más de caso positivo. Si se presenta esta circunstancia, realizamos una selección sobre los círculos detectados en el espacio de Hough.
+Consideramos que una detección está duplicada, cuando existen dos círculos cuyos centros distan uno del otro en menos de un cierto valor $k$. Entonces, dos círculos son \emph{redundantes} si cumplen que $d \leq k$, donde $d$ es la norma de la diferencia entre los centros de los círculos. Ante la detección de estos círculos redundantes, seleccionamos aquél que tenga más votos en el arreglo de acumulación.
+En una primera aproximación, trabajamos con $k = max(r1, r2)$ donde $r1$ y $r2$ son los radios, lo que equivale a que el centro del círculo menor se encuentra dentro del círculo mayor. Sin embargo, el valor de $k$ que arrojó mejores resultados empíricamente fue $k = r1 + r2$, lo que equivale a considerar que dos círculos son redundantes si sus circunferencias se intersecan. En las figura \ref{fig:deteccionDuplicadosK1K2} se puede observar la diferencia entre la detección de duplicados con $k = max(r1, r2)$ y $k = r1 + r2$.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.3]{Resources/resultado-chicken_pox_picture_13-int689101114.jpg}
+\includegraphics[scale=0.3]{Resources/resultado-chicken_pox_picture_13-int689101114-conc2.jpg}
+\caption{Eliminación de círculos redundantes. \textbf{Izq:} Detección de círculos redundantes con $k = max(r1, r2)$. \textbf{Der:} Detección de círculos redundantes con $k = r1 + r2$. \label{fig:deteccionDuplicadosK1K2}}
+\end{figure}
+
+\section{Ecualización del histograma}
+
+Al realizar la detección de bordes se encontró que muchos de ellos no eran detectados porque el constraste de las imágenes no era el adecuado. Para realzar el constraste realizamos una ecualización del histograma, por medio de una variante llamada \textbf{ecualización del histograma adaptativa}.
+
+La ecualización del histograma se trata de un caso específico de una clase más general de métodos de remapeo de histogramas, que se utilizan para facilitar su análisis o para darles ciertas cualidades visuales a la imagen. Este método consiste en variar el histograma de una zona de la imagen, o de la imagen entera, a uno de otra forma. Es decir, que dada una imagen y un histograma de cierta forma, se trata de llevar el histograma de la imagen a la forma del histograma modelo. Esto se realiza por ejemplo, cuando se quiere combinar fotografías que tienen una iluminación distinta, se toma una de ellas y se la transforma de manera tal que su histograma tenga la forma de la otra. Si el histograma al cual queremos llevar la imagen es un histograma uniforme, estaremos dándole a cada color el mismo peso. Esto producirá que el contraste se eleve y los detalles sean más visibles, por eso este método se utiliza para ajustar el constrate. Usualmente incrementa el contraste global, especialmente cuando en la imagen tratada se utilizan pocos valores distintos para representar los datos, justamente aumentando esta cantidad de valores distintos. El método es muy utilizado en imágenes cuyos fondos y primeros planos son ambos muy luminosos, o ambos muy oscuros. En particular, puede usarse para mejorar los detalles de fotografías que tienen poca o mucha exposición.
+
+La ecualización del histograma ordinaria utiliza la misma transformación del histograma de la imagen para modificar todos los píxeles de la imagen. Sin embargo, cuando la imagen contiene regiones que son significativamente luminosas o oscuras, el contraste de esas regiones no será lo suficientemente aumentado. Por otro lado, en algunas ocasiones puede incrementar el contraste del ruido, efecto que puede traducirse en nuestro caso, en detecciones incorrectas de las vesículas.
+
+Una generalización de este método propone utilizar múltiples histogramas para enfatizar el contraste local. A esta variante se la conoce como ecualización adaptativa del histograma (AHE) y difiere de la ecualización ordinaria en que el método adaptativo utiliza varios histogramas, correspondientes a distintos sectores de la imagen, y es utilizado para redistribuir la lumiosidad de los valores de la imagen. Por lo tanto, es apropiado para proveer contraste local a la imagen y realzar los detalles. Sin embargo, AHE tiende a amplificar el ruido en regiones relativamente homogéneas de la imagen. Esto es porque cuando una región de la imagen contienen píxeles vecinos bastante homogéneos, el histograma tendrá la forma de un pico pronunciado, y la cantidad de valores distintos serán más bien pocos. La función de transformación realizará un mapeo de ese rango pequeño de valores a otro de rango mayor, lo que causa que se sobreamplifiquen los ruidos en regiones homogéneas de la imagen. Para prevenir esta amplificación hemos utilizado otra generalización del método que es la ecualización adaptativa limitando el contraste (CLAHE). El procedimiento de limitar el constraste es aplicado a cada bloque de píxeles a través de la derivación de una función de transformación.
+
+El método AHE realiza una transformación de cada pixel utilizando una función de trasformación para cada uno de ellos, teniendo en cuenta los valores de los píxeles cercanos. Cada pixel es transformado basándose en el histograma del cuadrado alrededor del pixel. En nuestro caso resultó apropiada una región cuadrada de 16 píxeles de lado. La derivación de la función de transformación del histograma es exactamente la misma que la utilizada por la ecualización ordinaria: La función de transformación es proporcional a la función de distribución acumulativa de los valores de los pixels vecinos. Los píxeles de los bordes de la imagen tienen un tratamiento especial, dado que no está completo el cuadrado de los píxeles vecinos. Por ejemplo, una forma de resolverlo es extender los bordes de la imagen, replicando en forma de espejo los píxeles que se encuentran en el borde de la imagen. Sin embargo, no se profundizó sobre el análisis de este punto dado que se espera que las vesículas de varicela o herpes no se encuentren al borde de la imagen. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.45]{Resources/recorte-Varicel-02_bordes_sin_ecualizacion.png}
+\includegraphics[scale=0.45]{Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png}
+\caption{\textbf{Primer ejemplo:} Detección de vesículas \textbf{sin} ecualización el histograma. \textbf{Izq:} Bordes detectados sobre la imagen original sin aplicar ecualización del histograma. \textbf{Der:} Cículos detectados sobre la imagen original sin aplicar ecualización del histograma. \label{fig:sinecualizacionVaricel02}}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.45]{Resources/recorte-Varicel-02_bordes_con_ecualizacion.png}
+\includegraphics[scale=0.45]{Resources/recorte-Varicel-02_resultado_con_ecualizacion.png}
+\caption{\textbf{Primer ejemplo:} Detección de vesículas \textbf{con} ecualización el histograma. \textbf{Izq:} Bordes detectados sobre la imagen original aplicando previamente ecualización del histograma. \textbf{Der:} Cículos detectados sobre la imagen original aplicando previamente ecualización del histograma. \label{fig:conecualizacionVaricel02}}
+\end{figure}
+
+La amplificación de contraste en las proximidades de un valor de píxel determinado está dado por la pendiente de la función de transformación. Esto es proporcional a la pendiente de la función de distribución acumulada de vecindad (CDF) y por lo tanto al valor del histograma en ese valor de pixel. CLAHE limita la amplificación recortando el histograma antes de calcular la CDF. Esto limita la pendiente de la CDF y por lo tanto de la función de transformación. El valor en el que se recorta el histograma, llamado el limitante, depende de la normalización del histograma y por lo tanto del tamaño de la región de vecindad. La parte del histograma que supera el límite no es descartada, sino es redistribuida equitativamente entre los bins del histograma, por debajo del limitante. Esta redistribución empuja por encima del límite los bins del histograma. Si esto no es deseable, el procedimiento de redistribución se puede repetir de forma recursiva hasta que el exceso es despreciable.
+% Nosotros utilizamos un limitante de 0.0025 matlab tiene un rango de [0 1] ).
+La ecualización adaptativa del histograma en su forma simple, presentada anteriormente, con y sin contraste limitante, requiere el cálculo de un histograma diferente para cada bloque de píxeles y de una función de transformación para cada píxel de la imagen. Esto hace que el método sea muy costoso computacionalmente. La interpolación permite una mejora significativa sin comprometer la calidad del resultado. Por cada bloque de píxeles se calcula un histograma, una CDF y la función de transfomación. Con esta función se obtiene el nuevo valor del pixel central del bloque. El resto de los píxeles se transforman con un máximo de cuatro funciones de transformación de los bloques de píxeles más cercano a ellos, y se les asigna los valores interpolados.
+
+En las imágenes de las figuras \ref{fig:sinecualizacionVaricel02}, \ref{fig:conecualizacionVaricel02}, \ref{fig:sinecualizacionVaricel20} y \ref{fig:conecualizacionVaricel20} se puede observar la detección de bordes, primero sin aplicar previamente la ecualización del histograma y luego realizando la ecualización. Al realzar el constraste de las imágenes, mejora la detección de los bordes y de las vesículas. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{Resources/recorte-Varicella_20_bordes_sin_ecualizacion.png}
+\includegraphics[scale=0.4]{Resources/recorte-Varicella_20_resultado_sin_ecualizacion.png}
+\caption{\textbf{Segundo ejemplo:} Detección de vesículas \textbf{sin} ecualización el histograma. \textbf{Izq:} Bordes detectados sobre la imagen original sin aplicar ecualización del histograma. \textbf{Der:} Cículos detectados sobre la imagen original sin aplicar ecualización del histograma. \label{fig:sinecualizacionVaricel20}}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{Resources/recorte-Varicella_20_bordes_con_ecualizacion.png}
+\includegraphics[scale=0.4]{Resources/recorte-Varicella_20_resultado_con_ecualizacion.png}
+\caption{\textbf{Segundo ejemplo:} Detección de vesículas \textbf{con} ecualización el histograma. \textbf{Izq:} Bordes detectados sobre la imagen original aplicando previamente ecualización del histograma. \textbf{Der:} Cículos detectados sobre la imagen original aplicando previamente ecualización del histograma. \label{fig:conecualizacionVaricel20}}
+\end{figure}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+
+\section{Comparación de los espacios de color}
+
+Para determinar cuál era el espacio de color óptimo para llevar a cabo la detección de bordes y círculos, realizamos una comparación entre los modelos YCbCr y L*a*b, aplicando los mismos pasos del proceso a ambos. Por lo mencionado en la sección \ref{sec:color}, ambos espacios cuentan con una componente de luminancia que se puede utilizar para detectar bordes ($Y$ para YCbCr, $L$ para L*a*b). De acuerdo a la definición de cada uno, esperábamos que el proceso aplicado al espacio L*a*b tuviera mejor desempeño, ya que es más robusto ante cambios en la iluminación.
+
+Las pruebas confirmaron esta suposición: el proceso aplicado al espacio L*a*b tuvo mejores resultados en cuanto a la detección de bordes y vesículas. En las figuras \ref{fig:comparacionEspaciosColor1} y \ref{fig:comparacionEspaciosColor2} se puede observar que la detección aplicada al espacio YCbCr tiene menos aciertos.
+
+\begin{figure}[h!]
+\centering
+\subfigure[]
+{\includegraphics[scale=0.30]{Resources/color/lab/chicken_pox_primary_lesions_03_bordes.png}}\hspace{4pt}
+\subfigure[]
+{\includegraphics[scale=0.30]{Resources/color/lab/chicken_pox_primary_lesions_03_resultado.png}}\hspace{4pt} \\
+\subfigure[]
+{\includegraphics[scale=0.30]{Resources/color/ycbcr/chicken_pox_primary_lesions_03_bordes.png}}\hspace{4pt} \hspace{0.5pt}
+\subfigure[]
+{\includegraphics[scale=0.30]{Resources/color/ycbcr/chicken_pox_primary_lesions_03_resultado.png}}
+\caption{\textbf{Primer ejemplo:} Comparación de espacios de color en la detección de bordes y vesículas. (a) - (b) Utilizando L*a*b. (c) - (d) Utilizando YCbCr. \label{fig:comparacionEspaciosColor1}}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\subfigure[]
+{\includegraphics[scale=0.30]{Resources/color/lab/Varicel-02_bordes.png}}\hspace{4pt}
+\subfigure[]
+{\includegraphics[scale=0.30]{Resources/color/lab/Varicel-02_resultado.png}}\hspace{4pt} \\
+\subfigure[]
+{\includegraphics[scale=0.30]{Resources/color/ycbcr/Varicel-02_bordes.png}}\hspace{4pt} \hspace{0.5pt}
+\subfigure[]
+{\includegraphics[scale=0.30]{Resources/color/ycbcr/Varicel-02_resultado.png}}
+\caption{\textbf{Segundo ejemplo:} Comparación de espacios de color en la detección de bordes y vesículas. (a) - (b) Utilizando L*a*b. (c) - (d) Utilizando YCbCr. \label{fig:comparacionEspaciosColor2}}
+\end{figure}
+
+
+\section{Descripción del proceso realizado}
+
+El proceso llevado a cabo para obtener las vesículas de las imágenes consistió en aplicar las metodologías descriptas en esta sección. Se puede observar en el gráfico de la figura \ref{fig:diagramadeteccion} el orden de aplicación de dichas técnicas. La salida de este proceso tiene como resultado los círculos que contienen las vesículas de varicela o herpes, que se estudiarán en la siguiente sección, para extraer características de las mismas.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.5]{Resources/diagrama-deteccion.png}
+\caption{\textbf{Proceso:} De izquierda a derecha los pasos para la detección de vesículas. \label{fig:diagramadeteccion}}
+\end{figure}

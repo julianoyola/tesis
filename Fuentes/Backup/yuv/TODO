@@ -1,0 +1,5 @@
+-support for higher bit-depths in rgb2yuv.m and yuv2rgb.m
+-support for different YUV formats in different functions, e.g. divide_seq.m, yuv_range.m
+-YUV format paramter generator function, to avoid replicating code across functions (bit precision, Y, U and V frame sizes...)
+-function to combine 2 sequences (YUV interleave / merge)
+ 

@@ -1,0 +1,146 @@
+\section{Resultados}
+
+\subsection{Resumen}
+
+En el desarrollo encontramos ciertas dificultades. Por ejemplo, las fotografías pueden estar a una escala tal que no es posible la detección de las ampollas, o las imágenes pueden tener una gran variación de zonas de luz o saturación de colores, lo que hace difícil la obtención de resultados positivos. Por otro lado debemos tener presente que las ampollas suelen no ser de forma circular, como también puede ocurrir que sus bordes no se cierren, lo que hace que su detección se torne compleja. Asimismo, el método de detección empleado puede arrojar tanto duplicaciones como falsos positivos. Para abordar cada una de estas complicaciones u obstáculos utilizamos diferentes técnicas aplicadas en el preprocesamiento de la imagen y el posprocesamiento de los resultados, y el análisis de las características de color de las ampollas en forma comparativa con la piel u otras enfermedades. Entre las conclusiones obtenidas, se encuentra la necesidad de aplicar métodos de segmentación para el reconocimiento de las áreas de la fotografía relativas a la piel.
+
+\subsection{Detección de las ampollas}
+
+Para realizar la detección de los ampollas, se trabajó con los siguientes parámetros \footnote{Las funciones fueron desarrolladas en MATLAB}:
+\begin{enumerate}
+
+	\item El rango de radios esperados para las vesículas
+	\item El porcentaje de puntos del círculo detectado, con respecto al máximo de su mismo radio
+	\item Distancia para detectar círculos redundantes
+	\item Escala de la fotografía
+
+\end{enumerate}
+
+\subsubsection{El rango de radios esperados}
+El algoritmo desarrollado necesita de la especificación de los radios de los círculos a detectar.
+
+Tomando como ejemplo la imagen de la figura \ref{fig:deteccionRadios2324} \footnote{Las imágenes utilizadas pertenecen al archivo de imágenes de la Universidad de Iowa http://www.lib.uiowa.edu/HARDIN/MD/DERMPICTURES.HTML}, se pueden realizar pruebas con diferentes radios esperados, y verificar que varía la efectividad de la detección de círculos. En esta prueba se puede observar claramente que la selección de un radio erróneo puede determinar la aparición de falsos positivos, sin embargo, cuando el radio esta bien seleccionado, la detección es correcta.
+
+\begin{figure}[h]
+\caption{Detección con radio $r = 23$ y $r = 24$}
+\label{fig:deteccionRadios2324}
+\includegraphics[scale=0.50]{Resources/resultado-Varicel-02-radio23.jpg}
+\includegraphics[scale=0.50]{Resources/resultado-Varicel-02-radio24.jpg}
+\end{figure}
+
+Sin embargo, el método se muestra robusto para la imagen de la figura \ref{fig:deteccionRadios4043}, donde la ampolla es detectada con diferentes radios ingresados, a pesar de que sus bordes son claramente no circulares.
+
+\begin{figure}[h]
+\caption{Bordes y detección con radio $r = 40$ y $r = 43$}
+\label{fig:deteccionRadios4043}
+\includegraphics[scale=0.30]{Resources/resultado-varicella_18-bordes.jpg}
+\includegraphics[scale=0.30]{Resources/resultado-varicella_18-radio40.jpg}
+\includegraphics[scale=0.30]{Resources/resultado-varicella_18-radio43.jpg}
+\end{figure}
+
+
+\subsubsection{Porcentaje de puntos del círculo detectado}
+En las pruebas realizadas, los mejores resultados fueron obtenidos con un porcentaje del 90\% de los puntos del círculo, ya que se minimizó la cantidad de falsos positivos.
+Tomando los resultados de evaluar la imagen de la figura \ref{fig:bordesDetectados}, se puede observar que hay dos vesículas cuyos bordes no son circulares. Si se disminuye el umbral del porcentaje a un 70\%, son detectadas. Esto sucede porque en la fotografía existen otras vesículas del mismo diámetro cuya forma es más cercana a un círculo. Por lo tanto, cuando se pondera los acumulados de una vesícula cuya forma es más irregular, con los acumulados máximos que corresponden a vesículas más circulares, sucede que las primeras no pueden detectarse ya que el porcentaje resultante es menor al 80\%.
+
+\begin{figure}
+\caption{Bordes detectados. Ampollas lejanas a la forma circular}
+\label{fig:bordesDetectados}
+\includegraphics[scale=0.50]{Resources/resultado-chicken_pox_picture_13-marcado.jpg}
+\end{figure}
+
+\begin{figure}
+\caption{Detección de círculos con umbral = 70\% y 90\%}
+\label{fig:umbralPorcentajeHough}
+\includegraphics[scale=0.25]{Resources/resultado-chicken_pox_picture_13-int689101114-conc2-70.jpg}
+\includegraphics[scale=0.25]{Resources/resultado-chicken_pox_picture_13-int689101114-conc2-90.jpg}
+\end{figure}
+
+Para corregir este desvío podríamos ponderar con un porcentaje del acumulado de un círculo completo correspondiente al radio que estamos examinando. De esta forma la detección de vesículas irregulares no estaría supeditada a que existan otras cuya forma son más cercanas al círculo, sino que se podría comparar con un porcentaje del círculo completo. El mismo fenómeno se puede observar en la figura \ref{fig:umbralPorcentajeHough90}.
+
+\begin{figure}
+\caption{Detección de círculos con umbral = 90\%}
+\label{fig:umbralPorcentajeHough90}
+\includegraphics[scale=0.50]{Resources/resultado-Varicel-01-90.jpg}
+\end{figure}
+
+
+\subsubsection{Distancia para detectar círculos redundantes}
+Inicialmente, en las pruebas para descartar detecciones duplicadas de ampollas, determinamos que dos círculos son redundantes cuando sus centros se encuentran a una distancia menor que el radio máximo. Es decir, que consideramos que dos círculos establecen la presencia de la misma ampolla cuando el centro del círculo menor, se encuentra dentro del círculo mayor. Sin embargo, en las pruebas realizadas con la imagen que se muestra en la figura \ref{fig:deteccionDuplicadosK1K2}, para poder descartar detecciones duplicadas se debió modificar la distancia considerada ($k = r1 + r2$). Es decir, que si se tocan en un punto son considerados redundantes. Al realizar este cambio, el resto de las pruebas no se vieron modificadas.
+
+\subsubsection{Escala de la fotografía}
+Uno de los requisitos para que el método presentado trabaje de manera exitosa, es que la imagen se encuentre en una escala razonable para la detección de bordes y círculos. Por ejemplo, en la prueba con las imágenes de la figura \ref{fig:imagenesEscalaInutilizable}, se observa que, dada la escala que tienen, las ampollas no son localizadas.
+
+\begin{figure}
+\caption{Ejemplos de imágenes a escalas no utilizables}
+\label{fig:imagenesEscalaInutilizable}
+\includegraphics[scale=0.50]{Resources/resultado-chicken_pox_picture_01.jpg}
+\includegraphics[scale=0.50]{Resources/resultado-varicella_9.jpg}
+\end{figure}
+
+En general se observó un buen desempeño del proceso para las imágenes de las figuras \ref{fig:deteccionRadios4043} y \ref{fig:imagenOk2}.
+
+
+\begin{figure}
+\caption{Ejemplo de detección con ampollas de tamaño mediano}
+\label{fig:imagenOk2}
+\includegraphics[scale=0.5]{Resources/resultado-Varicel-03.jpg}
+\end{figure}
+
+\begin{figure}
+\caption{Ejemplo de detección con ampollas de tamaño mediano}
+\label{fig:imagenOk3}
+\includegraphics[scale=0.5]{Resources/resultado-Varicel-04.jpg}
+\end{figure}
+
+
+
+\subsection{Análisis de histograma de color}
+
+En un principio trabajamos con imagenes de varicela y herpes, tomando todas los estadios de ambas enfermedades, descartando sólo aquellas cuya escala no permitia detectar las ampollas. Calculamos el histograma promedio y al realizar las mediciones: KLD y norma 1 y 2, no obtuvimos buenos resultados. 
+Para tratar de determinar cuál era el motivo de estos resultados, comenzamos con un analisis más detallado de cada uno de los histogramas de las ampollas, tanto de varicela como de herpes, y los comparamos con los histogramas de zonas de piel, respetando el tamaño de la zona de piel estudiada. Tratamos de encontrar si podiamos determinar rangos en las componentes de color A y B, a los cuales pertenecian las ampollas de varicela y herpes respectivamente. Comparamos la ampollas de varicela con zonas de piel por un lado y ampollas de herpes con zonas de piel, por otro lado. Lo que observamos fue que los rangos de las componentes A y B de las ampollas, tanto en la varicela como en el herpes, se solapaban con los rangos de dichas componentes de las zonas de piel. 
+
+(se podria poner un grafico de los histogramas calculados mostrando el solapamiento del que hablamos)
+
+Podemos ver que una ampolla de varicela en su primer estadio, es una ampolla con agua, que se transforma en una ampolla con cáscara, en su estadio final. Estas diferencias, entre otras cosas, muestran colores distintos, que se traducen en rangos distintos de A y B; y que por consiguiente, afectan al histograma de la ampolla y a las mediciones que hagamos sobre él. Algo similar podemos ver en las ampollas de herpes.
+
+Entonces nos centramos en un estadio de la enfermedad, tanto de la varicela como del herpes, para quedarnos sólo con las caracteristicas de las ampollas de ese estadio. Calculamos nuevamente los histogramas de las ampollas, el histograma promedio y las mediciones de KLD y las normas. 
+Con esta nueva muestra conseguimos mejores resultados y encontramos rangos donde podemos decir que un circulo pertenece a una ampolla o no. Este resultado lo obtuvimos tanto para varicela como para herpes. 
+
+Además, observamos que los histogramas de LAB se encuentran más concetrados que los histogramas de RGB, donde se ven más dispersos. 
+
+(podemos poner una imagen de los histogramas)
+
+Luego comparamos ambas enfermedades. Tomamos el histograma promedio de una de las enfermedades y las imagenes de la otra enfermedad. Por ejemplo, el histograma promedio de la varicela y las imagenes de herpes, y al revés.  
+
+(Insertar tablas:
+Mediciones-HerpesConHistogramaVaricela.xlsx
+Mediciones-VaricelaConHistogramaHerpes.xlsx
+)
+
+En los resultados se puede observar:
+
+\begin{itemize}
+
+\item No hay una separación clara entre los rangos de valores de KLD, norma 1 y norma 2, entre las enfermedades de varicela y herpes. Por ejemplo, para las imágenes analizadas, el rango de KLD medido entre cada histograma y el promedio, oscila entre 4,99 y 12,47 para herpes y oscila entre 6,66 y 14,47 para varicela.
+
+\item Sin embargo, para una imagen dada, la cantidad de resultados que caen dentro de uno u otro rango permiten inclinar la balanza para decidir si la fotografía pertenece a una u otra enfermedad. Por ejemplo, la imagen "herpes-zoster-309", comparada utilizando KLD sobre las componentes A y B con el histograma promedio de varicela, arroja 2 valores dentro del rango y 4 por fuera, y comparada con el histograma promedio de herpes, arroja 6 resultados dentro del rango.
+
+\item Los mejores resultados se obtuvieron comparando el histograma bivariable sobre las componentes A y B, y utilizando la divergencia KLD.
+
+\end{itemize}
+
+
+Mencionar:
+- Al principio, las mediciones no dieron buenos resultados y tuvimos que centrarnos en analizar las ampollas una a una y extraer patrones
+- Calculamos histogramas de cada una de las ampollas, y tratamos de determinar si teníamos distintos rangos en las componentes de A y B, entre varicela y herpes. Nos dimos cuenta de que se solapaban, y que no bastaba una simple comparación por rango para determinar.
+- Nos centramos en un estadío de la enfermedad (tanto para herpes como para varicela), y volvimos a calcular el histograma promedio.
+- Apuntamos a dos objetivos: comparar ampollas con piel, y ampollas de una enfermedad con otra.
+- En LAB, los histogramas están más concentrados, en RGB los valores están más dispersos.
+- Al volver a calcular con estas directrices, encontramos diferencias entre piel y no piel.
+- Finalmente, comparamos herpes con varicela.
+
+
+La posibilidad de eliminar los falsos positivos aplicando técnicas de comparación del color dentro y fuera del círculo, para determinar si las variaciones de color y luminancia corresponden a una ampolla de varicela.
+
+

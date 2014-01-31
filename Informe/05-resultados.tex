@@ -1,0 +1,88 @@
+\section{Resultados}
+
+Para realizar la detección de los círculos, se trabajó con los siguientes parámetros \footnote{Las funciones fueron desarrolladas en MATLAB}:
+\begin{enumerate}
+
+	\item El rango de radios esperados para las vesículas
+	\item El porcentaje de puntos del círculo detectado, con respecto al máximo de su mismo radio
+	\item Distancia para detectar círculos redundantes
+	\item Escala de la fotografía
+
+\end{enumerate}
+
+\subsection{El rango de radios esperados}
+Para detectar las ampollas en la imagen, se debe especificar al algoritmo el rango esperado de radios de los círculos. 
+
+Tomando como ejemplo la imagen de la figura \ref{fig:deteccionRadios2324} \footnote{Las imágenes utilizadas pertenecen al archivo de imágenes de la Universidad de Iowa http://www.lib.uiowa.edu/HARDIN/MD/DERMPICTURES.HTML}, se pueden realizar pruebas con diferentes radios esperados, y verificar que varía la efectividad de la detección de círculos. En esta prueba se puede observar claramente que la selección de un radio erróneo puede determinar la aparición de falsos positivos, sin embargo, cuando el radio esta bien seleccionado, la detección es correcta.
+
+\begin{figure}[h]
+\caption{Detección con radio $r = 23$ y $r = 24$}
+\label{fig:deteccionRadios2324}
+\includegraphics[scale=0.50]{../Resultados/resultado-Varicel-02-radio23.jpg}
+\includegraphics[scale=0.50]{../Resultados/resultado-Varicel-02-radio24.jpg}
+\end{figure}
+
+Sin embargo, el método se muestra robusto para la imagen de la figura \ref{fig:deteccionRadios4043}, donde la ampolla es detectada con diferentes radios ingresados, a pesar de que sus bordes son claramente no circulares.
+
+\begin{figure}[h]
+\caption{Bordes y detección con radio $r = 40$ y $r = 43$}
+\label{fig:deteccionRadios4043}
+\includegraphics[scale=0.30]{../Resultados/resultado-varicella_18-bordes.jpg}
+\includegraphics[scale=0.30]{../Resultados/resultado-varicella_18-radio40.jpg}
+\includegraphics[scale=0.30]{../Resultados/resultado-varicella_18-radio43.jpg}
+\end{figure}
+
+
+\subsection{Porcentaje de puntos del círculo detectado}
+En las pruebas realizadas, los mejores resultados fueron obtenidos con un porcentaje del 90\% de los puntos del círculo, ya que se minimizó la cantidad de falsos positivos.
+Tomando los resultados de evaluar la imagen de la figura \ref{fig:bordesDetectados}, se puede observar que hay dos vesículas cuyos bordes no son circulares. Si se disminuye el umbral del porcentaje a un 70\%, son detectadas. Esto sucede porque en la fotografía existen otras vesículas del mismo diámetro cuya forma es más cercana a un círculo. Por lo tanto, cuando se pondera los acumulados de una vesícula cuya forma es más irregular, con los acumulados máximos que corresponden a vesículas más circulares, sucede que las primeras no pueden detectarse ya que el porcentaje resultante es menor al 80\%.
+
+\begin{figure}
+\caption{Bordes detectados. Ampollas lejanas a la forma circular}
+\label{fig:bordesDetectados}
+\includegraphics[scale=0.50]{../Resultados/resultado-chicken_pox_picture_13-marcado.jpg}
+\end{figure}
+
+\begin{figure}
+\caption{Detección de círculos con umbral = 70\% y 90\%}
+\label{fig:umbralPorcentajeHough}
+\includegraphics[scale=0.25]{../Resultados/resultado-chicken_pox_picture_13-int689101114-conc2-70.jpg}
+\includegraphics[scale=0.25]{../Resultados/resultado-chicken_pox_picture_13-int689101114-conc2-90.jpg}
+\end{figure}
+
+Para corregir este desvío podríamos ponderar con un porcentaje del acumulado de un círculo completo correspondiente al radio que estamos examinando. De esta forma la detección de vesículas irregulares no estaría supeditada a que existan otras cuya forma son más cercanas al círculo, sino que se podría comparar con un porcentaje del círculo completo. El mismo fenómeno se puede observar en la figura \ref{fig:umbralPorcentajeHough90}.
+
+\begin{figure}
+\caption{Detección de círculos con umbral = 90\%}
+\label{fig:umbralPorcentajeHough90}
+\includegraphics[scale=0.50]{../Resultados/resultado-Varicel-01-90.jpg}
+\end{figure}
+
+
+\subsection{Distancia para detectar círculos redundantes}
+Inicialmente, en las pruebas para descartar detecciones duplicadas de ampollas, determinamos que dos círculos son redundantes cuando sus centros se encuentran a una distancia menor que el radio máximo. Es decir, que consideramos que dos círculos establecen la presencia de la misma ampolla cuando el centro del círculo menor, se encuentra dentro del círculo mayor. Sin embargo, en las pruebas realizadas con la imagen que se muestra en la figura \ref{fig:deteccionDuplicadosK1K2}, para poder descartar detecciones duplicadas se debió modificar la distancia considerada ($k = r1 + r2$). Es decir, que si se tocan en un punto son considerados redundantes. Al realizar este cambio, el resto de las pruebas no se vieron modificadas.
+
+\subsection{Escala de la fotografía}
+Uno de los requisitos para que el método presentado trabaje de manera exitosa, es que la imagen se encuentre en una escala razonable para la detección de bordes y círculos. Por ejemplo, en la prueba con las imágenes de la figura \ref{fig:imagenesEscalaInutilizable}, se observa que, dada la escala que tienen, las ampollas no son localizadas.
+
+\begin{figure}
+\caption{Ejemplos de imágenes a escalas no utilizables}
+\label{fig:imagenesEscalaInutilizable}
+\includegraphics[scale=0.50]{../Resultados/resultado-chicken_pox_picture_01.jpg}
+\includegraphics[scale=0.50]{../Resultados/resultado-varicella_9.jpg}
+\end{figure}
+
+En general se observó un buen desempeño del proceso para las imágenes de las figuras \ref{fig:deteccionRadios4043} y \ref{fig:imagenOk2}.
+
+
+\begin{figure}
+\caption{Ejemplo de detección con ampollas de tamaño mediano}
+\label{fig:imagenOk2}
+\includegraphics[scale=0.5]{../Resultados/resultado-Varicel-03.jpg}
+\end{figure}
+
+\begin{figure}
+\caption{Ejemplo de detección con ampollas de tamaño mediano}
+\label{fig:imagenOk3}
+\includegraphics[scale=0.5]{../Resultados/resultado-Varicel-04.jpg}
+\end{figure}

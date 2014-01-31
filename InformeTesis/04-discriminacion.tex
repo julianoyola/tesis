@@ -1,0 +1,344 @@
+\section{Metodología propuesta}
+
+Una vez identificadas las vesículas de varicela, se presenta un aspecto a analizar: si existen diferencias entre las vesículas de la varicela y las de otra enfermedad, que permitan desarrollar técnicas de detección y discriminación automáticas.
+
+Para la detección de vesículas utilizamos técnicas basadas en la forma, pero éstas no resultan naturales para la distinción de una vesícula real de una falsa, o de la vesícula de otra enfermedad. Para el análisis de discriminación utilizamos técnicas basadas en el color interno de las vesículas detectadas. En este análisis también se buscaron formas de determinar si la vesícula encontrada se trata de un falso positivo; para eso realizamos comparaciones entre las vesículas de una de las enfermedades, varicela o herpes zóster, y una zona de piel sana.
+
+Como contrapartida a la varicela, como enfermedad alternativa de comparación, utilizamos imágenes de herpes zóster, que es una enfermedad de características similares.
+
+De acuerdo a la etapa de la enfermedad, las vesículas presentan un color característico, ya sea porque poseen líquido en su interior (primera etapa), o porque se han convertido en costras (última etapa). En este trabajo, nos centramos en la distinción de vesículas que se encuentran en la  etapa en que poseen líquido en su interior, basándonos en el color de las mismas.
+
+La metodología utilizada para el análisis sobre la discriminación puede resumirse en los siguientes puntos:
+
+\begin{enumerate}
+
+	\item Técnicas basadas en el histograma de color
+	\begin{enumerate}
+		\item Construcción de un histograma de referencia
+		\item Análisis de casos muestra: comparaciones entre el histograma de cada vesícula y
+		\begin{enumerate}
+			\item el histograma promedio de varicela
+			\item el histograma promedio de herpes zóster
+		\end{enumerate}
+	\end{enumerate}
+
+	\item Técnicas basadas en la comparación de media poblacional
+	\begin{enumerate}
+		\item Comparación por distancia de Mahalanobis
+		\item Test de distribución Hotelling T-Cuadrada
+		\item Test de ANOVA
+	\end{enumerate}
+	
+\end{enumerate}
+
+
+\section{Técnicas basadas en el histograma de color}
+
+\subsection{Construcción de un histograma de referencia}
+
+Para analizar las diferencias entre una vesícula y la piel normal u otra enfermedad, nos centramos en analizar el histograma de las distintas componentes de color, en forma individual, y el histograma bivariado de a pares de componentes. Dentro de los histogramas buscamos si existen patrones de concentración de valores de color que nos permitan definir el sector analizado.
+
+El análisis de los histogramas se puede realizar sobre distintos espacios de color. El espacio de color L*a*b, con el que trabajamos en la etapa de detección, sigue siendo conveniente porque tiene el color concentrado en dos de sus componentes (la restante es de luminancia), las cuales pueden ser analizadas en conjunto con un histograma bivariado. Adicionalmente, el espacio de color RGB puede brindar información sobre el corrimiento al rojo de las vesículas en relación a la piel normal.
+
+Suponiendo que los píxeles interiores a las 12 vesículas pertenecen a una misma población, es decir, son muestras de la misma variable aleatoria, entonces tendrán una distribución similar de colores. Se procederá a analizar los 12 histogramas de color de las mismas, y se realizarán pruebas estadísticas para determinar su homogeneidad, y su valor discriminatorio. 
+
+%En consecuencia, el primer paso consiste en construir uno o varios histograma de referencia de valores de un conjunto $\alpha$ de vesículas conocidas, contra los cuales comparar las nuevas vesículas. Llamamos $M$ al conjunto de doce histogramas promedio, construidos con la acumulación de los histogramas individuales de cada una de las vesículas pertenecientes al conjunto $\alpha$.
+
+
+		\begin{itemize}
+
+			\item $H_{R}$, $H_{G}$ y $H_{B}$: Histogramas individuales de las componentes R, G y B, respectivamente, sobre el espacio de color RGB.
+			\item $H_{RG}$, $H_{GB}$ y $H_{RB}$: Histogramas bivariados de las componentes R y B, G y B, R y B, respectivamente, sobre el espacio de color RGB.
+			\item $H_{L}$, $H_{A}$ y $H_{B}$: Histogramas individuales de las componentes L, *a y *b, respectivamente, sobre el espacio de color L*a*b.
+			\item $H_{LA}$, $H_{AB}$ y $H_{LB}$: Histogramas bivariados de las componentes L y *a, *a y *b, L y *b, respectivamente, sobre el espacio de color L*a*b.
+
+		\end{itemize}
+
+La varicela atraviesa distintas etapas durante su desarrollo. La primera etapa luego de la incubación consiste en la aparición de las vesículas típicas de la enfermedad, que contienen líquido en su interior, lo que les da el aspecto característico que se puede observar en la figura \ref{fig:comparacionEtapasVaricela}. Luego de esa etapa, las vesículas se transforman en costras como se muestra en la misma figura \ref{fig:comparacionEtapasVaricela}. Para el análisis nos centramos en la primera etapa, seleccionando de la base de imágenes aquellas que fueran de ese estadío de la enfermedad. La selección de las vesículas dentro de las imágenes la realizamos con un proceso manual, acumulando en el histograma aquellos pixels que estuvieran dentro del círculo \textbf{inscripto} en la vesícula, para descartar el ruido producido por los bordes de la misma.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Resources/recorte-chicken_pox_primary_lesions_03.jpg}
+\includegraphics[scale=0.53]{Resources/recorte-varicella_18.jpg}
+\caption{Aspectos característicos de la varicela en las distintas etapas de la enfermedad. \textbf{Izq:} Vesículas características de la primer etapa de la enfermedad. \textbf{Der:} Costras características de la última etapa de la enfermedad \label{fig:comparacionEtapasVaricela}}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Resources/histograma-promedio-varicela-ab.png}
+\includegraphics[scale=0.5]{Resources/histograma-promedio-herpes-ab.png}
+\caption{Histogramas bivariados promedio de varicela y herpes zóster, sobre las variables de crominancia *a y *b. \textbf{Izq:} Varicela. \textbf{Der:} Herpes zóster. \label{fig:histogramasPromedio}}
+\end{figure}
+
+En la figura \ref{fig:histogramasPromedio} se pueden observar los histogramas promedio de vesículas de varicela y herpes (respectivamente) obtenidos sobre las imágenes de muestra, donde se puede apreciar un leve corrimiento hacia el rojo del histograma de varicela (el extremo superior derecho del histograma, donde están los valores superiores de *a y *b).
+
+Cuando realizamos pruebas en el espacio de color RGB, descubrimos que la dispersión de valores es mayor que en el espacio de color L*a*b. En la figura \ref{fig:histogramasPromedioch03} se muestran los histogramas bivariados $H_{AB}$, como así también $H_{RG}$ y $H_{RB}$ de la imagen izquierda de la figura \ref{fig:comparacionEtapasVaricela}. Se observa mayor concentración de valores para el espacio de color L*a*b, lo cual es deseable al querer caracterizar las vesículas de la varicela.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Resources/contourAB-ch03.png}
+\includegraphics[scale=0.5]{Resources/contourRB-ch03.png}
+\includegraphics[scale=0.5]{Resources/contourRG-ch03.png}
+\caption{Histogramas bivariados promedio de la imagen izquierda de la figura \ref{fig:comparacionEtapasVaricela}, \textbf{Arriba izq:} , Variables de crominancia *a y *b. \textbf{Arriba der:} Variables de crominancia R y B. \textbf{Abajo:} Variables de crominancia R y B. \label{fig:histogramasPromedioch03}}
+\end{figure}
+
+\subsection{Comparación entre una vesícula y la piel normal}
+
+Dada una posible vesícula, la comparación con el histograma promedio puede brindar información acerca de si estamos en presencia de un falso positivo, o también si se trata de una vesícula de la enfermedad en cuestión. Para poder determinarlo numéricamente, utilizamos mediciones de distancia (o divergencia) entre histogramas. Si la distancia del histograma de la vesícula candidata al promedio está por debajo o por encima de cierto umbral, puede ser un indicador.
+
+Para evaluar la distancia o divergencia entre dos histogramas, trabajamos con la norma 1, la norma 2 y la divergencia de Kullback-Leibler ~\cite{KL01}. La norma 1 y la norma 2 comparan los histogramas acumulando la distancia bin a bin. Esta forma de medir la distancia se ve afectada por la presencia de bins vacíos, cuantización y otros efectos ~\cite{PW01}, asímismo por la cantidad de bins. Si son pocos bins, la distancia es robusta, pero no realiza una buena discriminación, y si la cantidad de bins es grande, la distancia deja de ser robusta (se ve influenciada por valores extremos).
+
+La divergencia de Kullback-Leibler, también llamada entropía relativa, es una medida de la diferencia entre dos distribuciones P y Q, en nuestro caso, de dos histogramas empíricos. La KLD mide la cantidad esperada de bits extra requeridos para codificar ejemplos de P utilizando un código basado en Q. Típicamente, P representa la distribución real de datos u observaciones (en este caso, la vesícula observada), y Q representa el modelo teórico (en este caso, el histograma promedio).
+
+\[
+KLD(P||Q) = \displaystyle\sum_{i} P(i) \ln(\frac{P(i)}{Q(i)}).
+\]
+
+La KLD no es una distancia, porque no cumple con la condición de simetría. Por lo tanto, utilizamos una variante simétrica de la KLD, que se obtiene como:
+
+\[
+KLD_{sym}(P||Q) = \frac{KLD(P||Q) + KLD(Q||P)}{2}.
+\]
+
+En la tabla siguiente \ref{tab:KLD} se muestra la distancia KLD entre los círculos detectados y los histogramas promedio correspondientes, donde se puede observar que los valores de los falsos positivos son mucho mayores que los de las vesículas reales.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}[pos]{ l | l | c | c | c }
+	Imagen \ref{fig:imagenesKLD}  & Círculo detectado & $KLD_{A}$ & $KLD_{B}$ & $KLD_{AB}$ \\
+\hline
+Varicela 1 & Falso positivo	& $24.26$	& $16.98$	& $32.60$ \\
+Varicela 2 & Falso positivo	& $27.54$	& $17.22$	& $45.41$ \\
+Varicela 3 & Falso positivo	& $25.71$	& $17.39$	& $28.28$ \\
+Varicela 4 & Falso positivo	& $22.52$	& $15.74$	& $24.90$ \\
+\hline
+Varicela 1 & Vesícula 1	& $0.33$	& $1.69$	& $ 6.43$     \\
+Varicela 1 & Vesícula 2	& $0.51$	& $1.16$	& $ 7.15$     \\
+Varicela 1 & Vesícula 3	& $1.13$	& $4.46$	& $11.39$     \\
+Varicela 1 & Vesícula 4	& $0.68$	& $2.60$	& $11.17$     \\
+Varicela 2 & Vesícula 1	& $2.00$	& $0.35$	& $12.87$     \\
+Varicela 3 & Vesícula 1	& $2.17$	& $3.87$	& $12.66$     \\
+Varicela 3 & Vesícula 2	& $0.68$	& $0.50$	& $ 6.06$     \\
+Varicela 3 & Vesícula 3	& $1.49$	& $0.49$	& $ 7.01$     \\
+Varicela 3 & Vesícula 1	& $1.83$	& $5.07$	& $11.46$     \\
+\end{tabular}
+\caption{Mediciones de KLD entre círculos detectados y el promedio de todas las vesículas de varicela. \label{tab:KLD}}
+\end{table}
+
+\begin{figure}[ht]
+\centering
+\subfigure[Varicela 1]
+{\includegraphics[width=0.32\textwidth]{Resources/chicken_pox_primary_lesions_03_concirculos_crop.jpg}}\hspace{4pt}
+\subfigure[Varicela 2]
+{\includegraphics[width=0.32\textwidth]{Resources/Varicel-02_resultado_con_ecualizacion_crop.png}}\hspace{4pt} \\
+\subfigure[Varicela 3]
+{\includegraphics[width=0.32\textwidth]{Resources/Varicella_20_resultado_con_ecualizacion_crop.png}}\hspace{4pt}
+\subfigure[Varicela 4]
+{\includegraphics[width=0.32\textwidth]{Resources/varicella_34_concirculos_crop.jpg}}\hspace{4pt} \\
+\subfigure[Herpes zóster 1]
+{\includegraphics[width=0.32\textwidth]{Resources/herpes_zoster_114_concirculos_crop.jpg}}\hspace{4pt}\hspace{0.5pt}
+\subfigure[Herpes zóster 2]
+{\includegraphics[width=0.32\textwidth]{Resources/herpes_zoster_309_concirculos_crop.png}}\hspace{0.5pt}
+\subfigure[Herpes zóster 3]
+{\includegraphics[width=0.32\textwidth]{Resources/herpes_zoster_8_concirculos_crop.jpg}}
+\caption{Vesículas analizadas. (a) - (b) - (c) - (d) Vesículas de varicela. (e) - (f) - (g) Vesículas de herpes zóster.\label{fig:imagenesKLD}}
+\end{figure}
+
+
+
+\subsection{Comparación entre una vesícula de una enfermedad y otra}
+
+Para la comparación entre una vesícula de varicela y otra de herpes, tomamos un conjunto de círculos de ambas enfermedades, y realizamos las mediciones contra el histograma promedio de la varicela. De este modo esperamos que las distancias o divergencias de las vesículas de varicela comparadas contra el histograma promedio, den todas dentro del rango esperado, y las distancias de los histogramas de herpes, indiquen que pocas o ninguna de las vesículas caigan dentro del rango esperado.
+
+En la tabla \ref{tab:KLDvh} se puede observar la divergencia KLD entre los círculos detectados de ambas enfermedades contra el histogramas promedio de varicela, indicando que la diferencia entre los valores de $KLD_{AB}$ no resulta concluyente para diferenciar vesículas de ambas enfermedades.
+Realizamos pruebas adicionales midiendo distancias como la norma 1 y la norma 2, pero no llegamos a resultados favorables.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}[pos]{ l | l | c | c | c }
+	Imagen \ref{fig:imagenesKLD}  & Círculo detectado & $KLD_{A}$ & $KLD_{B}$ & $KLD_{AB}$ \\
+\hline
+Herpes 1 & Vesícula 1	&  $ 7.86$	&	$10.42$	&	$18.73$	\\
+Herpes 1 & Vesícula 2	&  $17.79$	&	$15.80$	&	$22.70$	\\
+Herpes 1 & Vesícula 3	&  $ 7.24$	&	$11.72$	&	$20.27$	\\
+Herpes 1 & Vesícula 4	&  $ 8.39$	&	$14.63$	&	$20.15$	\\
+Herpes 1 & Vesícula 5	&  $ 7.42$	&	$10.35$	&	$17.85$	\\
+Herpes 1 & Vesícula 6	&  $ 5.41$	&	$ 4.95$	&	$15.72$	\\
+
+Herpes 2 & Vesícula 1	&	$4.03$	&	$5.78$	&	$12.86$ \cellcolor{pink}	\\
+Herpes 2 & Vesícula 2	&	$2.93$	&	$1.99$	&	$11.70$ \cellcolor{pink}	\\
+Herpes 2 & Vesícula 3	&	$6.35$	&	$6.79$	&	$15.60$	\\
+
+Herpes 3 & Vesícula 1	&	$26.25$	&	$24.90$	&	$31.63$	\\
+Herpes 3 & Vesícula 2	&	$ 4.81$	&	$ 9.57$	&	$19.64$	\\
+\hline
+Varicela 1 & Vesícula 1	& $0.33$	& $1.69$	& $ 6.43$      \\
+Varicela 1 & Vesícula 2	& $0.51$	& $1.16$	& $ 7.15$      \\
+Varicela 1 & Vesícula 3	& $1.13$	& $4.46$	& $11.39$ \cellcolor{pink}     \\
+Varicela 1 & Vesícula 4	& $0.68$	& $2.60$	& $11.17$ \cellcolor{pink}     \\
+Varicela 2 & Vesícula 1	& $2.00$	& $0.35$	& $12.87$ \cellcolor{pink}     \\
+Varicela 3 & Vesícula 1	& $2.17$	& $3.87$	& $12.66$ \cellcolor{pink}     \\
+Varicela 3 & Vesícula 2	& $0.68$	& $0.50$	& $ 6.06$      \\
+Varicela 3 & Vesícula 3	& $1.49$	& $0.49$	& $ 7.01$      \\
+Varicela 3 & Vesícula 1	& $1.83$	& $5.07$	& $11.46$ \cellcolor{pink}     \\
+\end{tabular}
+\caption{Mediciones de KLD entre círculos detectados de varicela y herpes zóster, contra el histograma promedio de varicela \label{tab:KLDvh}}
+\end{table}
+
+De estas observaciones se extrae que, en principio, el análisis de la divergencia de histogramas entre la varicela y el herpes zóster no alcanza para determinar un rango de valores para distinguir entre ambas enfermedades. Sin embargo, el mismo método arroja resultados favorables para determinar si una vesícula detectada es un falso positivo (piel) o una vesícula real de varicela.
+
+\section{Técnicas basadas en la comparación de media poblacional}
+
+\subsection{Comparación por distancia de Mahalanobis}
+
+La distancia Mahalanobis entre dos vectores aleatorios multidimensionales $x$ e $y$, que provienen de la misma población (o sea que tienen la misma distribución) con matriz de covarianza $S$, se define como: 
+
+\begin{equation}
+d_{mahal}(\vec{x},\vec{y}) = \sqrt{(\vec{x}-\vec{y})^{T} S^{-1} (\vec{x}-\vec{y})}.
+\end{equation}
+
+siendo $\vec{x}$ e $\vec{y}$ los vectores entre los cuáles se desea medir la distancia.
+
+La distancia Mahalanobis entre un vector multivariado $x$ a un conjunto de valores con media $\mu$, y matriz de covarianza $S$, se define como:
+
+\begin{eqnarray}
+D_{mahal}(x) & = & \sqrt{(x-\mu)^{T} S^{-1} (x-\mu)}.
+\end{eqnarray}
+
+siendo
+
+\begin{eqnarray}
+x & = & (x_{1},x_{2},x_{3},...,x_{n})^{T} \nonumber \\
+\mu & = & (\mu_{1},\mu_{2},\mu_{3},...,\mu_{n})^{T} \nonumber
+\end{eqnarray}
+
+La distancia Mahalanobis es similar a la euclídea y sirve para determinar la similitud entre los dos vectores. La diferencia con la distancia euclídea, es que tiene en cuenta la correlación entre las variables, por lo que se adapta mejor para distribuciones simétricas no esféricas. Resulta útil para determinar la distancia de un punto a la media de una distribución, o la distancia entre las medias de dos distribuciones.
+
+Aplicada al análisis de discriminación, puede indicar si los píxeles de una vesícula detectada son más similares a los de varicela o a los de herpes zóster. En la tabla \ref{tab:Mahal} se muestra el resultado de las mediciones de píxeles de varicela, herpes zóster y falsos positivos contra el histograma promedio de varicela. Se puede apreciar que el promedio de la distancia de Mahalanobis permite discriminar los falsos positivos, pero no permite distinguir entre vesículas de varicela y de herpes zóater. Esto indica que las distribuciones de color de ambas enfermedades son muy similares.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}[pos]{ l | l | c | c | c | c | c | c }
+Imagen \ref{fig:imagenesKLD} & Círculo detectado & $D_{L}$ & $D_{A}$ & $D_{B}$ & $D_{LA}$ & $D_{LB}$ & $D_{AB}$ \\
+\hline
+Varicela 1 & Falso positivo 1	&	$13.2$	&	$19.2$	&	$0.1$	&	$20.5$	&	$23.4$	&	$35.4$	\\
+Varicela 1 & Falso positivo 2	&	$ 9.5$	&	$19.4$	&	$0.0$	&	$20.0$	&	$16.1$	&	$34.2$	\\
+Varicela 1 & Falso positivo 3	&	$ 5.1$	&	$14.6$	&	$0.0$	&	$15.5$	&	$ 8.0$	&	$24.6$	\\
+Varicela 1 & Falso positivo 4	&	$11.0$	&	$15.3$	&	$0.1$	&	$16.7$	&	$19.2$	&	$27.7$	\\
+\hline
+Varicela 1 & Vesícula 1	&	$1.5$	&	$3.0$	&	$0.9$	&	$ 5.3$	&	$3.0$	&	$3.7$	\\
+Varicela 1 & Vesícula 2	&	$3.6$	&	$4.5$	&	$1.2$	&	$11.7$	&	$7.5$	&	$5.3$	\\
+Varicela 1 & Vesícula 3	&	$1.7$	&	$1.6$	&	$0.3$	&	$ 3.5$	&	$2.4$	&	$2.0$	\\
+Varicela 1 & Vesícula 4	&	$2.5$	&	$4.7$	&	$0.9$	&	$ 7.5$	&	$4.1$	&	$5.6$	\\
+\hline
+Herpes 1 & Vesícula 1 & $0.90$	&	$2.70$	&	$1.60$	&	$ 6.29$	&	$4.19$	&	$3.70$	\\
+Herpes 1 & Vesícula 2 & $1.14$	&	$2.64$	&	$1.16$	&	$ 3.48$	&	$1.97$	&	$3.50$	\\
+Herpes 2 & Vesícula 1 & $2.94$	&	$2.69$	&	$1.00$	&	$13.53$	&	$8.38$	&	$3.15$	\\
+Herpes 2 & Vesícula 2 & $1.74$	&	$4.75$	&	$1.63$	&	$14.37$	&	$7.21$	&	$5.38$	\\
+Herpes 3 & Vesícula 1 & $1.39$	&	$6.83$	&	$1.95$	&	$17.51$	&	$6.48$	&	$7.53$	\\
+Herpes 3 & Vesícula 2 & $0.98$	&	$3.62$	&	$1.86$	&	$ 7.59$	&	$4.42$	&	$4.02$	\\
+
+\end{tabular}
+\caption{Mediciones de promedio de $D_{mahal}$ entre círculos detectados de varicela, herpes zóster y falsos positivos, contra el histograma promedio de varicela \label{tab:Mahal}}
+\end{table}
+
+
+\subsection{Test de distribución Hotelling T-Cuadrada}
+
+El test de la distribución Hotelling T-Cuadrada para dos distribuciones, asumiendo que son multinormales y con matrices de covarianza idénticas, puede indicar, dada la hipótesis nula $H_{0}$ que ambas medias son iguales $\mu_{1} = \mu_{2}$, si hay suficiente evidencia para rechazar $H_{0}$.
+Para realizar este test sobre los datos de las vesículas, se trabajó con la distancia de Mahalanobis como vector de diferencia entre las medias de las poblaciones. Las comparaciones se realizaron:
+
+\begin{itemize}
+	\item Entre los píxeles de una vesícula de varicela y el histograma promedio de varicela
+	\item Entre los píxeles de una vesícula de herpes zóster y el histograma promedio de varicela
+\end{itemize}
+
+En todos los casos el test arrojó $p = 0$, lo que indica que \textbf{no hay evidencia suficiente} para rechazar la hipótesis nula de que ambas distribuciones tienen la misma media. Con este método, no se cuenta con suficiente información para determinar si se puede distinguir las vesículas de varicela de las de herpes zóster basándose en un análisis del color interno, para las imágenes con las que se trabajó.
+
+
+\subsection{Test de ANOVA}
+
+Otro test que puede llevarse a cabo para rechazar la hipotesis nula $H_{0}$ que ambas medias son iguales es el test de ANOVA. Para llevar a cabo este test realizamos el siguiente procedimiento. Primero tomamos cuatro imágenes representativas, dos de varicela y dos herpes zóster y construimos una clase con las vesículas de cada imagen. Las imágenes que utilizamos son las que se muestran en la figura \ref{fig:imagenesAnova}. Al realizar las pruebas encontramos que para la componente *a las diferencias son mayores si comparamos las medias de las vesículas de varicela y herpes zóster, que si comparamos entre vesículas de la misma enfermedad. En el cuadro \ref{tab:comparacionMediasCompA} podemos ver dicho comportamiento.
+
+\begin{figure}[h!]
+\centering
+\subfigure[]
+{\includegraphics[width=0.32\textwidth]{Resources/chicken_pox_primary_lesions_03_concirculos_crop.jpg}}\hspace{4pt}
+\subfigure[]
+{\includegraphics[width=0.32\textwidth]{Resources/varicella_34_concirculos_crop.jpg}}\hspace{4pt} \\
+\subfigure[]
+{\includegraphics[width=0.32\textwidth]{Resources/herpes_zoster_114_concirculos_crop.jpg}}\hspace{4pt}\hspace{0.5pt}
+\subfigure[]
+{\includegraphics[width=0.32\textwidth]{Resources/herpes_zoster_8_concirculos_crop.jpg}}
+\caption{Vesículas detectadas. (a) - (b) Vesículas de varicela. (c) - (d) Vesículas de herpes zóster.\label{fig:imagenesAnova}}
+\end{figure}
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}[pos]{ c | c | c }
+Distancia entre medias & Intervalo & Comparación de medias \\
+
+\hline
+$\mu_{(a)} - \mu_{(c)} = 9.1967$	&	$[ 8.8831  , \ 9.5104  ]$	&	Interclases \\
+$\mu_{(a)} - \mu_{(d)} = 6.1135$	&	$[ 5.8445  , \ 6.3826  ]$	&	Interclases  \\
+$\mu_{(b)} - \mu_{(c)} = 6.5746$	&	$[ 6.2689  , \ 6.8802  ]$	&	Interclases  \\
+$\mu_{(b)} - \mu_{(d)} = 3.4913$	&	$[ 3.2317  , \ 3.7509  ]$	&	Interclases  \\
+\hline
+$\mu_{(a)} - \mu_{(b)} = 2.6222$	&	$[ 2.3835  , \ 2.8609  ]$	&	Intraclases  \\
+$\mu_{(c)} - \mu_{(d)} = -3.0832$	&	$[ -3.4131  , \ -2.7533  ]$	&	Intraclases  \\
+
+\end{tabular}
+\caption{Comparación entre clases de varicela y herpes zóster, sobre componente *a \label{tab:comparacionMediasCompA}}
+\end{table}
+
+
+Luego, asumiendo una distribución normal de los valores y que las varianzas son iguales, utilizamos una hipótesis nula en la cual presumimos que las medias de los colores de las vesículas de varicela y herpes zóster son iguales. A través de una prueba estadística refutamos esta hipótesis. Para esta prueba seguimos utilizando la componente *a de color, pero ahora separamos las vesículas en dos clases, una de ellas contiene los valores de las vesículas de varicela y la otra, las vesículas de herpes zóster. Encontramos que la diferencia $\mu_{\scriptsize\textrm{(varicela)}}- \mu_{\scriptsize\textrm{(herpeszóster)}} = 5.8608$, con una confianza del 100\% en el intervalo $[5.7044 \quad 6.0171]$.
+
+Realizamos pruebas similares con las componentes *Cb y *Cr, del espacio de color Y*Cb*Cr. 
+
+Para la componente *Cb la diferencia interclases es $\mu_{\scriptsize\textrm{(varicela)}}- \mu_{\scriptsize\textrm{(herpeszóster)}} = -6.4700$, con una confianza del 100\% en el intervalo $[-6.6175 \quad -6.3225]$. Adicionalmente, sobre la componente *Cr también se puede observar la diferencia interclases $\mu_{\scriptsize\textrm{(varicela)}}- \mu_{\scriptsize\textrm{(herpeszóster)}} = 7.9246$, con una confianza del 100\% en el intervalo $[7.7563 \quad 8.0929]$ \ref{tab:comparacionMediasCompCr}.
+
+En los cuadros \ref{tab:comparacionMediasCompCb} y \ref{tab:comparacionMediasCompCr} se puede apreciar que la diferencia interclases es mayor que la intraclases.
+
+\begin{table}[h]
+\centering
+\begin{tabular}[pos]{ c | c | c }
+Distancia entre medias & Intervalo & Comparación de medias \\
+
+\hline
+$\mu_{(a)}- \mu_{(c)} =  -8.3343  $   &   $[   -8.6310    , \      -8.0376    ]$	&	Interclases \\
+$\mu_{(a)}- \mu_{(d)} =   -8.0301 $   &   $[  -8.2846     , \     -7.7756    ]$	&	Interclases \\
+$\mu_{(b)}- \mu_{(c)} =  5.2527   $   &   $[   4.9636   , \      5.5418     ]$	&	Interclases \\
+$\mu_{(b)}- \mu_{(d)} =   4.9486  $   &   $[ 4.7030       , \     5.1941    ]$	&	Interclases \\
+\hline
+$\mu_{(a)} - \mu_{(b)} = -3.0816$	&	$[ -3.3073  , \ -2.8558  ]$	&	Intraclases \\
+$\mu_{(c)} - \mu_{(d)} = 0.3042$	&	$[ -0.0079  , \ 0.6162  ]$   \textbf{(**)}	&	Intraclases \\
+
+\end{tabular}
+\caption{Comparación entre clases de varicela y herpes zóster, sobre componente *Cb \label{tab:comparacionMediasCompCb}}
+\end{table}
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}[pos]{ c | c | c }
+Distancia entre medias & Intervalo & Comparación de medias \\
+
+\hline
+$\mu_{(a)}- \mu_{(c)} = 12.1550   $	&	$[  11.8231    , \      12.4869  ]$	&	Interclases \\
+$\mu_{(a)}- \mu_{(d)} =   8.9064  $	&	$[ 8.6217      , \      9.1910    ]$	&	Interclases \\
+$\mu_{(b)}- \mu_{(c)} =  -8.0765  $	&	$[   -8.3999     , \     -7.7532    ]$	&	Interclases \\
+$\mu_{(b)}- \mu_{(d)} =   -4.8279 $	&	$[ -5.1026      , \    -4.5532    ]$	&	Interclases \\
+\hline
+$\mu_{(a)} - \mu_{(b)} = 4.0785$	&	$[ 3.8259  , \ 4.3310  ]$	&	Intraclases \\
+$\mu_{(c)} - \mu_{(d)} = -3.8426$	&	$[ -3.5977  , \ -2.8996  ]$	&	Intraclases \\
+
+\end{tabular}
+\caption{Comparación entre clases de varicela y herpes zóster, sobre componente *Cr \label{tab:comparacionMediasCompCr}}
+\end{table}
+
+
+Con estos resultados podemos concluir que existe suficiente evidencia estadística para rechazar la hipótesis nula en la cual presumimos que las medias de las dos clases son iguales. Sin embargo, a pesar de que la diferencia entre clases (diferencia interclases) es mayor que entre medias de la misma enfermedad (intraclases), hay demasiada variabilidad en los datos para poder aceptar la otra hipótesis nula: que las imágenes pertenecientes a la misma clase tienen la misma media. Dentro de las observaciones, el resultado de comparación intraclases entre vesículas de herpes zóster \textbf{(**)} en el cuadro \ref{tab:comparacionMediasCompCb} es alentador, ya que el intervalo de confianza incluye al cero, lo que indica que la diferencia entre las medias de esas dos vesículas de herpes zóster es casi nula, y no hay evidencia para rechazar la hipótesis de que las medias son iguales.

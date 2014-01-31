@@ -1,0 +1,20 @@
+\BOOKMARK [1][-]{section.1}{Introducci\363n}{}
+\BOOKMARK [1][-]{section.2}{Las im\341genes de piel y sus caracter\355sticas}{}
+\BOOKMARK [1][-]{section.3}{Detecci\363n de ves\355culas}{}
+\BOOKMARK [2][-]{subsection.3.1}{Metodolog\355a propuesta}{section.3}
+\BOOKMARK [2][-]{subsection.3.2}{Selecci\363n de un espacio de color \363ptimo}{section.3}
+\BOOKMARK [2][-]{subsection.3.3}{Detecci\363n de bordes}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.3.1}{M\351todo de detecci\363n de bordes Canny}{subsection.3.3}
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Operaciones morfol\363gicas}{subsection.3.3}
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Algoritmo de Deriche y Cocquerez}{subsection.3.3}
+\BOOKMARK [2][-]{subsection.3.4}{Detecci\363n de c\355rculos}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Porcentaje de puntos del c\355rculo detectado}{subsection.3.4}
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Radios utilizados para la detecci\363n de las ves\355culas}{subsection.3.4}
+\BOOKMARK [3][-]{subsubsection.3.4.3}{Eliminaci\363n de detecciones duplicadas}{subsection.3.4}
+\BOOKMARK [2][-]{subsection.3.5}{Ecualizaci\363n del histograma}{section.3}
+\BOOKMARK [1][-]{section.4}{Discriminaci\363n entre varicela y otras enfermedades}{}
+\BOOKMARK [2][-]{subsection.4.1}{Construcci\363n de un modelo te\363rico}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Selecci\363n de ves\355culas de referencia}{subsection.4.1}
+\BOOKMARK [2][-]{subsection.4.2}{Comparaci\363n entre una ves\355cula y la piel normal}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Comparaci\363n entre una ves\355cula de una enfermedad y otra}{subsection.4.2}
+\BOOKMARK [1][-]{section.5}{Conclusiones}{}

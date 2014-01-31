@@ -1,0 +1,5 @@
+
+hist=load('histograma_promedio.mat');
+desviacion=std(hist.AB,0,1);
+[X,Y]=meshgrid(-127:128)
+bar([-127:128],desviacion)

@@ -1,0 +1,15 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Motivaci\'on}{5}{0}{1}
+\beamer@subsectionintoc {1}{1}{Presentaci\'on del problema b\'asico}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Ejemplos}{6}{0}{1}
+\beamer@sectionintoc {2}{Resoluci\'on}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Procesamiento digital de im\'agenes}{8}{0}{2}
+\beamer@subsectionintoc {2}{2}{Espacio de color}{19}{0}{2}
+\beamer@subsectionintoc {2}{3}{Detecci\'on de bordes}{23}{0}{2}
+\beamer@subsectionintoc {2}{4}{Detecci\'on de c\IeC {\'\i }rculos}{28}{0}{2}
+\beamer@subsectionintoc {2}{5}{Falsos positivos y falsos negativos}{32}{0}{2}
+\beamer@sectionintoc {3}{Conclusiones}{35}{0}{3}
+\beamer@subsectionintoc {3}{1}{Trabajo futuro}{35}{0}{3}
+\beamer@subsectionintoc {3}{2}{Preguntas}{36}{0}{3}
+\beamer@subsectionintoc {3}{3}{Datos de contacto}{37}{0}{3}

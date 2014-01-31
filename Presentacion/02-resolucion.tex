@@ -1,0 +1,205 @@
+\section{Resolución}
+
+\subsection{Procesamiento digital de imágenes}
+\begin{frame}
+	\frametitle{Procesamiento digital de imágenes}
+	Este problema se enmarca en el procesamiento digital de imágenes. \pause
+	Algunas dificultades: \pause
+	\begin{itemize}
+		\item Escala \pause
+		\item Elementos que afectan la imagen \pause
+		\item Espacio de color \pause
+		\item Detección de bordes \pause
+		\item Detección de círculos \pause
+		\item Falsos positivos y falsos negativos \pause
+		\item Detección de la piel
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Escala}
+	\begin{tabular}{cc}
+		\includegraphics[width=1.7in]{../Imagenes/U.Iowa/chicken_pox_picture_01.jpg} &
+		\includegraphics[width=1.7in]{../Imagenes/U.Iowa/Varicel-02.jpg}
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Elementos que afectan la imagen}
+	Problemas
+	\begin{itemize}
+		\item Ruido
+		\item Imperfecciones de la piel
+		\item Luces y sombras
+		\item Elementos ajenos
+	\end{itemize}
+	Técnicas
+	\begin{itemize}
+		\item Ecualización del histograma (Contrast-limited adaptive histogram equalization)
+		\item Reducción del ruido o suavización utilizando un filtro gaussiano
+	\end{itemize}
+\end{frame}
+
+\subsection{Espacio de color}
+\begin{frame}
+	\frametitle{Espacio de color}
+	¿Cómo representamos los colores y la luz en el ordenador?
+	\begin{itemize}
+		\item Espacios de color posibles
+		\item Luminancia vs Crominancia
+		\item YUV vs L*a*b
+	\end{itemize}
+	Luminancia: detección de bordes\\
+	Crominancia: detección de piel y falsos positivos
+\end{frame}
+
+\begin{frame}
+	\frametitle{Luminancia vs Crominancia}
+	\begin{tabular}{cc}
+		\includegraphics[width=2in]{../Resultados/CompL-Varicel-02.jpg} & Luminancia - componente L \\
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Luminancia vs Crominancia}
+	\begin{tabular}{cc}
+		\includegraphics[width=2in]{../Resultados/CompA-Varicel-02.jpg} & Crominancia - componente a \\
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Luminancia vs Crominancia}
+	\begin{tabular}{cc}
+		\includegraphics[width=2in]{../Resultados/CompB-Varicel-02.jpg} & Crominancia - componente b \\
+	\end{tabular}
+\end{frame}
+
+\subsection{Detección de bordes}
+\begin{frame}
+	\frametitle{Detección de bordes}
+	\begin{itemize}
+		\item Resulta sencillo para el ser humano
+		\item Borde: frontera entre el objeto y el fondo
+		\item Existen varios métodos (Canny, Roberts, Sobel o Prewitt)
+		\item Objetivos de un detector de borde:
+		\begin{itemize}
+			\item Baja tasa de error
+			\item Buena localización del borde
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Método de Canny}
+	\begin{itemize}
+		\item Robusto contra el ruido
+		\item Etapas del método:
+		\begin{itemize}
+			\item Filtrado\\
+			Aplicar un filtrado convolutivo de la derivada primera de una función gaussiana normalizada\\
+			Objetivo: suavizar la imagen
+			\item Decisión inicial\\
+			Obtener el gradiente en las direcciones vertical y horizontal\\
+			Objetivo: detección cambios en los valores de la señal
+			\item Histéresis\\
+			Definir umbrales TL y TH, para decidir cuáles de los cambios detectados son bordes o fondo.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Operaciones morfológicas}
+	\begin{itemize}
+		\item Herramientas muy utilizadas en el procesamiento de imágenes
+		\item Simplificar los datos de una imagen
+		\item Preservar las características esenciales
+		\item Eliminar aspectos irrelevantes
+		\item bridge: Une pixeles que están separados
+		\item Otras operaciones: open, close, clean
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ejemplo: Bordes detectados en la imagen}
+	\includegraphics[width=4.3in]{../Resultados/bordesEnLaImagen-Varicel-01.jpg} \\
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ejemplo: Bordes detectados}
+	\includegraphics[width=4.3in]{../Resultados/bordes-Varicel-01.jpg}
+\end{frame}
+
+\subsection{Detección de círculos}
+\begin{frame}
+	\frametitle{Detección de círculos}
+	\begin{itemize}
+		\item ¿Dados los bordes, cuándo conforman un círculo?
+		\item CHT: Circular Hough Transform
+		\begin{itemize}
+			\item Espacio de Hough
+			\item Arreglo de acumulación
+		\end{itemize}
+		\item Selección de candidatos
+		\begin{itemize}
+			\item Ponderación con respecto al máximo
+			\item Umbralización
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ejemplo: Imagen con bordes detectados}
+	\begin{figure}[h]
+		\includegraphics[width=4in]{../Resultados/resultado-Varicel-02-radio24-bordes.jpg}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ejemplo: Arreglo de acumulación}
+	\begin{figure}[h]
+		\includegraphics[width=3.5in]{../Resultados/acumulador-Varicel-02.jpg}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ejemplo: Imagen con el círculo detectado}
+	\begin{figure}[h]
+		\includegraphics[width=4in]{../Resultados/resultado-Varicel-02-radio23_1.jpg}
+	\end{figure}
+\end{frame}
+
+\subsection{Falsos positivos y falsos negativos}
+\begin{frame}
+	\frametitle{Falsos positivos y falsos negativos}
+	\begin{itemize}
+		\item Detección de círculos redundantes
+		\begin{figure}[h]
+			\includegraphics[width=2.2in]{../Resultados/resultado-Varicel-02-radio23_1.jpg}
+			\includegraphics[width=2.2in]{../Resultados/resultado-Varicel-02-radio24.jpg}
+		\end{figure}
+		\item Análisis del interior de la ampolla: trabajo en curso
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Detección de la piel}
+	Trabajo en curso\\
+	Trabajos anteriores
+	\begin{itemize}
+		\item ``Statistical Color Models with Application to Skin Detection'' (Jones y Rehg, 1998)
+		\item ``Detección de Rostros Humanos en Posición Frontal...'' (Macías Sánchez y Chávez Burbano, 2010)
+	\end{itemize}
+	Métodos utilizados
+	\begin{itemize}
+		\item Definiciones explícitas de regiones de color
+		\item Modelado no paramétrico de la distribución de la piel
+		\item Modelado paramétrico de la distribución de la piel
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Imagen para detección de la piel}
+	\begin{figure}[h]
+		\includegraphics[width=2in]{../Imagenes/U.Iowa/varicella_9.jpg}
+	\end{figure}
+\end{frame}

@@ -1,0 +1,21 @@
+8 - diciembre
+
+1- existen dos tipos de histogramas: global y local. el primero es el que utilizamos. El segundo tiene la idea de localizacion de la informacion que se pierde con el global. Divide la imagen en bloques.
+
+2- existen trabajos que "comparan" histogramas para encontrar imagenes. Para hacerlo utilizan estos pasos:
+	1) seleccion de espacio de color
+	2) Cuantizacion 
+	3) calcular histogramas
+	4) calcular distancias
+
+3- Encontramos que se puede medir con:
+	- distancia euclidea
+	- distancia de interseccion
+	- distancia cuadratica
+	- La Distancia de Mahalanobis, Haussdorff, Minkowski
+
+
+4- Técnicas de comparación de contenido
+	- color
+	- textura
+	- forma

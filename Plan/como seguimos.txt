@@ -1,0 +1,23 @@
+- segmentacion teniendo en cuenta la piel
+
+- ajustar hough: comparar 1)contra circulo completo y 2) usar la tecnica del gradiente
+3) color dentro y fuera del circulo  4) elipses
+
+- Poner el tiling de la operación de contraste en función del tamaño de la imagen
+- Manejar el factor de contraste en función de la imagen
+
+- determinar los bordes de las ronchas, a partir del circulo que detecto una roncha y los puntos que se tomaron para ese circulo. buscar figuras cerradas.
+
+- Segmentación con max-lloyd + contar pixeles de color distintos, encerrados en un área de color diferente
+Ver algoritmo otsu + im2bw
+
+
+- revisar el double esta aplicado desde el principio --> July
+
+- revisar la performance del còdigo (no priorizado)
+
+- revisar que main haga lo mismo que encontrar_circulos
+
+- hacer plan de proyecto
+
+- eigenfaces para ronchas. revisar el tema.

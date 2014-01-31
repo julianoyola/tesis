@@ -1,0 +1,118 @@
+\section{Desarrollo}
+
+La metodología propuesta consiste en una combinación de técnicas de procesamiento de imágenes y de detección de bordes. Puede resumirse en la aplicación de las siguientes etapas:
+
+\begin{enumerate}
+
+	\item Preprocesamiento de la imagen
+		\begin{enumerate}
+			\item Selección de un espacio de color óptimo
+			\item Ecualización del histograma
+		\end{enumerate}
+	
+	\item Detección de patrones
+		\begin{enumerate}
+			\item Detección de bordes
+			\item Aplicación de operaciones morfológicas
+			\item Detección de círculos
+		\end{enumerate}
+
+	\item Selección de candidatos
+		\begin{enumerate}
+			\item Detección de múltiples ocurrencias
+		\end{enumerate}
+
+\end{enumerate}
+
+\subsection{Preprocesamiento de la imagen}
+
+Las imágenes con las que se trabajó son fotografías en bruto, sin ningún tipo de tratamiento previo, tomadas con cámaras de mano. Esto hace que la calidad de las mismas sea muy variable, así como también las zonas de luz y oscuridad muy marcadas, o los colores muy exagerados. Por lo tanto, la primera medida a tomar consistió en realizar un pre-procesamiento de la imagen, para poder centrarnos en un espacio de color o luminancia que maximice la detección de patrones, y como paso posterior, ajustar el contraste.
+
+La selección de un espacio de color se convierte en un punto clave para el procesamiento posterior. La imagen está compuesta por capas de luz y color que el ojo humano interpreta correctamente, pero sólo algunas de estas capas son las más apropiadas para realizar la posterior detección de patrones. En principio, evaluamos cuatro familias de modelos de color: RGB (RBG, CMYK), YCbCr (YUV, YCbCr), HSV (HSV, HSL) y CIE L*a*b.
+
+Uno de los modelos de color más utilizados en la representación de imágenes es el RGB, y su equivalente de síntesis sustractiva, el CYMK. Si bien este modelo de color resulta muy conveniente para la representación en dispositivos como monitores o impresoras, se aparta de un principio de la visión humana: el ojo es más susceptible a cambios en iluminación que a cambios en color. La luminancia es en general el componente más importante de la imagen al ser percibida por el ojo humano. Una imagen con un alto contraste en luminancia y pobre en cromatismo, puede ser percibida correctamente por un observador humano, mientras que el caso inverso genera dificultad en la detección de patrones.
+
+Los modelos YCbCr y L*a*b, en cambio, intentan separar la imagen en componentes de luminancia y color. De este modo, se puede contar con una capa de la imagen que representa a la misma en escalas de blanco y negro, y manipularla independientemente de la información de color, que puede incluso ser transmitida o almacenada con menor tasa de información, sin perjudicar la percepción humana. El modelo YCbCr es ampliamente utilizado en imágenes de video o fotografía. El modelo L*a*b es un derivado del espacio de color CIE XYZ, que es un intento de estandarización de la CIE del año 1931. Busca conseguir la uniformidad perceptiva: que ante determinados cambios en los valores de luminancia o color, la variación en la percepción humana sea proporcional a esos cambios. La ventaja de estos modelos es que permiten diferenciar la luminancia que posee un pixel del color del mismo y, en particular, el modelo L*a*b es robusto ante cambios en la iluminación.
+
+El modelo HSV/HSB (hue, saturation, value o brightness), busca modelar la percepción de color de un artista, que piensa en un determinado tinte de color (hue), la saturación o pureza del mismo (saturation) y el brillo o luz (value). La principal ventaja de este modelo es la facilidad para determinar o visualizar la componente del color, ya que se encuentra separada de la saturación y del brillo, sin embargo, la luminancia no resulta tan fácil de determinar, al estar separadas las variables `saturation' y `value'.
+
+En consecuencia, en la etapa de preprocesamiento el análisis se realizó en paralelo con los modelos YCbCr y L*a*b. De ambos se extrajo la componente de luminancia, es decir, $Y$ para el modelo YCbCr y $L$ en el caso de L*a*b.
+
+Para poder incrementar el contraste global de las imágenes se realiza una ecualización del histograma, lo cual es especialmente útil cuando las áreas de interés consisten de valores cercanos. Justamente las imágenes tratadas cumplen con esta condición, ya que las mismas contienen zonas de poca diferencia de luz en la piel, donde se encuentran las vesículas de la varicela, en comparación con grandes diferencias de luz entre la piel y el fondo de la fotografía, usualmente oscuro.
+
+
+\subsection{Detección de patrones}
+
+Los métodos de segmentación se pueden agrupar en diferentes esquemas de clasificación. En un sentido amplio se pueden considerar tres tipos principales: esquemas de agrupamiento de puntos, métodos basados en bordes y métodos orientados a regiones ~\cite{CK01}~\cite{LK01}. Además, se han propuesto esquemas híbridos que resultan de combinaciones de los enfoques anteriores.
+Para la segmentación de las fotografías en zonas con ampollas y zonas sin ampollas utilizaremos métodos basados en la detección de bordes.
+
+\subsubsection{Detección de bordes}
+
+Se puede definir en el Procesamiento Digital de Imágenes que un borde es la frontera entre un objeto y el fondo. Una vez identificado el borde, se puede localizar todo el objeto, así como analizar su forma. La utilización de la información de borde nos simplifica en gran medida el análisis de las fotografías, ya que una vez identificados los bordes podemos estudiarlos y determinar si se trata de elementos circulares que puedan identificarse con vesículas en la piel. Los objetivos principales de un detector de borde son dos: una baja tasa de error y una buena localización del borde. El primer objetivo se refiere a la capacidad del detector para clasificar pixeles de la imagen como bordes, sin incluir elementos espurios como ruidos o manchas. El segundo objetivo tiene que ver con que la propia forma del filtro puede dar lugar a una detección de borde ligeramente trasladada, o incluso duplicada ~\cite{GW01}.
+
+Para la detección de bordes en las fotografías utilizamos el método de Canny ya que es uno de los métodos más importantes para realizar una detección global de bordes sobre una imagen ~\cite{JC01} y es considerado uno de los más robustos contra el ruido (filtro óptimo), en comparación con los métodos de Roberts, Sobel o Prewitt ~\cite{GW01}. Esta técnica, que se caracteriza por estar optimizada para la detección de bordes diferenciales, consta de tres etapas principales: filtrado, decisión inicial, e histéresis. 
+La primera etapa consiste en un filtrado de convolución de la derivada primera de una función gaussiana normalizada discreta sobre la imagen, realizada en dos direcciones: horizontal y vertical. El objetivo de aplicar un filtro gaussiano en esta etapa es eliminar ruido de la imagen, ya que el mismo puede llevar a detectar bordes erróneamente. La función gaussiana posee dos parámetros fundamentales, valor medio m, y desviación típica sigma. En este caso, el valor medio es nulo. Por otro lado, durante las pruebas resultó adecuado aplicar el filtro gaussiano con un sigma igual a 2. El paso siguiente consiste en obtener el gradiente en las direcciones vertical y horizontal y con ellos detectar picos que indiquen la presencia de un borde. La última etapa de procesamiento realiza una optimización de la decisión llevada a cabo en la etapa anterior, mediante la aplicación de una función de histéresis sobre la imagen. Esta función se basa en la definición de dos umbrales, TL y TH, tales que TL $<$ TH. Valores típicos para estos umbrales son 0.1 y 0.5, respectivamente, aunque se recomienda que TH y TL tengan una relación entre 2:1 y 3:1, dependiendo de la relación señal ruido, en el caso de que este valor sea conocido ~\cite{JC01}. En esta etapa se realizan los siguientes cálculos:
+
+\begin{enumerate}
+
+	\item Un pixel de la imagen $e$, $e(i,j$), se considera borde definitivo si $e(i,j) \geq TH$.
+	\item Un pixel de la imagen $e$, $e(i,j)$, se considera fondo definitivo si $e(i,j) < TL$.
+	\item Todos los pixeles en un vecindario 3 x 3 de los pixeles considerados como borde definitivo, $e(k,l)$, se consideran también borde definitivo si $e(k,l) \geq TL$.
+
+\end{enumerate}
+
+Durante las pruebas realizadas surgió como óptimo los umbrales [TL TH] iguales a [0.15 0.4], lo que implica que requiere un pixel inicial con un valor alto relativo ($\geq 0.4$) para comenzar el borde, y un pixel vecino no muy alto para continuarlo ($\geq 0.15$).
+
+\subsubsection{Operaciones morfológicas}
+
+Luego de realizar la detección de bordes se recomienda realizar operaciones morfológicas para el cierre de contornos abiertos. Las operaciones morfológicas son una herramienta muy utilizada en el procesamiento de imágenes. Pueden simplificar los datos de una imagen, preservar las características esenciales y eliminar aspectos irrelevantes. Una de las sugerencias fue realizar una operación de cierre seguida de una operación de apertura.
+
+La operación de apertura suaviza el contorno de un objeto, separando pequeños enlaces entre formas presentes en la imagen. Si se toma como referencia un contorno, la apertura suaviza la imagen por la parte interior del mismo, lo cual es consecuencia de la erosión previa a la dilatación que lo caracteriza. La aplicación de la apertura realiza una separación de formas en una imagen. 
+
+La operación de cierre como la operación de apertura, suaviza el contorno del objeto, pero por la parte exterior del mismo. Al realizarse previamente la dilatación, se fortalecen los enlaces débiles entre los objetos.
+
+Sin embargo, en nuestro caso no sirvió realizar una operación de cierre y luego una de apertura ya que esto hacía que perdiéramos los contornos detectados.
+
+Otras de las operaciones morfológicas con las probamos fue la operación `clean', que básicamente elimina los pixeles aislados. Esta operación no mejoró resultados.
+
+Finalmente, probamos con la operación `bridge', que une pixeles que se hallan separados por un pixel. Con esta operación obtuvimos mejores resultados.
+
+\subsubsection{Detección de círculos}
+
+Una vez obtenidos los bordes de la imagen y eliminado todo elemento que pueda entorpecer la búsqueda de las vesículas de la varicela, se utiliza la transformada circular de Hough para detectar dichas vesículas.
+
+La transformada de Hough se trata de un método utilizado para detectar líneas de alguna clase determinada, presentes en una imagen digital. En general, su aplicación implica el uso de una formulación de parámetros específica al tipo de línea que se desea detectar (usualmente rectas, círculos o elipses). Sin embargo, puede generalizarse para cualquier tipo de forma ~\cite{AN01}.
+
+La forma clásica de la transformada fue originalmente propuesta por Paul Hough en 1959 durante la conferencia internacional sobre aceleradores de alta energía del CERN ~\cite{HO01}. Al utilizarla para detectar líneas rectas en una imagen, la transformada puede basarse en los dos parámetros implícitos en la ecuación de la recta según la representación pendiente-ordenada en el origen, $y = ax + b$.
+Independientemente de la formulación de parámetros empleada, la transformada siempre utiliza lo que se conoce como Arreglo de Acumulación, donde se totalizan los ``votos'' que dan el resultado de los parámetros más apropiados al tipo de línea que se desea detectar.
+
+La Transformada de Hough plantea entonces que en el espacio originado por los parámetros a y b (o espacio de Hough), es donde se analiza la aparición o no de una línea de puntos. Sin embargo, esta formulación tiene algunos inconvenientes numéricos: para rectas horizontales, cuando $a = 0$ y con rectas verticales, cuando $a\to\infty$ . Para evitar estos inconvenientes se puede reformular la transformada en la representación de coordenadas polares o radio-ángulo. Esta versión fue presentada por Richard Duda y Peter Hart en 1972 ~\cite{DH01}. La ecuación de la recta utilizada en esta versión es $p = x \cos \alpha + y \sin \alpha$.
+
+Las definiciones básicas de la transformada de Hough son:
+
+\begin{enumerate}
+
+	\item {\bf Función de Parámetros de la Transformada:} Es como se describe el objeto a detectar: rectas, círculos, elipses.
+	\item {\bf Transformada Directa de Hough:} Cada punto en el espacio de dos dimensiones de la imagen, es transformado a un hiper-espacio de Hough de n dimensiones, donde n es la cantidad de parámetros utilizados.
+	\item {\bf Transformada Inversa de Hough:} Cada punto en el espacio de Hough describe una instancia específica del tipo de línea de interés en el espacio bidimensional de la imagen.
+
+\end{enumerate}
+
+La transformada circular utiliza la siguiente fórmula $r=(x-x_0)^2 + (y-y_0)^2$. Los parámetros de la función de la transformada son: el centro del círculo y el radio. Es decir que el espacio de Hough es tridimensional, luego el arreglo de acumulación será de dimensión tres. Esta última es la versión que utilizamos para la detección de las vesículas de la varicela.
+
+Una vez obtenido el Arreglo de Acumulación se debe decidir con algún criterio si se esta en presencia de un círculo. En este trabajo el criterio que tomamos fue calcular un valor para cada posible círculo a través de una ponderación relativa respecto del círculo que obtuvo más votos. Luego comparamos este valor con un porcentaje de aciertos esperados. Durante las pruebas trabajamos con varios valores de este porcentaje, obteniendo resultados más representativos con un porcentaje del 90 por ciento. 
+
+\subsection{Selección de candidatos}
+
+Cuando se ingresa más de un radio posible para la detección de círculos, puede ocurrir que para una vesícula haya más de caso positivo. Si se presenta esta circunstancia, realizamos una selección sobre los círculos detectados en el espacio de Hough.
+
+Consideramos que una detección está duplicada, cuando existen dos círculos cuyos centros distan uno del otro en menos de un cierto valor $k$. Entonces, dos círculos son \emph{redundantes} si cumplen que $d \leq k$, donde $d$ es la norma de la diferencia entre los centros de los círculos. Ante la detección de estos círculos redundantes, seleccionamos aquél que tenga más votos en el arreglo de acumulación.
+En una primera aproximación, trabajamos con $k = max(r1, r2)$ donde $r1$ y $r2$ son los radios, lo que equivale a que el centro del círculo menor se encuentra dentro del círculo mayor. Sin embargo, el valor de $k$ que arrojó mejores resultados empíricamente fue $k = r1 + r2$, lo que equivale a considerar que dos círculos son redundantes si sus circunferencias se intersecan. En las figura \ref{fig:deteccionDuplicadosK1K2} se puede observar la diferencia entre la detección de duplicados con $k = max(r1, r2)$ y $k = r1 + r2$.
+
+\begin{figure}
+\caption{Detección de círculos redundantes con $k = max(r1, r2)$ y $k = r1 + r2$}
+\label{fig:deteccionDuplicadosK1K2}
+\includegraphics[scale=0.50]{../Resultados/resultado-chicken_pox_picture_13-int689101114.jpg}
+\includegraphics[scale=0.50]{../Resultados/resultado-chicken_pox_picture_13-int689101114-conc2.jpg}
+\end{figure}
+

@@ -1,0 +1,26 @@
+[imagen_res,him] = encontrar_circulos('Varicel-01.jpg',[3.5, 4, 5.75, 6.2]);
+
+[imagen_res,him] = encontrar_circulos('Varicel-02.jpg',[23]);
+[imagen_res,him] = encontrar_circulos('Varicel-02.jpg',[24]);
+
+[imagen_res,him] = encontrar_circulos('Varicel-03.jpg',[15, 17]);
+
+[imagen_res,him] = encontrar_circulos('Varicel-04.jpg',[17,18]);
+
+
+[imagen_res,him] = encontrar_circulos('varicella_18.jpg',[43]);
+
+
+[imagen_res,him] = encontrar_circulos('chicken_pox_picture_13.jpg',[6, 8, 9, 10, 11, 14]);
+para esta imagen aumente a 2 el valor para encontrar concentricos.
+probe con 80% todas las imagenes menos una al 90%
+hay dos ronchas que no encuentra: en la imagen bridge se ve que esas ronchas estan lejos de ser circulares.
+
+
+[imagen_res,him] = encontrar_circulos('parte_chicken_pox_picture_01.jpg',[5, 5.5, 6])
+
+
+[imagen_res,him] = encontrar_circulos('varicella_9.jpg',[4.5, 4.7, 5.7, 7])
+
+
+[imagen_res,him] = encontrar_circulos('chicken_pox_primary_lesions_30.jpg',[5, 6.5, 7, 7.5, 8, 9, 10, 11, 12]); seguir trabajando para encontrar mas radios 

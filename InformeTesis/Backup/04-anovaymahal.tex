@@ -1,0 +1,33 @@
+\section{Discriminación de enfermedades analizando los colores de las vesículas}
+
+Analizamos los colores de las vesículas de las enfermedades estudiadas: varicela y herpes zóster. El objetivo de este análisis es detectar caracteríscas que indiquen diferencias entre una enfermedad y otra. Nos centramos en el estudio de las medias de los colores de las vesículas de cada una de las enfermedades, comparándolas. El procedimiento que llevamos a cabo fue el siguiente. Primero tomamos cuatro imágenes representativas, dos de varicela y dos herpes zóster y construimos una clase con las vesículas de cada imagen. Las imágenes que utilizamos son las que se muestran en la figura (poner figura). Al realizar las pruebas encontramos que para la componente a* las diferencias son mayores si comparamos las medias de las vesículas de varicela y herpes zóster, que si comparamos entre vesículas de la misma enfermedad. En el siguiente cuadro podemos ver este comportamiento. 
+    
+Comparasión entre clases:\\
+$\mu_{(a)}- \mu_{(c)} =  9.1967      \in [   8.8831    , \      9.5104    ]$;  
+$\mu_{(a)}- \mu_{(d)} =   6.1135      \in [  5.8445     , \      6.3826    ]$.  
+$\mu_{(b)}- \mu_{(c)} =  6.5746      \in  [   6.2689    , \      6.8802     ]$;  
+$\mu_{(b)}- \mu_{(d)} =   3.4913       \in [ 3.2317      , \     3.7509    ]$. 
+
+
+Luego, asumiendo una distribución normal de los valores y varianzas iguales, utilizamos una hipótesis nula en la cual presumimos que las medias de os colores de las vesículas de varicela y herpes zóster son iguales. A través de una prueba estadística, refutamos esta hipótesis. Para esta prueba seguimos utilizando la componente a* de color, pero ahora separamos llas vesículas en dos clases, una de ellas contiene los valores de las vesículas de varicela y la otra,las vesículas de herpes zóster. Encontramos que la diferencia $\mu_{\scriptsize\textrm{(chickenpox)}}- \mu_{\scriptsize\textrm{(herpeszoster)}} =5.8608$, con una confianza del 100\% en el intervalo [5.7044,  6.0171].
+
+Con estos resultados podemos concluir que existen suficiente evidencia estadística para refutar la hipótesis nula en la cual presumimos que las medias de las dos clases diferentes son iguales. Además, vemos que la diferencia entre clases en mayor que la diferencia en medias de la  misma enfermedad.
+
+Realizamos pruebas similares con las componentes Cb y Cr, del modelo Y*Cb*Cr. 
+
+Encontramos que para la componente Cb* la diferencia $\mu_{\scriptsize\textrm{(chickenpox)}}- \mu_{\scriptsize\textrm{(herpeszoster)}} =-6.4700$, con una confianza del 100\% en el intervalo [-6.6175, -6.3225].
+
+Comparasión entre clases para la componenete Cb*:\\
+$\mu_{(a)}- \mu_{(c)} =  -8.3343      \in [   -8.6310    , \      -8.0376    ]$;  
+$\mu_{(a)}- \mu_{(d)} =   -8.0301      \in [  -8.2846     , \     -7.7756    ]$.  
+$\mu_{(b)}- \mu_{(c)} =  5.2527       \in  [   4.9636   , \      5.5418     ]$;  
+$\mu_{(b)}- \mu_{(d)} =   4.9486       \in [ 4.7030       , \     5.1941    ]$. 
+
+Encontramos que para la componente Cr* la diferencia $\mu_{\scriptsize\textrm{(chickenpox)}}- \mu_{\scriptsize\textrm{(herpeszoster)}} =7.9246$, con una confianza del 100\% en el intervalo [7.7563, 8.0929].
+
+Comparasión entre clases para la componenete Cr*:\\
+$\mu_{(a)}- \mu_{(c)} = 12.1550     \in [  11.8231    , \      12.4869  ]$;  
+$\mu_{(a)}- \mu_{(d)} =   8.9064       \in [ 8.6217      , \      9.1910    ]$.  
+$\mu_{(b)}- \mu_{(c)} =  -8.0765       \in  [   -8.3999     , \     -7.7532    ]$;  
+$\mu_{(b)}- \mu_{(d)} =   -4.8279       \in [ -5.1026      , \    -4.5532    ]$. 
+

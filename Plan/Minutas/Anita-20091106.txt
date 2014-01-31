@@ -1,0 +1,22 @@
+Preprocesamiento: hay algunos que suavizan imágenes -> Anita pidió info a Maximiliano Sacco que hizo una tesis sobre chips con Patricia B. -> filtros pasa bajos y gaussian filters
+
+Revisar tema de filtros pasa altos
+
+Operaciones de morfología:
+- bwmorph -> elemento estructurante: se aplica sobre la segmentación, y puede eliminar artefactos (ver paper explicación sobre clausura-apertura en ese orden)
+
+Segmentación de imágenes
+- Ver matlab 2008
+- Aplicar k-means con distintos espacios de color: RGB, YUV, HSV
+paper: n1 = (B/A) varianza entre clases (separación de clases de Fisher -> DUDA and HART)
+plugin djvu
+
+
+Trabajar en tunear Canny
+Trabajar en representaciones de color
+Trabajar en espacios de color
+Trabajar en operaciones de morfología
+Revisar material que nos envió Anita
+
+
+Buscar literatura de detección de contornos, no sólo de borders

@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper]{article}
+%\documentclass[oribibl]{llncs}
+%\usepackage{subfigure}
+
+%\documentclass[12pt]{tesis}
+
+\usepackage{verbatim} % Para incluir comentarios que abarquen varias líneas
+\usepackage[latin1]{inputenc} % Para acentos
+\usepackage[spanish]{babel} % Titulos en castellano
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage[pdftex]{graphicx}
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption} % Letra de los comentarios de las imagenes
+%\usepackage{sidecap}
+
+\setcounter{secnumdepth}{5} % profundidad de las secciones
+
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+%\author{Virginia Arroyo, Julián Oyola \\ \normalsize \emph{Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires}}
+%\principaladviser{Ana Ruedin y Daniel Acevedo}
+
+\title{}
+\date{}
+
+\begin{document}
+
+%\oddsidemargin 0in %dice al compilador de Latex que el márgen izquierdo será de 1+0 pulgadas desde el borde izquierdo de la hoja
+%\textwidth 7.75in %define el ancho del texto y con esto también se puede calcular el márgen derecho asociado
+%\topmargin 0 %coloca el margen superior del texto a 1+0 pulgadas desde el inicio de la hoja.
+%\headheight 0in %define el largo del texto excluyendo el encabezado y el pie de página.
+%\textheight 8.5in %largo del texto
+
+\maketitle
+
+\include{titulo}
+\input{00-abstract}
+\include{01-introduccion}
+\include{02-imagenes}
+\include{03-deteccion}
+\include{04-discriminacion}
+\include{05-conclusiones}
+\include{06-agradecimientos}
+\include{07-referencias}
+\include{10-contacto}
+
+\end{document}

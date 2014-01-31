@@ -1,0 +1,11 @@
+\section{Discusión}
+
+La metodología presentada permite la detección eficaz de ampollas de la varicela, bajo las condiciones de escala descriptas. El método propuesto consiste en la aplicación de diferentes técnicas de procesamiento de imágenes, entre ellas, Canny y CHT. Se comprobaron empíricamente los resultados esperados utilizando fotografías en bruto, demostrando un excelente desempeño.
+
+Para poder contar con un método más robusto se deben abordar ciertos aspectos no tratados en este trabajo. Uno de ellos consiste en poder realizar una detección de las áreas de la piel, por medio de algún método de segmentación por color. Esto permitiría poder trabajar sobre las áreas de interés de la fotografía. Existen numerosos antecedentes de trabajos de detección de piel por segmentación que pueden aplicarse para mejorar los resultados obtenidos hasta el momento (ver ~\cite{RA01}, ~\cite{LC01} y ~\cite{DM01}). La mayoría de ellos trabajan sobre modelos de color como YCbCr y HSI para reconocer secciones de piel, utilizando técnicas de ecualización del histograma, extrapolación de pixeles y filtros de suavización.
+
+Otro aspecto a mejorar es la detección de círculos cuando las ampollas no tienen una forma circular, por ejemplo, considerando elipses en lugar de círculos. También se puede optimizar la evaluación del arreglo de acumulación de CHT para que pondere los votos de cada posible círculo contra un porcentaje de un círculo completo correspondiente al radio examinado, en lugar de comparar contra el máximo local. Asimismo, otra variante para esta evaluación consiste en considerar la dirección del gradiente de un punto a la hora de sumar votos en la detección de círculos (ver Rojas, Sanz, Arteaga ~\cite{TR01}).
+
+Un aspecto adicional a considerar es la posibilidad de eliminar los falsos positivos aplicando técnicas de comparación del color dentro y fuera del círculo, para determinar si las variaciones de color y luminancia corresponden a una ampolla de varicela.
+
+% Aplicar otros algoritmos que vimos de cierre de bordes?

@@ -1,0 +1,19 @@
+Reunión con Anita
+27-nov-2009
+
+1) Comparar
+	pityrisasis rosea - tinia
+	varicela - alacille
+
+2) Entender bien cómo funciona el contraste
+
+3) Ver saltos de color con HSV (utilizar variable de hue)
+utilizar un gradiente / filtro pasa altos
+ver ecuaciones del paper sobre la corona
+
+4) Segmentación con max-lloyd + contar pixeles de color distintos, encerrados en un área de color diferente
+Ver algoritmo otsu + im2bw
+
+5) Probar con una ecualización sin tiles
+
+Próxima -> mediados de diciembre hablamos para próxima reunión.

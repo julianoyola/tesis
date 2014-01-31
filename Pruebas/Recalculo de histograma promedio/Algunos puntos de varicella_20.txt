@@ -1,0 +1,29 @@
+roncha
+imagen_color(253,367,1):  68.2353
+imagen_color(253,367,2):  24
+imagen_color(253,367,3):  48
+
+imagen_color(252,352,1):  73.7255
+imagen_color(252,352,2):  18
+imagen_color(252,352,3):  29
+
+imagen_color(280,361,1):  67.0588
+imagen_color(280,361,2):  25
+imagen_color(280,361,3):  34
+
+Piel
+imagen_color(170,156,1):  92.1569
+imagen_color(170,156,2):  4
+imagen_color(170,156,3):  13
+
+imagen_color(134,81,1):   93.3333
+imagen_color(134,81,2):   4
+imagen_color(134,81,3):   13
+
+imagen_color(420,603,1):  69.4118
+imagen_color(420,603,2):  14
+imagen_color(420,603,3):  39
+
+imagen_color(373,654,1):  67.0588
+imagen_color(373,654,2):  12
+imagen_color(373,654,3):  35

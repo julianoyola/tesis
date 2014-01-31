@@ -1,0 +1,8 @@
+link1
+http://tray.dermatology.uiowa.edu/DermImag.htm
+link2
+http://www.dermnet.com/dermatology-pictures-skin-disease-pictures/
+link3
+http://www.ncbi.nlm.nih.gov/pubmed/7791545
+link4
+http://www.lib.uiowa.edu/HARDIN/MD/DERMPICTURES.HTML

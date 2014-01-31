@@ -1,0 +1,1 @@
+pdflatex propuesta-tesis.tex

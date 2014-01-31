@@ -1,0 +1,38 @@
+\select@language {spanish}
+\contentsline {paragraph}{Palabras clave:}{\es@scroman {i}}{section*.2}
+\contentsline {chapter}{\numberline {1.}Introducci\'on}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introducci\'on}{2}{section.1.1}
+\contentsline {chapter}{\numberline {2.}Im\'agenes utilizadas}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Las im\'agenes de piel y sus caracter\IeC {\'\i }sticas}{6}{section.2.1}
+\contentsline {chapter}{\numberline {3.}Detecci\'on de ves\'iculas}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Metodolog\IeC {\'\i }a propuesta}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}Selecci\'on de un espacio de color \'optimo}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}Detecci\'on de bordes}{9}{section.3.3}
+\contentsline {section}{\numberline {3.4}M\'etodo de detecci\'on de bordes Canny}{9}{section.3.4}
+\contentsline {paragraph}{\textbf {Suavizado de la imagen.}}{10}{section*.10}
+\contentsline {paragraph}{\textbf {Obtenci\'on del gradiente.}}{10}{section*.11}
+\contentsline {paragraph}{\textbf {Supresi\'on de valores que no son m\'aximos locales.}}{10}{section*.12}
+\contentsline {paragraph}{\textbf {Umbral con hist\'eresis.}}{10}{section*.13}
+\contentsline {section}{\numberline {3.5}Operaciones morfol\'ogicas}{11}{section.3.5}
+\contentsline {section}{\numberline {3.6}Detecci\'on de c\IeC {\'\i }rculos}{11}{section.3.6}
+\contentsline {section}{\numberline {3.7}Porcentaje de puntos del c\IeC {\'\i }rculo detectado}{13}{section.3.7}
+\contentsline {section}{\numberline {3.8}Radios utilizados para la detecci\'on de las ves\IeC {\'\i }culas}{14}{section.3.8}
+\contentsline {section}{\numberline {3.9}Eliminaci\'on de detecciones duplicadas}{15}{section.3.9}
+\contentsline {section}{\numberline {3.10}Ecualizaci\'on del histograma}{15}{section.3.10}
+\contentsline {section}{\numberline {3.11}Comparaci\'on de los espacios de color}{18}{section.3.11}
+\contentsline {section}{\numberline {3.12}Descripci\'on del proceso realizado}{18}{section.3.12}
+\contentsline {chapter}{\numberline {4.}Discriminaci\'on de enfermedades}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Metodolog\IeC {\'\i }a propuesta}{22}{section.4.1}
+\contentsline {section}{\numberline {4.2}T\'ecnicas basadas en el histograma de color}{22}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Construcci\'on de un histograma de referencia}{22}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}{24}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Comparaci\'on entre una ves\IeC {\'\i }cula de una enfermedad y otra}{25}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}T\'ecnicas basadas en la comparaci\'on de media poblacional}{26}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Comparaci\'on por distancia de Mahalanobis}{26}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Test de distribuci\'on Hotelling T-Cuadrada}{27}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Test de ANOVA}{28}{subsection.4.3.3}
+\contentsline {chapter}{\numberline {5.}Conclusiones}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusiones sobre la detecci\'on de ves\IeC {\'\i }culas}{32}{section.5.1}
+\contentsline {section}{\numberline {5.2}Conclusiones sobre la discriminaci\'on de enfermedades}{32}{section.5.2}
+\contentsline {chapter}{\numberline {6.}Contactos}{35}{chapter.6}
+\contentsline {paragraph}{Datos de Contacto}{36}{section*.40}

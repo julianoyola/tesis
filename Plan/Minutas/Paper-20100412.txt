@@ -1,0 +1,12 @@
+Reunión paper JAIIO
+12-abr-2010
+
+Temas a tener en cuenta para las conclusiones del paper
+- Futuro trabajo: considerar el color
+- Futuro trabajo: considerar las regiones de piel
+- Futuro trabajo: evaluar yuv u otros espacios de color
+
+Temas a tener en cuenta para la tesis
+- Para parametrizar la detección con una pequeña intervención del usuario,
+1) Exigir un ratio de tamaño de la imagen "razonable"
+2) Solicitar que el usuario con el mouse indique el tamaño/forma de una "roncha ejemplo", a partir de la cual deducir un rango de radios a considerar

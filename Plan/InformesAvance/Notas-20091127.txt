@@ -1,0 +1,68 @@
+
+26-nov
+
+
+Pasos:
+
+1) Bajar el contraste
+  
+  a. Convertimos el espacio de color a L*a*b* y nos quedamos con la luminancia en BW.
+     Probamos también con YUV y visualmente el efecto es el mismo, aunque no nos quedó clara la diferencia entre los dos.
+     
+  b. Aplicamos una ecualización del histograma por tiles de 16x16 con adapthisteq
+     Utilizamos 16x16 tiles. Habría que considerar la cantidad de tiles en función del tamaño de la imagen.
+     Utilizamos un ClipLimit de 0.0025 (es el factor de contraste). Habría que hacer que dependa de la luminancia.
+     
+2) Aplicamos detección de bordes con Canny
+  
+  a. Utilizamos inicialmente una suavización de la imagen con un filtro Gaussiano de 7x7 y un sigma de 2.
+  
+  b. Nos dimos cuenta que Canny ya lo aplica solo, y le especificamos el sigma=2, lo que implica que automáticamente selecciona un filtro de 9x9.
+     http://suraj.lums.edu.pk/~cs436a02/CannyImplementation.htm
+     http://www.pages.drexel.edu/~weg22/can_tut.html
+     
+  c. A Canny le especificamos el threshold como [Tl Th] = [0.15 0.4],
+     lo que implica que requiere un pixel inicial con un valor alto relativo (>= 0.4) para comenzar el borde,
+     y un pixel vecino no muy alto para continuarlo (>= 0.15)
+     
+3) Aplicamos una operación morfológica
+  
+  a. Aplicamos una clausura (operación "close") sobre la imagen, que consiste en una dilatación y una erosión,
+     que tiene el efecto de cerrar grupos de pixels, lo que en algunos casos (Varicel-1.jpg) cerraba un círculo y abría otro.
+  
+  b. También probamos con una operación de "bridge", que une bordes separados por un pixel.
+     Empíricamente, mejoró la imagen Varicel-1.jpg, que pasó a detectar todas las ronchas.
+
+  c. No aplicamos una operación de "clean", porque borraba pixeles individuales aislados.
+  
+  d. Según el paper "Object Detection using Circular Hough Transform", sugieren aplicar una operación de "open" luego de la clausura.
+     	"The closing
+		tends to close small gaps and removes much of the
+		white pixel noise, giving a fairly clean image. Opening
+		on the other hand tends to open small gaps or spaces
+		between touching objects in an image. The closing has
+		been applied then followed by the opening. The closing
+		‘close’ small gaps and make the region is clearly seen
+		even though it consists of noise. Then, the opening took
+		place. The opening will eliminate some of the unwanted
+		information."
+	 En nuestro caso no resultó de utilidad porque eliminaba todos los bordes detectados.
+
+4) Aplicamos CHT (Circular Hough Transform)
+
+
+Conclusiones parciales:
+- En resumen, tenemos por ahora un método que permite detectar las ronchas conociendo de antemano el radio.
+- Introduce algunos errores, por ejemplo, detecta como círculos las letras del pie de la imagen.
+- La operación de ecualización del histograma resultó determinante, sin la cual obteníamos más errores (detecciones incorrectas) y menos aciertos
+(ronchas sin detectar)
+- También resultó crucial ajustar las variables de Canny, en particular el sigma 2 para el suavizado de la imagen.
+
+Mejoras posibles:
+- Eliminar los errores con alguna técnica de comparación del color dentro y fuera del círculo
+- Eliminar detección de múltiples círculos de diferente radio y centro cercano
+- Poner el tiling de la operación de contraste en función del tamaño de la imagen
+- Probar con más imágenes con diferente luminancia
+- Comprender la diferencia entre L*a*b* y YUV
+- Manejar el factor de contraste en función de la imagen
+- Ver si conviene aplicar una operación de segmentación

@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.2}{Desarrollo}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Preprocesamiento de la imagen}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Detecci\363n de patrones}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Detecci\363n de bordes}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Operaciones morfol\363gicas}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Detecci\363n de c\355rculos}{subsection.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Selecci\363n de candidatos}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Resultados}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{El rango de radios esperados}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Porcentaje de puntos del c\355rculo detectado}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Distancia para detectar c\355rculos redundantes}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.4}{Escala de la fotograf\355a}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{Discusi\363n}{}% 14

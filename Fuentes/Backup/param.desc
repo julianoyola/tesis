@@ -1,0 +1,3 @@
+espacio_de_color ("Lab", "RGB", "YCbCr", "HSI", "HSL", "HSV") cantidad_de_imagenes (ej: 3)
+carpeta_de_resultados (ej: "..\Resultados\")
+por cada imagen un renglón: archivo_imagen (ej: "..\Imagenes\U.Iowa\Varicel-02.jpg") cantidad_de_radios (ej: 3) radios (ej: 23 24 25)

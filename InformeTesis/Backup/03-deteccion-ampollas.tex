@@ -1,0 +1,237 @@
+\section{Detección de vesículas}
+
+\subsection {Metodología propuesta}
+
+La metodología propuesta para la detección de vesículas de varicela, consiste en una combinación de técnicas de procesamiento de imágenes. Puede resumirse en la aplicación de las siguientes etapas:
+
+\begin{enumerate}
+
+	\item Selección de un espacio de color óptimo
+		
+	\item Detección de bordes
+		
+	\item Detección de círculos
+	
+	\item Ecualización del histograma
+	
+	\item Eliminación de falsos positivos
+	
+\end{enumerate}
+
+\subsection{Selección de un espacio de color óptimo}
+
+Como primera medida a tomar realizamos un pre-procesamiento de la imagen, para poder centrarnos en un espacio de color o luminancia que maximice el porcentaje de patrones correctamente detectados, y como paso posterior, ajustar el contraste.
+
+La imagen tiene componentes de luz y de color. Alguno de estos componentes son más apropiados para realizar la posterior detección de patrones y análisis del color de las vesículas de varicela. Existen diferentes formas de representar una imagen, estos modelos guardan los componentes de las imágenes de distintas formas. Por tal motivo, la selección de un espacio de color se convierte en un punto clave para el procesamiento posterior. En principio, evaluamos cuatro familias de modelos de color: RGB (RBG, CMYK), YCbCr (YUV, YCbCr), HSV (HSV, HSL) y CIE L*a*b.
+
+Uno de los modelos de color más utilizados en la representación de imágenes es el RGB, y su equivalente de síntesis sustractiva, el CYMK. Si bien este modelo de color resulta muy conveniente para la representación en dispositivos como monitores o impresoras, se aparta de un principio de la visión humana: el ojo es más susceptible a cambios en iluminación que a cambios en color. La luminancia es en general el componente más importante de la imagen al ser percibida por el ojo humano. Una imagen con un alto contraste en luminancia y pobre en cromatismo, puede ser percibida correctamente por un observador humano, mientras que el caso inverso genera dificultad en la detección de patrones.
+
+Los modelos YCbCr y L*a*b, en cambio, intentan separar la imagen en componentes de luminancia y color. De este modo, se puede contar con una capa de la imagen que representa a la misma en escalas de blanco y negro, y manipularla independientemente de la información de color, que puede incluso ser transmitida o almacenada con menor tasa de información, sin perjudicar la percepción humana. El modelo YCbCr es ampliamente utilizado en imágenes de video o fotografía. El modelo L*a*b es un derivado del espacio de color CIE XYZ, que es un intento de estandarización de la CIE del año 1931. Busca conseguir la uniformidad perceptiva: que ante determinados cambios en los valores de luminancia o color, la variación en la percepción humana sea proporcional a esos cambios. La ventaja de estos modelos es que permiten diferenciar la luminancia que posee un pixel del color del mismo y, en particular, el modelo L*a*b es robusto ante cambios en la iluminación.
+
+El modelo HSV/HSB (hue, saturation, value o brightness), busca modelar la percepción de color de un artista, que piensa en un determinado tinte de color (hue), la saturación o pureza del mismo (saturation) y el brillo o luz (value). La principal ventaja de este modelo es la facilidad para determinar o visualizar la componente del color, ya que se encuentra separada de la saturación y del brillo, sin embargo, la luminancia no resulta tan fácil de determinar, al estar separadas las variables `saturation' y `value'.
+
+En consecuencia, en la etapa de preprocesamiento el análisis se realizó en paralelo con los modelos YCbCr y L*a*b. De ambos se extrajo la componente de luminancia, es decir, $Y$ para el modelo YCbCr y $L$ en el caso de L*a*b.
+
+
+\subsection{Detección de bordes}
+
+Los métodos de segmentación se pueden agrupar en diferentes esquemas de clasificación. En un sentido amplio se pueden considerar tres tipos principales: esquemas de agrupamiento de puntos, métodos basados en bordes y métodos orientados a regiones ~\cite{CK01}~\cite{LK01}. Además, se han propuesto esquemas híbridos que resultan de combinaciones de los enfoques anteriores.
+Para la segmentación de las fotografías en zonas con vesículas y zonas sin vesículas utilizaremos métodos basados en la detección de bordes.
+
+\subsubsection{Método Canny}
+
+Se puede definir en el Procesamiento Digital de Imágenes que un borde es la frontera entre un objeto y el fondo. Una vez identificado el borde, se puede localizar todo el objeto, así como analizar su forma. La utilización de la información de borde nos simplifica en gran medida el análisis de las fotografías, ya que una vez identificados los bordes podemos estudiarlos y determinar si se trata de elementos circulares que puedan identificarse con vesículas en la piel. 
+
+Para la detección de bordes en las fotografías utilizamos el método de Canny ya que es uno de los métodos más importantes para realizar una detección global de bordes sobre una imagen ~\cite{JC01} y es considerado como uno de los más robustos contra el ruido (filtro óptimo), en comparación con otros métodos, como por ejemplo los métodos de Roberts, Sobel o Prewitt ~\cite{GW01}. 
+
+El algoritmo de Canny esta basado en los siguientes criterios ~\cite{GW01} ~\cite{JR01}: 
+
+\begin{enumerate}
+	\item \textbf{Detectar} el borde, evitando eliminarlos o suministrando bordes falsos. 	
+	\item Minimizar la diferencia entre la \textbf{localización} real del borde y la que detecta el algoritmo.
+	\item Evitar la detección de bordes \textbf{duplicados}
+\end{enumerate}
+
+El algoritmo de Canny emplea máscaras de convolución y esta basado en la primera derivada. Los métodos basados en la primera derivada utilizan el hecho de que dicha función toma el valor de cero en todas las regiones donde no varía la intensidad y
+tiene un valor constante en toda la transición de intensidad. Por tanto un cambio de intensidad se manifiesta como un cambio brusco en la primera derivada, característica que es usada para detectar un borde, y en la que se basa el algoritmo de Canny ~\cite{JR01}.
+
+El algoritmo de detección de bordes de Canny consta de tres etapas principales: 
+
+\begin{enumerate}
+	\item Obtención del gradiente: en este paso se calcula la magnitud y orientación del vector gradiente en cada píxel.
+	\item Supresión no máxima: en este paso se logra el adelgazamiento del ancho de los bordes, obtenidos con el gradiente, hasta lograr bordes de un píxel de ancho.
+	\item Histéresis de umbral: en este paso se aplica una función de histéresis basada en dos umbrales; con este proceso se pretende reducir la posibilidad de aparición de contornos falsos.
+\end{enumerate}
+
+\subsubsection{Obtención del gradiente}
+Para la obtención del gradiente, lo primero que se realiza es la aplicación de un filtro gaussiano a la imagen original con el objetivo de suavizar la imagen y tratar de eliminar el posible ruido existente. Sin embargo, se debe de tener cuidado de no realizar un suavizado excesivo, pues se podrían perder detalles de la imagen y provocar un pésimo resultado final. Este suavizado se obtiene promediando los valores de intensidad de los píxels en el entorno de vecindad con una mascara de convolución de media cero y desviación estándars . En la figura 1 se muestran dos ejemplos de máscaras que se pueden usar para realizar el filtrado gaussiano. 
+Una vez que se suaviza la imagen, para cada píxel se obtiene la magnitud y módulo (orientación) del gradiente, obteniendo así dos imágenes. El algoritmo para este primer paso se describe a continuación.
+
+Figura
+
+La primera etapa consiste en un filtrado de convolución de la derivada primera de una función gaussiana normalizada discreta sobre la imagen, realizada en dos direcciones: horizontal y vertical. El objetivo de aplicar un filtro gaussiano en esta etapa es eliminar ruido de la imagen, ya que el mismo puede llevar a detectar bordes erróneamente. La función gaussiana posee dos parámetros fundamentales, valor medio m, y desviación típica sigma. En este caso, el valor medio es nulo. Por otro lado, durante las pruebas resultó adecuado aplicar el filtro gaussiano con un sigma igual a 2.
+
+\subsubsection{Supresión no máxima}
+Las dos imágenes generadas en el paso anterior sirven de entrada para generar una imagen con los bordes adelgazados. El procedimiento es el siguiente: se consideran cuatro direcciones identificadas por las orientaciones de 0º, 45º, 90º y 135º con respecto al eje horizontal. Para cada píxel se encuentra la dirección que mejor se aproxime a la dirección del ángulo de gradiente.
+
+se puede poner el algoritmo Obtención de Gradiente
+Posteriormente se observa si el valor de la magnitud de gradiente es más pequeño que al menos uno de sus dos vecinos en la dirección del ángulo obtenida en el paso anterior. De ser así se asigna el valor 0 a dicho píxel, en caso contrario se asigna el valor que tenga la magnitud del gradiente.
+La salida de este segundo paso es la imagen In con los bordes adelgazados, es decir, E m (i j) , después de la supresión no máxima de puntos de borde.
+
+El paso siguiente consiste en obtener el gradiente en las direcciones vertical y horizontal y con ellos detectar picos que indiquen la presencia de un borde.
+
+\subsubsection{Histéresis de umbral}
+La imagen obtenida en el paso anterior suele contener máximos locales creados por el ruido. Una solución para eliminar dicho ruido es la histéresis del umbral.
+El proceso consiste en tomar la imagen obtenida del paso anterior, tomar la orientación de los puntos de borde de la imagen y tomar dos umbrales, el primero más pequeño que el segundo. Para cada punto de la imagen se debe localizar el siguiente punto de borde no explorado que sea mayor al segundo umbral. A partir de dicho punto seguir las cadenas de máximos locales conectados en ambas direcciones perpendiculares a la normal del borde siempre que sean mayores al primer umbral. Así se marcan todos los puntos explorados y se almacena la lista de todos los puntos en el contorno conectado. Es así como en este paso se logra eliminar las uniones en forma de Y de los segmentos que confluyan en un punto.
+
+se puede poner el algoritmo Supresión no máxima
+
+  La última etapa de procesamiento realiza una optimización de la decisión llevada a cabo en la etapa anterior, mediante la aplicación de una función de histéresis sobre la imagen. Esta función se basa en la definición de dos umbrales, TL y TH, tales que TL $<$ TH. Valores típicos para estos umbrales son 0.1 y 0.5, respectivamente, aunque se recomienda que TH y TL tengan una relación entre 2:1 y 3:1, dependiendo de la relación señal ruido, en el caso de que este valor sea conocido ~\cite{JC01}. En esta etapa se realizan los siguientes cálculos:
+
+\begin{enumerate}
+
+	\item Un pixel de la imagen $e$, $e(i,j$), se considera borde definitivo si $e(i,j) \geq TH$.
+	\item Un pixel de la imagen $e$, $e(i,j)$, se considera fondo definitivo si $e(i,j) < TL$.
+	\item Todos los pixeles en un vecindario 3 x 3 de los pixeles considerados como borde definitivo, $e(k,l)$, se consideran también borde definitivo si $e(k,l) \geq TL$.
+
+\end{enumerate}
+
+Durante las pruebas realizadas surgió como óptimo los umbrales [TL TH] iguales a [0.15 0.4], lo que implica que requiere un pixel inicial con un valor alto relativo ($\geq 0.4$) para comenzar el borde, y un pixel vecino no muy alto para continuarlo ($\geq 0.15$).
+
+
+\subsubsection{Algoritmo de Deriche y Cocquerez ¿?}
+
+\subsubsection{Operaciones morfológicas}
+
+Luego de realizar la detección de bordes se recomienda realizar operaciones morfológicas para el cierre de contornos abiertos. Las operaciones morfológicas son una herramienta muy utilizada en el procesamiento de imágenes. Pueden simplificar los datos de una imagen, preservar las características esenciales y eliminar aspectos irrelevantes. Una de las sugerencias fue realizar una operación de cierre seguida de una operación de apertura.
+
+La operación de apertura suaviza el contorno de un objeto, separando pequeños enlaces entre formas presentes en la imagen. Si se toma como referencia un contorno, la apertura suaviza la imagen por la parte interior del mismo, lo cual es consecuencia de la erosión previa a la dilatación que lo caracteriza. La aplicación de la apertura realiza una separación de formas en una imagen. 
+
+La operación de cierre como la operación de apertura, suaviza el contorno del objeto, pero por la parte exterior del mismo. Al realizarse previamente la dilatación, se fortalecen los enlaces débiles entre los objetos.
+
+Sin embargo, en nuestro caso no sirvió realizar una operación de cierre y luego una de apertura ya que esto hacía que perdiéramos los contornos detectados.
+
+Otras de las operaciones morfológicas con las probamos fue la operación `clean', que básicamente elimina los pixeles aislados. Esta operación no mejoró resultados.
+
+Finalmente, probamos con la operación `bridge', que une pixeles que se hallan separados por un pixel. Con esta operación tampoco  obtuvimos mejores resultados.
+
+\subsubsection{Detección de círculos}
+
+Una vez obtenidos los bordes de la imagen y eliminado todo elemento que pueda entorpecer la búsqueda de las vesículas de la varicela, se utiliza la transformada circular de Hough para detectar dichas vesículas.
+
+La transformada de Hough se trata de un método utilizado para detectar líneas de alguna clase determinada, presentes en una imagen digital. En general, su aplicación implica el uso de una formulación de parámetros específica al tipo de línea que se desea detectar (usualmente rectas, círculos o elipses). Sin embargo, puede generalizarse para cualquier tipo de forma ~\cite{AN01}.
+
+La forma clásica de la transformada fue originalmente propuesta por Paul Hough en 1959 durante la conferencia internacional sobre aceleradores de alta energía del CERN ~\cite{HO01}. Al utilizarla para detectar líneas rectas en una imagen, la transformada puede basarse en los dos parámetros implícitos en la ecuación de la recta según la representación pendiente-ordenada en el origen, $y = ax + b$.
+Independientemente de la formulación de parámetros empleada, la transformada siempre utiliza lo que se conoce como Arreglo de Acumulación, donde se totalizan los ``votos'' que dan el resultado de los parámetros más apropiados al tipo de línea que se desea detectar.
+
+La Transformada de Hough plantea entonces que en el espacio originado por los parámetros a y b (o espacio de Hough), es donde se analiza la aparición o no de una línea de puntos. Sin embargo, esta formulación tiene algunos inconvenientes numéricos: para rectas horizontales, cuando $a = 0$ y con rectas verticales, cuando $a\to\infty$ . Para evitar estos inconvenientes se puede reformular la transformada en la representación de coordenadas polares o radio-ángulo. Esta versión fue presentada por Richard Duda y Peter Hart en 1972 ~\cite{DH01}. La ecuación de la recta utilizada en esta versión es $p = x \cos \alpha + y \sin \alpha$.
+
+Las definiciones básicas de la transformada de Hough son:
+
+\begin{enumerate}
+
+	\item {\bf Función de Parámetros de la Transformada:} Es como se describe el objeto a detectar: rectas, círculos, elipses.
+	\item {\bf Transformada Directa de Hough:} Cada punto en el espacio de dos dimensiones de la imagen, es transformado a un hiper-espacio de Hough de n dimensiones, donde n es la cantidad de parámetros utilizados.
+	\item {\bf Transformada Inversa de Hough:} Cada punto en el espacio de Hough describe una instancia específica del tipo de línea de interés en el espacio bidimensional de la imagen.
+
+\end{enumerate}
+
+La transformada circular utiliza la siguiente fórmula $r=(x-x_0)^2 + (y-y_0)^2$. Los parámetros de la función de la transformada son: el centro del círculo y el radio. Es decir que el espacio de Hough es tridimensional, luego el arreglo de acumulación será de dimensión tres. Esta última es la versión que utilizamos para la detección de las vesículas de la varicela.
+
+Una vez obtenido el Arreglo de Acumulación se debe decidir con algún criterio si se esta en presencia de un círculo. En este trabajo el criterio que tomamos fue calcular un valor para cada posible círculo a través de una ponderación relativa respecto del círculo que obtuvo más votos. Luego comparamos este valor con un porcentaje de aciertos esperados. Durante las pruebas trabajamos con varios valores de este porcentaje, obteniendo resultados más representativos con un porcentaje del 90 por ciento. 
+
+\subsection{Ecualización del histograma}
+
+Para poder incrementar el contraste global de las imágenes se realiza una ecualización del histograma, lo cual es especialmente útil cuando las áreas de interés consisten de valores cercanos. Justamente las imágenes tratadas cumplen con esta condición, ya que las mismas contienen zonas de poca diferencia de luz en la piel, donde se encuentran las vesículas de la varicela, en comparación con grandes diferencias de luz entre la piel y el fondo de la fotografía, usualmente oscuro.
+
+
+\subsection{Eliminación de falsos positivos}
+
+Cuando se ingresa más de un radio posible para la detección de círculos, puede ocurrir que para una vesícula haya más de caso positivo. Si se presenta esta circunstancia, realizamos una selección sobre los círculos detectados en el espacio de Hough.
+
+Consideramos que una detección está duplicada, cuando existen dos círculos cuyos centros distan uno del otro en menos de un cierto valor $k$. Entonces, dos círculos son \emph{redundantes} si cumplen que $d \leq k$, donde $d$ es la norma de la diferencia entre los centros de los círculos. Ante la detección de estos círculos redundantes, seleccionamos aquél que tenga más votos en el arreglo de acumulación.
+En una primera aproximación, trabajamos con $k = max(r1, r2)$ donde $r1$ y $r2$ son los radios, lo que equivale a que el centro del círculo menor se encuentra dentro del círculo mayor. Sin embargo, el valor de $k$ que arrojó mejores resultados empíricamente fue $k = r1 + r2$, lo que equivale a considerar que dos círculos son redundantes si sus circunferencias se intersecan. En las figura \ref{fig:deteccionDuplicadosK1K2} se puede observar la diferencia entre la detección de duplicados con $k = max(r1, r2)$ y $k = r1 + r2$.
+
+\begin{figure}
+\caption{Detección de círculos redundantes con $k = max(r1, r2)$ y $k = r1 + r2$}
+\label{fig:deteccionDuplicadosK1K2}
+\includegraphics[scale=0.50]{Resources/resultado-chicken_pox_picture_13-int689101114.jpg}
+\includegraphics[scale=0.50]{Resources/resultado-chicken_pox_picture_13-int689101114-conc2.jpg}
+\end{figure}
+
+
+
+
+
+
+
+\subsection{----------Resultados}
+
+En el desarrollo encontramos ciertas dificultades. Por ejemplo, las fotografías pueden estar a una escala tal que no es posible la detección de las vesículas, o las imágenes pueden tener una gran variación de zonas de luz o saturación de colores, lo que hace difícil la obtención de resultados positivos. Por otro lado debemos tener presente que las vesículas suelen no ser de forma circular, como también puede ocurrir que sus bordes no se cierren, lo que hace que su detección se torne compleja. Asimismo, el método de detección empleado puede arrojar tanto duplicaciones como falsos positivos. Para abordar cada una de estas complicaciones u obstáculos utilizamos diferentes técnicas aplicadas en el preprocesamiento de la imagen y el posprocesamiento de los resultados, y el análisis de las características de color de las vesículas en forma comparativa con la piel u otras enfermedades. Entre las conclusiones obtenidas, se encuentra la necesidad de aplicar métodos de segmentación para el reconocimiento de las áreas de la fotografía relativas a la piel.
+
+\subsection{Detección de las vesículas}
+
+Para realizar la detección de los vesículas, se trabajó con los siguientes parámetros \footnote{Las funciones fueron desarrolladas en MATLAB}:
+\begin{enumerate}
+
+	\item El rango de radios esperados para las vesículas
+	\item El porcentaje de puntos del círculo detectado, con respecto al máximo de su mismo radio
+	\item Distancia para detectar círculos redundantes
+	\item Escala de la fotografía
+
+\end{enumerate}
+
+\subsubsection{El rango de radios esperados}
+El algoritmo desarrollado necesita de la especificación de los radios de los círculos a detectar.
+
+Tomando como ejemplo la imagen de la figura \ref{fig:deteccionRadios2324} \footnote{Las imágenes utilizadas pertenecen al archivo de imágenes de la Universidad de Iowa http://www.lib.uiowa.edu/HARDIN/MD/DERMPICTURES.HTML}, se pueden realizar pruebas con diferentes radios esperados, y verificar que varía la efectividad de la detección de círculos. En esta prueba se puede observar claramente que la selección de un radio erróneo puede determinar la aparición de falsos positivos, sin embargo, cuando el radio esta bien seleccionado, la detección es correcta.
+
+\begin{figure}[h]
+\caption{Detección con radio $r = 23$ y $r = 24$}
+\label{fig:deteccionRadios2324}
+\includegraphics[scale=0.50]{Resources/resultado-Varicel-02-radio23.jpg}
+\includegraphics[scale=0.50]{Resources/resultado-Varicel-02-radio24.jpg}
+\end{figure}
+
+Sin embargo, el método se muestra robusto para la imagen de la figura \ref{fig:deteccionRadios4043}, donde la vesícula es detectada con diferentes radios ingresados, a pesar de que sus bordes son claramente no circulares.
+
+\begin{figure}[h]
+\caption{Bordes y detección con radio $r = 40$ y $r = 43$}
+\label{fig:deteccionRadios4043}
+\includegraphics[scale=0.30]{Resources/resultado-varicella_18-bordes.jpg}
+\includegraphics[scale=0.30]{Resources/resultado-varicella_18-radio40.jpg}
+\includegraphics[scale=0.30]{Resources/resultado-varicella_18-radio43.jpg}
+\end{figure}
+
+
+\subsubsection{Porcentaje de puntos del círculo detectado}
+En las pruebas realizadas, los mejores resultados fueron obtenidos con un porcentaje del 90\% de los puntos del círculo, ya que se minimizó la cantidad de falsos positivos.
+Tomando los resultados de evaluar la imagen de la figura \ref{fig:bordesDetectados}, se puede observar que hay dos vesículas cuyos bordes no son circulares. Si se disminuye el umbral del porcentaje a un 70\%, son detectadas. Esto sucede porque en la fotografía existen otras vesículas del mismo diámetro cuya forma es más cercana a un círculo. Por lo tanto, cuando se pondera los acumulados de una vesícula cuya forma es más irregular, con los acumulados máximos que corresponden a vesículas más circulares, sucede que las primeras no pueden detectarse ya que el porcentaje resultante es menor al 80\%.
+
+\begin{figure}
+\caption{Bordes detectados. vesículas lejanas a la forma circular}
+\label{fig:bordesDetectados}
+\includegraphics[scale=0.50]{Resources/resultado-chicken_pox_picture_13-marcado.jpg}
+\end{figure}
+
+\begin{figure}
+\caption{Detección de círculos con umbral = 70\% y 90\%}
+\label{fig:umbralPorcentajeHough}
+\includegraphics[scale=0.25]{Resources/resultado-chicken_pox_picture_13-int689101114-conc2-70.jpg}
+\includegraphics[scale=0.25]{Resources/resultado-chicken_pox_picture_13-int689101114-conc2-90.jpg}
+\end{figure}
+
+Para corregir este desvío podríamos ponderar con un porcentaje del acumulado de un círculo completo correspondiente al radio que estamos examinando. De esta forma la detección de vesículas irregulares no estaría supeditada a que existan otras cuya forma son más cercanas al círculo, sino que se podría comparar con un porcentaje del círculo completo. El mismo fenómeno se puede observar en la figura \ref{fig:umbralPorcentajeHough90}.
+
+\begin{figure}
+\caption{Detección de círculos con umbral = 90\%}
+\label{fig:umbralPorcentajeHough90}
+\includegraphics[scale=0.50]{Resources/resultado-Varicel-01-90.jpg}
+\end{figure}
+
+
+\subsubsection{Distancia para detectar círculos redundantes}
+Inicialmente, en las pruebas para descartar detecciones duplicadas de vesículas, determinamos que dos círculos son redundantes cuando sus centros se encuentran a una distancia menor que el radio máximo. Es decir, que consideramos que dos círculos establecen la presencia de la misma vesícula cuando el centro del círculo menor, se encuentra dentro del círculo mayor. Sin embargo, en las pruebas realizadas con la imagen que se muestra en la figura \ref{fig:deteccionDuplicadosK1K2}, para poder descartar detecciones duplicadas se debió modificar la distancia considerada ($k = r1 + r2$). Es decir, que si se tocan en un punto son considerados redundantes. Al realizar este cambio, el resto de las pruebas no se vieron modificadas.
+
+
+

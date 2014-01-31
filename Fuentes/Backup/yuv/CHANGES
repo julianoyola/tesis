@@ -1,0 +1,34 @@
+21.11.2007. v1.5
+
+    * Updated colourspace conversion definitions, and some new addeed (both BT.709 and BT.601 limited and full range in RGB), detailed description provided in rgb2yuv.m. Some functions now support all three available YUV formats 'YUV420_8', 'YUV420_16' and 'YUV444_8'.
+    * rgb2yuv.m (v3.00) - Support for new YUV formats.
+    * scale_seq.m (v3.01) - Function name change (from downscale_seq), to reflect the fact that upscaling is also possible.
+    * seq_frames.m (v1.02) - Changes to reflect other updates.
+    * yuv_compare.m (v1.21) - Parameter for number of frames to process. YUV formats update.
+    * yuv_export.m (v1.11) - Wording.
+    * yuv_import.m (v2.10) - Support for new YUV formats.
+    * yuv2avi.m (v1.02) - Wording.
+    * yuv2rgb.m (v4.00) - Support for new YUV formats. 
+
+13.08.2007. v1.4
+
+    * Added definition of colour transforms in BT601.mat, BT601full.mat and BT709full.mat. See in rgb2yuv.m for more information.
+    * rgb2yuv.m (v2.00) - Support for BT.601 and BT.709 colour spaces.
+    * yuv2rgb.m (v3.00) - Support for BT.601 and BT.709 colour spaces. Selection between 4:4:4 and 4:2:0 chroma subsamling of the input YUV data.
+    * downscale_seq.m (v2.10) - Temporal subsampling, cropping and spatial downscaling supported jointly.
+    * yuv_range (v1.00) - New function. 
+
+30.05.2006. v1.3
+
+    * All functions tidied up after checking with M-Lint. Contents.m added to the toolbox.
+    * downscale_seq.m (v1.10) - Added temporal downsampling.
+    * save_yuvframe.m (v1.10) - Added support for writing into 'raw' format files; each component separately saved into a .raw file.
+    * yuv_compare.m (v1.10) - MSE added to the output variables.
+    * yuv_export.m (v1.10) - Added option to append or to write into a new YUV file.
+    * yuv_export.m (v1.10) - Added option to append or to write into a new YUV file.
+    * divide_seq.m (v1.01) - New function.
+    * seq_frames.m (v1.01) - New function. 
+
+25.03.2006. v1.2
+
+    * Initial changelog entry, no changes since the previous version. 

@@ -1,0 +1,39 @@
+
+
+Se observa un buen desempeño del proceso para la imagen varicella_18.jpg. Se probó con dos radis diferentes y para ambos funcionó bien y detectó la rocha.
+También son buenos los resultados en Varicel-03.jpg y Varicel-04.jpg.
+
+
+
+Las variables con las que probé son: 
+- radio seleccionado
+- porcentaje versus forma de la roncha y cantidad de ronchas con el mismo radio 
+- distancia para detectar círculos concentricos
+- escala de la fotografía
+
+
+- radio seleccionado
+[imagen_res,him] = encontrar_circulos('Varicel-02.jpg',[23]);
+[imagen_res,him] = encontrar_circulos('Varicel-02.jpg',[24]);
+En esta prueba se puede observar claramente que la selección de un radio erróneo puede determinar la aparición de falsos positivos. Sin embargo cuando el radio esta bien seleccionado se detecta correctamente la roncha.
+
+- porcentaje versus forma de la roncha
+[imagen_res,him] = encontrar_circulos('chicken_pox_picture_13.jpg',[6, 8, 9, 10, 11, 14]);
+se puede observar en esta fotografía que hay dos ronchas cuyas bordes no son circulares. si se baja el porcentaje con el que se compara a un 70% las ronchas sondetectadas. Esto sucede porque en la fotografía existen otras rochas del mismo diametro cuya forma es mas cercana a un circulo, entonces cuando se pondera los acumulados d una roncha cuya forma es mas irregular con los acumulados maximos que corresponden a rochas más circulares sucede que las primeras no pueden detectarse ya que el porcentaje resultado es menor al 80%.
+Para corregir esto podriamos ponderar con un porcentaje de del acumulado de un circulo completo correspondiente al radio que estamos examinando. De esta forma la detección de rochas irregulares no estaría supeditada a que existan otras cuya forma son más cercanas al círculo sino que lo podríamos manejar como un parametro más en la detección. 
+
+El mismo fenómeno se puede observar en varicel-01 y en chicken_pox_picture_13.jpg.
+ 
+
+- distancia para detectar círculos concentricos
+[imagen_res,him] = encontrar_circulos('chicken_pox_picture_13.jpg',[6, 8, 9, 10, 11, 14]);
+Para poder detectar circulos concentricos en esta imagen debimos aumentar la distacia de detección a 2. Al realizar este cambio el resto de ls pruebas no se vieron modificadas.
+
+
+- escala de la fotografía
+[imagen_res,him] = encontrar_circulos('parte_chicken_pox_picture_01.jpg',[5, 5.5, 6])
+Se probó con la fotografía parte_chicken_pox_picture_01.jpg se observa que dada la escala que tiene los bordes detectados no son circulares porque se pierden al estar demesiado alejado la piel.
+El mismo fenomeno se observa en varicella_9.jpg.
+
+
+

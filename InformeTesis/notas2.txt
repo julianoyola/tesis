@@ -1,0 +1,39 @@
+
+Además, observamos que los histogramas de L*a*b se encuentran más concetrados que los histogramas de RGB, donde se ven más dispersos. 
+
+(podemos poner una imagen de los histogramas)
+
+Luego comparamos ambas enfermedades. Tomamos el histograma promedio de una de las enfermedades y las imagenes de la otra enfermedad. Por ejemplo, el histograma promedio de la varicela y las imagenes de herpes, y al revés.  
+
+(Insertar tablas:
+Mediciones-HerpesConHistogramaVaricela.xlsx
+Mediciones-VaricelaConHistogramaHerpes.xlsx
+)
+
+\
+En los resultados se puede observar:
+
+\begin{itemize}
+
+\item No hay una separación clara entre los rangos de valores de KLD, norma 1 y norma 2, entre las enfermedades de varicela y herpes. Por ejemplo, para las imágenes analizadas, el rango de KLD medido entre cada histograma y el promedio, oscila entre 4,99 y 12,47 para herpes y oscila entre 6,66 y 14,47 para varicela.
+
+\item Sin embargo, para una imagen dada, la cantidad de resultados que caen dentro de uno u otro rango permiten inclinar la balanza para decidir si la fotografía pertenece a una u otra enfermedad. Por ejemplo, la imagen "herpes-zoster-309", comparada utilizando KLD sobre las componentes A y B con el histograma promedio de varicela, arroja 2 valores dentro del rango y 4 por fuera, y comparada con el histograma promedio de herpes, arroja 6 resultados dentro del rango.
+
+\item Los mejores resultados se obtuvieron comparando el histograma bivariado sobre las componentes A y B, y utilizando la divergencia KLD.
+
+\end{itemize}
+
+
+Mencionar:
+- Al principio, las mediciones no dieron buenos resultados y tuvimos que centrarnos en analizar las vesículas una a una y extraer patrones
+- Calculamos histogramas de cada una de las vesículas, y tratamos de determinar si teníamos distintos rangos en las componentes de A y B, entre varicela y herpes. Nos dimos cuenta de que se solapaban, y que no bastaba una simple comparación por rango para determinar.
+- Nos centramos en un estadío de la enfermedad (tanto para herpes como para varicela), y volvimos a calcular el histograma promedio.
+- Apuntamos a dos objetivos: comparar vesículas con piel, y vesículas de una enfermedad con otra.
+- En L*a*b, los histogramas están más concentrados, en RGB los valores están más dispersos.
+- Al volver a calcular con estas directrices, encontramos diferencias entre piel y no piel.
+- Finalmente, comparamos herpes con varicela.
+
+
+La posibilidad de eliminar los falsos positivos aplicando técnicas de comparación del color dentro y fuera del círculo, para determinar si las variaciones de color y luminancia corresponden a una vesícula de varicela.
+
+

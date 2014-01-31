@@ -1,0 +1,9 @@
+http://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test
+http://en.wikipedia.org/wiki/Mahalanobis_distance
+http://en.wikipedia.org/wiki/Covariance_matrix
+
+- Cuantizacion
+- Distancia Euclidea
+- Distancia de interseccion
+- Análisis de otras combinaciones de valores
+- Histograma en 3d

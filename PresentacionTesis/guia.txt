@@ -1,0 +1,139 @@
+Introducción
+- Presentación de nombres (vicky, julián, anita)
+- Somos de la licenciatura de Cs. de la computación de la UBA
+- El trabajo que vamos a presentar es sobre "Análisis y detección de características de la varicela en imágenes de la piel"
+
+Presentación del problema básico
+- Qué métodos se utilizan para el diagnóstico?
+visuales
+fiebre, dolor de cabeza, picazon
+zonas del cuerpo
+contacto con otros enfermos
+epoca del año
+
+- Mostrar imágenes de varicela y sarampión y pedir que reconozcan
+comparación de las imágenes:
+	identificamos que las imágenes tiene piel
+	algo que se diferencia de lo que consideramos "piel normal"
+	identificamos los bordes
+	identificamos la distribución
+	identificamos el color interno
+	identificamos el brillo como el reflejo del agua de una vesícula, y el color rojizo como una erupción
+a partir de esto, podemos llegar a una primera aproximación de que una es varicela y la otra sarampión.
+
+- Mostrar diferentes imágenes de varicela
+	diferentes colores de piel
+	diferentes colores y formas de las ampollas
+	diferente escala
+	juegos de luces y sombras
+	imperfecciones de la piel
+	elementos que pueden confundir (p.ej tetillas)
+	diferentes etapas de la enfermedad (vesículas/ampollas -> costras)
+
+- Cómo hace un programa para determinar de un modo similar al que lo hace un ser humano? paso 1: buscar patrones
+El reconocimiento de patrones es uno de los temas que se estudia en el procesamiento digital de imágenes
+
+Como vimos en las imágenes de varicela, hay una serie de dificultades para poder reconocer los patrones de la enfermedad.
+Un tema que no es menor, es que trabajamos con fotografías digitales sin procesar, sin ningún condicionamiento hasta ahora, más adelante vamos a ver que hay algunas condiciones sobre la foto a tratar, por ejemplo, la escala.
+
+Escala
+- como ya vimos, hay imágenes a diferente escala, lo que influye en el tamaño relativo de las ampollas (Mostrar las imágenes)
+Elementos que afectan la imagen
+Espacio de color
+- cómo representamos los colores y la luz en el ordenador
+Deteccion de bordes y deteccion de circulos
+- cómo detectamos los bordes de las ampollas y su forma circular
+Falsos positivos y falsos negativos
+- cómo nos damos cuenta de cuáles son incorrectamente detectadas (falsos positivos) o directamente no son detectadas (falsos negativos)
+Deteccion de la piel
+- poder determinar qué áreas de la imagen corresponden a piel
+
+1) Escala
+Se pasa.
+
+2) Elementos que afectan la imagen
+Ruido: es una alteración no deseada de la información captada, en este caso, de la imagen
+Imperfecciones de la piel: Pelitos, cicatrices
+Luces y sombras: Por cómo fue captada la foto (posición de la fuente de luz, flash, etc), la iluminación puede afectar la detección
+ver imagen "resultado-Varicel-02-radio24-bordes.jpg", "resultado-Varicel-01-80%.jpg", "resultado-Varicel-01-bordes.jpg"
+Elementos ajenos: En las mismas fotos, hay letras.
+
+La primera de las técnicas que utilizamos para encarar estas dificultades se llama "Contrast-limited adaptive histogram equalization (CLAHE)" / "Ecualización adaptativa del histograma".
+La ecualización adaptativa del histograma busca mejorar el contraste local de una imagen, con lo que se mejora el detalle, especialmente cuando los datos que resultan de utilidad de la imagen están representados por valores muy cercanos. La técnica consiste en estirar el histograma: (http://en.wikipedia.org/wiki/File:Histogrammspreizung.png)
+((Un histograma es una representación gráfica de una variable en forma de barras. En nuestro caso, la variable es el brillo, y los picos del histograma van a representar cuáles de los valores son los más comunes.))
+
+La segunda de las técnicas que utilizamos, se aplica en el momento en el que se pretenden detectar los bordes, para eliminar el ruido. Consiste en aplicar, previo a la detección de bordes, un filtro convolutivo basado en la distribución normalizada de Gauss. En lenguaje coloquial, lo que se aplica es un "borroneo" de la imagen, utilizando una campana de Gauss, que hace que cada pixel de la imagen se parezca más a sus vecinos.
+
+3) Espacio de color
+
+Cómo representamos los colores y la luz en el ordenador.
+Existen diferentes maneras de representarlo. La más común es RGB. Cada punto o pixel de la imagen, es representado por 3 valores, cada uno de ellos representa el valor de una componente de color: rojo, verde y azul.
+Otras formas de representarlo tienen en cuenta por separado componentes de color y de brillo o luminancia. Éstas son la familia YUV (YCbCr) y la LAB.
+Estos espacios de color se basan en un principio de la vision humana: el ojo es mas susceptible a cambios en iluminacion que a cambios en el color. La luminancia es en general el componente mas importante de la imagen. Una imagen con un alto contraste en luminancia y pobre en cromatismo, puede ser percibida correctamente por un observador humano, mientras que el caso inverso genera dificultad.
+
+4) Detección de bordes
+
+Resulta sencillo para el ser humano
+Borde: frontera entre el objeto y el fondo
+Existen varios métodos (Canny, Roberts, Sobel o Prewitt)
+Objetivos de un detector de borde:
+- Baja tasa de error
+- Buena localización del borde
+
+Canny tiene 3 pasos:
+
+1. Filtrado - Aplicar un filtrado convolutivo de la derivada primera de una función gaussiana normalizada. Objetivo: suavizar la imagen.
+2. Decisión inicial - Obtener el gradiente en las direcciones vertical y horizontal. Objetivo: detección cambios en los valores de la señal.
+3. Histéresis - Definir umbrales TL y TH, donde los valores mayores a TH son considerados bordes definitivos, los menores a TL son considerados fondo, y los valores intermedio son considerados borde si están en la vecindad de un borde definitivo.
+
+Morfología:
+open: Suaviza el contorno de un objeto desde el interior (erosion + dilatacion)
+close: Suaviza el contorno externo de un objeto (dilatacion + erosion)
+clean: Elimina pixeles aislados
+bridge: Une pixeles que estan separados. Tuvo los mejores resultados.
+
+Erosión: Un pixel toma el valor 1 si él y todos sus vecinos valían 1.
+Dilatación: Un pixel toma el valor 1 si él o alguno de sus vecinos valía 1.
+
+5) Detección de círculos
+
+La transformada de Hough se trata de un método utilizado para detectar líneas de alguna clase determinada (usualmente rectas, círculos o elipses, pero puede ser cualquier forma).
+Trabaja con un arreglo de acumulación, que es una matriz multidimensional (en nuestro caso es tridimensional, porque la función utilizada es la de un círculo, que tiene los parámetros x, y, r). Cada punto de esta matriz representa un posible círculo, y lo que se hace es sumar votos para ese punto, y utilizarlos para ponderar la probabilidad de que se esté en presencia de un círculo.
+Mostrar imagen de "Arreglo de acumulación".
+Luego de que se consigue el arreglo de acumulación, se decide mediante algún criterio si la cantidad de votos determina que hay un círculo. El criterio que utilizamos fue calcular una ponderación relativa con respecto al círculo que tuvo más votos. Luego comparamos ese valor con un umbral.
+
+6) Falsos positivos y falsos negativos
+
+Detección de círculos redundantes: Consideramos que una detección está duplicada, cuando existen dos círculos cuyos centros distan uno del otro en menos de un cierto valor k.
+Empíricamente, los mejores resultados los arrojó k = r1 + r2, lo que equivale a decir que dos círculos son redundantes cuando sus circunferencias se intersecan.
+
+7) Deteccion de la piel
+
+Definiciones explícitas de regiones de color: con rangos
+Modelado no paramétrico de la distribución de la piel: con aprendizaje -> lookup table, funcion de probabilidad bayesiana o redes neuronales
+Modelado paramétrico de la distribución de la piel: con aprendizaje -> obtener parámetros de una función de densidad de probabilidad elíptica de Gauss
+
+
+
+
+---------------------------------------------------------------------------------------
+http://www.planetamama.com.ar/nota/enfermedades-eruptivas-cuadro-comparativo
+
+---------------------------------------------------------------------------------------
+visuales: 
+	en la varicela erupcion vesiculosa, fases evolutivas (patrón "cielo estrellado"), costras
+	en el sarampión manchas de koplik dentro de la boca, que son efímeras (24 horas), y después el exantema (3 o 4 días después de la fiebre), que es una erupción cutánea rojiza que desaparece con la presión.
+
+presencia de otros síntomas
+	varicela: fiebre, dolor de cabeza, picazon, malestar general, pérdida del apetito, vómitos
+	sarampión: fiebre alta (al menos 3 días), y uno de al menos de los síntomas: nariz moqueante, picazón moderado, catarro, conjuntivitis
+
+zonas del cuerpo
+	sarampion: de pies a cabeza, primero detrás de las orejas
+	varicela: cara, tronco y cuero cabelludo
+
+contacto con otros enfermos
+
+epoca del año
+	varicela: Septiembre y octubre
+	sarampion: Invierno y primavera

@@ -1,0 +1,896 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.12.12)  8 DEC 2012 18:38
+entering extended mode
+**tesis.tex
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\tesis.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\tesis.cls
+Document Class: tesis 1996/25/01 1.0g LaTeX document class (wm).
+\hours=\count79
+\minutes=\count80
+("C:\Program Files\MiKTeX 2.8\tex\latex\base\bk11.clo"
+File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count81
+\c@chapter=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+\beforechaptervspace=\skip41
+\afterchaptervspace=\skip42
+\exampleindent=\skip43
+\c@figure=\count88
+\c@table=\count89
+\abovecaptionskip=\skip44
+\belowcaptionskip=\skip45
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks14
+\verbatim@line=\toks15
+\verbatim@in@stream=\read1
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\base\latin1.def"
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+("C:\Program Files\MiKTeX 2.8\tex\generic\babel\babel.sty"
+Package: babel 2008/07/06 v3.8l The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files\MiKTeX 2.8\tex\generic\babel\spanish.ldf"
+Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
+
+("C:\Program Files\MiKTeX 2.8\tex\generic\babel\babel.def"
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count90
+\U@D=\dimen103
+)
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Spanish'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@spanish = a dialect from \language0
+\es@datefmt=\count91
+\es@quottoks=\toks18
+\es@quotdepth=\count92
+Package babel Info: Making " an active character on input line 492.
+Package babel Info: Making . an active character on input line 585.
+Package babel Info: Making < an active character on input line 630.
+Package babel Info: Making > an active character on input line 630.
+)) ("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2009/10/19 v6.79b Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\ifxetex\ifxetex.sty"
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\hycolor.sty"
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\xcolor-patch.sty"
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen104
+\Hy@linkcounter=\count93
+\Hy@pagecounter=\count94
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2009/10/19 v6.79b Hyperref: PDFDocEncoding definition (HO)
+)
+("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+("C:\Program Files\MiKTeX 2.8\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\bitset.sty"
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\intcalc.sty"
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\bigintcalc.sty"
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count95
+\Field@Width=\dimen105
+\Fld@charsize=\dimen106
+\Field@toks=\toks20
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count96
+\c@Item=\count97
+\c@Hfootnote=\count98
+)
+*hyperref using default driver hpdftex*
+("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2009/10/19 v6.79b Hyperref driver for pdfTeX
+\Fld@listcount=\count99
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen107
+\extrarowheight=\dimen108
+\NC@list=\toks21
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen109
+\Gin@req@width=\dimen110
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\caption\caption.sty"
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\caption\caption3.sty"
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen111
+\captionmargin@=\dimen112
+\captionwidth=\dimen113
+\caption@indent=\dimen114
+\caption@parindent=\dimen115
+\caption@hangindent=\dimen116
+)
+\c@ContinuedFloat=\count101
+Package caption Info: hyperref package is loaded.
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\geometry\geometry.sty"
+Package: geometry 2008/12/21 v4.2 Page Geometry
+\Gm@cnth=\count102
+\Gm@cntv=\count103
+\c@Gm@tempcnt=\count104
+\Gm@bindingoffset=\dimen117
+\Gm@wd@mp=\dimen118
+\Gm@odd@mp=\dimen119
+\Gm@even@mp=\dimen120
+\Gm@dimlist=\toks22
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.8\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\colortbl\colortbl.sty"
+Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
+\everycr=\toks23
+\minrowclearance=\skip48
+)
+\rownum=\count105
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip49
+\subfigcapskip=\skip50
+\subfigcaptopadj=\dimen121
+\subfigbottomskip=\skip51
+\subfigcapmargin=\dimen122
+\subfiglabelskip=\skip52
+\c@subfigure=\count106
+\c@lofdepth=\count107
+\c@subtable=\count108
+\c@lotdepth=\count109
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files\MiKTeX 2.8\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip53
+\subfig@bottom=\skip54
+)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\tesis.aux
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\01-introduccion.aux)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\02-imagenes.aux)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\03-deteccion.aux)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\04-discriminacion.aux)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\05-conclusiones.aux)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\07-referencias.aux)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\10-contacto.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+Package hyperref Info: Link coloring OFF on input line 21.
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\nameref.sty"
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\refcount.sty"
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count110
+)
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\tesis.out)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\tesis.out)
+\@outlinefile=\write3
+\AtBeginShipoutBox=\box26
+
+("C:\Program Files\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count111
+\scratchdimen=\dimen123
+\scratchbox=\box27
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen124
+\MPnumerator=\count115
+\everyMPtoPDFconversion=\toks25
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfigure package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: true
+asymmetric: --
+h-parts: 85.35826pt, 426.79135pt, 85.35826pt
+v-parts: 99.58464pt, 645.87756pt, 99.58464pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  426.79135pt
+\textheight 645.87756pt
+\oddsidemargin  13.08827pt
+\evensidemargin 13.08827pt
+\topmargin  -4.55914pt
+\headheight 12.0pt
+\headsep    19.8738pt
+\footskip   27.46295pt
+\marginparwidth 106.0pt
+\marginparsep   7.0pt
+\columnsep  10.0pt
+\skip\footins  10.0pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+\@twosidetrue \@mparswitchtrue 
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\caratula.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 9.
+
+
+pdfTeX warning: pdflatex (file C:/Users/vicky/Documents/Tesis/tesis/trunk/Infor
+meTesis/Resources/logo_dc_bw.pdf): PDF inclusion: found PDF version <1.5>, but 
+at most version <1.4> allowed
+<Resources/logo_dc_bw.pdf, id=123, 241.09161pt x 109.75935pt>
+File: Resources/logo_dc_bw.pdf Graphic file (type pdf)
+
+<use Resources/logo_dc_bw.pdf> [1
+
+{C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map} <C:/Users/vicky/Documents/
+Tesis/tesis/trunk/InformeTesis/Resources/logo_dc_bw.pdf>]) [2
+
+]
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\00-abstract.tex
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\00-palabras-clave.tex)
+) [1
+
+] [2
+
+]
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\00-abstract-en.tex)
+[3
+
+] [4
+
+]
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\06-agradecimientos.tex
+) [5
+
+] [6
+
+]
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\dedicatoria.tex)
+[7] [8
+
+] (C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\tesis.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+)
+\tf@toc=\write4
+
+[9
+
+] [10
+
+]
+Cap\'{\i }tulo 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 \include{01-introduccion}
+                               [1
+
+]
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\01-introduccion.texpdf
+TeX warning (ext4): destination with the same identifier (name{page.2}) has bee
+n already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.10 
+      [2
+
+]
+Overfull \hbox (3.57043pt too wide) in paragraph at lines 11--12
+[]\OT1/cmr/m/n/10 Para de-tec-tar las vescu-las de varicela y analizar sus ca
+r-ac-tersti-cas, apli-camos dis-tin-tas metodolo
+ []
+
+) [3] [4
+
+
+]
+Cap\'{\i }tulo 2.
+[5] (C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\02-imagenes.tex
+<Resources/resultado-chicken_pox_picture_01.jpg, id=262, 513.92pt x 471.7625pt>
+File: Resources/resultado-chicken_pox_picture_01.jpg Graphic file (type jpg)
+<use Resources/resultado-chicken_pox_picture_01.jpg>
+<Resources/resultado-varicella_9.jpg, id=263, 396.48125pt x 479.7925pt>
+File: Resources/resultado-varicella_9.jpg Graphic file (type jpg)
+
+<use Resources/resultado-varicella_9.jpg>
+<Resources/resultado-Varicel-03.jpg, id=264, 585.18625pt x 298.11375pt>
+File: Resources/resultado-Varicel-03.jpg Graphic file (type jpg)
+
+<use Resources/resultado-Varicel-03.jpg>
+<Resources/resultado-Varicel-04.jpg, id=265, 600.2425pt x 309.155pt>
+File: Resources/resultado-Varicel-04.jpg Graphic file (type jpg)
+
+<use Resources/resultado-Varicel-04.jpg>) [6
+
+ <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/resultado-c
+hicken_pox_picture_01.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeT
+esis/Resources/resultado-varicella_9.jpg> <C:/Users/vicky/Documents/Tesis/tesis
+/trunk/InformeTesis/Resources/resultado-Varicel-03.jpg> <C:/Users/vicky/Documen
+ts/Tesis/tesis/trunk/InformeTesis/Resources/resultado-Varicel-04.jpg>]
+Cap\'{\i }tulo 3.
+[7
+
+
+] (C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\03-deteccion.tex
+[8
+
+] <Resources/Varicel-03.jpg, id=287, 52.84744pt x 27.01091pt>
+File: Resources/Varicel-03.jpg Graphic file (type jpg)
+
+<use Resources/Varicel-03.jpg>
+<Resources/Varicel-03_bordes_detectados.png, id=288, 587.19376pt x 300.12125pt>
+File: Resources/Varicel-03_bordes_detectados.png Graphic file (type png)
+<use Resources/Varicel-03_bordes_detectados.png>
+<Resources/Varicel-03_imagen_con_bordes.png, id=289, 587.19376pt x 300.12125pt>
+File: Resources/Varicel-03_imagen_con_bordes.png Graphic file (type png)
+<use Resources/Varicel-03_imagen_con_bordes.png>
+<Resources/Varicel-04.jpg, id=293, 42.84782pt x 22.13805pt>
+File: Resources/Varicel-04.jpg Graphic file (type jpg)
+
+<use Resources/Varicel-04.jpg>
+<Resources/Varicel-04_bordes_detectados.png, id=294, 602.25pt x 311.1625pt>
+File: Resources/Varicel-04_bordes_detectados.png Graphic file (type png)
+
+<use Resources/Varicel-04_bordes_detectados.png>
+<Resources/Varicel-04_imagen_con_bordes.png, id=295, 602.25pt x 311.1625pt>
+File: Resources/Varicel-04_imagen_con_bordes.png Graphic file (type png)
+
+<use Resources/Varicel-04_imagen_con_bordes.png> [9 <C:/Users/vicky/Documents/T
+esis/tesis/trunk/InformeTesis/Resources/Varicel-03.jpg> <C:/Users/vicky/Documen
+ts/Tesis/tesis/trunk/InformeTesis/Resources/Varicel-03_bordes_detectados.png (P
+NG copy)> <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/Va
+ricel-03_imagen_con_bordes.png (PNG copy)>] [10 <C:/Users/vicky/Documents/Tesis
+/tesis/trunk/InformeTesis/Resources/Varicel-04.jpg> <C:/Users/vicky/Documents/T
+esis/tesis/trunk/InformeTesis/Resources/Varicel-04_bordes_detectados.png (PNG c
+opy)> <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/Varice
+l-04_imagen_con_bordes.png (PNG copy)>] [11]
+<Resources/coins2.jpg, id=333, 426.59375pt x 568.1225pt>
+File: Resources/coins2.jpg Graphic file (type jpg)
+
+<use Resources/coins2.jpg>
+<Resources/ccoins2-1.png, id=334, 318.43968pt x 426.09187pt>
+File: Resources/ccoins2-1.png Graphic file (type png)
+
+<use Resources/ccoins2-1.png>
+<Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png, id=335, 405.515pt
+ x 324.21124pt>
+File: Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png Graphic file 
+(type png)
+
+<use Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png>
+<Resources/acumulador-Varicel-02.jpg, id=336, 325.215pt x 255.95625pt>
+File: Resources/acumulador-Varicel-02.jpg Graphic file (type jpg)
+
+<use Resources/acumulador-Varicel-02.jpg> [12]
+<Resources/resultado-chicken_pox_picture_13-marcado.jpg, id=351, 453.695pt x 44
+4.66125pt>
+File: Resources/resultado-chicken_pox_picture_13-marcado.jpg Graphic file (type
+ jpg)
+ <use Resources/resultado-chicken_pox_picture_13-marcado.jpg>
+<Resources/resultado-chicken_pox_picture_13-int689101114-conc2-70.jpg, id=352, 
+453.695pt x 441.65pt>
+File: Resources/resultado-chicken_pox_picture_13-int689101114-conc2-70.jpg Grap
+hic file (type jpg)
+
+<use Resources/resultado-chicken_pox_picture_13-int689101114-conc2-70.jpg>
+<Resources/resultado-chicken_pox_picture_13-int689101114-conc2-90.jpg, id=353, 
+453.695pt x 442.65375pt>
+File: Resources/resultado-chicken_pox_picture_13-int689101114-conc2-90.jpg Grap
+hic file (type jpg)
+
+<use Resources/resultado-chicken_pox_picture_13-int689101114-conc2-90.jpg>
+<Resources/resultado-Varicel-01-70.jpg, id=355, 511.9125pt x 270.00874pt>
+File: Resources/resultado-Varicel-01-70.jpg Graphic file (type jpg)
+
+<use Resources/resultado-Varicel-01-70.jpg>
+<Resources/resultado-Varicel-01-80.jpg, id=356, 523.9575pt x 273.02pt>
+File: Resources/resultado-Varicel-01-80.jpg Graphic file (type jpg)
+
+<use Resources/resultado-Varicel-01-80.jpg>
+<Resources/resultado-Varicel-01-90.jpg, id=357, 511.9125pt x 269.005pt>
+File: Resources/resultado-Varicel-01-90.jpg Graphic file (type jpg)
+
+<use Resources/resultado-Varicel-01-90.jpg>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/coins2.
+jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/ccoins2
+-1.png (PNG copy)> <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Res
+ources/recorte-Varicel-02_resultado_sin_ecualizacion.png (PNG copy)> <C:/Users/
+vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/acumulador-Varicel-02.
+jpg>]
+<Resources/recorte-resultado-Varicel-02-radio23.jpg, id=366, 401.5pt x 233.8737
+5pt>
+File: Resources/recorte-resultado-Varicel-02-radio23.jpg Graphic file (type jpg
+)
+ <use Resources/recorte-resultado-Varicel-02-radio23.jpg>
+<Resources/recorte-resultado-Varicel-02-radio24.jpg, id=367, 400.49625pt x 232.
+87pt>
+File: Resources/recorte-resultado-Varicel-02-radio24.jpg Graphic file (type jpg
+)
+ <use Resources/recorte-resultado-Varicel-02-radio24.jpg>
+<Resources/recorte-resultado-varicella_18-bordes.jpg, id=369, 326.21875pt x 408
+.52625pt>
+File: Resources/recorte-resultado-varicella_18-bordes.jpg Graphic file (type jp
+g)
+ <use Resources/recorte-resultado-varicella_18-bordes.jpg>
+<Resources/recorte-resultado-varicella_18-radio40.jpg, id=370, 321.2pt x 402.50
+375pt>
+File: Resources/recorte-resultado-varicella_18-radio40.jpg Graphic file (type j
+pg)
+ <use Resources/recorte-resultado-varicella_18-radio40.jpg>
+<Resources/recorte-resultado-varicella_18-radio43.jpg, id=371, 337.26pt x 421.5
+75pt>
+File: Resources/recorte-resultado-varicella_18-radio43.jpg Graphic file (type j
+pg)
+ <use Resources/recorte-resultado-varicella_18-radio43.jpg>
+Underfull \vbox (badness 7613) has occurred while \output is active []
+
+ [14 <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/resulta
+do-chicken_pox_picture_13-marcado.jpg> <C:/Users/vicky/Documents/Tesis/tesis/tr
+unk/InformeTesis/Resources/resultado-chicken_pox_picture_13-int689101114-conc2-
+70.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/resu
+ltado-chicken_pox_picture_13-int689101114-conc2-90.jpg> <C:/Users/vicky/Documen
+ts/Tesis/tesis/trunk/InformeTesis/Resources/resultado-Varicel-01-70.jpg> <C:/Us
+ers/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/resultado-Varicel-
+01-80.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/r
+esultado-Varicel-01-90.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/Informe
+Tesis/Resources/recorte-resultado-Varicel-02-radio23.jpg> <C:/Users/vicky/Docum
+ents/Tesis/tesis/trunk/InformeTesis/Resources/recorte-resultado-Varicel-02-radi
+o24.jpg>]
+<Resources/resultado-chicken_pox_picture_13-int689101114.jpg, id=379, 512.91624
+pt x 441.65pt>
+File: Resources/resultado-chicken_pox_picture_13-int689101114.jpg Graphic file 
+(type jpg)
+
+<use Resources/resultado-chicken_pox_picture_13-int689101114.jpg>
+<Resources/resultado-chicken_pox_picture_13-int689101114-conc2.jpg, id=380, 512
+.91624pt x 441.65pt>
+File: Resources/resultado-chicken_pox_picture_13-int689101114-conc2.jpg Graphic
+ file (type jpg)
+
+<use Resources/resultado-chicken_pox_picture_13-int689101114-conc2.jpg>
+[15 <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/recorte-
+resultado-varicella_18-bordes.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/
+InformeTesis/Resources/recorte-resultado-varicella_18-radio40.jpg> <C:/Users/vi
+cky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/recorte-resultado-varice
+lla_18-radio43.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Re
+sources/resultado-chicken_pox_picture_13-int689101114.jpg> <C:/Users/vicky/Docu
+ments/Tesis/tesis/trunk/InformeTesis/Resources/resultado-chicken_pox_picture_13
+-int689101114-conc2.jpg>]
+<Resources/recorte-Varicel-02_bordes_sin_ecualizacion.png, id=386, 405.515pt x 
+324.21124pt>
+File: Resources/recorte-Varicel-02_bordes_sin_ecualizacion.png Graphic file (ty
+pe png)
+ <use Resources/recorte-Varicel-02_bordes_sin_ecualizacion.png>
+File: Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png Graphic file 
+(type png)
+
+<use Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<Resources/recorte-Varicel-02_bordes_con_ecualizacion.png, id=387, 405.515pt x 
+324.21124pt>
+File: Resources/recorte-Varicel-02_bordes_con_ecualizacion.png Graphic file (ty
+pe png)
+ <use Resources/recorte-Varicel-02_bordes_con_ecualizacion.png>
+<Resources/recorte-Varicel-02_resultado_con_ecualizacion.png, id=388, 405.515pt
+ x 324.21124pt>
+File: Resources/recorte-Varicel-02_resultado_con_ecualizacion.png Graphic file 
+(type png)
+
+<use Resources/recorte-Varicel-02_resultado_con_ecualizacion.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 2005) has occurred while \output is active []
+
+ [16]
+<Resources/recorte-Varicella_20_bordes_sin_ecualizacion.png, id=397, 446.66875p
+t x 398.48875pt>
+File: Resources/recorte-Varicella_20_bordes_sin_ecualizacion.png Graphic file (
+type png)
+
+<use Resources/recorte-Varicella_20_bordes_sin_ecualizacion.png>
+<Resources/recorte-Varicella_20_resultado_sin_ecualizacion.png, id=398, 446.668
+75pt x 398.48875pt>
+File: Resources/recorte-Varicella_20_resultado_sin_ecualizacion.png Graphic fil
+e (type png)
+
+<use Resources/recorte-Varicella_20_resultado_sin_ecualizacion.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<Resources/recorte-Varicella_20_bordes_con_ecualizacion.png, id=399, 446.66875p
+t x 398.48875pt>
+File: Resources/recorte-Varicella_20_bordes_con_ecualizacion.png Graphic file (
+type png)
+
+<use Resources/recorte-Varicella_20_bordes_con_ecualizacion.png>
+<Resources/recorte-Varicella_20_resultado_con_ecualizacion.png, id=400, 446.668
+75pt x 398.48875pt>
+File: Resources/recorte-Varicella_20_resultado_con_ecualizacion.png Graphic fil
+e (type png)
+
+<use Resources/recorte-Varicella_20_resultado_con_ecualizacion.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17 <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/recorte-
+Varicel-02_bordes_sin_ecualizacion.png (PNG copy)> <C:/Users/vicky/Documents/Te
+sis/tesis/trunk/InformeTesis/Resources/recorte-Varicel-02_bordes_con_ecualizaci
+on.png (PNG copy)> <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Res
+ources/recorte-Varicel-02_resultado_con_ecualizacion.png (PNG copy)>]
+<Resources/diagrama-deteccion.png, id=410, 723.70375pt x 409.53pt>
+File: Resources/diagrama-deteccion.png Graphic file (type png)
+
+<use Resources/diagrama-deteccion.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [18 <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/recort
+e-Varicella_20_bordes_sin_ecualizacion.png (PNG copy)> <C:/Users/vicky/Document
+s/Tesis/tesis/trunk/InformeTesis/Resources/recorte-Varicella_20_resultado_sin_e
+cualizacion.png (PNG copy)> <C:/Users/vicky/Documents/Tesis/tesis/trunk/Informe
+Tesis/Resources/recorte-Varicella_20_bordes_con_ecualizacion.png (PNG copy)> <C
+:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/recorte-Varice
+lla_20_resultado_con_ecualizacion.png (PNG copy)>] [19 <C:/Users/vicky/Document
+s/Tesis/tesis/trunk/InformeTesis/Resources/diagrama-deteccion.png (PNG copy)>]
+[20
+
+
+]
+Cap\'{\i }tulo 4.
+[21]
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\04-discriminacion.tex
+[22
+
+]
+<Resources/recorte-chicken_pox_primary_lesions_03.jpg, id=445, 343.2825pt x 249
+.93375pt>
+File: Resources/recorte-chicken_pox_primary_lesions_03.jpg Graphic file (type j
+pg)
+ <use Resources/recorte-chicken_pox_primary_lesions_03.jpg>
+<Resources/recorte-varicella_18.jpg, id=446, 401.5pt x 230.8625pt>
+File: Resources/recorte-varicella_18.jpg Graphic file (type jpg)
+
+<use Resources/recorte-varicella_18.jpg>
+<Resources/histograma-promedio-varicela-ab.png, id=447, 421.575pt x 316.18124pt
+>
+File: Resources/histograma-promedio-varicela-ab.png Graphic file (type png)
+ <use Resources/histograma-promedio-varicela-ab.png>
+<Resources/histograma-promedio-herpes-ab.png, id=448, 421.575pt x 316.18124pt>
+File: Resources/histograma-promedio-herpes-ab.png Graphic file (type png)
+
+<use Resources/histograma-promedio-herpes-ab.png> [23 <C:/Users/vicky/Documents
+/Tesis/tesis/trunk/InformeTesis/Resources/recorte-chicken_pox_primary_lesions_0
+3.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/recor
+te-varicella_18.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/R
+esources/histograma-promedio-varicela-ab.png (PNG copy)> <C:/Users/vicky/Docume
+nts/Tesis/tesis/trunk/InformeTesis/Resources/histograma-promedio-herpes-ab.png 
+(PNG copy)>] <Resources/contourAB-ch03.png, id=458, 421.575pt x 316.18124pt>
+File: Resources/contourAB-ch03.png Graphic file (type png)
+
+<use Resources/contourAB-ch03.png>
+<Resources/contourRB-ch03.png, id=459, 421.575pt x 316.18124pt>
+File: Resources/contourRB-ch03.png Graphic file (type png)
+
+<use Resources/contourRB-ch03.png>
+<Resources/contourRG-ch03.png, id=460, 421.575pt x 316.18124pt>
+File: Resources/contourRG-ch03.png Graphic file (type png)
+
+<use Resources/contourRG-ch03.png> [24 <C:/Users/vicky/Documents/Tesis/tesis/tr
+unk/InformeTesis/Resources/contourAB-ch03.png (PNG copy)> <C:/Users/vicky/Docum
+ents/Tesis/tesis/trunk/InformeTesis/Resources/contourRB-ch03.png (PNG copy)> <C
+:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/contourRG-ch03
+.png (PNG copy)>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 110.
+ [25] [26] [27]
+<Resources/chicken_pox_primary_lesions_03_concirculos_crop.jpg, id=503, 427.597
+5pt x 308.15125pt>
+File: Resources/chicken_pox_primary_lesions_03_concirculos_crop.jpg Graphic fil
+e (type jpg)
+
+<use Resources/chicken_pox_primary_lesions_03_concirculos_crop.jpg>
+<Resources/varicella_34_concirculos_crop.jpg, id=504, 427.5975pt x 309.155pt>
+File: Resources/varicella_34_concirculos_crop.jpg Graphic file (type jpg)
+
+<use Resources/varicella_34_concirculos_crop.jpg>
+<Resources/herpes_zoster_114_concirculos_crop.jpg, id=505, 553.06625pt x 371.38
+75pt>
+File: Resources/herpes_zoster_114_concirculos_crop.jpg Graphic file (type jpg)
+ <use Resources/herpes_zoster_114_concirculos_crop.jpg>
+<Resources/herpes_zoster_8_concirculos_crop.jpg, id=506, 553.06625pt x 372.3912
+5pt>
+File: Resources/herpes_zoster_8_concirculos_crop.jpg Graphic file (type jpg)
+ <use Resources/herpes_zoster_8_concirculos_crop.jpg>
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 282.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 282.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 286.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 286.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 286.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 286.
+
+
+[28 <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/chicken_
+pox_primary_lesions_03_concirculos_crop.jpg> <C:/Users/vicky/Documents/Tesis/te
+sis/trunk/InformeTesis/Resources/varicella_34_concirculos_crop.jpg> <C:/Users/v
+icky/Documents/Tesis/tesis/trunk/InformeTesis/Resources/herpes_zoster_114_conci
+rculos_crop.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/InformeTesis/Resou
+rces/herpes_zoster_8_concirculos_crop.jpg>]) [29] [30
+
+
+]
+Cap\'{\i }tulo 5.
+[31]
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\05-conclusiones.tex)
+[32
+
+]
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\07-referencias.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+ [33
+
+
+
+]) [34]
+Cap\'{\i }tulo 6.
+[35
+
+
+] (C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\10-contacto.tex)
+[36
+
+] (C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\tesis.aux
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\01-introduccion.aux)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\02-imagenes.aux)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\03-deteccion.aux)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\04-discriminacion.aux)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\05-conclusiones.aux)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\07-referencias.aux)
+(C:\Users\vicky\Documents\Tesis\tesis\trunk\InformeTesis\10-contacto.aux)) ) 
+Here is how much of TeX's memory you used:
+ 7607 strings out of 495285
+ 121618 string characters out of 3180393
+ 210763 words of memory out of 3000000
+ 10431 multiletter control sequences out of 15000+200000
+ 11435 words of font info for 39 fonts, out of 3000000 for 9000
+ 15 hyphenation exceptions out of 8191
+ 41i,11n,38p,2380b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:
+/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program
+ Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/M
+iKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><C:/Program Files/MiKTeX 
+2.8/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.8/fo
+nts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.8/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmm
+i8.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
+:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program
+ Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiK
+TeX 2.8/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.8/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/
+public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/ams
+fonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/c
+msl10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Pro
+gram Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on tesis.pdf (48 pages, 5604256 bytes).
+PDF statistics:
+ 674 PDF objects out of 1000 (max. 8388607)
+ 168 named destinations out of 1000 (max. 500000)
+ 476 words of extra memory for PDF output out of 10000 (max. 10000000)
+

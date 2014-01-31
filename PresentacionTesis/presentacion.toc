@@ -1,0 +1,18 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Motivaci\'on}{7}{0}{1}
+\beamer@subsectionintoc {1}{1}{Presentaci\'on del problema b\'asico}{7}{0}{1}
+\beamer@subsectionintoc {1}{2}{Ejemplos}{8}{0}{1}
+\beamer@sectionintoc {2}{Las im\'agenes de piel y sus caracter\IeC {\'\i }sticas}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Procesamiento digital de im\'agenes}{10}{0}{2}
+\beamer@sectionintoc {3}{Detecci\'on de ves\IeC {\'\i }culas}{21}{0}{3}
+\beamer@subsectionintoc {3}{1}{Espacio de color}{21}{0}{3}
+\beamer@subsectionintoc {3}{2}{Detecci\'on de bordes}{25}{0}{3}
+\beamer@subsectionintoc {3}{3}{Detecci\'on de c\IeC {\'\i }rculos}{31}{0}{3}
+\beamer@subsectionintoc {3}{4}{Falsos positivos y falsos negativos}{35}{0}{3}
+\beamer@sectionintoc {4}{Discriminaci\'on entre varicela y otras enfermedades}{36}{0}{4}
+\beamer@subsectionintoc {4}{1}{Construcci\'on de un modelo te\'orico}{36}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones}{37}{0}{5}
+\beamer@subsectionintoc {5}{1}{Trabajo futuro}{37}{0}{5}
+\beamer@subsectionintoc {5}{2}{Preguntas}{38}{0}{5}
+\beamer@subsectionintoc {5}{3}{Datos de contacto}{39}{0}{5}

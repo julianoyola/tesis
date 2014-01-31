@@ -1,0 +1,13 @@
+http://en.wikipedia.org/wiki/YUV
+
+Another advantage of Y'UV is that some of the information can be discarded in order to reduce bandwidth. The human eye has fairly little color sensitivity: the accuracy of the brightness information of the luminance channel has far more impact on the image discerned than that of the other two.
+...
+Instead of Y'UV, Y'CbCr was used as the standard format for (digital) common video compression algorithms such as MPEG-2. Digital television and DVDs preserve their compressed video streams in the MPEG-2 format, which uses a full Y'CbCr color space. The professional CCIR 601 uncompressed digital video format also uses Y'CbCr, primarily for compatibility with previous analog video standards. This stream can be easily mixed into any output format needed.
+
+Y'CbCr is not an absolute color space, it is a way of encoding RGB information. The actual color displayed depends on the actual RGB colorants used to display the signal. Therefore a value expressed as Y'CbCr is only predictable if standard RGB colorants or an ICC profile are used.
+
+http://en.wikipedia.org/wiki/List_of_color_spaces_and_their_uses
+
+http://en.wikipedia.org/wiki/HSL_and_HSV
+
+http://www.openphotographyforums.com/forums/showthread.php?t=5606

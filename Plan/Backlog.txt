@@ -1,0 +1,58 @@
+
+Formales
+
+1) Subir CVs a la página del proyecto del MinCyT-FONCyT2
+http://foncyt.mincyt.gov.ar/FONCyT2/convocatoria
+
+2) Armar documento de proyecto de tesis
+
+
+Gestión
+
+1) Ver llamado JAIIO / CAIM
+http://www.39jaiio.org.ar/cais
+El congreso 30/08 al 3 de Septiembre de 2010 se hace la JAIIO en Buenos Aires, me interesa el subsimposio Congreso Argentino Informatica y salud.
+La fecha limite para mandar algo es el 03/05/2010
+Resumen o abstract: explica en pocas líneas de qué se trata el artículo: "Detección de features de algunas enfermedades de la piel"
+Introduccion: presentacion del problema, y qué se ha hecho hasta ahora para abordarlo, con referencias actualizadas. Una línea que explique la organización del paper.
+Después los subtítulos que quieran. Por último, Conclusiones y Biblio.
+
+a. Buscar bibliografía y trabajos sobre detección de figuras y análisis de imágenes de la piel. Si no se encuentra, médicas, y si no, en general. (VA-JO)
+b. Armar el esqueleto del paper (JO)
+
+
+2) Armar plan de proyecto
+
+
+Proyecto
+
+1) Refactorizar el proyecto
+
+2) Obtener métricas
+
+3) Ver nuevas bases de datos de imágenes y bajarlas
+
+4) Mejoras posibles:
+- Eliminar los errores con alguna técnica de comparación del color dentro y fuera del círculo
+- Eliminar detección de múltiples círculos de diferente radio y centro cercano
+- Poner el tiling de la operación de contraste en función del tamaño de la imagen
+- Probar con más imágenes con diferente luminancia
+- Comprender la diferencia entre L*a*b* y YUV
+- Manejar el factor de contraste en función de la imagen
+- Ver si conviene aplicar una operación de segmentación
+
+5) Notas de la última reunión
+- Comparar
+	pityrisasis rosea - tinia
+	varicela - alacille
+
+- Entender bien cómo funciona el contraste
+
+- Ver saltos de color con HSV (utilizar variable de hue)
+utilizar un gradiente / filtro pasa altos
+ver ecuaciones del paper sobre la corona
+
+- Segmentación con max-lloyd + contar pixeles de color distintos, encerrados en un área de color diferente
+Ver algoritmo otsu + im2bw
+
+- Probar con una ecualización sin tiles

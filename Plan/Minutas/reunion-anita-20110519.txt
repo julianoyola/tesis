@@ -1,0 +1,25 @@
+Shingles:
+AB: 24 14
+
+Varicela:
+AB: 23 27
+y 37 22
+
+Detectar outliars
+Probar con menos imágenes y que se parezcan lo más posibles
+Poner labels inteligibles en el Excel
+Dividir las normas por la cantidad de pixels
+Normalizar los tamaños de las ronchas
+Corroborar los picos del histograma a qué pertenecen
+Ver línea en histograma de varicela
+Armar una comparación de 2 ronchas buenas varicela y 2 ronchas buenas herpes
+Concentrarnos en la distancia entre las ronchas y el histograma promedio
+Calcular también la distancia entre las ronchas de herpes y el histograma promedio de varicela (y viceversa)
+Escribir lo que hicimos hasta ahora
+
+Mejoras:
+Cambiar nombres de "bw_lab" "bw_*"
+
+Más adelante:
+cuantizar los histogramas
+probar con ycbcr

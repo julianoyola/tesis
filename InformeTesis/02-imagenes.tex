@@ -1,0 +1,19 @@
+\section{Las imágenes de piel y sus características}
+
+Las imágenes con las que trabajamos son fotografías en bruto, sin ningún tipo de tratamiento previo, tomadas con cámaras de mano, lo que hace que la calidad de las mismas sea muy variable. Dichas fotografías no fueron tomadas para realizar nuestro trabajo, sino que forman parte de la base de datos de imágenes de la Universidad de Iowa, publicadas en la página http: //hardinmd.lib.uiowa.edu/DERMPICTURES.HTML. En esta base hallamos fotografías de muy variada calidad. Uno de los principales problemas con los que nos topamos al momento de analizarlas, fue la diferencia en la iluminación de las imágenes, lo que causa zonas de luz y oscuridad muy marcadas. No fue un tema menor la escala utilizada en cada una de las imágenes, por tal motivo debimos considerar que la distancia del observador a las ampollas puede ser muy variable. Para que el método presentado detecte de manera exitosa las vesículas, uno de los requisitos que se debió tener presente al momento de seleccionar las fotografías es que la escala de la imagen muestre la vesícula en primer plano. Como por ejemplo, en las imágenes de la figura \ref{fig:imagenOk2}. En tanto que, la vesículas presentes en las imágenes de la figura \ref{fig:imagenesEscalaInutilizable} mayormente no fueron localizadas, dado que dichas fotografias fueron tomadas a una distancia mayor. Este tipo de imágenes fueron descartadas del subconjunto con el cual trabajamos.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.25]{Resources/resultado-chicken_pox_picture_01.jpg}
+\includegraphics[scale=0.25]{Resources/resultado-varicella_9.jpg}
+\caption{Ejemplos de imágenes no utilizables debido a su escala \label{fig:imagenesEscalaInutilizable}}
+\end{figure}
+
+Generalmente las vesículas de varicela se presentan con una forma circular, pero existen excepciones, con lo cuál debimos tener presente que no siempre la detección de círculos sería apropiada para detectar la vesícula. Cuando nos centramos en analizar el color de las vesículas de varicela, nos encontramos con la presencia de colores un tanto alejados del color real de la vesícula, debido a la calidad de las fotografías. Esto dificultó el análisis de las mismas. Por último, debimos tener en cuenta el ruido que presentan las imágenes que utilizamos, esto puede ser desde lunares, pelos e irregularidades propias de la piel y hasta inscripciones agregadas en las fotografías e incluso la calidad de las mismas. Dadas estas particularidades de las imágenes utilizadas, debimos extraer un subconjunto de imágenes homogéneo, que nos permitiera aplicarles métodos generales para las detecciones de forma y color.
+
+\begin{figure} [ht]
+\centering
+\includegraphics[scale=0.25]{Resources/resultado-Varicel-03.jpg}
+\includegraphics[scale=0.24]{Resources/resultado-Varicel-04.jpg}
+\caption{Ejemplos de imágenes con una escala tal que es posible detectar las vesículas \label{fig:imagenOk2}}
+\end{figure}

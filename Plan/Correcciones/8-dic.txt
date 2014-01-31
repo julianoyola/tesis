@@ -1,0 +1,30 @@
+
+
+Vicky
+
+- Resumen: Habría que decir algo de Canny, KLD, Anova y Mahalanobis?
+
+- Uniformar puntos y comas en el informe, con el uso de $ (hasta 03-) (ok)
+
+- Agregar el ejemplo de acumulado de procesamiento de imagenes de las monedas (ok)
+
+- Mostrar ejemplos de umbral al 70%, 80% y 90%, y reescribir texto. (ok)
+
+
+Julián
+
+- Agregar las imágenes como tabla en 4.2.2 indicando cuál es el nombre (ok)
+
+- Poner imágenes de comparación YCbCr con Lab (Pruebas Universo/Varicela-*) (ok)
+En 3.2 Selección de un espacio óptimo
+y agregar una mini-micro-sección nueva 3.11
+
+- Modificar todo lo de "modelo teórico" (ok)
+
+- Uniformar puntos y comas en el informe, con el uso de $ (de 04- en adelante) (ok)
+
+
+??
+
+- Quitar las hojas en blanco
+
