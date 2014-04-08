@@ -1,23 +1,31 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.12.12)  3 DEC 2012 22:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.7)  8 APR 2014 01:04
 entering extended mode
 **presentacion.tex
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\presentacion.tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamer.cls"
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasercs.sty"
-Package: beamerbasercs 2012/11/13 (rcs-revision cb16a617839f)
+(c:\Repositorios\tesis\PresentacionTesis\presentacion.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamer.cls"
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasercs.sty"
+Package: beamerbasercs 2013/12/25 (rcs-revision 31cc758a62ae)
 )
-Document Class: beamer 2012/10/15 development version 3.24 A class for typesett
-ing presentations (rcs-revision 24853e6b98cf)
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasemodes.sty"
-Package: beamerbasemodes 2012/04/15 (rcs-revision cc6557182d97)
+Document Class: beamer 2013/12/02 3.33 A class for typesetting presentations (r
+cs-revision 332bfd3ce558)
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasemodes.sty"
+Package: beamerbasemodes 2013/09/03 (rcs-revision 768f2d98ca64)
 \beamer@tempbox=\box26
 \beamer@tempcount=\count79
 \c@beamerpauses=\count80
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasedecode.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasedecode.sty"
 Package: beamerbasedecode 2010/05/01 (rcs-revision efa082c6111d)
 \beamer@slideinframe=\count81
 \beamer@minimum=\count82
@@ -25,9 +33,9 @@ Package: beamerbasedecode 2010/05/01 (rcs-revision efa082c6111d)
 \beamer@commentbox=\box27
 \beamer@modecount=\count83
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode detected.
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 \headheight=\dimen102
 \headdp=\dimen103
@@ -72,22 +80,25 @@ Package ifpdf Info: pdfTeX in pdf mode detected.
 \beamer@sectionadjust=\count100
 \beamer@tocsectionnumber=\count101
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbaseoptions.sty"
-Package: beamerbaseoptions 2010/04/27 (rcs-revision 982469101dd6)
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaseoptions.sty"
+Package: beamerbaseoptions 2013/03/10 (rcs-revision 47431932db0d)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 ))
 \beamer@paperwidth=\skip42
 \beamer@paperheight=\skip43
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\geometry\geometry.sty"
-Package: geometry 2008/12/21 v4.2 Page Geometry
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count102
 \Gm@cntv=\count103
@@ -96,98 +107,114 @@ Package ifvtex Info: VTeX not detected.
 \Gm@wd@mp=\dimen120
 \Gm@odd@mp=\dimen121
 \Gm@even@mp=\dimen122
+\Gm@layoutwidth=\dimen123
+\Gm@layoutheight=\dimen124
+\Gm@layouthoffset=\dimen125
+\Gm@layoutvoffset=\dimen126
 \Gm@dimlist=\toks15
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\size11.clo"
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\pgf\basiclayer\pgfcore.sty"
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\trig.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
 \Gread@gobject=\count105
 ))
-\Gin@req@height=\dimen123
-\Gin@req@width=\dimen124
+\Gin@req@height=\dimen127
+\Gin@req@width=\dimen128
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\pgf\systemlayer\pgfsys.sty"
-("C:\Program Files\MiKTeX 2.8\tex\latex\pgf\utilities\pgfrcs.sty"
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\utilities\pgfutil-common.tex"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks16
-)
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\utilities\pgfutil-latex.def"
-\pgfutil@abb=\box34
+\pgfutil@tempdima=\dimen129
+\pgfutil@tempdimb=\dimen130
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\ms\everyshi.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
+x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
+\pgfutil@abb=\box34
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\utilities\pgfrcs.code.tex"
-Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
 ))
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\systemlayer\pgfsys.code.tex"
-Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\utilities\pgfkeys.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
 \pgfkeys@pathtoks=\toks17
 \pgfkeys@temptoks=\toks18
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
 x"
 \pgfkeys@tmptoks=\toks19
 ))
-\pgf@x=\dimen125
-\pgf@y=\dimen126
-\pgf@xa=\dimen127
-\pgf@ya=\dimen128
-\pgf@xb=\dimen129
-\pgf@yb=\dimen130
-\pgf@xc=\dimen131
-\pgf@yc=\dimen132
+\pgf@x=\dimen131
+\pgf@y=\dimen132
+\pgf@xa=\dimen133
+\pgf@ya=\dimen134
+\pgf@xb=\dimen135
+\pgf@yb=\dimen136
+\pgf@xc=\dimen137
+\pgf@yc=\dimen138
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
 \c@pgf@counta=\count106
 \c@pgf@countb=\count107
 \c@pgf@countc=\count108
 \c@pgf@countd=\count109
- ("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\systemlayer\pgf.cfg"
+\t@pgf@toka=\toks20
+\t@pgf@tokb=\toks21
+\t@pgf@tokc=\toks22
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+Driver file for pgf: pgfsys-pdftex.def
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
-File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
 "
-File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
 ex"
-File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count110
 \pgfsyssoftpath@bigbuffer@items=\count111
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
 ex"
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) ("C:\Program Files\MiKTeX 2.8\tex\latex\xcolor\xcolor.sty"
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\color.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -201,555 +228,563 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcore.code.tex"
-Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\math\pgfmath.code.tex"
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\math\pgfmathcalc.code.tex"
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\math\pgfmathutil.code.tex")
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen133
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen139
 \pgfmath@count=\count112
 \pgfmath@box=\box35
-\pgfmath@toks=\toks20
-\pgfmath@stack@operand=\toks21
-\pgfmath@stack@operation=\toks22
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\math\pgfmathfunctions.code.tex"
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\math\pgfmathfunctions.basic.code.
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
 tex")
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\math\pgfmathfunctions.trigonometr
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometr
 ic.code.tex")
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\math\pgfmathfunctions.random.code
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code
 .tex")
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\math\pgfmathfunctions.comparison.
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.
 code.tex")
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\math\pgfmathfunctions.base.code.t
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.t
 ex")
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\math\pgfmathfunctions.round.code.
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.
 tex")
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
-ex"))) ("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\math\pgfmathfloat.code.tex
-"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
+hmetics.code.tex")))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
 \c@pgfmathroundto@lastzeros=\count113
 ))
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
 "
-File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
-\pgf@picminx=\dimen134
-\pgf@picmaxx=\dimen135
-\pgf@picminy=\dimen136
-\pgf@picmaxy=\dimen137
-\pgf@pathminx=\dimen138
-\pgf@pathmaxx=\dimen139
-\pgf@pathminy=\dimen140
-\pgf@pathmaxy=\dimen141
-\pgf@xx=\dimen142
-\pgf@xy=\dimen143
-\pgf@yx=\dimen144
-\pgf@yy=\dimen145
-\pgf@zx=\dimen146
-\pgf@zy=\dimen147
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen140
+\pgf@picmaxx=\dimen141
+\pgf@picminy=\dimen142
+\pgf@picmaxy=\dimen143
+\pgf@pathminx=\dimen144
+\pgf@pathmaxx=\dimen145
+\pgf@pathminy=\dimen146
+\pgf@pathmaxy=\dimen147
+\pgf@xx=\dimen148
+\pgf@xy=\dimen149
+\pgf@yx=\dimen150
+\pgf@yy=\dimen151
+\pgf@zx=\dimen152
+\pgf@zy=\dimen153
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
 ode.tex"
-File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
-\pgf@path@lastx=\dimen148
-\pgf@path@lasty=\dimen149
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen154
+\pgf@path@lasty=\dimen155
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
 tex"
-File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
-\pgf@shorten@end@additional=\dimen150
-\pgf@shorten@start@additional=\dimen151
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+\pgf@shorten@end@additional=\dimen156
+\pgf@shorten@start@additional=\dimen157
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
 "
-File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box36
 \pgf@hbox=\box37
 \pgf@layerbox@main=\box38
 \pgf@picture@serial@count=\count114
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
 de.tex"
-File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
-\pgflinewidth=\dimen152
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+\pgflinewidth=\dimen158
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcoretransformations
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
 .code.tex"
-File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
-\pgf@pt@x=\dimen153
-\pgf@pt@y=\dimen154
-\pgf@pt@temp=\dimen155
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+\pgf@pt@x=\dimen159
+\pgf@pt@y=\dimen160
+\pgf@pt@temp=\dimen161
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcoreobjects.code.te
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.te
 x"
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcorepathprocessing.
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.
 code.tex"
-File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
 "
-File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+\pgfarrowsep=\dimen162
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
-File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
-\pgf@max=\dimen156
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen163
 \pgf@sys@shading@range@num=\count115
-) ("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
 x"
-File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
 ex"
-File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
 \pgfexternal@startupbox=\box39
 ))
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
 "
-File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcoretransparency.co
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.co
 de.tex"
-File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\pgf\basiclayer\pgfcorepatterns.code.t
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.t
 ex"
-File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
-))) ("C:\Program Files\MiKTeX 2.8\tex\latex\pgf\utilities\xxcolor.sty"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+))) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\xxcolor.sty"
 Package: xxcolor 2003/10/24 ver 0.1
 \XC@nummixins=\count116
 \XC@countmixins=\count117
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\hyperref.sty"
-Package: hyperref 2009/10/19 v6.79b Hypertext links for LaTeX
-
-("C:\Program Files\MiKTeX 2.8\tex\latex\ifxetex\ifxetex.sty"
-Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\hycolor.sty"
-Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
-O)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\xcolor-patch.sty"
-Package: xcolor-patch 2009/10/02 xcolor patch
-))
-\@linkdim=\dimen157
-\Hy@linkcounter=\count118
-\Hy@pagecounter=\count119
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\pd1enc.def"
-File: pd1enc.def 2009/10/19 v6.79b Hyperref: PDFDocEncoding definition (HO)
-)
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
-)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-)
-("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\hyperref.cfg"
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
-)
-("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
-
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
-t (HO)
-))
-Package hyperref Info: Option `bookmarks' set `true' on input line 2864.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 2864.
-Package hyperref Info: Option `implicit' set `false' on input line 2864.
-Package hyperref Info: Hyper figures OFF on input line 2975.
-Package hyperref Info: Link nesting OFF on input line 2980.
-Package hyperref Info: Hyper index ON on input line 2983.
-Package hyperref Info: Plain pages OFF on input line 2990.
-Package hyperref Info: Backreferencing OFF on input line 2995.
-
-Implicit mode OFF; no redefinition of LaTeX internals
-Package hyperref Info: Bookmarks ON on input line 3191.
-("C:\Program Files\MiKTeX 2.8\tex\latex\ltxmisc\url.sty"
-\Urlmuskip=\muskip10
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 3428.
-
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\bitset.sty"
-Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
-
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\intcalc.sty"
-Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
-)
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\bigintcalc.sty"
-Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
-
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
- (HO)
-
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
-)
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-)))
-\Fld@menulength=\count120
-\Field@Width=\dimen158
-\Fld@charsize=\dimen159
-\Field@toks=\toks23
-Package hyperref Info: Hyper figures OFF on input line 4377.
-Package hyperref Info: Link nesting OFF on input line 4382.
-Package hyperref Info: Hyper index ON on input line 4385.
-Package hyperref Info: backreferencing OFF on input line 4392.
-Package hyperref Info: Link coloring OFF on input line 4397.
-Package hyperref Info: Link coloring with OCG OFF on input line 4402.
-Package hyperref Info: PDF/A mode OFF on input line 4407.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen164
+\Hy@linkcounter=\count118
+\Hy@pagecounter=\count119
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\atbegshi.sty"
-Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@abspage=\count121
+\Hy@SavedSpaceFactor=\count120
 
-Hyperref stopped early
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-*hyperref using default driver hpdftex*
-("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2009/10/19 v6.79b Hyperref driver for pdfTeX
-\Fld@listcount=\count122
+Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4319.
+Package hyperref Info: Option `implicit' set `false' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count121
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbaserequires.sty"
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen165
+\Fld@menulength=\count122
+\Field@Width=\dimen166
+\Fld@charsize=\dimen167
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count123
+
+
+Package hyperref Message: Stopped early.
+
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count124
+\c@bookmark@seq@number=\count125
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaserequires.sty"
 Package: beamerbaserequires 2010/05/01  (rcs-revision efa082c6111d)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasecompatibility.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasecompatibility.sty
 "
 Package: beamerbasecompatibility 2012/05/01  (rcs-revision 67c48b3b652d)
-) ("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasefont.sty"
-Package: beamerbasefont 2012/09/19  (rcs-revision 733629cd0c6c)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasefont.sty"
+Package: beamerbasefont 2013/10/18  (rcs-revision 72f39e01808a)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\amssymb.sty"
-Package: amssymb 2009/06/22 v3.00
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\amsfonts.sty"
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
-\@emptytoks=\toks24
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks26
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\sansmathaccent\sansmathaccent.sty"
+Package: sansmathaccent 2013/03/28
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\filehook\filehook.sty"
+Package: filehook 2011/10/12 v0.5d Hooks for input files
 )))
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasetranslator.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasetranslator.sty"
 Package: beamerbasetranslator 2010/06/11  (rcs-revision 85fd1cc7fc42)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\translator\translator.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\translator.sty"
 Package: translator 2010/06/12 ver 1.10
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\translator\translator-langu
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\translator-langu
 age-mappings.tex")))
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasemisc.sty"
-Package: beamerbasemisc 2012/02/24  (rcs-revision 2ff5461be705)
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasemisc.sty"
+Package: beamerbasemisc 2013/09/03  (rcs-revision a55719c41d85)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasetwoscreens.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasetwoscreens.sty"
 Package: beamerbasetwoscreens 2010/05/01  (rcs-revision efa082c6111d)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbaseoverlay.sty"
-Package: beamerbaseoverlay 2012/11/11  (rcs-revision 6afbc49b1109)
-\beamer@argscount=\count123
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaseoverlay.sty"
+Package: beamerbaseoverlay 2013/12/25  (rcs-revision f6bd5e3805da)
+\beamer@argscount=\count126
 \beamer@lastskipcover=\skip44
-\beamer@trivlistdepth=\count124
+\beamer@trivlistdepth=\count127
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasetitle.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasetitle.sty"
 Package: beamerbasetitle 2010/09/21  (rcs-revision f0446ed0b6ae)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasesection.sty"
-Package: beamerbasesection 2012/11/11  (rcs-revision 0056eef6f17f)
-\c@lecture=\count125
-\c@part=\count126
-\c@section=\count127
-\c@subsection=\count128
-\c@subsubsection=\count129
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasesection.sty"
+Package: beamerbasesection 2013/06/07  (rcs-revision 60b9fe0f342f)
+\c@lecture=\count128
+\c@part=\count129
+\c@section=\count130
+\c@subsection=\count131
+\c@subsubsection=\count132
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbaseframe.sty"
-Package: beamerbaseframe 2012/09/13  (rcs-revision dcd846607320)
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaseframe.sty"
+Package: beamerbaseframe 2013/10/02  (rcs-revision cdc8e9a3aaac)
 \beamer@framebox=\box40
 \beamer@frametitlebox=\box41
 \beamer@zoombox=\box42
-\beamer@zoomcount=\count130
-\beamer@zoomframecount=\count131
-\beamer@frametextheight=\dimen160
-\c@subsectionslide=\count132
+\beamer@zoomcount=\count133
+\beamer@zoomframecount=\count134
+\beamer@frametextheight=\dimen168
+\c@subsectionslide=\count135
 \beamer@frametopskip=\skip45
 \beamer@framebottomskip=\skip46
 \beamer@frametopskipautobreak=\skip47
 \beamer@framebottomskipautobreak=\skip48
-\beamer@envbody=\toks25
-\framewidth=\dimen161
-\c@framenumber=\count133
+\beamer@envbody=\toks27
+\framewidth=\dimen169
+\c@framenumber=\count136
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbaseverbatim.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaseverbatim.sty"
 Package: beamerbaseverbatim 2012/08/30  (rcs-revision dfdb135076b3)
 \beamer@verbatimfileout=\write4
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbaseframesize.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaseframesize.sty"
 Package: beamerbaseframesize 2011/09/12  (rcs-revision 70f9d8411e54)
 \beamer@splitbox=\box43
-\beamer@autobreakcount=\count134
-\beamer@autobreaklastheight=\dimen162
-\beamer@frametitletoks=\toks26
-\beamer@framesubtitletoks=\toks27
+\beamer@autobreakcount=\count137
+\beamer@autobreaklastheight=\dimen170
+\beamer@frametitletoks=\toks28
+\beamer@framesubtitletoks=\toks29
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbaseframecomponents.s
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaseframecomponents.s
 ty"
-Package: beamerbaseframecomponents 2012/09/13  (rcs-revision dcd846607320)
+Package: beamerbaseframecomponents 2013/10/18  (rcs-revision 5cf6c5555a45)
 \beamer@footins=\box44
-) ("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasecolor.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasecolor.sty"
 Package: beamerbasecolor 2010/06/06  (rcs-revision d1a9b48be06d)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasenotes.sty"
-Package: beamerbasenotes 2010/05/01  (rcs-revision efa082c6111d)
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasenotes.sty"
+Package: beamerbasenotes 2012/12/19  (rcs-revision 1686da3db3c9)
 \beamer@frameboxcopy=\box45
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasetoc.sty"
-Package: beamerbasetoc 2012/10/02  (rcs-revision 5ed0f4010e8a)
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasetoc.sty"
+Package: beamerbasetoc 2013/05/23  (rcs-revision 0fdf5bc43be8)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasetemplates.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasetemplates.sty"
 Package: beamerbasetemplates 2010/05/01  (rcs-revision efa082c6111d)
-\beamer@sbttoks=\toks28
+\beamer@sbttoks=\toks30
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbaseauxtemplates.sty"
-Package: beamerbaseauxtemplates 2012/05/01  (rcs-revision 67c48b3b652d)
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbaseboxes.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaseauxtemplates.sty"
+Package: beamerbaseauxtemplates 2013/09/04  (rcs-revision 4ac715c499d0)
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaseboxes.sty"
 Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
 \bmb@box=\box46
 \bmb@colorbox=\box47
 \bmb@boxshadow=\box48
 \bmb@boxshadowball=\box49
 \bmb@boxshadowballlarge=\box50
-\bmb@temp=\dimen163
-\bmb@dima=\dimen164
-\bmb@dimb=\dimen165
-\bmb@prevheight=\dimen166
+\bmb@temp=\dimen171
+\bmb@dima=\dimen172
+\bmb@dimb=\dimen173
+\bmb@prevheight=\dimen174
 )
-\beamer@blockheadheight=\dimen167
+\beamer@blockheadheight=\dimen175
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbaselocalstructure.st
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaselocalstructure.st
 y"
-Package: beamerbaselocalstructure 2012/11/13  (rcs-revision ddfba79dac19)
- ("C:\Program Files\MiKTeX 2.8\tex\latex\tools\enumerate.sty"
+Package: beamerbaselocalstructure 2013/09/04  (rcs-revision 4ac715c499d0)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
-\@enLab=\toks29
+\@enLab=\toks31
 )
-\c@figure=\count135
-\c@table=\count136
+\c@figure=\count138
+\c@table=\count139
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasenavigation.sty"
-Package: beamerbasenavigation 2012/04/03  (rcs-revision 42a0f21a412d)
-\beamer@section@min@dim=\dimen168
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasenavigation.sty"
+Package: beamerbasenavigation 2013/10/05  (rcs-revision 62be157fe783)
+\beamer@section@min@dim=\dimen176
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasetheorems.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasetheorems.sty"
 Package: beamerbasetheorems 2010/06/06  (rcs-revision 7e7cc5e53e9d)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsmath.sty"
-Package: amsmath 2000/07/18 v2.13 AMS math features
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amstext.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsgen.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks30
-\ex@=\dimen169
+\@emptytoks=\toks32
+\ex@=\dimen177
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsbsy.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen170
+\pmbraise@=\dimen178
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsopn.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count137
-LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count138
-\leftroot@=\count139
-LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count140
-\DOTSCASE@=\count141
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+\inf@bad=\count140
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count141
+\leftroot@=\count142
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count143
+\DOTSCASE@=\count144
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box51
 \strutbox@=\box52
-\big@size=\dimen171
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count142
-\c@MaxMatrixCols=\count143
+\big@size=\dimen179
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count145
+\c@MaxMatrixCols=\count146
 \dotsspace@=\muskip11
-\c@parentequation=\count144
-\dspbrk@lvl=\count145
-\tag@help=\toks31
-\row@=\count146
-\column@=\count147
-\maxfields@=\count148
-\andhelp@=\toks32
-\eqnshift@=\dimen172
-\alignsep@=\dimen173
-\tagshift@=\dimen174
-\tagwidth@=\dimen175
-\totwidth@=\dimen176
-\lineht@=\dimen177
-\@envbody=\toks33
+\c@parentequation=\count147
+\dspbrk@lvl=\count148
+\tag@help=\toks33
+\row@=\count149
+\column@=\count150
+\maxfields@=\count151
+\andhelp@=\toks34
+\eqnshift@=\dimen180
+\alignsep@=\dimen181
+\tagshift@=\dimen182
+\tagwidth@=\dimen183
+\totwidth@=\dimen184
+\lineht@=\dimen185
+\@envbody=\toks35
 \multlinegap=\skip52
 \multlinetaggap=\skip53
-\mathdisplay@stack=\toks34
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\classes\amsthm.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2004/08/06 v2.20
-\thm@style=\toks35
-\thm@bodyfont=\toks36
-\thm@headfont=\toks37
-\thm@notefont=\toks38
-\thm@headpunct=\toks39
+\thm@style=\toks37
+\thm@bodyfont=\toks38
+\thm@headfont=\toks39
+\thm@notefont=\toks40
+\thm@headpunct=\toks41
 \thm@preskip=\skip54
 \thm@postskip=\skip55
 \thm@headsep=\skip56
-\dth@everypar=\toks40
+\dth@everypar=\toks42
 )
-\c@theorem=\count149
+\c@theorem=\count152
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\beamerbasethemes.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasethemes.sty"
 Package: beamerbasethemes 2010/05/01  (rcs-revision efa082c6111d)
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\themes\theme\beamerthemedef
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\theme\beamerthemedef
 ault.sty"
 Package: beamerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\themes\font\beamerfonttheme
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\font\beamerfonttheme
 default.sty"
-Package: beamerfontthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
+Package: beamerfontthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\themes\color\beamercolorthe
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\color\beamercolorthe
 medefault.sty"
-Package: beamercolorthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
+Package: beamercolorthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\themes\inner\beamerinnerthe
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\inner\beamerinnerthe
 medefault.sty"
-Package: beamerinnerthemedefault 2012/05/01  (rcs-revision 67c48b3b652d)
-\beamer@dima=\dimen178
-\beamer@dimb=\dimen179
+Package: beamerinnerthemedefault 2013/10/15  (rcs-revision 65cb471f9634)
+\beamer@dima=\dimen186
+\beamer@dimb=\dimen187
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\themes\outer\beamerouterthe
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\outer\beamerouterthe
 medefault.sty"
-Package: beamerouterthemedefault 2012/10/02  (rcs-revision 5ed0f4010e8a)
-))) ("C:\Program Files\MiKTeX 2.8\tex\latex\tools\verbatim.sty"
+Package: beamerouterthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
+))) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks41
-\verbatim@line=\toks42
+\every@verbatim=\toks43
+\verbatim@line=\toks44
 \verbatim@in@stream=\read2
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\inputenc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks43
-\inpenc@posthook=\toks44
+\inpenc@prehook=\toks45
+\inpenc@posthook=\toks46
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\latin1.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2008/03/30 v1.1d Input encoding file
 ))
-("C:\Program Files\MiKTeX 2.8\tex\generic\babel\babel.sty"
-Package: babel 2008/07/06 v3.8l The Babel package
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\bblopts.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\babel\spanish.ldf"
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\spanish.ldf"
 Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\babel\babel.def"
-File: babel.def 2008/07/06 v3.8l Babel common definitions
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
 LaTeX Info: Redefining \textlatin on input line 82.
-\babel@savecnt=\count150
-\U@D=\dimen180
+\babel@savecnt=\count153
+\U@D=\dimen188
 )
-
-Package babel Warning: No hyphenation patterns were loaded for
-(babel)                the language `Spanish'
-(babel)                I will use the patterns loaded for \language=0 instead.
-
-\l@spanish = a dialect from \language0
-\es@datefmt=\count151
-\es@quottoks=\toks45
-\es@quotdepth=\count152
+\es@datefmt=\count154
+\es@quottoks=\toks47
+\es@quotdepth=\count155
 Package babel Info: Making " an active character on input line 492.
 Package babel Info: Making . an active character on input line 585.
 Package babel Info: Making < an active character on input line 630.
 Package babel Info: Making > an active character on input line 630.
-)) ("C:\Program Files\MiKTeX 2.8\tex\latex\multirow\multirow.sty"
-\bigstrutjot=\dimen181
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen189
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\themes\font\beamerfonttheme
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\font\beamerfonttheme
 professionalfonts.sty"
 Package: beamerfontthemeprofessionalfonts 2010/06/17  (rcs-revision d02a7cf4d8a
 e)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\themes\theme\beamerthemeWar
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\theme\beamerthemeWar
 saw.sty"
 Package: beamerthemeWarsaw 2010/06/17  (rcs-revision d02a7cf4d8ae)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\themes\inner\beamerinnerthe
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\inner\beamerinnerthe
 merounded.sty"
 Package: beamerinnerthemerounded 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\themes\outer\beamerouterthe
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\outer\beamerouterthe
 meshadow.sty"
 Package: beamerouterthemeshadow 2010/06/17  (rcs-revision d02a7cf4d8ae)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\themes\outer\beamerouterthe
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\outer\beamerouterthe
 mesplit.sty"
 Package: beamerouterthemesplit 2012/10/16  (rcs-revision 51a8c72084af)
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\themes\color\beamercolorthe
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\color\beamercolorthe
 meorchid.sty"
 Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\themes\color\beamercolorthe
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\color\beamercolorthe
 mewhale.sty"
 Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
-))
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\presentacion.aux
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\01-motivacion.aux
-) (C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\02-imagenes.aux
-)
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\03-deteccion.aux)
-
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\04-discriminacion
-.aux)
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\05-conclusiones.a
-ux))
+)) (c:\Repositorios\tesis\PresentacionTesis\presentacion.aux
+(c:\Repositorios\tesis\PresentacionTesis\01-motivacion.aux)
+(c:\Repositorios\tesis\PresentacionTesis\02-imagenes.aux)
+(c:\Repositorios\tesis\PresentacionTesis\03-deteccion.aux)
+(c:\Repositorios\tesis\PresentacionTesis\04-discriminacion.aux)
+(c:\Repositorios\tesis\PresentacionTesis\05-conclusiones.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
@@ -765,199 +800,162 @@ LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 
-*geometry auto-detecting driver*
-*geometry detected driver: pdftex*
--------------------- Geometry parameters
-paper: user defined
-landscape: --
-twocolumn: --
-twoside: --
-asymmetric: --
-h-parts: 28.45274pt, 307.28987pt, 28.45274pt
-v-parts: 0.0pt, 273.14662pt, 0.0pt
-hmarginratio: --
-vmarginratio: --
-lines: --
-heightrounded: --
-bindingoffset: 0.0pt
-truedimen: --
-includehead: true
-includefoot: true
-includemp: --
-driver: pdftex
--------------------- Page layout dimensions and switches
-\paperwidth  364.19536pt
-\paperheight 273.14662pt
-\textwidth  307.28987pt
-\textheight 244.6939pt
-\oddsidemargin  -43.81725pt
-\evensidemargin -43.81725pt
-\topmargin  -72.26999pt
-\headheight 14.22636pt
-\headsep    0.0pt
-\footskip   14.22636pt
-\marginparwidth 4.0pt
-\marginparsep   10.0pt
-\columnsep  10.0pt
-\skip\footins  10.0pt plus 4.0pt minus 2.0pt
-\hoffset 0.0pt
-\voffset 0.0pt
-\mag 1000
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=307.28987pt
+* \textheight=244.6939pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(1in=72.27pt, 1cm=28.45pt)
------------------------
-("C:\Program Files\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count153
-\scratchdimen=\dimen182
+\scratchcounter=\count156
+\scratchdimen=\dimen190
 \scratchbox=\box53
-\nofMPsegments=\count154
-\nofMParguments=\count155
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count156
-\MPscratchDim=\dimen183
-\MPnumerator=\count157
-\everyMPtoPDFconversion=\toks47
+\nofMPsegments=\count157
+\nofMParguments=\count158
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count159
+\MPscratchDim=\dimen191
+\MPnumerator=\count160
+\makeMPintoPDFobject=\count161
+\everyMPtoPDFconversion=\toks49
 ) ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box54
 Package hyperref Info: Link coloring OFF on input line 17.
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\nameref.sty"
-Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\refcount.sty"
-Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count158
+\c@section@level=\count162
 )
 LaTeX Info: Redefining \ref on input line 17.
 LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
 
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\presentacion.out)
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\presentacion.out)
+(c:\Repositorios\tesis\PresentacionTesis\presentacion.out)
+(c:\Repositorios\tesis\PresentacionTesis\presentacion.out)
 \@outlinefile=\write5
-\AtBeginShipoutBox=\box54
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\translator\dicts\translator
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
 -basic-dictionary\translator-basic-dictionary-English.dict"
 Dictionary: translator-basic-dictionary, Language: English 
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\translator\dicts\translator
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
 -bibliography-dictionary\translator-bibliography-dictionary-English.dict"
 Dictionary: translator-bibliography-dictionary, Language: English 
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\translator\dicts\translator
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
 -environment-dictionary\translator-environment-dictionary-English.dict"
 Dictionary: translator-environment-dictionary, Language: English 
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\translator\dicts\translator
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
 -months-dictionary\translator-months-dictionary-English.dict"
 Dictionary: translator-months-dictionary, Language: English 
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\translator\dicts\translator
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
 -numbers-dictionary\translator-numbers-dictionary-English.dict"
 Dictionary: translator-numbers-dictionary, Language: English 
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\beamer\base\translator\dicts\translator
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
 -theorem-dictionary\translator-theorem-dictionary-English.dict"
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Info: Redefining \includegraphics on input line 17.
 
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\presentacion.nav)
-
-Overfull \hbox (119.36914pt too wide) in paragraph at lines 17--17
+(c:\Repositorios\tesis\PresentacionTesis\presentacion.nav)
+Overfull \hbox (123.7442pt too wide) in paragraph at lines 17--17
  [][][][]  
  []
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 21.
-("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 21.
 
 
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[1{C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\presentacion.toc)
-
-Overfull \vbox (14.94917pt too high) detected at line 26
- []
-
-
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+(c:\Repositorios\tesis\PresentacionTesis\presentacion.toc)
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [2
 
-]
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\presentacion.toc)
-
-Overfull \vbox (14.94917pt too high) detected at line 26
- []
-
-
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+] (c:\Repositorios\tesis\PresentacionTesis\presentacion.toc)
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [3
 
-]
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\presentacion.toc)
-
-Overfull \vbox (14.94917pt too high) detected at line 26
- []
-
-
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+] (c:\Repositorios\tesis\PresentacionTesis\presentacion.toc)
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [4
 
-]
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\presentacion.toc)
-
-Overfull \vbox (14.94917pt too high) detected at line 26
- []
-
-
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+] (c:\Repositorios\tesis\PresentacionTesis\presentacion.toc)
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [5
 
-]
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\presentacion.toc)
-
-Overfull \vbox (14.94917pt too high) detected at line 26
- []
-
-
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+] (c:\Repositorios\tesis\PresentacionTesis\presentacion.toc)
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [6
 
-]
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\01-motivacion.tex
-
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+] (c:\Repositorios\tesis\PresentacionTesis\01-motivacion.tex
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -965,54 +963,77 @@ Overfull \hbox (120.07748pt too wide) has occurred while \output is active
 
 
 ]
-<../Imagenes/U.Iowa/Varicela/Varicel-02.jpg, id=414, 54.11217pt x 31.61812pt>
+<../Imagenes/U.Iowa/Varicela/Varicel-02.jpg, id=393, 54.11217pt x 31.61812pt>
 File: ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg Graphic file (type jpg)
 
 <use ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg>
-<../Imagenes/U.Iowa/measles-PHIL_3168_lores.jpg, id=415, 389.14615pt x 259.6160
-7pt>
-File: ../Imagenes/U.Iowa/measles-PHIL_3168_lores.jpg Graphic file (type jpg)
- <use ../Imagenes/U.Iowa/measles-PHIL_3168_lores.jpg>
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg used on inp
+ut line 20.
+(pdftex.def)             Requested size: 144.54pt x 84.45963pt.
+
+<../Imagenes/U.Iowa/Shingles/Fase1/herpes_zoster_309.jpg, id=394, 542.025pt x 3
+66.61969pt>
+File: ../Imagenes/U.Iowa/Shingles/Fase1/herpes_zoster_309.jpg Graphic file (typ
+e jpg)
+ <use ../Imagenes/U.Iowa/Shingles/Fase1/herpes_zoster_309.jpg>
+Package pdftex.def Info: ../Imagenes/U.Iowa/Shingles/Fase1/herpes_zoster_309.jp
+g used on input line 20.
+(pdftex.def)             Requested size: 144.54pt x 97.7635pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [8
 
- <C:/Users/vicky/Documents/Tesis/tesis/trunk/Imagenes/U.Iowa/Varicela/Varicel-0
-2.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/Imagenes/U.Iowa/measles-PHIL
-_3168_lores.jpg>]
-<../Imagenes/U.Iowa/Varicela/chicken_pox_picture_13.jpg, id=448, 513.92pt x 443
+ <c:/Repositorios/tesis/Imagenes/U.Iowa/Varicela/Varicel-02.jpg> <c:/Repositori
+os/tesis/Imagenes/U.Iowa/Shingles/Fase1/herpes_zoster_309.jpg>]
+<../Imagenes/U.Iowa/Varicela/chicken_pox_picture_13.jpg, id=426, 513.92pt x 443
 .6575pt>
 File: ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_13.jpg Graphic file (type
  jpg)
  <use ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_13.jpg>
-<../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg, id=449, 513.92pt x 790
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_13.jpg
+ used on input line 28.
+(pdftex.def)             Requested size: 115.63243pt x 99.81862pt.
+
+<../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg, id=427, 513.92pt x 790
 .955pt>
 File: ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg Graphic file (type
  jpg)
  <use ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg>
-<../Imagenes/U.Iowa/Varicela/Varicel-04.jpg, id=450, 42.84782pt x 22.13805pt>
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg
+ used on input line 28.
+(pdftex.def)             Requested size: 65.04256pt x 100.10016pt.
+
+<../Imagenes/U.Iowa/Varicela/Varicel-04.jpg, id=428, 42.84782pt x 22.13805pt>
 File: ../Imagenes/U.Iowa/Varicela/Varicel-04.jpg Graphic file (type jpg)
 
 <use ../Imagenes/U.Iowa/Varicela/Varicel-04.jpg>
-<../Imagenes/U.Iowa/Varicela/Varicel-01.jpg, id=451, 42.84782pt x 20.99544pt>
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-04.jpg used on inp
+ut line 28.
+(pdftex.def)             Requested size: 115.63243pt x 59.74884pt.
+
+<../Imagenes/U.Iowa/Varicela/Varicel-01.jpg, id=429, 42.84782pt x 20.99544pt>
 File: ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg Graphic file (type jpg)
 
 <use ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg>
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg used on inp
+ut line 28.
+(pdftex.def)             Requested size: 115.63243pt x 56.66502pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [9
 
- <C:/Users/vicky/Documents/Tesis/tesis/trunk/Imagenes/U.Iowa/Varicela/chicken_p
-ox_picture_13.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/Imagenes/U.Iowa/
-Varicela/chicken_pox_picture_01.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trun
-k/Imagenes/U.Iowa/Varicela/Varicel-04.jpg> <C:/Users/vicky/Documents/Tesis/tesi
-s/trunk/Imagenes/U.Iowa/Varicela/Varicel-01.jpg>])
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\02-imagenes.tex
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ <c:/Repositorios/tesis/Imagenes/U.Iowa/Varicela/chicken_pox_picture_13.jpg> <c
+:/Repositorios/tesis/Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg> <c:/R
+epositorios/tesis/Imagenes/U.Iowa/Varicela/Varicel-04.jpg> <c:/Repositorios/tes
+is/Imagenes/U.Iowa/Varicela/Varicel-01.jpg>])
+(c:\Repositorios\tesis\PresentacionTesis\02-imagenes.tex
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1021,385 +1042,669 @@ Overfull \hbox (120.07748pt too wide) has occurred while \output is active
 
 
 ]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+File: ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg Graphic file (type
+ jpg)
+ <use ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg>
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg
+ used on input line 23.
+(pdftex.def)             Requested size: 86.72377pt x 133.47092pt.
+File: ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg Graphic file (type jpg)
+
+<use ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg>
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg used on inp
+ut line 23.
+(pdftex.def)             Requested size: 144.54pt x 84.45963pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [11
 
 ]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [12
 
 ]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [13
 
 ]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [14
 
 ]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [15
 
 ]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [16
 
 ]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [17
 
 ]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [18
 
 ]
-File: ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg Graphic file (type
- jpg)
- <use ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg>
-File: ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg Graphic file (type jpg)
-
-<use ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg>
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [19
 
 ]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+File: ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg Graphic file (type jpg)
+ <use ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg>
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg used on inp
+ut line 54.
+(pdftex.def)             Requested size: 115.63243pt x 56.66502pt.
+File: ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg Graphic file (type jpg)
+
+<use ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg>
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg used on inp
+ut line 54.
+(pdftex.def)             Requested size: 115.63243pt x 67.568pt.
+
+<../Imagenes/U.Iowa/Varicela/Varicel-03.jpg, id=793, 52.84744pt x 27.01091pt>
+File: ../Imagenes/U.Iowa/Varicela/Varicel-03.jpg Graphic file (type jpg)
+
+<use ../Imagenes/U.Iowa/Varicela/Varicel-03.jpg>
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-03.jpg used on inp
+ut line 54.
+(pdftex.def)             Requested size: 115.63243pt x 59.10474pt.
+File: ../Imagenes/U.Iowa/Varicela/Varicel-04.jpg Graphic file (type jpg)
+
+<use ../Imagenes/U.Iowa/Varicela/Varicel-04.jpg>
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-04.jpg used on inp
+ut line 54.
+(pdftex.def)             Requested size: 115.63243pt x 59.74884pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [20
 
-])
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\03-deteccion.tex
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ <c:/Repositorios/tesis/Imagenes/U.Iowa/Varicela/Varicel-03.jpg>]
+<../Imagenes/U.Iowa/Varicela/chicken_pox_primary_lesions_03.jpg, id=826, 513.92
+pt x 374.39874pt>
+File: ../Imagenes/U.Iowa/Varicela/chicken_pox_primary_lesions_03.jpg Graphic fi
+le (type jpg)
+
+<use ../Imagenes/U.Iowa/Varicela/chicken_pox_primary_lesions_03.jpg>
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/chicken_pox_primary_lesion
+s_03.jpg used on input line 61.
+(pdftex.def)             Requested size: 115.63243pt x 84.23607pt.
+
+<../Imagenes/U.Iowa/Varicela/varicella_20.jpg, id=827, 542.025pt x 359.09157pt>
+File: ../Imagenes/U.Iowa/Varicela/varicella_20.jpg Graphic file (type jpg)
+<use ../Imagenes/U.Iowa/Varicela/varicella_20.jpg>
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/varicella_20.jpg used on i
+nput line 61.
+(pdftex.def)             Requested size: 115.63243pt x 76.60593pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [21
 
-
-
-] <Resources/CompL-Varicel-02.jpg, id=873, 765.86125pt x 437.635pt>
-File: Resources/CompL-Varicel-02.jpg Graphic file (type jpg)
-
-<use Resources/CompL-Varicel-02.jpg>
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ <c:/Repositorios/tesis/Imagenes/U.Iowa/Varicela/chicken_pox_primary_lesions_03
+.jpg> <c:/Repositorios/tesis/Imagenes/U.Iowa/Varicela/varicella_20.jpg>])
+(c:\Repositorios\tesis\PresentacionTesis\03-deteccion.tex
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [22
 
- <C:/Users/vicky/Documents/Tesis/tesis/trunk/PresentacionTesis/Resources/CompL-
-Varicel-02.jpg>]
-<Resources/CompA-Varicel-02.jpg, id=909, 765.86125pt x 437.635pt>
-File: Resources/CompA-Varicel-02.jpg Graphic file (type jpg)
 
-<use Resources/CompA-Varicel-02.jpg>
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+
+]
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [23
 
- <C:/Users/vicky/Documents/Tesis/tesis/trunk/PresentacionTesis/Resources/CompA-
-Varicel-02.jpg>]
-<Resources/CompB-Varicel-02.jpg, id=944, 765.86125pt x 437.635pt>
-File: Resources/CompB-Varicel-02.jpg Graphic file (type jpg)
+] <Resources/CompL-Varicel-02.jpg, id=930, 765.86125pt x 437.635pt>
+File: Resources/CompL-Varicel-02.jpg Graphic file (type jpg)
 
-<use Resources/CompB-Varicel-02.jpg>
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+<use Resources/CompL-Varicel-02.jpg>
+Package pdftex.def Info: Resources/CompL-Varicel-02.jpg used on input line 33.
+(pdftex.def)             Requested size: 144.54pt x 82.59058pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [24
 
- <C:/Users/vicky/Documents/Tesis/tesis/trunk/PresentacionTesis/Resources/CompB-
-Varicel-02.jpg>]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/CompL-Varicel-02.jpg>]
+<Resources/CompA-Varicel-02.jpg, id=965, 765.86125pt x 437.635pt>
+File: Resources/CompA-Varicel-02.jpg Graphic file (type jpg)
+
+<use Resources/CompA-Varicel-02.jpg>
+Package pdftex.def Info: Resources/CompA-Varicel-02.jpg used on input line 40.
+(pdftex.def)             Requested size: 144.54pt x 82.59058pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [25
 
-]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/CompA-Varicel-02.jpg>]
+<Resources/CompB-Varicel-02.jpg, id=1000, 765.86125pt x 437.635pt>
+File: Resources/CompB-Varicel-02.jpg Graphic file (type jpg)
+
+<use Resources/CompB-Varicel-02.jpg>
+Package pdftex.def Info: Resources/CompB-Varicel-02.jpg used on input line 47.
+(pdftex.def)             Requested size: 144.54pt x 82.59058pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [26
 
-]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/CompB-Varicel-02.jpg>]
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [27
 
-] <Resources/Varicel-03.jpg, id=1088, 52.84744pt x 27.01091pt>
-File: Resources/Varicel-03.jpg Graphic file (type jpg)
-
-<use Resources/Varicel-03.jpg>
-Overfull \hbox (14.72931pt too wide) in paragraph at lines 91--91
-[][]  
- []
-
-
-<Resources/Varicel-03_bordes_detectados.png, id=1089, 587.19376pt x 300.12125pt
->
-File: Resources/Varicel-03_bordes_detectados.png Graphic file (type png)
- <use Resources/Varicel-03_bordes_detectados.png>
-Overfull \hbox (14.90932pt too wide) in paragraph at lines 91--91
-[][]  
- []
-
-
-<Resources/Varicel-03_imagen_con_bordes.png, id=1090, 587.19376pt x 300.12125pt
->
-File: Resources/Varicel-03_imagen_con_bordes.png Graphic file (type png)
- <use Resources/Varicel-03_imagen_con_bordes.png>
-Overfull \hbox (14.90932pt too wide) in paragraph at lines 91--91
-[][]  
- []
-
-<Resources/Varicel-04.jpg, id=1091, 42.84782pt x 22.13805pt>
-File: Resources/Varicel-04.jpg Graphic file (type jpg)
-
-<use Resources/Varicel-04.jpg>
-Overfull \hbox (11.5687pt too wide) in paragraph at lines 91--91
-[][]  
- []
-
-<Resources/Varicel-04_bordes_detectados.png, id=1092, 602.25pt x 311.1625pt>
-File: Resources/Varicel-04_bordes_detectados.png Graphic file (type png)
-
-<use Resources/Varicel-04_bordes_detectados.png>
-Overfull \hbox (12.04286pt too wide) in paragraph at lines 91--91
-[][]  
- []
-
-<Resources/Varicel-04_imagen_con_bordes.png, id=1093, 602.25pt x 311.1625pt>
-File: Resources/Varicel-04_imagen_con_bordes.png Graphic file (type png)
-
-<use Resources/Varicel-04_imagen_con_bordes.png>
-Overfull \hbox (12.04286pt too wide) in paragraph at lines 91--91
-[][]  
- []
-
-
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+]
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [28
 
- <C:/Users/vicky/Documents/Tesis/tesis/trunk/PresentacionTesis/Resources/Varice
-l-03.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/PresentacionTesis/Resourc
-es/Varicel-03_bordes_detectados.png (PNG copy)> <C:/Users/vicky/Documents/Tesis
-/tesis/trunk/PresentacionTesis/Resources/Varicel-03_imagen_con_bordes.png (PNG 
-copy)> <C:/Users/vicky/Documents/Tesis/tesis/trunk/PresentacionTesis/Resources/
-Varicel-04.jpg> <C:/Users/vicky/Documents/Tesis/tesis/trunk/PresentacionTesis/R
-esources/Varicel-04_bordes_detectados.png (PNG copy)> <C:/Users/vicky/Documents
-/Tesis/tesis/trunk/PresentacionTesis/Resources/Varicel-04_imagen_con_bordes.png
- (PNG copy)>]
-<Resources/bordesEnLaImagen-Varicel-01.jpg, id=1129, 600.2425pt x 295.1025pt>
-File: Resources/bordesEnLaImagen-Varicel-01.jpg Graphic file (type jpg)
-
-<use Resources/bordesEnLaImagen-Varicel-01.jpg>
-Overfull \hbox (3.47134pt too wide) in paragraph at lines 96--96
-[][]  
- []
-
-
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+]
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [29
 
- <C:/Users/vicky/Documents/Tesis/tesis/trunk/PresentacionTesis/Resources/bordes
-EnLaImagen-Varicel-01.jpg>]
-<Resources/bordes-Varicel-01.jpg, id=1164, 766.865pt x 381.425pt>
-File: Resources/bordes-Varicel-01.jpg Graphic file (type jpg)
-
-<use Resources/bordes-Varicel-01.jpg>
-Overfull \hbox (3.47134pt too wide) in paragraph at lines 101--101
-[][]  
- []
-
-
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+]
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [30
 
- <C:/Users/vicky/Documents/Tesis/tesis/trunk/PresentacionTesis/Resources/bordes
--Varicel-01.jpg>]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+] <Resources/Varicel-03.jpg, id=1173, 52.84744pt x 27.01091pt>
+File: Resources/Varicel-03.jpg Graphic file (type jpg)
+
+<use Resources/Varicel-03.jpg>
+Package pdftex.def Info: Resources/Varicel-03.jpg used on input line 113.
+(pdftex.def)             Requested size: 123.13431pt x 62.93529pt.
+
+Overfull \hbox (14.72931pt too wide) in paragraph at lines 113--113
+[][]  
+ []
+
+
+<Resources/Varicel-03_bordes_detectados.png, id=1174, 587.19376pt x 300.12125pt
+>
+File: Resources/Varicel-03_bordes_detectados.png Graphic file (type png)
+ <use Resources/Varicel-03_bordes_detectados.png>
+Package pdftex.def Info: Resources/Varicel-03_bordes_detectados.png used on inp
+ut line 113.
+(pdftex.def)             Requested size: 123.31432pt x 63.02731pt.
+
+Overfull \hbox (14.90932pt too wide) in paragraph at lines 113--113
+[][]  
+ []
+
+
+<Resources/Varicel-03_imagen_con_bordes.png, id=1175, 587.19376pt x 300.12125pt
+>
+File: Resources/Varicel-03_imagen_con_bordes.png Graphic file (type png)
+ <use Resources/Varicel-03_imagen_con_bordes.png>
+Package pdftex.def Info: Resources/Varicel-03_imagen_con_bordes.png used on inp
+ut line 113.
+(pdftex.def)             Requested size: 123.31432pt x 63.02731pt.
+
+Overfull \hbox (14.90932pt too wide) in paragraph at lines 113--113
+[][]  
+ []
+
+<Resources/Varicel-04.jpg, id=1176, 42.84782pt x 22.13805pt>
+File: Resources/Varicel-04.jpg Graphic file (type jpg)
+
+<use Resources/Varicel-04.jpg>
+Package pdftex.def Info: Resources/Varicel-04.jpg used on input line 113.
+(pdftex.def)             Requested size: 119.9737pt x 61.98642pt.
+
+Overfull \hbox (11.5687pt too wide) in paragraph at lines 113--113
+[][]  
+ []
+
+<Resources/Varicel-04_bordes_detectados.png, id=1177, 602.25pt x 311.1625pt>
+File: Resources/Varicel-04_bordes_detectados.png Graphic file (type png)
+
+<use Resources/Varicel-04_bordes_detectados.png>
+Package pdftex.def Info: Resources/Varicel-04_bordes_detectados.png used on inp
+ut line 113.
+(pdftex.def)             Requested size: 120.44786pt x 62.23138pt.
+
+Overfull \hbox (12.04286pt too wide) in paragraph at lines 113--113
+[][]  
+ []
+
+<Resources/Varicel-04_imagen_con_bordes.png, id=1178, 602.25pt x 311.1625pt>
+File: Resources/Varicel-04_imagen_con_bordes.png Graphic file (type png)
+
+<use Resources/Varicel-04_imagen_con_bordes.png>
+Package pdftex.def Info: Resources/Varicel-04_imagen_con_bordes.png used on inp
+ut line 113.
+(pdftex.def)             Requested size: 120.44786pt x 62.23138pt.
+
+Overfull \hbox (12.04286pt too wide) in paragraph at lines 113--113
+[][]  
+ []
+
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [31
 
-]
-<Resources/resultado-Varicel-02-radio24-bordes.jpg, id=1236, 598.235pt x 348.30
-125pt>
-File: Resources/resultado-Varicel-02-radio24-bordes.jpg Graphic file (type jpg)
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/Varicel-03.jpg> <c:/Reposit
+orios/tesis/PresentacionTesis/Resources/Varicel-03_bordes_detectados.png (PNG c
+opy)> <c:/Repositorios/tesis/PresentacionTesis/Resources/Varicel-03_imagen_con_
+bordes.png (PNG copy)> <c:/Repositorios/tesis/PresentacionTesis/Resources/Varic
+el-04.jpg> <c:/Repositorios/tesis/PresentacionTesis/Resources/Varicel-04_bordes
+_detectados.png (PNG copy)> <c:/Repositorios/tesis/PresentacionTesis/Resources/
+Varicel-04_imagen_con_bordes.png (PNG copy)>]
+File: ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg Graphic file (type jpg)
 
- <use Resources/resultado-Varicel-02-radio24-bordes.jpg>
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+<use ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg>
+Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg used on inp
+ut line 123.
+(pdftex.def)             Requested size: 115.63243pt x 56.66502pt.
+
+Overfull \hbox (7.22743pt too wide) in paragraph at lines 123--123
+[][]  
+ []
+
+<Resources/bordes-Varicel-01.jpg, id=1214, 766.865pt x 381.425pt>
+File: Resources/bordes-Varicel-01.jpg Graphic file (type jpg)
+
+<use Resources/bordes-Varicel-01.jpg>
+Package pdftex.def Info: Resources/bordes-Varicel-01.jpg used on input line 123
+.
+(pdftex.def)             Requested size: 144.54pt x 71.88948pt.
+
+Overfull \hbox (36.135pt too wide) in paragraph at lines 123--123
+[][]  
+ []
+
+<Resources/bordesEnLaImagen-Varicel-01.jpg, id=1215, 600.2425pt x 295.1025pt>
+File: Resources/bordesEnLaImagen-Varicel-01.jpg Graphic file (type jpg)
+
+<use Resources/bordesEnLaImagen-Varicel-01.jpg>
+Package pdftex.def Info: Resources/bordesEnLaImagen-Varicel-01.jpg used on inpu
+t line 123.
+(pdftex.def)             Requested size: 115.63243pt x 56.84904pt.
+
+Overfull \hbox (7.22743pt too wide) in paragraph at lines 123--123
+[][]  
+ []
+
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [32
 
- <C:/Users/vicky/Documents/Tesis/tesis/trunk/PresentacionTesis/Resources/result
-ado-Varicel-02-radio24-bordes.jpg>]
-<Resources/acumulador-Varicel-02.jpg, id=1272, 562.1pt x 421.575pt>
-File: Resources/acumulador-Varicel-02.jpg Graphic file (type jpg)
-
-<use Resources/acumulador-Varicel-02.jpg>
-Overfull \vbox (5.53107pt too high) detected at line 133
- []
-
-
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/bordes-Varicel-01.jpg> <c:/
+Repositorios/tesis/PresentacionTesis/Resources/bordesEnLaImagen-Varicel-01.jpg>
+]
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [33
 
- <C:/Users/vicky/Documents/Tesis/tesis/trunk/PresentacionTesis/Resources/acumul
-ador-Varicel-02.jpg>]
-<Resources/resultado-Varicel-02-radio23_1.jpg, id=1307, 597.23125pt x 350.30875
-pt>
-File: Resources/resultado-Varicel-02-radio23_1.jpg Graphic file (type jpg)
- <use Resources/resultado-Varicel-02-radio23_1.jpg>
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+] <Resources/coins2.jpg, id=1284, 426.59375pt x 568.1225pt>
+File: Resources/coins2.jpg Graphic file (type jpg)
+
+<use Resources/coins2.jpg>
+Package pdftex.def Info: Resources/coins2.jpg used on input line 150.
+(pdftex.def)             Requested size: 106.64816pt x 142.03027pt.
+
+<Resources/ccoins2-1.png, id=1285, 318.43968pt x 426.09187pt>
+File: Resources/ccoins2-1.png Graphic file (type png)
+
+<use Resources/ccoins2-1.png>
+Package pdftex.def Info: Resources/ccoins2-1.png used on input line 150.
+(pdftex.def)             Requested size: 105.08542pt x 140.61075pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [34
 
- <C:/Users/vicky/Documents/Tesis/tesis/trunk/PresentacionTesis/Resources/result
-ado-Varicel-02-radio23_1.jpg>]
-File: Resources/resultado-Varicel-02-radio23_1.jpg Graphic file (type jpg)
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/coins2.jpg> <c:/Repositorio
+s/tesis/PresentacionTesis/Resources/ccoins2-1.png>]
+<Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png, id=1322, 405.515p
+t x 324.21124pt>
+File: Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png Graphic file 
+(type png)
 
-<use Resources/resultado-Varicel-02-radio23_1.jpg>
-<Resources/resultado-Varicel-02-radio24.jpg, id=1342, 598.235pt x 351.3125pt>
-File: Resources/resultado-Varicel-02-radio24.jpg Graphic file (type jpg)
+<use Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png>
+Package pdftex.def Info: Resources/recorte-Varicel-02_resultado_sin_ecualizacio
+n.png used on input line 160.
+(pdftex.def)             Requested size: 141.93236pt x 113.47563pt.
 
-<use Resources/resultado-Varicel-02-radio24.jpg>
-Overfull \hbox (32.59773pt too wide) in paragraph at lines 153--153
- [][] 
- []
+<Resources/acumulador-Varicel-02.jpg, id=1323, 325.215pt x 255.95625pt>
+File: Resources/acumulador-Varicel-02.jpg Graphic file (type jpg)
 
+<use Resources/acumulador-Varicel-02.jpg>
+Package pdftex.def Info: Resources/acumulador-Varicel-02.jpg used on input line
+ 160.
+(pdftex.def)             Requested size: 146.3454pt x 115.17923pt.
 
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [35
 
- <C:/Users/vicky/Documents/Tesis/tesis/trunk/PresentacionTesis/Resources/result
-ado-Varicel-02-radio24.jpg>])
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\04-discriminacion
-.tex
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/recorte-Varicel-02_resultad
+o_sin_ecualizacion.png> <c:/Repositorios/tesis/PresentacionTesis/Resources/acum
+ulador-Varicel-02.jpg>]
+<Resources/resultado-Varicel-02-radio24-bordes.jpg, id=1359, 599.23875pt x 349.
+305pt>
+File: Resources/resultado-Varicel-02-radio24-bordes.jpg Graphic file (type jpg)
+
+ <use Resources/resultado-Varicel-02-radio24-bordes.jpg>
+Package pdftex.def Info: Resources/resultado-Varicel-02-radio24-bordes.jpg used
+ on input line 168.
+(pdftex.def)             Requested size: 289.07999pt x 168.51195pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [36
 
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/resultado-Varicel-02-radio2
+4-bordes.jpg>]
+<Resources/resultado-Varicel-02-radio23_1.jpg, id=1394, 598.235pt x 349.305pt>
+File: Resources/resultado-Varicel-02-radio23_1.jpg Graphic file (type jpg)
 
+<use Resources/resultado-Varicel-02-radio23_1.jpg>
+Package pdftex.def Info: Resources/resultado-Varicel-02-radio23_1.jpg used on i
+nput line 176.
+(pdftex.def)             Requested size: 289.07999pt x 168.79443pt.
 
-])
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\05-conclusiones.t
-ex
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [37
 
-
-
-]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/resultado-Varicel-02-radio2
+3_1.jpg>]
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [38
 
 ]
-Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+<Resources/recorte-resultado-varicella_18-bordes.jpg, id=1467, 326.21875pt x 40
+8.52625pt>
+File: Resources/recorte-resultado-varicella_18-bordes.jpg Graphic file (type jp
+g)
+ <use Resources/recorte-resultado-varicella_18-bordes.jpg>
+Package pdftex.def Info: Resources/recorte-resultado-varicella_18-bordes.jpg us
+ed on input line 198.
+(pdftex.def)             Requested size: 97.86636pt x 122.55882pt.
+
+<Resources/recorte-resultado-varicella_18-radio40.jpg, id=1468, 321.2pt x 402.5
+0375pt>
+File: Resources/recorte-resultado-varicella_18-radio40.jpg Graphic file (type j
+pg)
+ <use Resources/recorte-resultado-varicella_18-radio40.jpg>
+Package pdftex.def Info: Resources/recorte-resultado-varicella_18-radio40.jpg u
+sed on input line 198.
+(pdftex.def)             Requested size: 96.36073pt x 120.75204pt.
+
+<Resources/recorte-resultado-varicella_18-radio43.jpg, id=1469, 337.26pt x 421.
+575pt>
+File: Resources/recorte-resultado-varicella_18-radio43.jpg Graphic file (type j
+pg)
+ <use Resources/recorte-resultado-varicella_18-radio43.jpg>
+Package pdftex.def Info: Resources/recorte-resultado-varicella_18-radio43.jpg u
+sed on input line 198.
+(pdftex.def)             Requested size: 97.80289pt x 122.25362pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [39
 
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/recorte-resultado-varicella
+_18-bordes.jpg> <c:/Repositorios/tesis/PresentacionTesis/Resources/recorte-resu
+ltado-varicella_18-radio40.jpg> <c:/Repositorios/tesis/PresentacionTesis/Resour
+ces/recorte-resultado-varicella_18-radio43.jpg>]
+<Resources/recorte-resultado-Varicel-02-radio23.jpg, id=1504, 401.5pt x 233.873
+75pt>
+File: Resources/recorte-resultado-Varicel-02-radio23.jpg Graphic file (type jpg
+)
+ <use Resources/recorte-resultado-Varicel-02-radio23.jpg>
+Package pdftex.def Info: Resources/recorte-resultado-Varicel-02-radio23.jpg use
+d on input line 208.
+(pdftex.def)             Requested size: 140.5271pt x 81.85703pt.
+
+<Resources/recorte-resultado-Varicel-02-radio24.jpg, id=1505, 400.49625pt x 232
+.87pt>
+File: Resources/recorte-resultado-Varicel-02-radio24.jpg Graphic file (type jpg
+)
+ <use Resources/recorte-resultado-Varicel-02-radio24.jpg>
+Package pdftex.def Info: Resources/recorte-resultado-Varicel-02-radio24.jpg use
+d on input line 208.
+(pdftex.def)             Requested size: 140.17578pt x 81.5057pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[40
+
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/recorte-resultado-Varicel-0
+2-radio23.jpg> <c:/Repositorios/tesis/PresentacionTesis/Resources/recorte-resul
+tado-Varicel-02-radio24.jpg>]
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[41
+
+]
+<Resources/recorte-Varicella_20_bordes_sin_ecualizacion.png, id=1574, 446.66875
+pt x 398.48875pt>
+File: Resources/recorte-Varicella_20_bordes_sin_ecualizacion.png Graphic file (
+type png)
+
+<use Resources/recorte-Varicella_20_bordes_sin_ecualizacion.png>
+Package pdftex.def Info: Resources/recorte-Varicella_20_bordes_sin_ecualizacion
+.png used on input line 230.
+(pdftex.def)             Requested size: 111.6669pt x 99.62193pt.
+
+<Resources/recorte-Varicella_20_resultado_sin_ecualizacion.png, id=1575, 446.66
+875pt x 398.48875pt>
+File: Resources/recorte-Varicella_20_resultado_sin_ecualizacion.png Graphic fil
+e (type png)
+
+<use Resources/recorte-Varicella_20_resultado_sin_ecualizacion.png>
+Package pdftex.def Info: Resources/recorte-Varicella_20_resultado_sin_ecualizac
+ion.png used on input line 230.
+(pdftex.def)             Requested size: 111.6669pt x 99.62193pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[42
+
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/recorte-Varicella_20_bordes
+_sin_ecualizacion.png> <c:/Repositorios/tesis/PresentacionTesis/Resources/recor
+te-Varicella_20_resultado_sin_ecualizacion.png>]
+<Resources/recorte-Varicella_20_bordes_con_ecualizacion.png, id=1610, 446.66875
+pt x 398.48875pt>
+File: Resources/recorte-Varicella_20_bordes_con_ecualizacion.png Graphic file (
+type png)
+
+<use Resources/recorte-Varicella_20_bordes_con_ecualizacion.png>
+Package pdftex.def Info: Resources/recorte-Varicella_20_bordes_con_ecualizacion
+.png used on input line 241.
+(pdftex.def)             Requested size: 111.6669pt x 99.62193pt.
+
+<Resources/recorte-Varicella_20_resultado_con_ecualizacion.png, id=1611, 446.66
+875pt x 398.48875pt>
+File: Resources/recorte-Varicella_20_resultado_con_ecualizacion.png Graphic fil
+e (type png)
+
+<use Resources/recorte-Varicella_20_resultado_con_ecualizacion.png>
+Package pdftex.def Info: Resources/recorte-Varicella_20_resultado_con_ecualizac
+ion.png used on input line 241.
+(pdftex.def)             Requested size: 111.6669pt x 99.62193pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[43
+
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/recorte-Varicella_20_bordes
+_con_ecualizacion.png> <c:/Repositorios/tesis/PresentacionTesis/Resources/recor
+te-Varicella_20_resultado_con_ecualizacion.png>]
+<Resources/diagrama-deteccion.png, id=1646, 723.70375pt x 409.53pt>
+File: Resources/diagrama-deteccion.png Graphic file (type png)
+
+<use Resources/diagrama-deteccion.png>
+Package pdftex.def Info: Resources/diagrama-deteccion.png used on input line 24
+9.
+(pdftex.def)             Requested size: 289.47636pt x 163.80908pt.
+
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[44
+
+ <c:/Repositorios/tesis/PresentacionTesis/Resources/diagrama-deteccion.png>]) (
+c:\Repositorios\tesis\PresentacionTesis\04-discriminacion.tex
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[45
+
+
+
+]) (c:\Repositorios\tesis\PresentacionTesis\05-conclusiones.tex
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[46
+
+
+
+]
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[47
+
+]
+Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[48
+
 ])
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
+ (c:\Repositorios\tesis\PresentacionTesis\presentacion.aux
+(c:\Repositorios\tesis\PresentacionTesis\01-motivacion.aux)
+(c:\Repositorios\tesis\PresentacionTesis\02-imagenes.aux)
+(c:\Repositorios\tesis\PresentacionTesis\03-deteccion.aux)
+(c:\Repositorios\tesis\PresentacionTesis\04-discriminacion.aux)
+(c:\Repositorios\tesis\PresentacionTesis\05-conclusiones.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
+Package rerunfilecheck Info: File `presentacion.out' has not changed.
+(rerunfilecheck)             Checksum: 7E21E28DA38F94D96ED804B703B51CAB;1066.
 
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\presentacion.aux
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\01-motivacion.aux
-) (C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\02-imagenes.aux
-)
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\03-deteccion.aux)
-
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\04-discriminacion
-.aux)
-(C:\Users\vicky\Documents\Tesis\tesis\trunk\PresentacionTesis\05-conclusiones.a
-ux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 15693 strings out of 495285
- 299751 string characters out of 3180393
- 364608 words of memory out of 3000000
- 18313 multiletter control sequences out of 15000+200000
- 10105 words of font info for 38 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 49i,20n,62p,402b,790s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
-gram Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Fil
-es/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTe
-X 2.8/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on presentacion.pdf (39 pages, 1372876 bytes).
+ 17679 strings out of 493921
+ 342539 string characters out of 3147277
+ 404620 words of memory out of 3000000
+ 20358 multiletter control sequences out of 15000+200000
+ 10399 words of font info for 39 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 56i,20n,65p,393b,792s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb>
+Output written on presentacion.pdf (48 pages, 4315488 bytes).
 PDF statistics:
- 1546 PDF objects out of 1728 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
- 324 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1862 PDF objects out of 2073 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 383 words of extra memory for PDF output out of 10000 (max. 10000000)
 

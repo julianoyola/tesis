@@ -1,30 +1,31 @@
-\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}
-\BOOKMARK [1][-]{section.1.1}{Introducci\363n}{chapter.1}
-\BOOKMARK [0][-]{chapter.2}{Im\341genes utilizadas}{}
-\BOOKMARK [1][-]{section.2.1}{Las im\341genes de piel y sus caracter\355sticas}{chapter.2}
-\BOOKMARK [0][-]{chapter.3}{Detecci\363n de ves\355culas}{}
-\BOOKMARK [1][-]{section.3.1}{Metodolog\355a propuesta}{chapter.3}
-\BOOKMARK [1][-]{section.3.2}{Selecci\363n de un espacio de color \363ptimo}{chapter.3}
-\BOOKMARK [1][-]{section.3.3}{Detecci\363n de bordes}{chapter.3}
-\BOOKMARK [1][-]{section.3.4}{M\351todo de detecci\363n de bordes Canny}{chapter.3}
-\BOOKMARK [1][-]{section.3.5}{Operaciones morfol\363gicas}{chapter.3}
-\BOOKMARK [1][-]{section.3.6}{Detecci\363n de c\355rculos}{chapter.3}
-\BOOKMARK [1][-]{section.3.7}{Porcentaje de puntos del c\355rculo detectado}{chapter.3}
-\BOOKMARK [1][-]{section.3.8}{Radios utilizados para la detecci\363n de las ves\355culas}{chapter.3}
-\BOOKMARK [1][-]{section.3.9}{Eliminaci\363n de detecciones duplicadas}{chapter.3}
-\BOOKMARK [1][-]{section.3.10}{Ecualizaci\363n del histograma}{chapter.3}
-\BOOKMARK [1][-]{section.3.11}{Descripci\363n del proceso realizado}{chapter.3}
-\BOOKMARK [0][-]{chapter.4}{Discriminaci\363n de enfermedades}{}
-\BOOKMARK [1][-]{section.4.1}{Metodolog\355a propuesta}{chapter.4}
-\BOOKMARK [1][-]{section.4.2}{T\351cnicas basadas en el histograma de color}{chapter.4}
-\BOOKMARK [2][-]{subsection.4.2.1}{Construcci\363n de un modelo te\363rico}{section.4.2}
-\BOOKMARK [2][-]{subsection.4.2.2}{Comparaci\363n entre una ves\355cula y la piel normal}{section.4.2}
-\BOOKMARK [2][-]{subsection.4.2.3}{Comparaci\363n entre una ves\355cula de una enfermedad y otra}{section.4.2}
-\BOOKMARK [1][-]{section.4.3}{T\351cnicas basadas en la comparaci\363n de media poblacional}{chapter.4}
-\BOOKMARK [2][-]{subsection.4.3.1}{Comparaci\363n por distancia de Mahalanobis}{section.4.3}
-\BOOKMARK [2][-]{subsection.4.3.2}{Test de distribuci\363n Hotelling T-Cuadrada}{section.4.3}
-\BOOKMARK [2][-]{subsection.4.3.3}{Test de ANOVA}{section.4.3}
-\BOOKMARK [0][-]{chapter.5}{Conclusiones}{}
-\BOOKMARK [1][-]{section.5.1}{Conclusiones sobre la detecci\363n de ves\355culas}{chapter.5}
-\BOOKMARK [1][-]{section.5.2}{Conclusiones sobre la discriminaci\363n de enfermedades}{chapter.5}
-\BOOKMARK [0][-]{chapter.6}{Contactos}{}
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Introducci\363n}{chapter.1}% 2
+\BOOKMARK [0][-]{chapter.2}{Im\341genes utilizadas}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Las im\341genes de piel y sus caracter\355sticas}{chapter.2}% 4
+\BOOKMARK [0][-]{chapter.3}{Detecci\363n de ves\355culas}{}% 5
+\BOOKMARK [1][-]{section.3.1}{Metodolog\355a propuesta}{chapter.3}% 6
+\BOOKMARK [1][-]{section.3.2}{Selecci\363n de un espacio de color \363ptimo}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.3}{Detecci\363n de bordes}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.4}{M\351todo de detecci\363n de bordes Canny}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.5}{Operaciones morfol\363gicas}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.6}{Detecci\363n de c\355rculos}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.7}{Porcentaje de puntos del c\355rculo detectado}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.8}{Radios utilizados para la detecci\363n de las ves\355culas}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.9}{Eliminaci\363n de detecciones duplicadas}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.10}{Ecualizaci\363n del histograma}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.11}{Comparaci\363n de los espacios de color}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.12}{Descripci\363n del proceso realizado}{chapter.3}% 17
+\BOOKMARK [0][-]{chapter.4}{Discriminaci\363n de enfermedades}{}% 18
+\BOOKMARK [1][-]{section.4.1}{Metodolog\355a propuesta}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.2}{T\351cnicas basadas en el histograma de color}{chapter.4}% 20
+\BOOKMARK [2][-]{subsection.4.2.1}{Construcci\363n de un histograma de referencia}{section.4.2}% 21
+\BOOKMARK [2][-]{subsection.4.2.2}{Comparaci\363n entre una ves\355cula y la piel normal}{section.4.2}% 22
+\BOOKMARK [2][-]{subsection.4.2.3}{Comparaci\363n entre una ves\355cula de una enfermedad y otra}{section.4.2}% 23
+\BOOKMARK [1][-]{section.4.3}{T\351cnicas basadas en la comparaci\363n de media poblacional}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.3.1}{Comparaci\363n por distancia de Mahalanobis}{section.4.3}% 25
+\BOOKMARK [2][-]{subsection.4.3.2}{Test de distribuci\363n Hotelling T-Cuadrada}{section.4.3}% 26
+\BOOKMARK [2][-]{subsection.4.3.3}{Test de ANOVA}{section.4.3}% 27
+\BOOKMARK [0][-]{chapter.5}{Conclusiones}{}% 28
+\BOOKMARK [1][-]{section.5.1}{Conclusiones sobre la detecci\363n de ves\355culas}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.2}{Conclusiones sobre la discriminaci\363n de enfermedades}{chapter.5}% 30
+\BOOKMARK [0][-]{chapter.6}{Contactos}{}% 31

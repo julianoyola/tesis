@@ -1,6 +1,18 @@
 \section{Detección de vesículas}
 
 \subsection{Espacio de color}
+
+\begin{frame}
+	\frametitle{Metodología propuesta}
+	Técnicas de procesamiento digital de imágenes
+	\begin{itemize}
+		\item Selección de espacio de color
+		\item Detección de bordes
+		\item Detección de círculos
+		\item Ecualización del histograma
+	\end{itemize}
+\end{frame}
+
 \begin{frame}
 	\frametitle{Espacio de color}
 	¿Cómo representamos los colores y la luz en el ordenador?
@@ -9,7 +21,7 @@
 		\item Luminancia vs Crominancia
 		\item YUV vs L*a*b
 	\end{itemize}
-	Luminancia: detección de bordes\\
+	Luminancia: detección de bordes
 	Crominancia: detección de piel y falsos positivos
 \end{frame}
 
@@ -34,7 +46,7 @@
 	\end{tabular}
 \end{frame}
 
-\subsection{Detección de bordes}
+\subsection{Detección de bordes y circulos}
 \begin{frame}
 	\frametitle{Detección de bordes}
 	\begin{itemize}
@@ -46,21 +58,32 @@
 			\item Baja tasa de error
 			\item Buena localización del borde
 		\end{itemize}
+		\item Método Canny:
+		\begin{itemize}
+			\item Robusto contra el ruido
+			\item Gran adaptabilidad
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Método de Canny}
+	Criterios:
 	\begin{itemize}
-		\item Robusto contra el ruido
-		\item Gran adaptabilidad
-		\item Etapas del método:
-		\begin{itemize}
-			\item Suavizado de la imagen: Filtro gaussiano\\
-			\item Obtención del gradiente: Filtro pasa altos en dirección vertical y horizontal \\
-			\item Supresión de puntos que no son máximos locales: Adelgazamiento del ancho de los bordes hasta lograr bordes de un píxel de ancho\\
-			\item Umbral con histéresis: Función de histéresis basada en dos umbrales; con este proceso se trata de reducir la posibilidad de aparición de contornos falsos.\\
-		\end{itemize}
+		\item Detectar los bordes sin eliminar ninguno y sin detectar bordes falsos\\
+		\item Minimizar la diferencia entre la localización real del borde y la que detecta el algoritmo \\
+		\item Evitar la detección de bordes duplicados\\
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Método de Canny}
+     Etapas del método:
+	\begin{itemize}
+		\item Suavizado de la imagen: Filtro gaussiano\\
+		\item Obtención del gradiente: Filtro pasa altos en dirección vertical y horizontal \\
+		\item Supresión de puntos que no son máximos locales: Adelgazamiento del ancho de los bordes hasta lograr bordes de un píxel de ancho\\
+		\item Umbral con histéresis: Función de histéresis basada en dos umbrales; con este proceso se trata de reducir la posibilidad de aparición de contornos falsos\\
 	\end{itemize}
 \end{frame}
 
@@ -71,8 +94,7 @@
 		\item Simplificar los datos de una imagen
 		\item Preservar las características esenciales
 		\item Eliminar aspectos irrelevantes
-		\item bridge: Une pixeles que están separados
-		\item Otras operaciones: open, close, clean
+		\item Operaciones con la que probamos: open, close, clean, bridge
 	\end{itemize}
 \end{frame}
 
@@ -91,63 +113,137 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Ejemplo: Bordes detectados en la imagen}
-	\includegraphics[width=4.3in]{Resources/bordesEnLaImagen-Varicel-01.jpg} \\
+	\frametitle{Ejemplo: Bordes detectados en algunas imágenes}
+	\begin{columns}[c]
+	\column{1.5in}
+		\includegraphics[width=1.6in]{../Imagenes/U.Iowa/Varicela/Varicel-01.jpg} \\
+		\includegraphics[width=2in]{Resources/bordes-Varicel-01.jpg}  \\
+		\includegraphics[width=1.6in]{Resources/bordesEnLaImagen-Varicel-01.jpg} \\
+	\end{columns}	
 \end{frame}
 
-\begin{frame}
-	\frametitle{Ejemplo: Bordes detectados}
-	\includegraphics[width=4.3in]{Resources/bordes-Varicel-01.jpg}
-\end{frame}
-
-\subsection{Detección de círculos}
 \begin{frame}
 	\frametitle{Detección de círculos}
 	\begin{itemize}
-		\item ¿Dados los bordes, cuándo conforman un círculo?
-		\item CHT: Circular Hough Transform
+		\item ¿Cómo determinar que estamos en presencia de un círculo?
+		\item Transformada de Hough
 		\begin{itemize}
 			\item Espacio de Hough
 			\item Arreglo de acumulación
 		\end{itemize}
-		\item Selección de candidatos
+		\item Definiciones de la transformada
 		\begin{itemize}
-			\item Ponderación con respecto al máximo
-			\item Umbralización
+			\item Función de Parámetros de la Transformada
+			\item Transformada Directa de Hough
+			\item Transformada Inversa de Hough
 		\end{itemize}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Ejemplo: Imagen con bordes detectados}
+	\frametitle{Ejemplo: Arreglo de acumulación}
 	\begin{figure}[h]
-		\includegraphics[width=4in]{Resources/resultado-Varicel-02-radio24-bordes.jpg}
+		\includegraphics[scale=0.25]{Resources/coins2.jpg}
+		\includegraphics[scale=0.33]{Resources/ccoins2-1.png}
+		\caption{\textbf{Izquierda:} Fotografía original de las monedas. \textbf{Derecha:} Arreglo acumulador de votos. \label{fig:acumuladorMonedas}}
 	\end{figure}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Ejemplo: Arreglo de acumulación}
 	\begin{figure}[h]
-		\includegraphics[width=3.5in]{Resources/acumulador-Varicel-02.jpg}
+	\centering
+		\includegraphics[scale=0.35]{Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png}
+		\includegraphics[scale=0.45]{Resources/acumulador-Varicel-02.jpg}
+		\caption{\textbf{Izquierda:} Fotografía original de varicela. \textbf{Derecha:} Arreglo acumulador con votos sumados. \label{fig:acumuladorVesiculas}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo: Imagen con bordes detectados}
+	\begin{figure}[h]
+	\centering
+		\includegraphics[width=4in]{Resources/resultado-Varicel-02-radio24-bordes.jpg}
 	\end{figure}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Ejemplo: Imagen con el círculo detectado}
-	\begin{figure}[h]
+	\begin{figure}
+	\centering
 		\includegraphics[width=4in]{Resources/resultado-Varicel-02-radio23_1.jpg}
 	\end{figure}
 \end{frame}
 
-\subsection{Falsos positivos y falsos negativos}
 \begin{frame}
-	\frametitle{Falsos positivos y falsos negativos}
+	\frametitle{Transformada Circular de Hough}
+	Procedimiento realizado:
 	\begin{itemize}
-		\item Detección de círculos redundantes
-		\begin{figure}[h]
-			\includegraphics[width=2.2in]{Resources/resultado-Varicel-02-radio23_1.jpg}
-			\includegraphics[width=2.2in]{Resources/resultado-Varicel-02-radio24.jpg}
-		\end{figure}
-		\item Análisis del interior de la ampolla: Discriminación
-	\end{itemize}
+		\item Se aplica CHT: Circular Hough Trasnform. Ecuación $(x-x0)^2 + (y-y0)^2 = r^2$ \\
+		\item Selección de candidatos: Ponderación con respecto al máximo y Umbralización   \\
+		\item Radios utilizados \\
+		\item Eliminación de detecciones duplicadas \\
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Radios Utilizados}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.30]{Resources/recorte-resultado-varicella_18-bordes.jpg}
+		\includegraphics[scale=0.30]{Resources/recorte-resultado-varicella_18-radio40.jpg}
+		\includegraphics[scale=0.29]{Resources/recorte-resultado-varicella_18-radio43.jpg}
+		\caption{Detección de vesículas con diferentes radios. \textbf{Izq:} Bordes detectados. \textbf{Centro:} Detección de vesículas con radio radio = 40. \textbf{Der:} Detección de vesículas con radio = 43. \label{fig:deteccionRadios4043}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Eliminación de detecciones duplicadas}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.35]{Resources/recorte-resultado-Varicel-02-radio23.jpg}
+		\includegraphics[scale=0.35]{Resources/recorte-resultado-Varicel-02-radio24.jpg}
+		\caption{Detección de vesículas con diferentes radios. \textbf{Izquierda:} radio = 23. \textbf{Derecha:} radio = 24. \label{fig:deteccionRadios2324}}
+	\end{figure}
+\end{frame}
+
+\subsection{Ecualización del histograma}
+\begin{frame}
+	\frametitle{Ecualización del histograma}
+	¿Qué se desea obtener?
+	\begin{itemize}
+		\item Incrementar el contraste
+		\item Mejorar de la detección
+	\end{itemize}	
+	CLAHE: Ecualización adaptativa limitando el contraste
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ejemplos de aplicación de ecualización}
+	Sin aplicar ecualización
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.25]{Resources/recorte-Varicella_20_bordes_sin_ecualizacion.png}
+		\includegraphics[scale=0.25]{Resources/recorte-Varicella_20_resultado_sin_ecualizacion.png}
+		\caption{\textbf {Detección de vesículas} \textbf{Izq:} Bordes detectados. \textbf{Der:} Cículos detectados. }
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ejemplos de aplicación de ecualización}
+	Aplicando ecualización
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[scale=0.25]{Resources/recorte-Varicella_20_bordes_con_ecualizacion.png}
+		\includegraphics[scale=0.25]{Resources/recorte-Varicella_20_resultado_con_ecualizacion.png}
+		\caption{\textbf{Detección de vesículas} \textbf{Izq:} Bordes detectados. \textbf{Der:} Cículos detectados.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Esquema del proceso realizado}
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.4]{Resources/diagrama-deteccion.png}
+	\end{figure}	
 \end{frame}
