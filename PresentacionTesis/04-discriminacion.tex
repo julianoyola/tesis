@@ -5,3 +5,380 @@
 	\frametitle{Selección de vesículas de referencia}
 	...
 \end{frame}
+
+\subsection{Objetivo}
+\begin{frame}
+	\frametitle{Motivaciones}
+	¿Existen diferencias entre las vesículas de la varicela y las de otra enfermedad? \\
+	¿Se pueden desarrollar técnicas de detección y discriminación automáticas? \\
+	¿Existen diferencias entre la piel sana y las vesículas? \\
+	¿Se puede detectar un falso positivo? \\
+	\begin{itemize}
+		\item Análisis comparativo entre la varicela y otra enfermedad \\
+		\item Análisis comparativo entre la varicela y la piel sana \\
+	\end{itemize}
+\end{frame}
+
+\subsection{Técnicas utilizadas}
+\begin{frame}
+	\frametitle{Técnicas utilizadas}
+	\begin{itemize}
+
+		\item Técnicas basadas en el histograma de color
+		\begin{itemize}
+			\item Construcción de un histograma de referencia
+			\item Análisis de casos muestra: comparaciones entre el histograma de cada vesícula y
+			\begin{itemize}
+				\item el histograma promedio de varicela
+				\item el histograma promedio de herpes zóster
+			\end{itemize}
+		\end{itemize}
+
+		\item Técnicas basadas en la comparación de media poblacional
+		\begin{itemize}
+			\item Comparación por distancia de Mahalanobis
+			\item Test de distribución Hotelling T-Cuadrada
+			\item Test de ANOVA
+		\end{itemize}
+		
+	\end{itemize}
+\end{frame}
+
+\subsection{Construcción de un histograma de referencia}
+\begin{frame}
+	\frametitle{Histogramas sobre espacios de color}
+	Análisis del histograma de las distintas componentes de color \\
+	\begin{itemize}
+		\item De forma individual \\
+		\item Histograma bivariado de a pares de componentes \\
+	\end{itemize}
+	Buscar si existen patrones de concentración de valores de color \\
+	Qué espacio de color utilizar? \\
+	\begin{itemize}
+		\item L*a*b: Dos componentes de crominancia (analizadas en conjunto con un histograma bivariado) \\
+		\item RGB: Información sobre el corrimiento al rojo de las vesículas en relación a la piel normal \\
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Histogramas de referencia}
+	Doce histogramas de referencia \\
+	Valores extraídos de un conjunto de vesículas conocidas, contra los cuales comparar las nuevas vesículas \\
+	\begin{itemize}
+
+		\item RGB: Histogramas individuales de las componentes R, G y B
+		\item RGB: Histogramas bivariados de las componentes R y B, G y B, R y B
+		\item L*a*b: Histogramas individuales de las componentes L, *a y *b
+		\item L*a*b: Histogramas bivariados de las componentes L y *a, *a y *b, L y *b
+
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Etapas de la enfermedad}
+	La varicela atraviesa distintas etapas durante su desarrollo \\
+	\begin{itemize}
+
+		\item Incubación
+		\item Vesículas típicas: Etapa seleccionada para el análisis
+		\item Costras
+
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Etapas de la enfermedad}
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.25]{Resources/recorte-chicken_pox_primary_lesions_03.jpg}
+	\includegraphics[scale=0.253]{Resources/recorte-varicella_18.jpg}
+	\caption{Aspectos característicos de la varicela en las distintas etapas de la enfermedad.\textbf{Izq:} Vesículas características de la primer etapa de la enfermedad. \textbf{Der:} Costras características de la última etapa de la enfermedad \label{fig:comparacionEtapasVaricela}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Histogramas}
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.25]{Resources/histograma-promedio-varicela-ab.png}
+	\includegraphics[scale=0.25]{Resources/histograma-promedio-herpes-ab.png}
+	\caption{Histogramas bivariados promedio de varicela y herpes zóster, sobre las variables de crominancia *a y *b. \textbf{Izq:} Varicela. \textbf{Der:} Herpes zóster. \label{fig:histogramasPromedio}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Histogramas}
+	Leve corrimiento hacia el rojo del histograma de varicela \\
+	Dispersión de valores mayor en el histograma del espacio RGB \\
+	Mayor concentración de valores para el espacio de color L*a*b \\
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.15]{Resources/contourAB-ch03.png}
+	\includegraphics[scale=0.15]{Resources/contourRB-ch03.png}
+	\includegraphics[scale=0.15]{Resources/contourRG-ch03.png}
+	\caption{Histogramas bivariados promedio de la imagen izquierda de la figura \ref{fig:comparacionEtapasVaricela}, \textbf{Arriba izq:} , Variables de crominancia *a y *b. \textbf{Arriba der:} Variables de crominancia R y B. \textbf{Abajo:} Variables de crominancia R y B. \label{fig:histogramasPromedioch03}}
+	\end{figure}
+\end{frame}
+
+\subsection{Comparación entre una vesícula y la piel normal}
+\begin{frame}
+	\frametitle{Divergencia entre histogramas}
+	Mediciones de distancia (o divergencia) entre histogramas \\
+	\textbf{Indicador buscado:} Si la distancia del histograma de la vesícula candidata al promedio está por debajo o por encima de cierto umbral \\
+	Evaluación sobre: \\
+	\begin{itemize}
+
+		\item Norma 1
+		\item Norma 2
+		\item Divergencia de Kullback-Leibler (KLD)
+
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Divergencia de Kullback-Leibler}
+	También llamada entropía relativa \\
+	Mide la diferencia entre dos distribuciones P y Q \\
+	En nuestro caso, medirá la diferencia entre dos histogramas empíricos \\
+	Mide la cantidad esperada de bits extra requeridos para codificar ejemplos de P utilizando un código basado en Q \\
+	\begin{itemize}
+
+		\item P representa la distribución real de datos u observaciones (en este caso, la vesícula observada)
+		\item Q representa el modelo teórico (en este caso, el histograma promedio)
+
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Divergencia de Kullback-Leibler}
+	\[
+	KLD(P||Q) = \displaystyle\sum_{i} P(i) \ln(\frac{P(i)}{Q(i)}).
+	\]
+
+	La KLD no es una distancia, porque no cumple con la condición de simetría \\
+	Utilizamos una variante simétrica de la KLD \\
+
+	\[
+	KLD_{sym}(P||Q) = \frac{KLD(P||Q) + KLD(Q||P)}{2}.
+	\]
+
+\end{frame}
+
+
+\subsection{Mediciones}
+\begin{frame}
+	\frametitle{Medición: KLD}
+	Distancia KLD entre los círculos detectados y los histogramas promedio correspondientes \\
+
+\begin{table}[ht]
+\centering
+\begin{tabular}[pos]{ l | l | c | c | c }
+	Imagen & Círculo detectado & $KLD_{A}$ & $KLD_{B}$ & $KLD_{AB}$ \\
+\hline
+Varicela 1 & Falso positivo	& $24.26$	& $16.98$	& $32.60$ \\
+Varicela 2 & Falso positivo	& $27.54$	& $17.22$	& $45.41$ \\
+Varicela 3 & Falso positivo	& $25.71$	& $17.39$	& $28.28$ \\
+Varicela 4 & Falso positivo	& $22.52$	& $15.74$	& $24.90$ \\
+\hline
+Varicela 1 & Vesícula 1	& $0.33$	& $1.69$	& $ 6.43$     \\
+Varicela 1 & Vesícula 2	& $0.51$	& $1.16$	& $ 7.15$     \\
+Varicela 1 & Vesícula 3	& $1.13$	& $4.46$	& $11.39$     \\
+Varicela 1 & Vesícula 4	& $0.68$	& $2.60$	& $11.17$     \\
+Varicela 2 & Vesícula 1	& $2.00$	& $0.35$	& $12.87$     \\
+Varicela 3 & Vesícula 1	& $2.17$	& $3.87$	& $12.66$     \\
+Varicela 3 & Vesícula 2	& $0.68$	& $0.50$	& $ 6.06$     \\
+Varicela 3 & Vesícula 3	& $1.49$	& $0.49$	& $ 7.01$     \\
+Varicela 3 & Vesícula 1	& $1.83$	& $5.07$	& $11.46$     \\
+\end{tabular}
+\caption{Mediciones de KLD entre círculos detectados y el promedio de todas las vesículas de varicela. \label{tab:KLD}}
+\end{table}
+
+\end{frame}
+
+
+\subsection{Mediciones}
+\begin{frame}
+	\frametitle{Imágenes}
+
+\begin{figure}[ht]
+\centering
+	\begin{columns}[c]
+		\column{2in}
+		\includegraphics[width=0.32\textwidth]{Resources/chicken_pox_primary_lesions_03_concirculos_crop.jpg} \\
+		\includegraphics[width=0.32\textwidth]{Resources/Varicel-02_resultado_con_ecualizacion_crop.png} \\
+	\column{2in}	
+		\includegraphics[width=0.32\textwidth]{Resources/Varicella_20_resultado_con_ecualizacion_crop.png} \\
+		\includegraphics[width=0.32\textwidth]{Resources/varicella_34_concirculos_crop.jpg} \\
+	\column{2in}	
+		\includegraphics[width=0.32\textwidth]{Resources/herpes_zoster_114_concirculos_crop.jpg} \\
+		\includegraphics[width=0.32\textwidth]{Resources/herpes_zoster_309_concirculos_crop.png} \\
+		\includegraphics[width=0.32\textwidth]{Resources/herpes_zoster_8_concirculos_crop.jpg} \\
+	\end{columns}	
+	\caption{Vesículas analizadas. (a) - (b) - (c) - (d) Vesículas de varicela. (e) - (f) - (g) Vesículas de herpes zóster.\label{fig:imagenesKLD}}
+\end{figure}
+
+\end{frame}
+
+
+\subsection{Comparación entre vesículas de varicela y herpes}
+\begin{frame}
+	\frametitle{Comparación}
+	Conjunto de círculos detectados, de ambas enfermedades \\
+	Mediciones realizadas contra el histograma promedio de la varicela \\
+	Resultado esperado:
+	
+	\begin{itemize}
+
+		\item Divergencias de las vesículas de varicela: dentro del rango esperado
+		\item Divergencias de los histogramas de herpes: pocas o ninguna de las vesículas caigan dentro del rango esperado
+
+	\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Resultados}
+	La diferencia entre los valores de $KLD_{AB}$ no resulta concluyente para diferenciar vesículas de ambas enfermedades. \\
+	Pruebas adicionales:
+	\begin{itemize}
+
+		\item Medición de distancias: la norma 1 y norma 2
+		\item Histogramas de componentes individuales de RGB
+		\item Histogramas bivariados de componentes de RGB
+		\item Histogramas de componentes individuales de L*a*b
+
+	\end{itemize}
+
+\end{frame}
+	
+
+\begin{frame}
+	\frametitle{Resultados}
+\begin{table}[ht]
+\centering
+\begin{tabular}[pos]{ l | l | c | c | c }
+	Imagen \ref{fig:imagenesKLD}  & Círculo detectado & $KLD_{A}$ & $KLD_{B}$ & $KLD_{AB}$ \\
+\hline
+Herpes 1 & Vesícula 1	&  $ 7.86$	&	$10.42$	&	$18.73$	\\
+Herpes 1 & Vesícula 2	&  $17.79$	&	$15.80$	&	$22.70$	\\
+Herpes 1 & Vesícula 3	&  $ 7.24$	&	$11.72$	&	$20.27$	\\
+Herpes 1 & Vesícula 4	&  $ 8.39$	&	$14.63$	&	$20.15$	\\
+Herpes 1 & Vesícula 5	&  $ 7.42$	&	$10.35$	&	$17.85$	\\
+Herpes 1 & Vesícula 6	&  $ 5.41$	&	$ 4.95$	&	$15.72$	\\
+
+Herpes 2 & Vesícula 1	&	$4.03$	&	$5.78$	&	$12.86$ 	\\
+Herpes 2 & Vesícula 2	&	$2.93$	&	$1.99$	&	$11.70$ 	\\
+Herpes 2 & Vesícula 3	&	$6.35$	&	$6.79$	&	$15.60$	\\
+
+Herpes 3 & Vesícula 1	&	$26.25$	&	$24.90$	&	$31.63$	\\
+Herpes 3 & Vesícula 2	&	$ 4.81$	&	$ 9.57$	&	$19.64$	\\
+\hline
+Varicela 1 & Vesícula 1	& $0.33$	& $1.69$	& $ 6.43$      \\
+Varicela 1 & Vesícula 2	& $0.51$	& $1.16$	& $ 7.15$      \\
+Varicela 1 & Vesícula 3	& $1.13$	& $4.46$	& $11.39$      \\
+Varicela 1 & Vesícula 4	& $0.68$	& $2.60$	& $11.17$      \\
+Varicela 2 & Vesícula 1	& $2.00$	& $0.35$	& $12.87$      \\
+Varicela 3 & Vesícula 1	& $2.17$	& $3.87$	& $12.66$      \\
+Varicela 3 & Vesícula 2	& $0.68$	& $0.50$	& $ 6.06$      \\
+Varicela 3 & Vesícula 3	& $1.49$	& $0.49$	& $ 7.01$      \\
+Varicela 3 & Vesícula 1	& $1.83$	& $5.07$	& $11.46$      \\
+\end{tabular}
+\caption{Mediciones de KLD entre círculos detectados de varicela y herpes zóster, contra el histograma promedio de varicela \label{tab:KLDvh}}
+\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Conclusión parcial}
+	En principio, el análisis de la divergencia de histogramas entre la varicela y el herpes zóster no alcanza para determinar un rango de valores para distinguir entre ambas enfermedades. \\
+	Sin embargo, el mismo método arroja resultados favorables para determinar si una vesícula detectada es un falso positivo (piel) o una vesícula real de varicela.
+
+\end{frame}
+
+
+
+
+\subsection{Técnicas basadas en la comparación de media poblacional}
+\begin{frame}
+	\frametitle{Distancia de Mahalanobis}
+	La distancia Mahalanobis entre dos vectores aleatorios multidimensionales $x$ e $y$, provenientes de la misma población, se define como: \\
+
+\begin{equation}
+d_{mahal}(\vec{x},\vec{y}) = \sqrt{(\vec{x}-\vec{y})^{T} S^{-1} (\vec{x}-\vec{y})}.
+\end{equation}
+
+Siendo $\vec{x}$ e $\vec{y}$ los vectores entre los cuáles se desea medir la distancia.
+
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Distancia de Mahalanobis}
+
+	La distancia Mahalanobis entre un vector multivariado $x$ a un conjunto de valores con media $\mu$, y matriz de covarianza $S$, se define como: \\
+
+\begin{eqnarray}
+D_{mahal}(x) & = & \sqrt{(x-\mu)^{T} S^{-1} (x-\mu)}.
+\end{eqnarray}
+
+\begin{eqnarray}
+x & = & (x_{1},x_{2},x_{3},...,x_{n})^{T} \nonumber \\
+\mu & = & (\mu_{1},\mu_{2},\mu_{3},...,\mu_{n})^{T} \nonumber
+\end{eqnarray}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Distancia de Mahalanobis}
+
+	Similar a la distancia euclídea \\
+	Sirve para determinar la similitud entre los dos vectores \\
+	A diferencia de la distancia euclídea, tiene en cuenta la correlación entre las variables \\
+	Se adapta mejor para distribuciones simétricas no esféricas \\
+	Es útil para determinar la distancia de un punto a la media de una distribución, o la distancia entre las medias de dos distribuciones \\
+	Entonces, puede indicar si los píxeles de una vesícula detectada son más similares a los de varicela o a los de herpes zóster \\
+
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Resultados}
+	Mediciones de píxeles de varicela, herpes zóster y falsos positivos contra el histograma promedio de varicela \\
+	Se puede notar que el promedio de la distancia de Mahalanobis permite discriminar los falsos positivos, pero no permite distinguir entre vesículas de varicela y de herpes zóater \\
+	Esto indica que las distribuciones de color de ambas enfermedades son muy similares \\
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Resultados}
+\begin{table}[h!]
+\centering
+
+\begin{tabular}[pos]{ l | l | c | c | c | c | c | c }
+Imagen \ref{fig:imagenesKLD} & Círculo detectado & $D_{L}$ & $D_{A}$ & $D_{B}$ & $D_{LA}$ & $D_{LB}$ & $D_{AB}$ \\
+\hline
+Varicela 1 & Falso positivo 1	&	$13.2$	&	$19.2$	&	$0.1$	&	$20.5$	&	$23.4$	&	$35.4$	\\
+Varicela 1 & Falso positivo 2	&	$ 9.5$	&	$19.4$	&	$0.0$	&	$20.0$	&	$16.1$	&	$34.2$	\\
+Varicela 1 & Falso positivo 3	&	$ 5.1$	&	$14.6$	&	$0.0$	&	$15.5$	&	$ 8.0$	&	$24.6$	\\
+Varicela 1 & Falso positivo 4	&	$11.0$	&	$15.3$	&	$0.1$	&	$16.7$	&	$19.2$	&	$27.7$	\\
+\hline
+Varicela 1 & Vesícula 1	&	$1.5$	&	$3.0$	&	$0.9$	&	$ 5.3$	&	$3.0$	&	$3.7$	\\
+Varicela 1 & Vesícula 2	&	$3.6$	&	$4.5$	&	$1.2$	&	$11.7$	&	$7.5$	&	$5.3$	\\
+Varicela 1 & Vesícula 3	&	$1.7$	&	$1.6$	&	$0.3$	&	$ 3.5$	&	$2.4$	&	$2.0$	\\
+Varicela 1 & Vesícula 4	&	$2.5$	&	$4.7$	&	$0.9$	&	$ 7.5$	&	$4.1$	&	$5.6$	\\
+\hline
+Herpes 1 & Vesícula 1 & $0.90$	&	$2.70$	&	$1.60$	&	$ 6.29$	&	$4.19$	&	$3.70$	\\
+Herpes 1 & Vesícula 2 & $1.14$	&	$2.64$	&	$1.16$	&	$ 3.48$	&	$1.97$	&	$3.50$	\\
+Herpes 2 & Vesícula 1 & $2.94$	&	$2.69$	&	$1.00$	&	$13.53$	&	$8.38$	&	$3.15$	\\
+Herpes 2 & Vesícula 2 & $1.74$	&	$4.75$	&	$1.63$	&	$14.37$	&	$7.21$	&	$5.38$	\\
+Herpes 3 & Vesícula 1 & $1.39$	&	$6.83$	&	$1.95$	&	$17.51$	&	$6.48$	&	$7.53$	\\
+Herpes 3 & Vesícula 2 & $0.98$	&	$3.62$	&	$1.86$	&	$ 7.59$	&	$4.42$	&	$4.02$	\\
+
+\end{tabular}
+\caption{Mediciones de promedio de $D_{mahal}$ entre círculos detectados de varicela, herpes zóster y falsos positivos, contra el histograma promedio de varicela \label{tab:Mahal}}
+\end{table}
+
+\end{frame}

@@ -11,6 +11,14 @@
 \beamer@subsectionintoc {3}{3}{Ecualizaci\'on del histograma}{41}{0}{3}
 \beamer@sectionintoc {4}{Discriminaci\'on entre varicela y otras enfermedades}{45}{0}{4}
 \beamer@subsectionintoc {4}{1}{Construcci\'on de un modelo te\'orico}{45}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones}{46}{0}{5}
-\beamer@subsectionintoc {5}{1}{Trabajo futuro}{46}{0}{5}
-\beamer@subsectionintoc {5}{2}{Preguntas}{47}{0}{5}
+\beamer@subsectionintoc {4}{2}{Objetivo}{46}{0}{4}
+\beamer@subsectionintoc {4}{3}{T\'ecnicas utilizadas}{47}{0}{4}
+\beamer@subsectionintoc {4}{4}{Construcci\'on de un histograma de referencia}{48}{0}{4}
+\beamer@subsectionintoc {4}{5}{Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}{54}{0}{4}
+\beamer@subsectionintoc {4}{6}{Mediciones}{57}{0}{4}
+\beamer@subsectionintoc {4}{7}{Mediciones}{58}{0}{4}
+\beamer@subsectionintoc {4}{8}{Comparaci\'on entre ves\IeC {\'\i }culas de varicela y herpes}{59}{0}{4}
+\beamer@subsectionintoc {4}{9}{T\'ecnicas basadas en la comparaci\'on de media poblacional}{63}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones}{68}{0}{5}
+\beamer@subsectionintoc {5}{1}{Trabajo futuro}{68}{0}{5}
+\beamer@subsectionintoc {5}{2}{Preguntas}{69}{0}{5}
