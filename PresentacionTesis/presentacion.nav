@@ -16,143 +16,132 @@
 \headcommand {\sectionentry {2}{Las im\'agenes de piel y sus caracter\IeC {\'\i }sticas}{10}{Las im\'agenes de piel y sus caracter\IeC {\'\i }sticas}{0}}
 \headcommand {\beamer@sectionpages {7}{9}}
 \headcommand {\beamer@subsectionpages {7}{9}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{10}{Caracter\IeC {\'\i }sticas de las im\'agenes utilizadas}}\headcommand {\beamer@subsectionpages {10}{9}}
-\headcommand {\slideentry {2}{1}{1}{10/10}{Caracter\IeC {\'\i }sticas de las im\'agenes utilizadas}{0}}
+\headcommand {\slideentry {2}{0}{4}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {2}{1}{2}{11/11}{Caracter\IeC {\'\i }sticas de las im\'agenes utilizadas}{0}}
+\headcommand {\slideentry {2}{0}{5}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{1}{3}{12/15}{Caracter\IeC {\'\i }sticas de las im\'agenes utilizadas}{0}}
+\headcommand {\slideentry {2}{0}{6}{12/15}{}{0}}
 \headcommand {\beamer@framepages {12}{15}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{16}{T\'ecnicas utilizadas y medidas adoptadas}}\headcommand {\beamer@subsectionpages {10}{15}}
-\headcommand {\slideentry {2}{2}{1}{16/19}{T\'ecnicas utilizadas y medidas adoptadas}{0}}
-\headcommand {\beamer@framepages {16}{19}}
-\headcommand {\slideentry {2}{2}{2}{20/20}{T\'ecnicas utilizadas y medidas adoptadas}{0}}
+\headcommand {\slideentry {2}{0}{7}{16/16}{}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\slideentry {2}{0}{8}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\sectionentry {3}{Detecci\'on de ves\IeC {\'\i }culas}{18}{Detecci\'on de ves\IeC {\'\i }culas}{0}}
+\headcommand {\beamer@sectionpages {10}{17}}
+\headcommand {\beamer@subsectionpages {10}{17}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{18}{Espacio de color}}\headcommand {\beamer@subsectionpages {18}{17}}
+\headcommand {\slideentry {3}{1}{1}{18/18}{Espacio de color}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {3}{1}{2}{19/19}{Espacio de color}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {3}{1}{3}{20/20}{Espacio de color}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {2}{2}{3}{21/21}{T\'ecnicas utilizadas y medidas adoptadas}{0}}
+\headcommand {\slideentry {3}{1}{4}{21/21}{Espacio de color}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\sectionentry {3}{Detecci\'on de ves\IeC {\'\i }culas}{22}{Detecci\'on de ves\IeC {\'\i }culas}{0}}
-\headcommand {\beamer@sectionpages {10}{21}}
-\headcommand {\beamer@subsectionpages {16}{21}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{22}{Espacio de color}}\headcommand {\beamer@subsectionpages {22}{21}}
-\headcommand {\slideentry {3}{1}{1}{22/22}{Espacio de color}{0}}
+\headcommand {\slideentry {3}{1}{5}{22/22}{Espacio de color}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {3}{1}{2}{23/23}{Espacio de color}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{23}{Detecci\'on de bordes y circulos}}\headcommand {\beamer@subsectionpages {18}{22}}
+\headcommand {\slideentry {3}{2}{1}{23/23}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\slideentry {3}{1}{3}{24/24}{Espacio de color}{0}}
+\headcommand {\slideentry {3}{2}{2}{24/24}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {3}{1}{4}{25/25}{Espacio de color}{0}}
+\headcommand {\slideentry {3}{2}{3}{25/25}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {25}{25}}
-\headcommand {\slideentry {3}{1}{5}{26/26}{Espacio de color}{0}}
+\headcommand {\slideentry {3}{2}{4}{26/26}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {26}{26}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{27}{Detecci\'on de bordes y circulos}}\headcommand {\beamer@subsectionpages {22}{26}}
-\headcommand {\slideentry {3}{2}{1}{27/27}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\slideentry {3}{2}{5}{27/27}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {3}{2}{2}{28/28}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\slideentry {3}{2}{6}{28/28}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\slideentry {3}{2}{3}{29/29}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\slideentry {3}{2}{7}{29/29}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {3}{2}{4}{30/30}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\slideentry {3}{2}{8}{30/30}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\slideentry {3}{2}{5}{31/31}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\slideentry {3}{2}{9}{31/31}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {3}{2}{6}{32/32}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\slideentry {3}{2}{10}{32/32}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {3}{2}{7}{33/33}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\slideentry {3}{2}{11}{33/33}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {3}{2}{8}{34/34}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\slideentry {3}{2}{12}{34/34}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\slideentry {3}{2}{9}{35/35}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\slideentry {3}{2}{13}{35/35}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {3}{2}{10}{36/36}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\slideentry {3}{2}{14}{36/36}{Detecci\'on de bordes y circulos}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {3}{2}{11}{37/37}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{37}{Ecualizaci\'on del histograma}}\headcommand {\beamer@subsectionpages {23}{36}}
+\headcommand {\slideentry {3}{3}{1}{37/37}{Ecualizaci\'on del histograma}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {3}{2}{12}{38/38}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\slideentry {3}{3}{2}{38/38}{Ecualizaci\'on del histograma}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {3}{2}{13}{39/39}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\slideentry {3}{3}{3}{39/39}{Ecualizaci\'on del histograma}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {3}{2}{14}{40/40}{Detecci\'on de bordes y circulos}{0}}
+\headcommand {\slideentry {3}{3}{4}{40/40}{Ecualizaci\'on del histograma}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{41}{Ecualizaci\'on del histograma}}\headcommand {\beamer@subsectionpages {27}{40}}
-\headcommand {\slideentry {3}{3}{1}{41/41}{Ecualizaci\'on del histograma}{0}}
+\headcommand {\sectionentry {4}{Discriminaci\'on entre varicela y otras enfermedades}{41}{Discriminaci\'on entre varicela y otras enfermedades}{0}}
+\headcommand {\beamer@sectionpages {18}{40}}
+\headcommand {\beamer@subsectionpages {37}{40}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{41}{Objetivo}}\headcommand {\beamer@subsectionpages {41}{40}}
+\headcommand {\slideentry {4}{1}{1}{41/41}{Objetivo}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {3}{3}{2}{42/42}{Ecualizaci\'on del histograma}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{42}{T\'ecnicas utilizadas}}\headcommand {\beamer@subsectionpages {41}{41}}
+\headcommand {\slideentry {4}{2}{1}{42/42}{T\'ecnicas utilizadas}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {3}{3}{3}{43/43}{Ecualizaci\'on del histograma}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{43}{Construcci\'on de un histograma de referencia}}\headcommand {\beamer@subsectionpages {42}{42}}
+\headcommand {\slideentry {4}{3}{1}{43/43}{Construcci\'on de un histograma de referencia}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {3}{3}{4}{44/44}{Ecualizaci\'on del histograma}{0}}
+\headcommand {\slideentry {4}{3}{2}{44/44}{Construcci\'on de un histograma de referencia}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\sectionentry {4}{Discriminaci\'on entre varicela y otras enfermedades}{45}{Discriminaci\'on entre varicela y otras enfermedades}{0}}
-\headcommand {\beamer@sectionpages {22}{44}}
-\headcommand {\beamer@subsectionpages {41}{44}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{45}{Construcci\'on de un modelo te\'orico}}\headcommand {\beamer@subsectionpages {45}{44}}
-\headcommand {\slideentry {4}{1}{1}{45/45}{Construcci\'on de un modelo te\'orico}{0}}
+\headcommand {\slideentry {4}{3}{3}{45/45}{Construcci\'on de un histograma de referencia}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{46}{Objetivo}}\headcommand {\beamer@subsectionpages {45}{45}}
-\headcommand {\slideentry {4}{2}{1}{46/46}{Objetivo}{0}}
+\headcommand {\slideentry {4}{3}{4}{46/46}{Construcci\'on de un histograma de referencia}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{47}{T\'ecnicas utilizadas}}\headcommand {\beamer@subsectionpages {46}{46}}
-\headcommand {\slideentry {4}{3}{1}{47/47}{T\'ecnicas utilizadas}{0}}
+\headcommand {\slideentry {4}{3}{5}{47/47}{Construcci\'on de un histograma de referencia}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\beamer@subsectionentry {0}{4}{4}{48}{Construcci\'on de un histograma de referencia}}\headcommand {\beamer@subsectionpages {47}{47}}
-\headcommand {\slideentry {4}{4}{1}{48/48}{Construcci\'on de un histograma de referencia}{0}}
+\headcommand {\slideentry {4}{3}{6}{48/48}{Construcci\'on de un histograma de referencia}{0}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\slideentry {4}{4}{2}{49/49}{Construcci\'on de un histograma de referencia}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{49}{Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}}\headcommand {\beamer@subsectionpages {43}{48}}
+\headcommand {\slideentry {4}{4}{1}{49/49}{Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}{0}}
 \headcommand {\beamer@framepages {49}{49}}
-\headcommand {\slideentry {4}{4}{3}{50/50}{Construcci\'on de un histograma de referencia}{0}}
+\headcommand {\slideentry {4}{4}{2}{50/50}{Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}{0}}
 \headcommand {\beamer@framepages {50}{50}}
-\headcommand {\slideentry {4}{4}{4}{51/51}{Construcci\'on de un histograma de referencia}{0}}
+\headcommand {\slideentry {4}{4}{3}{51/51}{Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}{0}}
 \headcommand {\beamer@framepages {51}{51}}
-\headcommand {\slideentry {4}{4}{5}{52/52}{Construcci\'on de un histograma de referencia}{0}}
+\headcommand {\slideentry {4}{4}{4}{52/52}{Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}{0}}
 \headcommand {\beamer@framepages {52}{52}}
-\headcommand {\slideentry {4}{4}{6}{53/53}{Construcci\'on de un histograma de referencia}{0}}
+\headcommand {\slideentry {4}{4}{5}{53/53}{Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}{0}}
 \headcommand {\beamer@framepages {53}{53}}
-\headcommand {\beamer@subsectionentry {0}{4}{5}{54}{Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}}\headcommand {\beamer@subsectionpages {48}{53}}
-\headcommand {\slideentry {4}{5}{1}{54/54}{Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{5}{54}{Comparaci\'on entre ves\IeC {\'\i }culas de varicela y herpes}}\headcommand {\beamer@subsectionpages {49}{53}}
+\headcommand {\slideentry {4}{5}{1}{54/54}{Comparaci\'on entre ves\IeC {\'\i }culas de varicela y herpes}{0}}
 \headcommand {\beamer@framepages {54}{54}}
-\headcommand {\slideentry {4}{5}{2}{55/55}{Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}{0}}
+\headcommand {\slideentry {4}{5}{2}{55/55}{Comparaci\'on entre ves\IeC {\'\i }culas de varicela y herpes}{0}}
 \headcommand {\beamer@framepages {55}{55}}
-\headcommand {\slideentry {4}{5}{3}{56/56}{Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}{0}}
+\headcommand {\slideentry {4}{5}{3}{56/56}{Comparaci\'on entre ves\IeC {\'\i }culas de varicela y herpes}{0}}
 \headcommand {\beamer@framepages {56}{56}}
-\headcommand {\beamer@subsectionentry {0}{4}{6}{57}{Mediciones}}\headcommand {\beamer@subsectionpages {54}{56}}
-\headcommand {\slideentry {4}{6}{1}{57/57}{Mediciones}{0}}
+\headcommand {\slideentry {4}{5}{4}{57/57}{Comparaci\'on entre ves\IeC {\'\i }culas de varicela y herpes}{0}}
 \headcommand {\beamer@framepages {57}{57}}
-\headcommand {\beamer@subsectionentry {0}{4}{7}{58}{Mediciones}}\headcommand {\beamer@subsectionpages {57}{57}}
-\headcommand {\slideentry {4}{7}{1}{58/58}{Mediciones}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{6}{58}{T\'ecnicas basadas en la comparaci\'on de media poblacional}}\headcommand {\beamer@subsectionpages {54}{57}}
+\headcommand {\slideentry {4}{6}{1}{58/58}{T\'ecnicas basadas en la comparaci\'on de media poblacional}{0}}
 \headcommand {\beamer@framepages {58}{58}}
-\headcommand {\beamer@subsectionentry {0}{4}{8}{59}{Comparaci\'on entre ves\IeC {\'\i }culas de varicela y herpes}}\headcommand {\beamer@subsectionpages {58}{58}}
-\headcommand {\slideentry {4}{8}{1}{59/59}{Comparaci\'on entre ves\IeC {\'\i }culas de varicela y herpes}{0}}
+\headcommand {\slideentry {4}{6}{2}{59/59}{T\'ecnicas basadas en la comparaci\'on de media poblacional}{0}}
 \headcommand {\beamer@framepages {59}{59}}
-\headcommand {\slideentry {4}{8}{2}{60/60}{Comparaci\'on entre ves\IeC {\'\i }culas de varicela y herpes}{0}}
+\headcommand {\slideentry {4}{6}{3}{60/60}{T\'ecnicas basadas en la comparaci\'on de media poblacional}{0}}
 \headcommand {\beamer@framepages {60}{60}}
-\headcommand {\slideentry {4}{8}{3}{61/61}{Comparaci\'on entre ves\IeC {\'\i }culas de varicela y herpes}{0}}
+\headcommand {\slideentry {4}{6}{4}{61/61}{T\'ecnicas basadas en la comparaci\'on de media poblacional}{0}}
 \headcommand {\beamer@framepages {61}{61}}
-\headcommand {\slideentry {4}{8}{4}{62/62}{Comparaci\'on entre ves\IeC {\'\i }culas de varicela y herpes}{0}}
+\headcommand {\slideentry {4}{6}{5}{62/62}{T\'ecnicas basadas en la comparaci\'on de media poblacional}{0}}
 \headcommand {\beamer@framepages {62}{62}}
-\headcommand {\beamer@subsectionentry {0}{4}{9}{63}{T\'ecnicas basadas en la comparaci\'on de media poblacional}}\headcommand {\beamer@subsectionpages {59}{62}}
-\headcommand {\slideentry {4}{9}{1}{63/63}{T\'ecnicas basadas en la comparaci\'on de media poblacional}{0}}
+\headcommand {\sectionentry {5}{Conclusiones}{63}{Conclusiones}{0}}
+\headcommand {\beamer@sectionpages {41}{62}}
+\headcommand {\beamer@subsectionpages {58}{62}}
+\headcommand {\slideentry {5}{0}{6}{63/63}{}{0}}
 \headcommand {\beamer@framepages {63}{63}}
-\headcommand {\slideentry {4}{9}{2}{64/64}{T\'ecnicas basadas en la comparaci\'on de media poblacional}{0}}
+\headcommand {\slideentry {5}{0}{7}{64/64}{}{0}}
 \headcommand {\beamer@framepages {64}{64}}
-\headcommand {\slideentry {4}{9}{3}{65/65}{T\'ecnicas basadas en la comparaci\'on de media poblacional}{0}}
+\headcommand {\slideentry {5}{0}{8}{65/65}{}{0}}
 \headcommand {\beamer@framepages {65}{65}}
-\headcommand {\slideentry {4}{9}{4}{66/66}{T\'ecnicas basadas en la comparaci\'on de media poblacional}{0}}
-\headcommand {\beamer@framepages {66}{66}}
-\headcommand {\slideentry {4}{9}{5}{67/67}{T\'ecnicas basadas en la comparaci\'on de media poblacional}{0}}
-\headcommand {\beamer@framepages {67}{67}}
-\headcommand {\sectionentry {5}{Conclusiones}{68}{Conclusiones}{0}}
-\headcommand {\beamer@sectionpages {45}{67}}
-\headcommand {\beamer@subsectionpages {63}{67}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{68}{Trabajo futuro}}\headcommand {\beamer@subsectionpages {68}{67}}
-\headcommand {\slideentry {5}{1}{1}{68/68}{Trabajo futuro}{0}}
-\headcommand {\beamer@framepages {68}{68}}
-\headcommand {\beamer@subsectionentry {0}{5}{2}{69}{Preguntas}}\headcommand {\beamer@subsectionpages {68}{68}}
-\headcommand {\slideentry {5}{2}{1}{69/69}{Preguntas}{0}}
-\headcommand {\beamer@framepages {69}{69}}
-\headcommand {\slideentry {5}{2}{2}{70/70}{Preguntas}{0}}
-\headcommand {\beamer@framepages {70}{70}}
-\headcommand {\beamer@partpages {1}{70}}
-\headcommand {\beamer@subsectionpages {69}{70}}
-\headcommand {\beamer@sectionpages {68}{70}}
-\headcommand {\beamer@documentpages {70}}
-\headcommand {\def \inserttotalframenumber {60}}
+\headcommand {\beamer@partpages {1}{65}}
+\headcommand {\beamer@subsectionpages {63}{65}}
+\headcommand {\beamer@sectionpages {63}{65}}
+\headcommand {\beamer@documentpages {65}}
+\headcommand {\def \inserttotalframenumber {58}}

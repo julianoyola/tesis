@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.7)  8 APR 2014 19:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.7)  8 APR 2014 21:49
 entering extended mode
 **presentacion.tex
 (C:\Repositorios\tesis\PresentacionTesis\presentacion.tex
@@ -894,7 +894,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 LaTeX Info: Redefining \includegraphics on input line 17.
 
 (C:\Repositorios\tesis\PresentacionTesis\presentacion.nav)
-Overfull \hbox (123.7442pt too wide) in paragraph at lines 17--17
+Overfull \hbox (119.36914pt too wide) in paragraph at lines 17--17
  [][][][]  
  []
 
@@ -912,7 +912,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 21.
 
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -920,62 +920,62 @@ Overfull \hbox (124.45255pt too wide) has occurred while \output is active
 
 ]
 (C:\Repositorios\tesis\PresentacionTesis\presentacion.toc)
-Overfull \vbox (124.67825pt too high) detected at line 26
+Overfull \vbox (7.84914pt too high) detected at line 26
  []
 
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [2
 
 ] (C:\Repositorios\tesis\PresentacionTesis\presentacion.toc)
-Overfull \vbox (124.67825pt too high) detected at line 26
+Overfull \vbox (7.84914pt too high) detected at line 26
  []
 
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [3
 
 ] (C:\Repositorios\tesis\PresentacionTesis\presentacion.toc)
-Overfull \vbox (124.67825pt too high) detected at line 26
+Overfull \vbox (7.84914pt too high) detected at line 26
  []
 
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [4
 
 ] (C:\Repositorios\tesis\PresentacionTesis\presentacion.toc)
-Overfull \vbox (124.67825pt too high) detected at line 26
+Overfull \vbox (7.84914pt too high) detected at line 26
  []
 
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [5
 
 ] (C:\Repositorios\tesis\PresentacionTesis\presentacion.toc)
-Overfull \vbox (124.67825pt too high) detected at line 26
+Overfull \vbox (7.84914pt too high) detected at line 26
  []
 
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [6
 
 ] (C:\Repositorios\tesis\PresentacionTesis\01-motivacion.tex
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -983,7 +983,7 @@ Overfull \hbox (124.45255pt too wide) has occurred while \output is active
 
 
 ]
-<../Imagenes/U.Iowa/Varicela/Varicel-02.jpg, id=473, 54.11217pt x 31.61812pt>
+<../Imagenes/U.Iowa/Varicela/Varicel-02.jpg, id=405, 54.11217pt x 31.61812pt>
 File: ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg Graphic file (type jpg)
 
 <use ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg>
@@ -991,7 +991,7 @@ Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg used on inp
 ut line 20.
 (pdftex.def)             Requested size: 144.54pt x 84.45963pt.
 
-<../Imagenes/U.Iowa/Shingles/Fase1/herpes_zoster_309.jpg, id=474, 542.025pt x 3
+<../Imagenes/U.Iowa/Shingles/Fase1/herpes_zoster_309.jpg, id=406, 542.025pt x 3
 66.61969pt>
 File: ../Imagenes/U.Iowa/Shingles/Fase1/herpes_zoster_309.jpg Graphic file (typ
 e jpg)
@@ -1000,11 +1000,11 @@ Package pdftex.def Info: ../Imagenes/U.Iowa/Shingles/Fase1/herpes_zoster_309.jp
 g used on input line 20.
 (pdftex.def)             Requested size: 144.54pt x 97.7635pt.
 
-Overfull \vbox (20.20715pt too high) detected at line 20
+Overfull \vbox (0.70724pt too high) detected at line 20
  []
 
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1012,7 +1012,7 @@ Overfull \hbox (124.45255pt too wide) has occurred while \output is active
 
  <C:/Repositorios/tesis/Imagenes/U.Iowa/Varicela/Varicel-02.jpg> <C:/Repositori
 os/tesis/Imagenes/U.Iowa/Shingles/Fase1/herpes_zoster_309.jpg>]
-<../Imagenes/U.Iowa/Varicela/chicken_pox_picture_13.jpg, id=506, 513.92pt x 443
+<../Imagenes/U.Iowa/Varicela/chicken_pox_picture_13.jpg, id=438, 513.92pt x 443
 .6575pt>
 File: ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_13.jpg Graphic file (type
  jpg)
@@ -1021,7 +1021,7 @@ Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_13.jpg
  used on input line 28.
 (pdftex.def)             Requested size: 115.63243pt x 99.81862pt.
 
-<../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg, id=507, 513.92pt x 790
+<../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg, id=439, 513.92pt x 790
 .955pt>
 File: ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg Graphic file (type
  jpg)
@@ -1030,7 +1030,7 @@ Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg
  used on input line 28.
 (pdftex.def)             Requested size: 65.04256pt x 100.10016pt.
 
-<../Imagenes/U.Iowa/Varicela/Varicel-04.jpg, id=508, 42.84782pt x 22.13805pt>
+<../Imagenes/U.Iowa/Varicela/Varicel-04.jpg, id=440, 42.84782pt x 22.13805pt>
 File: ../Imagenes/U.Iowa/Varicela/Varicel-04.jpg Graphic file (type jpg)
 
 <use ../Imagenes/U.Iowa/Varicela/Varicel-04.jpg>
@@ -1038,7 +1038,7 @@ Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-04.jpg used on inp
 ut line 28.
 (pdftex.def)             Requested size: 115.63243pt x 59.74884pt.
 
-<../Imagenes/U.Iowa/Varicela/Varicel-01.jpg, id=509, 42.84782pt x 20.99544pt>
+<../Imagenes/U.Iowa/Varicela/Varicel-01.jpg, id=441, 42.84782pt x 20.99544pt>
 File: ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg Graphic file (type jpg)
 
 <use ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg>
@@ -1046,11 +1046,7 @@ Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg used on inp
 ut line 28.
 (pdftex.def)             Requested size: 115.63243pt x 56.66502pt.
 
-Overfull \vbox (15.83302pt too high) detected at line 28
- []
-
-
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1061,7 +1057,7 @@ Overfull \hbox (124.45255pt too wide) has occurred while \output is active
 epositorios/tesis/Imagenes/U.Iowa/Varicela/Varicel-04.jpg> <C:/Repositorios/tes
 is/Imagenes/U.Iowa/Varicela/Varicel-01.jpg>])
 (C:\Repositorios\tesis\PresentacionTesis\02-imagenes.tex
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1074,222 +1070,194 @@ File: ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg Graphic file (type
  jpg)
  <use ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg>
 Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/chicken_pox_picture_01.jpg
- used on input line 23.
+ used on input line 25.
 (pdftex.def)             Requested size: 86.72377pt x 133.47092pt.
 File: ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg Graphic file (type jpg)
 
 <use ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg>
 Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg used on inp
-ut line 23.
+ut line 25.
 (pdftex.def)             Requested size: 144.54pt x 84.45963pt.
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [11
 
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [12
 
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [13
 
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [14
 
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [15
 
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[16
-
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[17
-
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[18
-
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[19
-
-]
 File: ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg Graphic file (type jpg)
  <use ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg>
 Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-01.jpg used on inp
-ut line 54.
+ut line 44.
 (pdftex.def)             Requested size: 115.63243pt x 56.66502pt.
 File: ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg Graphic file (type jpg)
 
 <use ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg>
 Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-02.jpg used on inp
-ut line 54.
+ut line 44.
 (pdftex.def)             Requested size: 115.63243pt x 67.568pt.
 
-<../Imagenes/U.Iowa/Varicela/Varicel-03.jpg, id=873, 52.84744pt x 27.01091pt>
+<../Imagenes/U.Iowa/Varicela/Varicel-03.jpg, id=661, 52.84744pt x 27.01091pt>
 File: ../Imagenes/U.Iowa/Varicela/Varicel-03.jpg Graphic file (type jpg)
 
 <use ../Imagenes/U.Iowa/Varicela/Varicel-03.jpg>
 Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-03.jpg used on inp
-ut line 54.
+ut line 44.
 (pdftex.def)             Requested size: 115.63243pt x 59.10474pt.
 File: ../Imagenes/U.Iowa/Varicela/Varicel-04.jpg Graphic file (type jpg)
 
 <use ../Imagenes/U.Iowa/Varicela/Varicel-04.jpg>
 Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/Varicel-04.jpg used on inp
-ut line 54.
+ut line 44.
 (pdftex.def)             Requested size: 115.63243pt x 59.74884pt.
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[20
+[16
 
  <C:/Repositorios/tesis/Imagenes/U.Iowa/Varicela/Varicel-03.jpg>]
-<../Imagenes/U.Iowa/Varicela/chicken_pox_primary_lesions_03.jpg, id=906, 513.92
+<../Imagenes/U.Iowa/Varicela/chicken_pox_primary_lesions_03.jpg, id=692, 513.92
 pt x 374.39874pt>
 File: ../Imagenes/U.Iowa/Varicela/chicken_pox_primary_lesions_03.jpg Graphic fi
 le (type jpg)
 
 <use ../Imagenes/U.Iowa/Varicela/chicken_pox_primary_lesions_03.jpg>
 Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/chicken_pox_primary_lesion
-s_03.jpg used on input line 61.
+s_03.jpg used on input line 51.
 (pdftex.def)             Requested size: 115.63243pt x 84.23607pt.
 
-<../Imagenes/U.Iowa/Varicela/varicella_20.jpg, id=907, 542.025pt x 359.09157pt>
+<../Imagenes/U.Iowa/Varicela/varicella_20.jpg, id=693, 542.025pt x 359.09157pt>
 File: ../Imagenes/U.Iowa/Varicela/varicella_20.jpg Graphic file (type jpg)
 <use ../Imagenes/U.Iowa/Varicela/varicella_20.jpg>
 Package pdftex.def Info: ../Imagenes/U.Iowa/Varicela/varicella_20.jpg used on i
-nput line 61.
+nput line 51.
 (pdftex.def)             Requested size: 115.63243pt x 76.60593pt.
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[21
+[17
 
  <C:/Repositorios/tesis/Imagenes/U.Iowa/Varicela/chicken_pox_primary_lesions_03
 .jpg> <C:/Repositorios/tesis/Imagenes/U.Iowa/Varicela/varicella_20.jpg>])
 (C:\Repositorios\tesis\PresentacionTesis\03-deteccion.tex
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[22
+[18
 
 
 
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[23
+[19
 
-] <Resources/CompL-Varicel-02.jpg, id=1010, 765.86125pt x 437.635pt>
+] <Resources/CompL-Varicel-02.jpg, id=795, 765.86125pt x 437.635pt>
 File: Resources/CompL-Varicel-02.jpg Graphic file (type jpg)
 
 <use Resources/CompL-Varicel-02.jpg>
 Package pdftex.def Info: Resources/CompL-Varicel-02.jpg used on input line 33.
 (pdftex.def)             Requested size: 144.54pt x 82.59058pt.
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[24
+[20
 
  <C:/Repositorios/tesis/PresentacionTesis/Resources/CompL-Varicel-02.jpg>]
-<Resources/CompA-Varicel-02.jpg, id=1045, 765.86125pt x 437.635pt>
+<Resources/CompA-Varicel-02.jpg, id=830, 765.86125pt x 437.635pt>
 File: Resources/CompA-Varicel-02.jpg Graphic file (type jpg)
 
 <use Resources/CompA-Varicel-02.jpg>
 Package pdftex.def Info: Resources/CompA-Varicel-02.jpg used on input line 40.
 (pdftex.def)             Requested size: 144.54pt x 82.59058pt.
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[25
+[21
 
  <C:/Repositorios/tesis/PresentacionTesis/Resources/CompA-Varicel-02.jpg>]
-<Resources/CompB-Varicel-02.jpg, id=1080, 765.86125pt x 437.635pt>
+<Resources/CompB-Varicel-02.jpg, id=864, 765.86125pt x 437.635pt>
 File: Resources/CompB-Varicel-02.jpg Graphic file (type jpg)
 
 <use Resources/CompB-Varicel-02.jpg>
 Package pdftex.def Info: Resources/CompB-Varicel-02.jpg used on input line 47.
 (pdftex.def)             Requested size: 144.54pt x 82.59058pt.
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[22
+
+ <C:/Repositorios/tesis/PresentacionTesis/Resources/CompB-Varicel-02.jpg>]
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[23
+
+]
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[24
+
+]
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[25
+
+]
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [26
 
- <C:/Repositorios/tesis/PresentacionTesis/Resources/CompB-Varicel-02.jpg>]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[27
-
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[28
-
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[29
-
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[30
-
-] <Resources/Varicel-03.jpg, id=1253, 52.84744pt x 27.01091pt>
+] <Resources/Varicel-03.jpg, id=1038, 52.84744pt x 27.01091pt>
 File: Resources/Varicel-03.jpg Graphic file (type jpg)
 
 <use Resources/Varicel-03.jpg>
@@ -1301,7 +1269,7 @@ Overfull \hbox (14.72931pt too wide) in paragraph at lines 113--113
  []
 
 
-<Resources/Varicel-03_bordes_detectados.png, id=1254, 587.19376pt x 300.12125pt
+<Resources/Varicel-03_bordes_detectados.png, id=1039, 587.19376pt x 300.12125pt
 >
 File: Resources/Varicel-03_bordes_detectados.png Graphic file (type png)
  <use Resources/Varicel-03_bordes_detectados.png>
@@ -1314,7 +1282,7 @@ Overfull \hbox (14.90932pt too wide) in paragraph at lines 113--113
  []
 
 
-<Resources/Varicel-03_imagen_con_bordes.png, id=1255, 587.19376pt x 300.12125pt
+<Resources/Varicel-03_imagen_con_bordes.png, id=1040, 587.19376pt x 300.12125pt
 >
 File: Resources/Varicel-03_imagen_con_bordes.png Graphic file (type png)
  <use Resources/Varicel-03_imagen_con_bordes.png>
@@ -1326,7 +1294,7 @@ Overfull \hbox (14.90932pt too wide) in paragraph at lines 113--113
 [][]  
  []
 
-<Resources/Varicel-04.jpg, id=1256, 42.84782pt x 22.13805pt>
+<Resources/Varicel-04.jpg, id=1041, 42.84782pt x 22.13805pt>
 File: Resources/Varicel-04.jpg Graphic file (type jpg)
 
 <use Resources/Varicel-04.jpg>
@@ -1337,7 +1305,7 @@ Overfull \hbox (11.5687pt too wide) in paragraph at lines 113--113
 [][]  
  []
 
-<Resources/Varicel-04_bordes_detectados.png, id=1257, 602.25pt x 311.1625pt>
+<Resources/Varicel-04_bordes_detectados.png, id=1042, 602.25pt x 311.1625pt>
 File: Resources/Varicel-04_bordes_detectados.png Graphic file (type png)
 
 <use Resources/Varicel-04_bordes_detectados.png>
@@ -1349,7 +1317,7 @@ Overfull \hbox (12.04286pt too wide) in paragraph at lines 113--113
 [][]  
  []
 
-<Resources/Varicel-04_imagen_con_bordes.png, id=1258, 602.25pt x 311.1625pt>
+<Resources/Varicel-04_imagen_con_bordes.png, id=1043, 602.25pt x 311.1625pt>
 File: Resources/Varicel-04_imagen_con_bordes.png Graphic file (type png)
 
 <use Resources/Varicel-04_imagen_con_bordes.png>
@@ -1362,15 +1330,15 @@ Overfull \hbox (12.04286pt too wide) in paragraph at lines 113--113
  []
 
 
-Overfull \vbox (20.81387pt too high) detected at line 113
+Overfull \vbox (1.31396pt too high) detected at line 113
  []
 
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[31
+[27
 
  <C:/Repositorios/tesis/PresentacionTesis/Resources/Varicel-03.jpg> <C:/Reposit
 orios/tesis/PresentacionTesis/Resources/Varicel-03_bordes_detectados.png (PNG c
@@ -1390,7 +1358,7 @@ Overfull \hbox (7.22743pt too wide) in paragraph at lines 123--123
 [][]  
  []
 
-<Resources/bordes-Varicel-01.jpg, id=1294, 766.865pt x 381.425pt>
+<Resources/bordes-Varicel-01.jpg, id=1078, 766.865pt x 381.425pt>
 File: Resources/bordes-Varicel-01.jpg Graphic file (type jpg)
 
 <use Resources/bordes-Varicel-01.jpg>
@@ -1402,7 +1370,7 @@ Overfull \hbox (36.135pt too wide) in paragraph at lines 123--123
 [][]  
  []
 
-<Resources/bordesEnLaImagen-Varicel-01.jpg, id=1295, 600.2425pt x 295.1025pt>
+<Resources/bordesEnLaImagen-Varicel-01.jpg, id=1079, 600.2425pt x 295.1025pt>
 File: Resources/bordesEnLaImagen-Varicel-01.jpg Graphic file (type jpg)
 
 <use Resources/bordesEnLaImagen-Varicel-01.jpg>
@@ -1415,52 +1383,48 @@ Overfull \hbox (7.22743pt too wide) in paragraph at lines 123--123
  []
 
 
-Overfull \vbox (17.22751pt too high) detected at line 123
- []
-
-
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[32
+[28
 
  <C:/Repositorios/tesis/PresentacionTesis/Resources/bordes-Varicel-01.jpg> <C:/
 Repositorios/tesis/PresentacionTesis/Resources/bordesEnLaImagen-Varicel-01.jpg>
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[33
+[29
 
-] <Resources/coins2.jpg, id=1364, 426.59375pt x 568.1225pt>
+] <Resources/coins2.jpg, id=1148, 426.59375pt x 568.1225pt>
 File: Resources/coins2.jpg Graphic file (type jpg)
 
 <use Resources/coins2.jpg>
 Package pdftex.def Info: Resources/coins2.jpg used on input line 150.
 (pdftex.def)             Requested size: 106.64816pt x 142.03027pt.
 
-<Resources/ccoins2-1.png, id=1365, 318.43968pt x 426.09187pt>
+<Resources/ccoins2-1.png, id=1149, 318.43968pt x 426.09187pt>
 File: Resources/ccoins2-1.png Graphic file (type png)
 
 <use Resources/ccoins2-1.png>
 Package pdftex.def Info: Resources/ccoins2-1.png used on input line 150.
 (pdftex.def)             Requested size: 105.08542pt x 140.61075pt.
 
-Overfull \vbox (21.85423pt too high) detected at line 150
+Overfull \vbox (2.35432pt too high) detected at line 150
  []
 
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[34
+[30
 
  <C:/Repositorios/tesis/PresentacionTesis/Resources/coins2.jpg> <C:/Repositorio
 s/tesis/PresentacionTesis/Resources/ccoins2-1.png>]
-<Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png, id=1402, 405.515p
+<Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png, id=1186, 405.515p
 t x 324.21124pt>
 File: Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png Graphic file 
 (type png)
@@ -1470,7 +1434,7 @@ Package pdftex.def Info: Resources/recorte-Varicel-02_resultado_sin_ecualizacio
 n.png used on input line 160.
 (pdftex.def)             Requested size: 141.93236pt x 113.47563pt.
 
-<Resources/acumulador-Varicel-02.jpg, id=1403, 325.215pt x 255.95625pt>
+<Resources/acumulador-Varicel-02.jpg, id=1187, 325.215pt x 255.95625pt>
 File: Resources/acumulador-Varicel-02.jpg Graphic file (type jpg)
 
 <use Resources/acumulador-Varicel-02.jpg>
@@ -1478,16 +1442,16 @@ Package pdftex.def Info: Resources/acumulador-Varicel-02.jpg used on input line
  160.
 (pdftex.def)             Requested size: 146.3454pt x 115.17923pt.
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[35
+[31
 
  <C:/Repositorios/tesis/PresentacionTesis/Resources/recorte-Varicel-02_resultad
 o_sin_ecualizacion.png> <C:/Repositorios/tesis/PresentacionTesis/Resources/acum
 ulador-Varicel-02.jpg>]
-<Resources/resultado-Varicel-02-radio24-bordes.jpg, id=1439, 599.23875pt x 349.
+<Resources/resultado-Varicel-02-radio24-bordes.jpg, id=1224, 599.23875pt x 349.
 305pt>
 File: Resources/resultado-Varicel-02-radio24-bordes.jpg Graphic file (type jpg)
 
@@ -1496,19 +1460,15 @@ Package pdftex.def Info: Resources/resultado-Varicel-02-radio24-bordes.jpg used
  on input line 168.
 (pdftex.def)             Requested size: 289.07999pt x 168.51195pt.
 
-Overfull \vbox (10.3359pt too high) detected at line 168
- []
-
-
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[36
+[32
 
  <C:/Repositorios/tesis/PresentacionTesis/Resources/resultado-Varicel-02-radio2
 4-bordes.jpg>]
-<Resources/resultado-Varicel-02-radio23_1.jpg, id=1474, 598.235pt x 349.305pt>
+<Resources/resultado-Varicel-02-radio23_1.jpg, id=1259, 598.235pt x 349.305pt>
 File: Resources/resultado-Varicel-02-radio23_1.jpg Graphic file (type jpg)
 
 <use Resources/resultado-Varicel-02-radio23_1.jpg>
@@ -1516,26 +1476,22 @@ Package pdftex.def Info: Resources/resultado-Varicel-02-radio23_1.jpg used on i
 nput line 176.
 (pdftex.def)             Requested size: 289.07999pt x 168.79443pt.
 
-Overfull \vbox (10.6184pt too high) detected at line 176
- []
-
-
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[37
+[33
 
  <C:/Repositorios/tesis/PresentacionTesis/Resources/resultado-Varicel-02-radio2
 3_1.jpg>]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[38
+[34
 
 ]
-<Resources/recorte-resultado-varicella_18-bordes.jpg, id=1547, 326.21875pt x 40
+<Resources/recorte-resultado-varicella_18-bordes.jpg, id=1331, 326.21875pt x 40
 8.52625pt>
 File: Resources/recorte-resultado-varicella_18-bordes.jpg Graphic file (type jp
 g)
@@ -1544,7 +1500,7 @@ Package pdftex.def Info: Resources/recorte-resultado-varicella_18-bordes.jpg us
 ed on input line 198.
 (pdftex.def)             Requested size: 97.86636pt x 122.55882pt.
 
-<Resources/recorte-resultado-varicella_18-radio40.jpg, id=1548, 321.2pt x 402.5
+<Resources/recorte-resultado-varicella_18-radio40.jpg, id=1332, 321.2pt x 402.5
 0375pt>
 File: Resources/recorte-resultado-varicella_18-radio40.jpg Graphic file (type j
 pg)
@@ -1553,7 +1509,7 @@ Package pdftex.def Info: Resources/recorte-resultado-varicella_18-radio40.jpg u
 sed on input line 198.
 (pdftex.def)             Requested size: 96.36073pt x 120.75204pt.
 
-<Resources/recorte-resultado-varicella_18-radio43.jpg, id=1549, 337.26pt x 421.
+<Resources/recorte-resultado-varicella_18-radio43.jpg, id=1333, 337.26pt x 421.
 575pt>
 File: Resources/recorte-resultado-varicella_18-radio43.jpg Graphic file (type j
 pg)
@@ -1562,21 +1518,17 @@ Package pdftex.def Info: Resources/recorte-resultado-varicella_18-radio43.jpg u
 sed on input line 198.
 (pdftex.def)             Requested size: 97.80289pt x 122.25362pt.
 
-Overfull \vbox (14.38278pt too high) detected at line 198
- []
-
-
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[39
+[35
 
  <C:/Repositorios/tesis/PresentacionTesis/Resources/recorte-resultado-varicella
 _18-bordes.jpg> <C:/Repositorios/tesis/PresentacionTesis/Resources/recorte-resu
 ltado-varicella_18-radio40.jpg> <C:/Repositorios/tesis/PresentacionTesis/Resour
 ces/recorte-resultado-varicella_18-radio43.jpg>]
-<Resources/recorte-resultado-Varicel-02-radio23.jpg, id=1584, 401.5pt x 233.873
+<Resources/recorte-resultado-Varicel-02-radio23.jpg, id=1368, 401.5pt x 233.873
 75pt>
 File: Resources/recorte-resultado-Varicel-02-radio23.jpg Graphic file (type jpg
 )
@@ -1585,7 +1537,7 @@ Package pdftex.def Info: Resources/recorte-resultado-Varicel-02-radio23.jpg use
 d on input line 208.
 (pdftex.def)             Requested size: 140.5271pt x 81.85703pt.
 
-<Resources/recorte-resultado-Varicel-02-radio24.jpg, id=1585, 400.49625pt x 232
+<Resources/recorte-resultado-Varicel-02-radio24.jpg, id=1369, 400.49625pt x 232
 .87pt>
 File: Resources/recorte-resultado-Varicel-02-radio24.jpg Graphic file (type jpg
 )
@@ -1594,23 +1546,23 @@ Package pdftex.def Info: Resources/recorte-resultado-Varicel-02-radio24.jpg use
 d on input line 208.
 (pdftex.def)             Requested size: 140.17578pt x 81.5057pt.
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[40
+[36
 
  <C:/Repositorios/tesis/PresentacionTesis/Resources/recorte-resultado-Varicel-0
 2-radio23.jpg> <C:/Repositorios/tesis/PresentacionTesis/Resources/recorte-resul
 tado-Varicel-02-radio24.jpg>]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[41
+[37
 
 ]
-<Resources/recorte-Varicella_20_bordes_sin_ecualizacion.png, id=1654, 446.66875
+<Resources/recorte-Varicella_20_bordes_sin_ecualizacion.png, id=1439, 446.66875
 pt x 398.48875pt>
 File: Resources/recorte-Varicella_20_bordes_sin_ecualizacion.png Graphic file (
 type png)
@@ -1620,7 +1572,7 @@ Package pdftex.def Info: Resources/recorte-Varicella_20_bordes_sin_ecualizacion
 .png used on input line 230.
 (pdftex.def)             Requested size: 111.6669pt x 99.62193pt.
 
-<Resources/recorte-Varicella_20_resultado_sin_ecualizacion.png, id=1655, 446.66
+<Resources/recorte-Varicella_20_resultado_sin_ecualizacion.png, id=1440, 446.66
 875pt x 398.48875pt>
 File: Resources/recorte-Varicella_20_resultado_sin_ecualizacion.png Graphic fil
 e (type png)
@@ -1630,16 +1582,16 @@ Package pdftex.def Info: Resources/recorte-Varicella_20_resultado_sin_ecualizac
 ion.png used on input line 230.
 (pdftex.def)             Requested size: 111.6669pt x 99.62193pt.
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[42
+[38
 
  <C:/Repositorios/tesis/PresentacionTesis/Resources/recorte-Varicella_20_bordes
 _sin_ecualizacion.png> <C:/Repositorios/tesis/PresentacionTesis/Resources/recor
 te-Varicella_20_resultado_sin_ecualizacion.png>]
-<Resources/recorte-Varicella_20_bordes_con_ecualizacion.png, id=1690, 446.66875
+<Resources/recorte-Varicella_20_bordes_con_ecualizacion.png, id=1475, 446.66875
 pt x 398.48875pt>
 File: Resources/recorte-Varicella_20_bordes_con_ecualizacion.png Graphic file (
 type png)
@@ -1649,7 +1601,7 @@ Package pdftex.def Info: Resources/recorte-Varicella_20_bordes_con_ecualizacion
 .png used on input line 241.
 (pdftex.def)             Requested size: 111.6669pt x 99.62193pt.
 
-<Resources/recorte-Varicella_20_resultado_con_ecualizacion.png, id=1691, 446.66
+<Resources/recorte-Varicella_20_resultado_con_ecualizacion.png, id=1476, 446.66
 875pt x 398.48875pt>
 File: Resources/recorte-Varicella_20_resultado_con_ecualizacion.png Graphic fil
 e (type png)
@@ -1659,16 +1611,16 @@ Package pdftex.def Info: Resources/recorte-Varicella_20_resultado_con_ecualizac
 ion.png used on input line 241.
 (pdftex.def)             Requested size: 111.6669pt x 99.62193pt.
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[43
+[39
 
  <C:/Repositorios/tesis/PresentacionTesis/Resources/recorte-Varicella_20_bordes
 _con_ecualizacion.png> <C:/Repositorios/tesis/PresentacionTesis/Resources/recor
 te-Varicella_20_resultado_con_ecualizacion.png>]
-<Resources/diagrama-deteccion.png, id=1726, 723.70375pt x 409.53pt>
+<Resources/diagrama-deteccion.png, id=1510, 723.70375pt x 409.53pt>
 File: Resources/diagrama-deteccion.png Graphic file (type png)
 
 <use Resources/diagrama-deteccion.png>
@@ -1676,246 +1628,235 @@ Package pdftex.def Info: Resources/diagrama-deteccion.png used on input line 24
 9.
 (pdftex.def)             Requested size: 289.47636pt x 163.80908pt.
 
-Overfull \vbox (5.63304pt too high) detected at line 249
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ [][][][]  
  []
 
+[40
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+ <C:/Repositorios/tesis/PresentacionTesis/Resources/diagrama-deteccion.png>]) (
+C:\Repositorios\tesis\PresentacionTesis\04-discriminacion.tex
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[41
+
+
+
+]
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[42
+
+]
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[43
+
+]
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [44
 
- <C:/Repositorios/tesis/PresentacionTesis/Resources/diagrama-deteccion.png>]) (
-C:\Repositorios\tesis\PresentacionTesis\04-discriminacion.tex
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+]
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [45
 
-
-
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+<Resources/recorte-chicken_pox_primary_lesions_03.jpg, id=1731, 343.2825pt x 24
+9.93375pt>
+File: Resources/recorte-chicken_pox_primary_lesions_03.jpg Graphic file (type j
+pg)
+ <use Resources/recorte-chicken_pox_primary_lesions_03.jpg>
+Package pdftex.def Info: Resources/recorte-chicken_pox_primary_lesions_03.jpg u
+sed on input line 91.
+(pdftex.def)             Requested size: 85.8204pt x 62.48328pt.
+
+<Resources/recorte-varicella_18.jpg, id=1732, 401.5pt x 230.8625pt>
+File: Resources/recorte-varicella_18.jpg Graphic file (type jpg)
+
+<use Resources/recorte-varicella_18.jpg>
+Package pdftex.def Info: Resources/recorte-varicella_18.jpg used on input line 
+91.
+(pdftex.def)             Requested size: 101.58165pt x 58.40944pt.
+
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [46
 
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+ <C:/Repositorios/tesis/PresentacionTesis/Resources/recorte-chicken_pox_primary
+_lesions_03.jpg> <C:/Repositorios/tesis/PresentacionTesis/Resources/recorte-var
+icella_18.jpg>]
+<Resources/histograma-promedio-varicela-ab.png, id=1771, 421.575pt x 316.18124p
+t>
+File: Resources/histograma-promedio-varicela-ab.png Graphic file (type png)
+ <use Resources/histograma-promedio-varicela-ab.png>
+Package pdftex.def Info: Resources/histograma-promedio-varicela-ab.png used on 
+input line 101.
+(pdftex.def)             Requested size: 105.39348pt x 79.0451pt.
+
+<Resources/histograma-promedio-herpes-ab.png, id=1772, 421.575pt x 316.18124pt>
+File: Resources/histograma-promedio-herpes-ab.png Graphic file (type png)
+<use Resources/histograma-promedio-herpes-ab.png>
+Package pdftex.def Info: Resources/histograma-promedio-herpes-ab.png used on in
+put line 101.
+(pdftex.def)             Requested size: 105.39348pt x 79.0451pt.
+
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [47
 
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+ <C:/Repositorios/tesis/PresentacionTesis/Resources/histograma-promedio-varicel
+a-ab.png (PNG copy)> <C:/Repositorios/tesis/PresentacionTesis/Resources/histogr
+ama-promedio-herpes-ab.png (PNG copy)>]
+<Resources/contourAB-ch03.png, id=1810, 421.575pt x 316.18124pt>
+File: Resources/contourAB-ch03.png Graphic file (type png)
+
+<use Resources/contourAB-ch03.png>
+Package pdftex.def Info: Resources/contourAB-ch03.png used on input line 115.
+(pdftex.def)             Requested size: 63.23352pt x 47.42513pt.
+
+<Resources/contourRB-ch03.png, id=1811, 421.575pt x 316.18124pt>
+File: Resources/contourRB-ch03.png Graphic file (type png)
+
+<use Resources/contourRB-ch03.png>
+Package pdftex.def Info: Resources/contourRB-ch03.png used on input line 115.
+(pdftex.def)             Requested size: 63.23352pt x 47.42513pt.
+
+<Resources/contourRG-ch03.png, id=1812, 421.575pt x 316.18124pt>
+File: Resources/contourRG-ch03.png Graphic file (type png)
+
+<use Resources/contourRG-ch03.png>
+Package pdftex.def Info: Resources/contourRG-ch03.png used on input line 115.
+(pdftex.def)             Requested size: 63.23352pt x 47.42513pt.
+
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [48
 
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+ <C:/Repositorios/tesis/PresentacionTesis/Resources/contourAB-ch03.png (PNG cop
+y)> <C:/Repositorios/tesis/PresentacionTesis/Resources/contourRB-ch03.png (PNG 
+copy)> <C:/Repositorios/tesis/PresentacionTesis/Resources/contourRG-ch03.png (P
+NG copy)>]
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [49
 
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [50
 
 ]
-<Resources/recorte-chicken_pox_primary_lesions_03.jpg, id=2001, 343.2825pt x 24
-9.93375pt>
-File: Resources/recorte-chicken_pox_primary_lesions_03.jpg Graphic file (type j
-pg)
- <use Resources/recorte-chicken_pox_primary_lesions_03.jpg>
-Package pdftex.def Info: Resources/recorte-chicken_pox_primary_lesions_03.jpg u
-sed on input line 97.
-(pdftex.def)             Requested size: 85.8204pt x 62.48328pt.
-
-<Resources/recorte-varicella_18.jpg, id=2002, 401.5pt x 230.8625pt>
-File: Resources/recorte-varicella_18.jpg Graphic file (type jpg)
-
-<use Resources/recorte-varicella_18.jpg>
-Package pdftex.def Info: Resources/recorte-varicella_18.jpg used on input line 
-97.
-(pdftex.def)             Requested size: 101.58165pt x 58.40944pt.
-
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [51
 
- <C:/Repositorios/tesis/PresentacionTesis/Resources/recorte-chicken_pox_primary
-_lesions_03.jpg> <C:/Repositorios/tesis/PresentacionTesis/Resources/recorte-var
-icella_18.jpg>]
-<Resources/histograma-promedio-varicela-ab.png, id=2044, 421.575pt x 316.18124p
-t>
-File: Resources/histograma-promedio-varicela-ab.png Graphic file (type png)
- <use Resources/histograma-promedio-varicela-ab.png>
-Package pdftex.def Info: Resources/histograma-promedio-varicela-ab.png used on 
-input line 107.
-(pdftex.def)             Requested size: 105.39348pt x 79.0451pt.
+]
+Overfull \vbox (76.79753pt too high) detected at line 189
+ []
 
-<Resources/histograma-promedio-herpes-ab.png, id=2045, 421.575pt x 316.18124pt>
-File: Resources/histograma-promedio-herpes-ab.png Graphic file (type png)
-<use Resources/histograma-promedio-herpes-ab.png>
-Package pdftex.def Info: Resources/histograma-promedio-herpes-ab.png used on in
-put line 107.
-(pdftex.def)             Requested size: 105.39348pt x 79.0451pt.
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [52
 
- <C:/Repositorios/tesis/PresentacionTesis/Resources/histograma-promedio-varicel
-a-ab.png (PNG copy)> <C:/Repositorios/tesis/PresentacionTesis/Resources/histogr
-ama-promedio-herpes-ab.png (PNG copy)>]
-<Resources/contourAB-ch03.png, id=2086, 421.575pt x 316.18124pt>
-File: Resources/contourAB-ch03.png Graphic file (type png)
-
-<use Resources/contourAB-ch03.png>
-Package pdftex.def Info: Resources/contourAB-ch03.png used on input line 121.
-(pdftex.def)             Requested size: 63.23352pt x 47.42513pt.
-
-<Resources/contourRB-ch03.png, id=2087, 421.575pt x 316.18124pt>
-File: Resources/contourRB-ch03.png Graphic file (type png)
-
-<use Resources/contourRB-ch03.png>
-Package pdftex.def Info: Resources/contourRB-ch03.png used on input line 121.
-(pdftex.def)             Requested size: 63.23352pt x 47.42513pt.
-
-<Resources/contourRG-ch03.png, id=2088, 421.575pt x 316.18124pt>
-File: Resources/contourRG-ch03.png Graphic file (type png)
-
-<use Resources/contourRG-ch03.png>
-Package pdftex.def Info: Resources/contourRG-ch03.png used on input line 121.
-(pdftex.def)             Requested size: 63.23352pt x 47.42513pt.
-
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[53
-
- <C:/Repositorios/tesis/PresentacionTesis/Resources/contourAB-ch03.png (PNG cop
-y)> <C:/Repositorios/tesis/PresentacionTesis/Resources/contourRB-ch03.png (PNG 
-copy)> <C:/Repositorios/tesis/PresentacionTesis/Resources/contourRG-ch03.png (P
-NG copy)>]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[54
-
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[55
-
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[56
-
-]
-Overfull \vbox (96.29744pt too high) detected at line 196
- []
-
-
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[57
-
-]
-<Resources/chicken_pox_primary_lesions_03_concirculos_crop.jpg, id=2293, 427.59
+<Resources/chicken_pox_primary_lesions_03_concirculos_crop.jpg, id=2004, 427.59
 75pt x 308.15125pt>
 File: Resources/chicken_pox_primary_lesions_03_concirculos_crop.jpg Graphic fil
 e (type jpg)
 
 <use Resources/chicken_pox_primary_lesions_03_concirculos_crop.jpg>
 Package pdftex.def Info: Resources/chicken_pox_primary_lesions_03_concirculos_c
-rop.jpg used on input line 220.
+rop.jpg used on input line 211.
 (pdftex.def)             Requested size: 46.25385pt x 33.33249pt.
 
-<Resources/Varicel-02_resultado_con_ecualizacion_crop.png, id=2294, 395.22656pt
+<Resources/Varicel-02_resultado_con_ecualizacion_crop.png, id=2005, 395.22656pt
  x 231.11343pt>
 File: Resources/Varicel-02_resultado_con_ecualizacion_crop.png Graphic file (ty
 pe png)
  <use Resources/Varicel-02_resultado_con_ecualizacion_crop.png>
 Package pdftex.def Info: Resources/Varicel-02_resultado_con_ecualizacion_crop.p
-ng used on input line 220.
+ng used on input line 211.
 (pdftex.def)             Requested size: 46.25385pt x 27.04474pt.
 
-<Resources/Varicella_20_resultado_con_ecualizacion_crop.png, id=2296, 348.55219
+<Resources/Varicella_20_resultado_con_ecualizacion_crop.png, id=2007, 348.55219
 pt x 231.11343pt>
 File: Resources/Varicella_20_resultado_con_ecualizacion_crop.png Graphic file (
 type png)
 
 <use Resources/Varicella_20_resultado_con_ecualizacion_crop.png>
 Package pdftex.def Info: Resources/Varicella_20_resultado_con_ecualizacion_crop
-.png used on input line 220.
+.png used on input line 211.
 (pdftex.def)             Requested size: 46.25385pt x 30.66646pt.
 
-<Resources/varicella_34_concirculos_crop.jpg, id=2297, 427.5975pt x 309.155pt>
+<Resources/varicella_34_concirculos_crop.jpg, id=2008, 427.5975pt x 309.155pt>
 File: Resources/varicella_34_concirculos_crop.jpg Graphic file (type jpg)
 
 <use Resources/varicella_34_concirculos_crop.jpg>
 Package pdftex.def Info: Resources/varicella_34_concirculos_crop.jpg used on in
-put line 220.
+put line 211.
 (pdftex.def)             Requested size: 46.25385pt x 33.44107pt.
 
-<Resources/herpes_zoster_114_concirculos_crop.jpg, id=2298, 553.06625pt x 371.3
+<Resources/herpes_zoster_114_concirculos_crop.jpg, id=2009, 553.06625pt x 371.3
 875pt>
 File: Resources/herpes_zoster_114_concirculos_crop.jpg Graphic file (type jpg)
  <use Resources/herpes_zoster_114_concirculos_crop.jpg>
 Package pdftex.def Info: Resources/herpes_zoster_114_concirculos_crop.jpg used 
-on input line 220.
+on input line 211.
 (pdftex.def)             Requested size: 46.25385pt x 31.05466pt.
 
-<Resources/herpes_zoster_309_concirculos_crop.png, id=2299, 341.02406pt x 231.1
+<Resources/herpes_zoster_309_concirculos_crop.png, id=2010, 341.02406pt x 231.1
 1343pt>
 File: Resources/herpes_zoster_309_concirculos_crop.png Graphic file (type png)
  <use Resources/herpes_zoster_309_concirculos_crop.png>
 Package pdftex.def Info: Resources/herpes_zoster_309_concirculos_crop.png used 
-on input line 220.
+on input line 211.
 (pdftex.def)             Requested size: 46.25385pt x 31.34355pt.
 
-<Resources/herpes_zoster_8_concirculos_crop.jpg, id=2300, 553.06625pt x 372.391
+<Resources/herpes_zoster_8_concirculos_crop.jpg, id=2011, 553.06625pt x 372.391
 25pt>
 File: Resources/herpes_zoster_8_concirculos_crop.jpg Graphic file (type jpg)
  <use Resources/herpes_zoster_8_concirculos_crop.jpg>
 Package pdftex.def Info: Resources/herpes_zoster_8_concirculos_crop.jpg used on
- input line 220.
+ input line 211.
 (pdftex.def)             Requested size: 46.25385pt x 31.1386pt.
 
-Overfull \hbox (69.42462pt too wide) detected at line 220
+Overfull \hbox (69.42462pt too wide) detected at line 211
 [][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[58
+[53
 
  <C:/Repositorios/tesis/PresentacionTesis/Resources/chicken_pox_primary_lesions
 _03_concirculos_crop.jpg> <C:/Repositorios/tesis/PresentacionTesis/Resources/Va
@@ -1926,103 +1867,103 @@ Repositorios/tesis/PresentacionTesis/Resources/herpes_zoster_114_concirculos_cr
 op.jpg> <C:/Repositorios/tesis/PresentacionTesis/Resources/herpes_zoster_309_co
 ncirculos_crop.png> <C:/Repositorios/tesis/PresentacionTesis/Resources/herpes_z
 oster_8_concirculos_crop.jpg>]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[54
+
+]
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[55
+
+]
+Overfull \vbox (144.61273pt too high) detected at line 281
+ []
+
+
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[56
+
+]
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[57
+
+]
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[58
+
+]
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [59
 
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [60
 
 ]
-Overfull \vbox (164.11264pt too high) detected at line 290
- []
-
-
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [61
 
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (44.72258pt too wide) in paragraph at lines 375--375
+ [] 
+ []
+
+
+Overfull \vbox (87.06834pt too high) detected at line 375
+ []
+
+
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [62
 
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+]) (C:\Repositorios\tesis\PresentacionTesis\05-conclusiones.tex
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [63
 
+
+
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [64
 
 ]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
+Overfull \hbox (120.07748pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [65
-
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[66
-
-]
-Overfull \hbox (44.72258pt too wide) in paragraph at lines 384--384
- [] 
- []
-
-
-Overfull \vbox (106.56825pt too high) detected at line 384
- []
-
-
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[67
-
-]) (C:\Repositorios\tesis\PresentacionTesis\05-conclusiones.tex
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[68
-
-
-
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[69
-
-]
-Overfull \hbox (124.45255pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[70
 
 ])
 \tf@nav=\write6
@@ -2039,7 +1980,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `presentacion.out' has not changed.
-(rerunfilecheck)             Checksum: 5E09C94F6C85C7AE76C94D1061DA5E61;1746.
+(rerunfilecheck)             Checksum: 1EE5741A8A85D46AEE922E8C6E468BE7;1210.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2048,10 +1989,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 17941 strings out of 493921
- 348707 string characters out of 3147277
- 422791 words of memory out of 3000000
- 20544 multiletter control sequences out of 15000+200000
+ 17899 strings out of 493921
+ 348226 string characters out of 3147277
+ 422164 words of memory out of 3000000
+ 20519 multiletter control sequences out of 15000+200000
  12698 words of font info for 49 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  56i,20n,65p,393b,792s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2067,9 +2008,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on presentacion.pdf (70 pages, 6494061 bytes).
+Output written on presentacion.pdf (65 pages, 6426714 bytes).
 PDF statistics:
- 2885 PDF objects out of 2984 (max. 8388607)
- 174 named destinations out of 1000 (max. 500000)
- 517 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2559 PDF objects out of 2984 (max. 8388607)
+ 157 named destinations out of 1000 (max. 500000)
+ 461 words of extra memory for PDF output out of 10000 (max. 10000000)
 
