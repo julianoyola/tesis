@@ -14,6 +14,14 @@
 \end{frame}
 
 \begin{frame}
+	\frametitle{Esquema del proceso realizado}
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.4]{Resources/diagrama-deteccion.png}
+	\end{figure}	
+\end{frame}
+
+\begin{frame}
 	\frametitle{Espacio de color}
 	¿Cómo representamos los colores y la luz en el ordenador?
 	\begin{itemize}
@@ -117,7 +125,7 @@
 	\begin{columns}[c]
 	\column{1.5in}
 		\includegraphics[width=1.6in]{../Imagenes/U.Iowa/Varicela/Varicel-01.jpg} \\
-		\includegraphics[width=2in]{Resources/bordes-Varicel-01.jpg}  \\
+		\includegraphics[width=1.6in]{Resources/bordes-Varicel-01.jpg}  \\
 		\includegraphics[width=1.6in]{Resources/bordesEnLaImagen-Varicel-01.jpg} \\
 	\end{columns}	
 \end{frame}
@@ -145,7 +153,7 @@
 	\begin{figure}[h]
 		\includegraphics[scale=0.25]{Resources/coins2.jpg}
 		\includegraphics[scale=0.33]{Resources/ccoins2-1.png}
-		\caption{\textbf{Izquierda:} Fotografía original de las monedas. \textbf{Derecha:} Arreglo acumulador de votos. \label{fig:acumuladorMonedas}}
+		\caption{\textbf{Izquierda:} Fotografía original de las monedas. \textbf{Derecha:} Arreglo acumulador de votos. }
 	\end{figure}
 \end{frame}
 
@@ -155,7 +163,7 @@
 	\centering
 		\includegraphics[scale=0.35]{Resources/recorte-Varicel-02_resultado_sin_ecualizacion.png}
 		\includegraphics[scale=0.45]{Resources/acumulador-Varicel-02.jpg}
-		\caption{\textbf{Izquierda:} Fotografía original de varicela. \textbf{Derecha:} Arreglo acumulador con votos sumados. \label{fig:acumuladorVesiculas}}
+		\caption{\textbf{Izquierda:} Fotografía original de varicela. \textbf{Derecha:} Arreglo acumulador con votos sumados. }
 	\end{figure}
 \end{frame}
 
@@ -179,7 +187,7 @@
 	\frametitle{Transformada Circular de Hough}
 	Procedimiento realizado:
 	\begin{itemize}
-		\item Se aplica CHT: Circular Hough Trasnform. Ecuación $(x-x0)^2 + (y-y0)^2 = r^2$ \\
+		\item Se aplica CHT: Circular Hough Transform. Ecuación $(x-x0)^2 + (y-y0)^2 = r^2$ \\
 		\item Selección de candidatos: Ponderación con respecto al máximo y Umbralización   \\
 		\item Radios utilizados \\
 		\item Eliminación de detecciones duplicadas \\
@@ -193,7 +201,7 @@
 		\includegraphics[scale=0.30]{Resources/recorte-resultado-varicella_18-bordes.jpg}
 		\includegraphics[scale=0.30]{Resources/recorte-resultado-varicella_18-radio40.jpg}
 		\includegraphics[scale=0.29]{Resources/recorte-resultado-varicella_18-radio43.jpg}
-		\caption{Detección de vesículas con diferentes radios. \textbf{Izq:} Bordes detectados. \textbf{Centro:} Detección de vesículas con radio radio = 40. \textbf{Der:} Detección de vesículas con radio = 43. \label{fig:deteccionRadios4043}}
+		\caption{Detección de vesículas con diferentes radios. \textbf{Izq:} Bordes detectados. \textbf{Centro:} Detección de vesículas con radio radio = 40. \textbf{Der:} Detección de vesículas con radio = 43. }
 	\end{figure}
 \end{frame}
 
@@ -203,7 +211,7 @@
 		\centering
 		\includegraphics[scale=0.35]{Resources/recorte-resultado-Varicel-02-radio23.jpg}
 		\includegraphics[scale=0.35]{Resources/recorte-resultado-Varicel-02-radio24.jpg}
-		\caption{Detección de vesículas con diferentes radios. \textbf{Izquierda:} radio = 23. \textbf{Derecha:} radio = 24. \label{fig:deteccionRadios2324}}
+		\caption{Detección de vesículas con diferentes radios. \textbf{Izquierda:} radio = 23. \textbf{Derecha:} radio = 24. }
 	\end{figure}
 \end{frame}
 
@@ -238,12 +246,4 @@
 		\includegraphics[scale=0.25]{Resources/recorte-Varicella_20_resultado_con_ecualizacion.png}
 		\caption{\textbf{Detección de vesículas} \textbf{Izq:} Bordes detectados. \textbf{Der:} Cículos detectados.}
 	\end{figure}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Esquema del proceso realizado}
-	\begin{figure}[!h]
-		\centering
-		\includegraphics[scale=0.4]{Resources/diagrama-deteccion.png}
-	\end{figure}	
 \end{frame}

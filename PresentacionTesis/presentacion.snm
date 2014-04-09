@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \beamer@slide {fig:acumuladorMonedas}{30}
 \beamer@slide {fig:acumuladorVesiculas}{31}
 \beamer@slide {fig:deteccionRadios4043}{35}
@@ -9,3 +10,12 @@
 \beamer@slide {fig:imagenesKLD}{53}
 \beamer@slide {tab:KLDvh}{56}
 \beamer@slide {tab:Mahal}{62}
+=======
+\beamer@slide {fig:comparacionEtapasVaricela}{47}
+\beamer@slide {fig:histogramasPromedio}{48}
+\beamer@slide {fig:histogramasPromedioch03}{49}
+\beamer@slide {tab:KLD}{53}
+\beamer@slide {fig:imagenesKLD}{54}
+\beamer@slide {tab:KLDvh}{57}
+\beamer@slide {tab:Mahal}{63}
+>>>>>>> e28ae45159c6d2cd9332e4df7816cbfe884ee1d2
