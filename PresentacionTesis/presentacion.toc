@@ -1,24 +1,19 @@
-\beamer@endinputifotherversion {3.33pt}
+\beamer@endinputifotherversion {3.26pt}
 \select@language {spanish}
 \beamer@sectionintoc {1}{Motivaci\'on}{7}{0}{1}
-\beamer@subsectionintoc {1}{1}{Presentaci\'on del problema b\'asico}{7}{0}{1}
 \beamer@sectionintoc {2}{Las im\'agenes de piel y sus caracter\IeC {\'\i }sticas}{10}{0}{2}
-\beamer@subsectionintoc {2}{1}{Caracter\IeC {\'\i }sticas de las im\'agenes utilizadas}{10}{0}{2}
-\beamer@subsectionintoc {2}{2}{T\'ecnicas utilizadas y medidas adoptadas}{16}{0}{2}
-\beamer@sectionintoc {3}{Detecci\'on de ves\IeC {\'\i }culas}{22}{0}{3}
-\beamer@subsectionintoc {3}{1}{Espacio de color}{22}{0}{3}
-\beamer@subsectionintoc {3}{2}{Detecci\'on de bordes y circulos}{27}{0}{3}
-\beamer@subsectionintoc {3}{3}{Ecualizaci\'on del histograma}{41}{0}{3}
-\beamer@sectionintoc {4}{Discriminaci\'on entre varicela y otras enfermedades}{45}{0}{4}
-\beamer@subsectionintoc {4}{1}{Construcci\'on de un modelo te\'orico}{45}{0}{4}
-\beamer@subsectionintoc {4}{2}{Objetivo}{46}{0}{4}
-\beamer@subsectionintoc {4}{3}{T\'ecnicas utilizadas}{47}{0}{4}
-\beamer@subsectionintoc {4}{4}{Construcci\'on de un histograma de referencia}{48}{0}{4}
-\beamer@subsectionintoc {4}{5}{Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}{54}{0}{4}
-\beamer@subsectionintoc {4}{6}{Mediciones}{57}{0}{4}
-\beamer@subsectionintoc {4}{7}{Mediciones}{58}{0}{4}
-\beamer@subsectionintoc {4}{8}{Comparaci\'on entre ves\IeC {\'\i }culas de varicela y herpes}{59}{0}{4}
-\beamer@subsectionintoc {4}{9}{T\'ecnicas basadas en la comparaci\'on de media poblacional}{63}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones}{68}{0}{5}
-\beamer@subsectionintoc {5}{1}{Trabajo futuro}{68}{0}{5}
-\beamer@subsectionintoc {5}{2}{Preguntas}{69}{0}{5}
+\beamer@sectionintoc {3}{Detecci\'on de ves\IeC {\'\i }culas}{18}{0}{3}
+\beamer@subsectionintoc {3}{1}{Espacio de color}{18}{0}{3}
+\beamer@subsectionintoc {3}{2}{Detecci\'on de bordes y circulos}{24}{0}{3}
+\beamer@subsectionintoc {3}{3}{Ecualizaci\'on del histograma}{38}{0}{3}
+\beamer@sectionintoc {4}{Discriminaci\'on entre varicela y otras enfermedades}{41}{0}{4}
+\beamer@subsectionintoc {4}{1}{Construcci\'on de un modelo te\'orico}{41}{0}{4}
+\beamer@subsectionintoc {4}{2}{Objetivo}{42}{0}{4}
+\beamer@subsectionintoc {4}{3}{T\'ecnicas utilizadas}{43}{0}{4}
+\beamer@subsectionintoc {4}{4}{Construcci\'on de un histograma de referencia}{44}{0}{4}
+\beamer@subsectionintoc {4}{5}{Comparaci\'on entre una ves\IeC {\'\i }cula y la piel normal}{50}{0}{4}
+\beamer@subsectionintoc {4}{6}{Mediciones}{53}{0}{4}
+\beamer@subsectionintoc {4}{7}{Mediciones}{54}{0}{4}
+\beamer@subsectionintoc {4}{8}{Comparaci\'on entre ves\IeC {\'\i }culas de varicela y herpes}{55}{0}{4}
+\beamer@subsectionintoc {4}{9}{T\'ecnicas basadas en la comparaci\'on de media poblacional}{59}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones}{64}{0}{5}
