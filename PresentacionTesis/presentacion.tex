@@ -9,7 +9,23 @@
 \usefonttheme{professionalfonts}% font de LaTeX
 \usetheme{Warsaw}
 
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}
+	Análisis y extracción de características de enfermedades de la piel
+	%\hspace*{3em}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
 \title{Análisis y extracción de características de enfermedades de la piel: su aplicación en la detección de varicela}
+%\def\shorttitle{Análisis y extracción de características de enfermedades de la piel}
 \author[Virginia Arroyo y Julián Oyola]{Virginia Arroyo y Julián Oyola}
 \institute{Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires}
 \date{$11$ de abril de $2014$}

@@ -1,7 +1,5 @@
 \section{Detección de vesículas}
 
-\subsection{Espacio de color}
-
 \begin{frame}
 	\frametitle{Metodología propuesta}
 	Técnicas de procesamiento digital de imágenes
@@ -21,6 +19,7 @@
 	\end{figure}	
 \end{frame}
 
+\subsection{Espacio de color}
 \begin{frame}
 	\frametitle{Espacio de color}
 	¿Cómo representamos los colores y la luz en el ordenador?
@@ -54,7 +53,7 @@
 	\end{tabular}
 \end{frame}
 
-\subsection{Detección de bordes y circulos}
+\subsection{Detección de bordes}
 \begin{frame}
 	\frametitle{Detección de bordes}
 	\begin{itemize}
@@ -130,6 +129,7 @@
 	\end{columns}	
 \end{frame}
 
+\subsection{Detección de círculos}
 \begin{frame}
 	\frametitle{Detección de círculos}
 	\begin{itemize}
@@ -221,7 +221,7 @@
 	¿Qué se desea obtener?
 	\begin{itemize}
 		\item Incrementar el contraste
-		\item Mejorar de la detección
+		\item Mejorar la detección
 	\end{itemize}	
 	CLAHE: Ecualización adaptativa limitando el contraste
 \end{frame}
@@ -244,6 +244,28 @@
 		\centering
 		\includegraphics[scale=0.25]{Resources/recorte-Varicella_20_bordes_con_ecualizacion.png}
 		\includegraphics[scale=0.25]{Resources/recorte-Varicella_20_resultado_con_ecualizacion.png}
+		\caption{\textbf{Detección de vesículas} \textbf{Izq:} Bordes detectados. \textbf{Der:} Cículos detectados.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ejemplos de aplicación de ecualización}
+	Sin aplicar ecualización
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.25]{Resources/chicken_pox_primary_lesions_03-bordes-sin-ecualizacion.png}
+		\includegraphics[scale=0.25]{Resources/chicken_pox_primary_lesions_03-resultado-sin-ecualizacion.png}
+		\caption{\textbf {Detección de vesículas} \textbf{Izq:} Bordes detectados. \textbf{Der:} Cículos detectados. }
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ejemplos de aplicación de ecualización}
+	Aplicando ecualización
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[scale=0.25]{Resources/chicken_pox_primary_lesions_03-bordes-con-ecualizacion.png}
+		\includegraphics[scale=0.25]{Resources/chicken_pox_primary_lesions_03-resultado-con-ecualizacion.png}
 		\caption{\textbf{Detección de vesículas} \textbf{Izq:} Bordes detectados. \textbf{Der:} Cículos detectados.}
 	\end{figure}
 \end{frame}

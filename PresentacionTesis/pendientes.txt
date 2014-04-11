@@ -1,0 +1,116 @@
+
+\section{Técnicas basadas en el histograma de color}
+
+\subsection{Construcción de un histograma de referencia}
+
+
+
+
+
+	Suponiendo que los píxeles interiores a las 12 vesículas pertenecen a una misma población, es decir, son muestras de la misma variable aleatoria, entonces tendrán una distribución similar de colores. Se procederá a analizar los 12 histogramas de color de las mismas, y se realizarán pruebas estadísticas para determinar su homogeneidad, y su valor discriminatorio. 
+
+	
+	
+	
+
+
+
+
+
+\subsection{Test de distribución Hotelling T-Cuadrada}
+
+El test de la distribución Hotelling T-Cuadrada para dos distribuciones, asumiendo que son multinormales y con matrices de covarianza idénticas, puede indicar, dada la hipótesis nula $H_{0}$ que ambas medias son iguales $\mu_{1} = \mu_{2}$, si hay suficiente evidencia para rechazar $H_{0}$.
+Para realizar este test sobre los datos de las vesículas, se trabajó con la distancia de Mahalanobis como vector de diferencia entre las medias de las poblaciones. Las comparaciones se realizaron:
+
+\begin{itemize}
+	\item Entre los píxeles de una vesícula de varicela y el histograma promedio de varicela
+	\item Entre los píxeles de una vesícula de herpes zóster y el histograma promedio de varicela
+\end{itemize}
+
+En todos los casos el test arrojó $p = 0$, lo que indica que \textbf{no hay evidencia suficiente} para rechazar la hipótesis nula de que ambas distribuciones tienen la misma media. Con este método, no se cuenta con suficiente información para determinar si se puede distinguir las vesículas de varicela de las de herpes zóster basándose en un análisis del color interno, para las imágenes con las que se trabajó.
+
+
+\subsection{Test de ANOVA}
+
+Otro test que puede llevarse a cabo para rechazar la hipotesis nula $H_{0}$ que ambas medias son iguales es el test de ANOVA. Para llevar a cabo este test realizamos el siguiente procedimiento. Primero tomamos cuatro imágenes representativas, dos de varicela y dos herpes zóster y construimos una clase con las vesículas de cada imagen. Las imágenes que utilizamos son las que se muestran en la figura \ref{fig:imagenesAnova}. Al realizar las pruebas encontramos que para la componente *a las diferencias son mayores si comparamos las medias de las vesículas de varicela y herpes zóster, que si comparamos entre vesículas de la misma enfermedad. En el cuadro \ref{tab:comparacionMediasCompA} podemos ver dicho comportamiento.
+
+\begin{figure}[h!]
+\centering
+\subfigure[]
+{\includegraphics[width=0.32\textwidth]{Resources/chicken_pox_primary_lesions_03_concirculos_crop.jpg}}\hspace{4pt}
+\subfigure[]
+{\includegraphics[width=0.32\textwidth]{Resources/varicella_34_concirculos_crop.jpg}}\hspace{4pt} \\
+\subfigure[]
+{\includegraphics[width=0.32\textwidth]{Resources/herpes_zoster_114_concirculos_crop.jpg}}\hspace{4pt}\hspace{0.5pt}
+\subfigure[]
+{\includegraphics[width=0.32\textwidth]{Resources/herpes_zoster_8_concirculos_crop.jpg}}
+\caption{Vesículas detectadas. (a) - (b) Vesículas de varicela. (c) - (d) Vesículas de herpes zóster.\label{fig:imagenesAnova}}
+\end{figure}
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}[pos]{ c | c | c }
+Distancia entre medias & Intervalo & Comparación de medias \\
+
+\hline
+$\mu_{(a)} - \mu_{(c)} = 9.1967$	&	$[ 8.8831  , \ 9.5104  ]$	&	Interclases \\
+$\mu_{(a)} - \mu_{(d)} = 6.1135$	&	$[ 5.8445  , \ 6.3826  ]$	&	Interclases  \\
+$\mu_{(b)} - \mu_{(c)} = 6.5746$	&	$[ 6.2689  , \ 6.8802  ]$	&	Interclases  \\
+$\mu_{(b)} - \mu_{(d)} = 3.4913$	&	$[ 3.2317  , \ 3.7509  ]$	&	Interclases  \\
+\hline
+$\mu_{(a)} - \mu_{(b)} = 2.6222$	&	$[ 2.3835  , \ 2.8609  ]$	&	Intraclases  \\
+$\mu_{(c)} - \mu_{(d)} = -3.0832$	&	$[ -3.4131  , \ -2.7533  ]$	&	Intraclases  \\
+
+\end{tabular}
+\caption{Comparación entre clases de varicela y herpes zóster, sobre componente *a \label{tab:comparacionMediasCompA}}
+\end{table}
+
+
+Luego, asumiendo una distribución normal de los valores y que las varianzas son iguales, utilizamos una hipótesis nula en la cual presumimos que las medias de los colores de las vesículas de varicela y herpes zóster son iguales. A través de una prueba estadística refutamos esta hipótesis. Para esta prueba seguimos utilizando la componente *a de color, pero ahora separamos las vesículas en dos clases, una de ellas contiene los valores de las vesículas de varicela y la otra, las vesículas de herpes zóster. Encontramos que la diferencia $\mu_{\scriptsize\textrm{(varicela)}}- \mu_{\scriptsize\textrm{(herpeszóster)}} = 5.8608$, con una confianza del 100\% en el intervalo $[5.7044 \quad 6.0171]$.
+
+Realizamos pruebas similares con las componentes *Cb y *Cr, del espacio de color Y*Cb*Cr. 
+
+Para la componente *Cb la diferencia interclases es $\mu_{\scriptsize\textrm{(varicela)}}- \mu_{\scriptsize\textrm{(herpeszóster)}} = -6.4700$, con una confianza del 100\% en el intervalo $[-6.6175 \quad -6.3225]$. Adicionalmente, sobre la componente *Cr también se puede observar la diferencia interclases $\mu_{\scriptsize\textrm{(varicela)}}- \mu_{\scriptsize\textrm{(herpeszóster)}} = 7.9246$, con una confianza del 100\% en el intervalo $[7.7563 \quad 8.0929]$ \ref{tab:comparacionMediasCompCr}.
+
+En los cuadros \ref{tab:comparacionMediasCompCb} y \ref{tab:comparacionMediasCompCr} se puede apreciar que la diferencia interclases es mayor que la intraclases.
+
+\begin{table}[h]
+\centering
+\begin{tabular}[pos]{ c | c | c }
+Distancia entre medias & Intervalo & Comparación de medias \\
+
+\hline
+$\mu_{(a)}- \mu_{(c)} =  -8.3343  $   &   $[   -8.6310    , \      -8.0376    ]$	&	Interclases \\
+$\mu_{(a)}- \mu_{(d)} =   -8.0301 $   &   $[  -8.2846     , \     -7.7756    ]$	&	Interclases \\
+$\mu_{(b)}- \mu_{(c)} =  5.2527   $   &   $[   4.9636   , \      5.5418     ]$	&	Interclases \\
+$\mu_{(b)}- \mu_{(d)} =   4.9486  $   &   $[ 4.7030       , \     5.1941    ]$	&	Interclases \\
+\hline
+$\mu_{(a)} - \mu_{(b)} = -3.0816$	&	$[ -3.3073  , \ -2.8558  ]$	&	Intraclases \\
+$\mu_{(c)} - \mu_{(d)} = 0.3042$	&	$[ -0.0079  , \ 0.6162  ]$   \textbf{(**)}	&	Intraclases \\
+
+\end{tabular}
+\caption{Comparación entre clases de varicela y herpes zóster, sobre componente *Cb \label{tab:comparacionMediasCompCb}}
+\end{table}
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}[pos]{ c | c | c }
+Distancia entre medias & Intervalo & Comparación de medias \\
+
+\hline
+$\mu_{(a)}- \mu_{(c)} = 12.1550   $	&	$[  11.8231    , \      12.4869  ]$	&	Interclases \\
+$\mu_{(a)}- \mu_{(d)} =   8.9064  $	&	$[ 8.6217      , \      9.1910    ]$	&	Interclases \\
+$\mu_{(b)}- \mu_{(c)} =  -8.0765  $	&	$[   -8.3999     , \     -7.7532    ]$	&	Interclases \\
+$\mu_{(b)}- \mu_{(d)} =   -4.8279 $	&	$[ -5.1026      , \    -4.5532    ]$	&	Interclases \\
+\hline
+$\mu_{(a)} - \mu_{(b)} = 4.0785$	&	$[ 3.8259  , \ 4.3310  ]$	&	Intraclases \\
+$\mu_{(c)} - \mu_{(d)} = -3.8426$	&	$[ -3.5977  , \ -2.8996  ]$	&	Intraclases \\
+
+\end{tabular}
+\caption{Comparación entre clases de varicela y herpes zóster, sobre componente *Cr \label{tab:comparacionMediasCompCr}}
+\end{table}
+
+
+Con estos resultados podemos concluir que existe suficiente evidencia estadística para rechazar la hipótesis nula en la cual presumimos que las medias de las dos clases son iguales. Sin embargo, a pesar de que la diferencia entre clases (diferencia interclases) es mayor que entre medias de la misma enfermedad (intraclases), hay demasiada variabilidad en los datos para poder aceptar la otra hipótesis nula: que las imágenes pertenecientes a la misma clase tienen la misma media. Dentro de las observaciones, el resultado de comparación intraclases entre vesículas de herpes zóster \textbf{(**)} en el cuadro \ref{tab:comparacionMediasCompCb} es alentador, ya que el intervalo de confianza incluye al cero, lo que indica que la diferencia entre las medias de esas dos vesículas de herpes zóster es casi nula, y no hay evidencia para rechazar la hipótesis de que las medias son iguales.
