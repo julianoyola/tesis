@@ -1,15 +1,35 @@
 \section{Conclusiones}
 
 \begin{frame}
+	\frametitle{Conclusiones sobre detección}
+	\begin{itemize}
+		\item Método para detección de vesículas sobre fotografías en bruto
+		\item Espacio de color L*a*b útil para detección de bordes y discriminación
+		\item Buen desempeño de método de Canny y CHT
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Conclusiones sobre discriminación}
+	\begin{itemize}
+		\item Análisis de discriminación basado en el color interno de las vesículas
+		\item Resultados favorables en la discriminación de falsos positivos
+		\item Resultados poco alentadores en la discriminación de varicela y herpes zóster
+		\item Test de ANOVA permite rechazar la hipótesis nula de que las medias de varicela y herpes son iguales
+		\item Variabilidad y poca cantidad de las imágenes de muestra
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
 	\frametitle{Trabajo futuro}
 	\begin{itemize}
-		\item Detección de piel
+		\item Detección de piel: segmentación por color
 		\item Detección de ampollas que no tengan forma circular
-		\item Detección de patrones en las imágenes
-		\begin{itemize}
-			\item Buscar características que permitan determinar cuándo se está en presencia de la varicela
-			\item Aprendizaje automático sobre el histograma del color de las ampollas detectadas
-		\end{itemize}
+		\item Análisis de la distribución de las vesículas
+		\item Escala de las imágenes
+		\item Aprendizaje automático sobre el histograma del color de las ampollas detectadas
+		\item Biblioteca de imágenes
+		\item Comparación con otras enfermedades
 	\end{itemize}
 \end{frame}
 

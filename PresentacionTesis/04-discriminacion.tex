@@ -327,7 +327,7 @@ x & = & (x_{1},x_{2},x_{3},...,x_{n})^{T} \nonumber \\
 \begin{frame}
 	\frametitle{Resultados: Comparación por distancia de Mahalanobis}
 	
-	Resultados favorables para discriminar los falsos positivos, pero no para distinguir entre vesículas de varicela y de herpes zóater. \\
+	Resultados favorables para discriminar los falsos positivos, pero no para distinguir entre vesículas de varicela y de herpes zóster. \\
 	
 	\tiny
 \begin{table}[h!]
@@ -402,17 +402,18 @@ Herpes 3 & Vesícula 2 & $0.98$	&	$3.62$	&	$1.86$	&	$ 7.59$	&	$4.42$	&	$4.02$	\\
 
 	\begin{itemize}
 		\item En todos los casos el test arrojó $p = 0$
-		\item Indica que \textbf{no hay evidencia suficiente} para rechazar la hipótesis nula de que ambas distribuciones tienen la misma media.
+		\item Indica que, utilizando este test, \textbf{no hay evidencia suficiente} para rechazar la hipótesis nula de que ambas distribuciones tienen la misma media.
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Test de ANOVA}
+	\frametitle{Test de ANOVA (Analysis of Variance)}
 
 	Evaluar si se puede rechazar la hipotesis nula $H_{0}$ de igualdad de las medias. \\
 	\begin{itemize}
 		\item Tomar imágenes representativas
 		\item Contruir una clase con los valores para las vesículas de cada imagen
+		\item Medir la distancia entre las medias de las clases (e intraclases también)
 	\end{itemize}
 \tiny
 \begin{figure}[h!]
@@ -427,7 +428,7 @@ Herpes 3 & Vesícula 2 & $0.98$	&	$3.62$	&	$1.86$	&	$ 7.59$	&	$4.42$	&	$4.02$	\\
 \end{frame}
 
 \begin{frame}
-	\frametitle{Resultados: Test de ANOVA}
+	\frametitle{Mediciones: Diferencias entre medias de varicela y herpes zóster (comp. *a)}
 
 	\tiny
 \begin{table}[h]
@@ -450,3 +451,86 @@ $\mu_{(c)} - \mu_{(d)} = -3.0832$	&	$[ -3.4131  , \ -2.7533  ]$	&	Intraclases  \
 \normalsize
 
 \end{frame}
+
+\begin{frame}
+	\frametitle{Mediciones: Diferencias entre medias de varicela y herpes zóster (comp. *Cb)}
+
+	\tiny
+\begin{table}[h]
+\centering
+\begin{tabular}[pos]{ c | c | c }
+Distancia entre medias & Intervalo & Comparación de medias \\
+
+\hline
+$\mu_{(a)}- \mu_{(c)} =  -8.3343  $   &   $[   -8.6310    , \      -8.0376    ]$	&	Interclases \\
+$\mu_{(a)}- \mu_{(d)} =   -8.0301 $   &   $[  -8.2846     , \     -7.7756    ]$	&	Interclases \\
+$\mu_{(b)}- \mu_{(c)} =  5.2527   $   &   $[   4.9636   , \      5.5418     ]$	&	Interclases \\
+$\mu_{(b)}- \mu_{(d)} =   4.9486  $   &   $[ 4.7030       , \     5.1941    ]$	&	Interclases \\
+\hline
+$\mu_{(a)} - \mu_{(b)} = -3.0816$	&	$[ -3.3073  , \ -2.8558  ]$	&	Intraclases \\
+$\mu_{(c)} - \mu_{(d)} = 0.3042$	&	$[ -0.0079  , \ 0.6162  ]$   \textbf{(**)}	&	Intraclases \\
+
+\end{tabular}
+\caption{Comparación entre clases de varicela y herpes zóster, sobre componente *Cb \label{tab:comparacionMediasCompCb}}
+\end{table}
+\normalsize
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Mediciones: Diferencias entre medias de varicela y herpes zóster (comp. *Cr)}
+
+	\tiny
+\begin{table}[h]
+\centering
+\begin{tabular}[pos]{ c | c | c }
+Distancia entre medias & Intervalo & Comparación de medias \\
+
+\hline
+$\mu_{(a)}- \mu_{(c)} = 12.1550   $	&	$[  11.8231    , \      12.4869  ]$	&	Interclases \\
+$\mu_{(a)}- \mu_{(d)} =   8.9064  $	&	$[ 8.6217      , \      9.1910    ]$	&	Interclases \\
+$\mu_{(b)}- \mu_{(c)} =  -8.0765  $	&	$[   -8.3999     , \     -7.7532    ]$	&	Interclases \\
+$\mu_{(b)}- \mu_{(d)} =   -4.8279 $	&	$[ -5.1026      , \    -4.5532    ]$	&	Interclases \\
+\hline
+$\mu_{(a)} - \mu_{(b)} = 4.0785$	&	$[ 3.8259  , \ 4.3310  ]$	&	Intraclases \\
+$\mu_{(c)} - \mu_{(d)} = -3.8426$	&	$[ -3.5977  , \ -2.8996  ]$	&	Intraclases \\
+
+\end{tabular}
+\caption{Comparación entre clases de varicela y herpes zóster, sobre componente *Cr \label{tab:comparacionMediasCompCr}}
+\end{table}
+\normalsize
+
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Resultados: Test de ANOVA}
+
+	Asumiendo una distribución normal de los valores y varianzas iguales, \\
+	Hipótesis nula $H_{0}$: las medias de los colores de las vesículas de varicela y herpes zóster son iguales.
+
+	\footnotesize
+	\begin{itemize}
+		\item Componente a*: diferencia $\mu_{\scriptsize\textrm{(varicela)}}- \mu_{\scriptsize\textrm{(herpeszóster)}} = 5.8608$, \\
+		con una confianza del 100\% en el intervalo $[5.7044 \quad 6.0171]$.
+		\item Componente *Cb: diferencia $\mu_{\scriptsize\textrm{(varicela)}}- \mu_{\scriptsize\textrm{(herpeszóster)}} = -6.4700$, \\
+		con una confianza del 100\% en el intervalo $[-6.6175 \quad -6.3225]$.
+		\item Componente *Cr: diferencia $\mu_{\scriptsize\textrm{(varicela)}}- \mu_{\scriptsize\textrm{(herpeszóster)}} = 7.9246$, \\
+		con una confianza del 100\% en el intervalo $[7.7563 \quad 8.0929]$.
+	\end{itemize}
+\normalsize
+
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Resultados: Test de ANOVA}
+
+	\begin{itemize}
+		\item Existe suficiente evidencia estadística para rechazar la hipótesis nula de que las medias de las dos clases son iguales
+		\item Además, la diferencia interclases es mayor que la diferencia intraclases
+		\item Sin embargo, hay demasiada variabilidad en los datos para poder aceptar la otra hipótesis nula: que las imágenes pertenecientes a la misma clase tienen la misma media.
+	\end{itemize}
+	
+\end{frame}
+
