@@ -168,6 +168,17 @@
 \end{frame}
 
 \begin{frame}
+	\frametitle{Transformada Circular de Hough}
+	Procedimiento realizado:
+	\begin{itemize}
+		\item Se aplica CHT: Circular Hough Transform. Ecuación $(x-x0)^2 + (y-y0)^2 = r^2$ \\
+		\item Selección de candidatos: Ponderación con respecto al máximo y Umbralización   \\
+		\item Radios utilizados \\
+		\item Eliminación de detecciones duplicadas \\
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}
 \frametitle{Ejemplo: Imagen con bordes detectados}
 	\begin{figure}[h]
 	\centering
@@ -184,17 +195,6 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Transformada Circular de Hough}
-	Procedimiento realizado:
-	\begin{itemize}
-		\item Se aplica CHT: Circular Hough Transform. Ecuación $(x-x0)^2 + (y-y0)^2 = r^2$ \\
-		\item Selección de candidatos: Ponderación con respecto al máximo y Umbralización   \\
-		\item Radios utilizados \\
-		\item Eliminación de detecciones duplicadas \\
-	\end{itemize}	
-\end{frame}
-
-\begin{frame}
 	\frametitle{Radios Utilizados}
 	\begin{figure}
 		\centering
@@ -206,12 +206,22 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Eliminación de detecciones duplicadas}
+	\frametitle{Radios Utilizados}
 	\begin{figure}
 		\centering
 		\includegraphics[scale=0.35]{Resources/recorte-resultado-Varicel-02-radio23.jpg}
 		\includegraphics[scale=0.35]{Resources/recorte-resultado-Varicel-02-radio24.jpg}
 		\caption{Detección de vesículas con diferentes radios. \textbf{Izquierda:} radio = 23. \textbf{Derecha:} radio = 24. }
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Eliminación de círculos redundantes}
+	\begin{figure}[!h]
+		\centering
+			\includegraphics[scale=0.33]{Resources/resultado-chicken_pox_picture_13-int689101114.jpg} 
+			\includegraphics[scale=0.25]{Resources/resultado-chicken_pox_picture_13-int689101114-conc2.jpg} 
+			\caption{\textbf{Izq:} Detección de círculos redundantes con $k = max(r1, r2)$. \textbf{Der:} Detección de círculos redundantes con $k = r1 + r2$.}
 	\end{figure}
 \end{frame}
 
@@ -267,5 +277,41 @@
 		\includegraphics[scale=0.25]{Resources/chicken_pox_primary_lesions_03-bordes-con-ecualizacion.png}
 		\includegraphics[scale=0.25]{Resources/chicken_pox_primary_lesions_03-resultado-con-ecualizacion.png}
 		\caption{\textbf{Detección de vesículas} \textbf{Izq:} Bordes detectados. \textbf{Der:} Cículos detectados.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Comparación de los espacios de color L*a*b y YCbCr}
+		\begin{figure}[h!]
+		\centering
+		\tiny
+		\subfigure[]
+		{\includegraphics[scale=0.18]{Resources/color/lab/chicken_pox_primary_lesions_03_bordes.png}}\hspace{4pt}
+		\subfigure[]
+		{\includegraphics[scale=0.18]{Resources/color/lab/chicken_pox_primary_lesions_03_resultado.png}}\hspace{4pt} \\ 
+		\subfigure[]
+		{\includegraphics[scale=0.18]{Resources/color/ycbcr/chicken_pox_primary_lesions_03_bordes.png}}\hspace{4pt} \hspace{0.5pt}
+		\subfigure[]
+		{\includegraphics[scale=0.18]{Resources/color/ycbcr/chicken_pox_primary_lesions_03_resultado.png}}
+		\caption{(a) - (b) Utilizando L*a*b. (c) - (d) Utilizando YCbCr.}
+		\normalsize
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Comparación de los espacios de color L*a*b y YCbCr}
+	\begin{figure}[h!]
+		\centering
+		\tiny{
+		\subfigure[]
+		{\includegraphics[scale=0.18]{Resources/color/lab/Varicel-02_bordes.png}}\hspace{4pt}
+		\subfigure[]
+		{\includegraphics[scale=0.18]{Resources/color/lab/Varicel-02_resultado.png}}\hspace{4pt} \\
+		\subfigure[]
+		{\includegraphics[scale=0.18]{Resources/color/ycbcr/Varicel-02_bordes.png}}\hspace{4pt} \hspace{0.5pt}
+		\subfigure[]
+		{\includegraphics[scale=0.18]{Resources/color/ycbcr/Varicel-02_resultado.png}}
+		\caption{(a) - (b) Utilizando L*a*b. (c) - (d) Utilizando YCbCr.}
+		}
 	\end{figure}
 \end{frame}
